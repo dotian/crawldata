@@ -1,0 +1,30 @@
+2014-06-03 01:00:12,340
+--INFO:程序开始
+
+2014-06-03 01:00:12,384
+--FATAL:Main
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ConGetData.DAL.SystemConst.get_StrCookie() 位置 D:\杨博\2015年Join\ActionLM2014\数据挖掘系统\ConGetData\ConGetData\DAL\SystemConst.cs:行号 29
+   在 ConGetData.BLL.MicroblogWork.OpenWork() 位置 D:\杨博\2015年Join\ActionLM2014\数据挖掘系统\ConGetData\ConGetData\BLL\MicroblogWork.cs:行号 139
+   在 ConGetData.Program.Main() 位置 D:\杨博\2015年Join\ActionLM2014\数据挖掘系统\ConGetData\ConGetData\Program.cs:行号 34
+2014-06-03 01:02:15,996
+--INFO:程序开始
+
+2014-06-03 01:02:16,006
+--FATAL:Main
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ConGetData.DAL.SystemConst.get_StrCookie() 位置 D:\杨博\2015年Join\ActionLM2014\数据挖掘系统\ConGetData\ConGetData\DAL\SystemConst.cs:行号 29
+   在 ConGetData.BLL.MicroblogWork.OpenWork() 位置 D:\杨博\2015年Join\ActionLM2014\数据挖掘系统\ConGetData\ConGetData\BLL\MicroblogWork.cs:行号 139
+   在 ConGetData.Program.Main() 位置 D:\杨博\2015年Join\ActionLM2014\数据挖掘系统\ConGetData\ConGetData\Program.cs:行号 34
+2014-06-03 01:02:32,522
+--INFO:程序开始
+
+2014-06-03 01:02:32,531
+--FATAL:Main
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ConGetData.DAL.SystemConst.get_StrCookie() 位置 D:\杨博\2015年Join\ActionLM2014\数据挖掘系统\ConGetData\ConGetData\DAL\SystemConst.cs:行号 29
+   在 ConGetData.BLL.MicroblogWork.OpenWork() 位置 D:\杨博\2015年Join\ActionLM2014\数据挖掘系统\ConGetData\ConGetData\BLL\MicroblogWork.cs:行号 139
+   在 ConGetData.Program.Main() 位置 D:\杨博\2015年Join\ActionLM2014\数据挖掘系统\ConGetData\ConGetData\Program.cs:行号 34

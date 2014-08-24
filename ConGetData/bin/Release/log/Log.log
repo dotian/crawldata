@@ -1,0 +1,52 @@
+2014-06-21 16:40:11,116
+--INFO:程序开始
+
+2014-06-21 16:42:21,382
+--INFO:Microblog Cookie  获取完毕:	
+
+2014-06-21 16:42:25,581
+--ERROR:99463
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ConGetData.DAL.SystemConst.get_StrCookie() 位置 D:\杨博\2015年Join\ActionLM2014\数据挖掘系统\ConGetData\ConGetData\DAL\SystemConst.cs:行号 29
+   在 ConGetData.BLL.MicroblogWork.RunWork(CrawlTarget target) 位置 D:\杨博\2015年Join\ActionLM2014\数据挖掘系统\ConGetData\ConGetData\BLL\MicroblogWork.cs:行号 29
+   在 ConGetData.BLL.MainWork.CrawlWorkAction(Object obj) 位置 D:\杨博\2015年Join\ActionLM2014\数据挖掘系统\ConGetData\ConGetData\BLL\MainWork.cs:行号 131
+2014-06-21 16:42:25,581
+--ERROR:99463
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ConGetData.DAL.SystemConst.get_StrCookie() 位置 D:\杨博\2015年Join\ActionLM2014\数据挖掘系统\ConGetData\ConGetData\DAL\SystemConst.cs:行号 29
+   在 ConGetData.BLL.MicroblogWork.RunWork(CrawlTarget target) 位置 D:\杨博\2015年Join\ActionLM2014\数据挖掘系统\ConGetData\ConGetData\BLL\MicroblogWork.cs:行号 29
+   在 ConGetData.BLL.MainWork.CrawlWorkAction(Object obj) 位置 D:\杨博\2015年Join\ActionLM2014\数据挖掘系统\ConGetData\ConGetData\BLL\MainWork.cs:行号 131
+2014-06-21 16:46:34,489
+--INFO:Microblog Cookie  获取完毕:	
+
+2014-06-21 16:46:36,531
+--ERROR:99463
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ConGetData.DAL.SystemConst.get_StrCookie() 位置 D:\杨博\2015年Join\ActionLM2014\数据挖掘系统\ConGetData\ConGetData\DAL\SystemConst.cs:行号 29
+   在 ConGetData.BLL.MicroblogWork.RunWork(CrawlTarget target) 位置 D:\杨博\2015年Join\ActionLM2014\数据挖掘系统\ConGetData\ConGetData\BLL\MicroblogWork.cs:行号 29
+   在 ConGetData.BLL.MainWork.CrawlWorkAction(Object obj) 位置 D:\杨博\2015年Join\ActionLM2014\数据挖掘系统\ConGetData\ConGetData\BLL\MainWork.cs:行号 131
+2014-06-21 16:46:36,540
+--ERROR:99463
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ConGetData.DAL.SystemConst.get_StrCookie() 位置 D:\杨博\2015年Join\ActionLM2014\数据挖掘系统\ConGetData\ConGetData\DAL\SystemConst.cs:行号 29
+   在 ConGetData.BLL.MicroblogWork.RunWork(CrawlTarget target) 位置 D:\杨博\2015年Join\ActionLM2014\数据挖掘系统\ConGetData\ConGetData\BLL\MicroblogWork.cs:行号 29
+   在 ConGetData.BLL.MainWork.CrawlWorkAction(Object obj) 位置 D:\杨博\2015年Join\ActionLM2014\数据挖掘系统\ConGetData\ConGetData\BLL\MainWork.cs:行号 131
+2014-06-21 16:54:11,820
+--INFO:程序开始
+
+2014-06-21 16:54:32,871
+--INFO:程序开始
+
+2014-06-21 16:56:42,990
+--INFO:Microblog Cookie  获取完毕:	SUBP=002A2c-gVlwEm1uAWxfgXELuuu1xVxBxA7eyc8eF__Dn8dQd0imZI0YuHY-u_E%3D; SINAGLOBAL=5635231436509.096.1403334959574; ULV=1403340288578:9:9:9:2395836053782.757.1403340288405:1403336470439; ALF=1434876876; SUS=SID-3087668437-1403340876-GZ-ykwtr-9c555272dfcb5e1b772b44723c31dcb9; SUE=es%3D90dd7486ddd5872e54e2af7a8238bf83%26ev%3Dv1%26es2%3Da86af0fa96112adfd8d655b03ab21d91%26rs0%3DzIOti%252FypHzFEPqp1vDKX1CCN9BU%252BAoCDDfjir7H02trGtOp3XkEuXgROJ9Ldvw8Fxtg2C0UxYErPGD8S%252F%252B0T6hLxRPIznoZ383lAFflYi6QQv%252BrfcUmBjCgYl9%252F7biklg0m4AQMNC%252B4qg7QkCIHjgm7o70Z5BVwdZ4T8N8yPr2g%253D%26rv%3D0; SUP=cv%3D1%26bt%3D1403340876%26et%3D1403427276%26d%3Dc909%26i%3Ddcb9%26us%3D1%26vf%3D0%26vt%3D0%26ac%3D%26st%3D0%26uid%3D3087668437%26name%3D996167490%2540qq.com%26nick%3D%25E9%2593%25AD%25E4%25BA%25A6%25E5%25B9%25BB%26fmp%3D%26lcp%3D; SUB=AW9oQNMfku8qbF8UAL0ME5mQeq1GpOt%2BEvxe4X1A9AY%2Fs7dAEBPOrOQKZZXyblcPhVtK49uF%2BkWWulVGZHCFoQPsjGJY5x9nrEt3MW2iNtr5S9xzuPqgfjsGFCPsMMgzTKhiP%2BWkgBceslmRrE4y7PU%3D; SSOLoginState=1403340876
+
+2014-06-21 17:07:23,985
+--INFO:程序开始
+
+2014-06-21 17:09:34,033
+--INFO:Microblog Cookie  获取完毕:	SUBP=002A2c-gVlwEm1uAWxfgXELuuu1xVxBxA7eyc8eF__Dn8dQd0imZI0YuHY-u_E%3D; SINAGLOBAL=5635231436509.096.1403334959574; ULV=1403340895966:10:10:10:6525701538418.193.1403340895897:1403340288578; ALF=1434877647; SUS=SID-3087668437-1403341648-GZ-0kt2w-7f3b632b850c6420524d68bd7dabdcb9; SUE=es%3D5dfb9d4c173838c1f83f88bad72f43cc%26ev%3Dv1%26es2%3D1501b4ad7a0fdd53ef12c6990de0c18c%26rs0%3DNlhMv%252BDX5oEu6HQvPJ2doxlNLvB4sGbv5jpcxmUebcqX7DUUN7cy%252FQ%252FsKIW6sA8ViFBw27Dim5JBh7Kr8cIYYRDoAH%252BU3FVp0FJsipMHbW50MvnecFQIoOFZDruGcP4c4YiZVx31nmA6kyDMpUT50PDTvwrxeCbVsi6ggIVz8TA%253D%26rv%3D0; SUP=cv%3D1%26bt%3D1403341648%26et%3D1403428048%26d%3Dc909%26i%3Ddcb9%26us%3D1%26vf%3D0%26vt%3D0%26ac%3D%26st%3D0%26uid%3D3087668437%26name%3D996167490%2540qq.com%26nick%3D%25E9%2593%25AD%25E4%25BA%25A6%25E5%25B9%25BB%26fmp%3D%26lcp%3D; SUB=AZwWf27k4bU9lDBEBnT9fbrKgkdHYBlIQ2swg%2FyDS5SQo8hUvKFnJu5lW%2FeYLO6vOmn3T5igKIyzlRzWcVlpKqp60C2JnRG4yyL7nYESOdMHEpZIGY%2F9gCUxFFEMNOHGhLgIpO%2BeCjQ0A%2FmcjHgI8w0%3D; SSOLoginState=1403341648
+

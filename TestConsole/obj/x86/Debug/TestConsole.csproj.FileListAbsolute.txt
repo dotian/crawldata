@@ -1,0 +1,10 @@
+F:\crawl\数据挖掘系统2014-7-27\数据挖掘系统\ConGetData\TestConsole\bin\Debug\TestConsole.exe
+F:\crawl\数据挖掘系统2014-7-27\数据挖掘系统\ConGetData\TestConsole\bin\Debug\TestConsole.pdb
+F:\crawl\数据挖掘系统2014-7-27\数据挖掘系统\ConGetData\TestConsole\obj\x86\Debug\TestConsole.exe
+F:\crawl\数据挖掘系统2014-7-27\数据挖掘系统\ConGetData\TestConsole\obj\x86\Debug\TestConsole.pdb
+F:\crawl\数据挖掘系统2014-7-27\数据挖掘系统\ConGetData\TestConsole\obj\x86\Debug\TestConsole.csprojResolveAssemblyReference.cache
+F:\crawl\数据挖掘系统2014-7-27\数据挖掘系统\ConGetData\TestConsole\bin\Debug\TestConsole.exe.config
+F:\crawl\数据挖掘系统2014-7-27\数据挖掘系统\ConGetData\TestConsole\bin\Debug\ConGetData.exe
+F:\crawl\数据挖掘系统2014-7-27\数据挖掘系统\ConGetData\TestConsole\bin\Debug\LogNet.dll
+F:\crawl\数据挖掘系统2014-7-27\数据挖掘系统\ConGetData\TestConsole\bin\Debug\log4net.dll
+F:\crawl\数据挖掘系统2014-7-27\数据挖掘系统\ConGetData\TestConsole\bin\Debug\ConGetData.pdb
