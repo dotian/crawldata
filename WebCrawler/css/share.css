@@ -1,0 +1,6 @@
+body,a,b,span,div,ul,li,p,h1,h2,h3,h4,td,table,form{ margin:0px; padding:0px; text-decoration:none; list-style-type:none;}
+a,img{ border:0px;}
+.Lfloat{ float:left;}
+.cl{ clear:both;}
+.Rfloat{float:right;}
+body{ font-size:12px; font-family:Arial; }

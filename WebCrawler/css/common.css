@@ -1,0 +1,365 @@
+.pt {
+	FONT-SIZE: 12px; LINE-HEIGHT: 150%; FONT-FAMILY: "Arial"; TEXT-DECORATION: none
+}
+.lj4 {
+	FONT-SIZE: 12px; COLOR: #000000; LINE-HEIGHT: 150%; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+.lj1 {
+	FONT-SIZE: 12px; COLOR: #000000; LINE-HEIGHT: 150%; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+.lj2 {
+	FONT-SIZE: 12px; COLOR: #ffffff; LINE-HEIGHT: 150%; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+.lj3 {
+	FONT-SIZE: 12px; COLOR: #0066cc; LINE-HEIGHT: 150%; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+.pt1 {
+	FONT-SIZE: 12px; LINE-HEIGHT: 200%; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+.pt2 {
+	FONT-WEIGHT: normal; FONT-SIZE: 14px; LINE-HEIGHT: 200%; FONT-FAMILY: "Arial"; TEXT-DECORATION: none
+}
+A {
+	COLOR: #000066
+}
+A:visited {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #000066; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-SIZE: 12px; COLOR: #ff7f0a; TEXT-DECORATION: none
+}
+.font12 {
+	FONT-SIZE: 12px; LINE-HEIGHT: 140%
+}
+
+BODY {
+	FONT-SIZE: 9pt;
+}
+td {
+	font-size: 12px;
+	COLOR: #000000;
+}
+
+.tui {
+	font-size: 16px;
+	COLOR: red;
+}
+
+.aixin {font-size: 16px;color: #474747;line-height: 30px;font-family: "幼圆";}
+
+.t10g {font-size: 10px;color: #898989;line-height: 18px;font-family: "Arial";}
+
+.t10 {font-size: 10px;color: #FF9966;font-family: "Arial", "SimSun";}
+
+.t10g2 {font-size: 10px;color: #999999;font-family: "Arial", "SimSun";}
+
+.t12o {font-size: 12px;color: #FF7300;line-height: 18px;font-family: "Arial", "SimSun";}
+
+.t12o2 {font-size: 12px;color: #FF9900;line-height: 18px;font-family: "Arial", "SimSun";}
+
+.t12o22 {font-size: 12px;color: red;line-height: 18px;font-family: "Arial", "SimSun";}
+
+.t12o23 {font-size: 14px;color: #666666;line-height: 18px;font-family: "Arial", "SimSun";}
+
+.t12o24 {font-size: 14px;color: #000000;line-height: 18px;font-family: "Arial", "SimSun";}
+
+.t12o25 {font-size: 18px;color: #000000;line-height: 20px;font-family: "黑体";}
+
+.t12g {font-size: 12px;color: #858585;line-height: 18px;font-family: "Arial", "SimSun";}
+
+.t12g2 {font-size: 12px;color: #666666;line-height: 18px;font-family: "Arial", "SimSun";}
+
+.t12g24 {font-size: 14px;color: #666666;line-height: 18px;font-family: "Arial", "SimSun";}
+
+.t12g3 {font-size: 12px;color: #333333;line-height: 18px;font-family: "Arial", "SimSun";}
+
+.t12g2b {font-size: 12px;color: #666666;line-height: 18px;font-weight: bold;font-family: "Arial", "SimSun";}
+
+.t12r {font-size: 12px;color: #FF0000;line-height: 18px;font-family: "Arial", "SimSun";}
+
+.t12blue {font-size: 12px;color: #606A74;line-height: 18px;font-family: "Arial", "SimSun";}
+
+.t12blue2 {font-size: 12px;color: #2965B6;font-family: "Arial", "SimSun";}
+
+.t12blueb {font-size: 12px;color: #009DFF;font-weight: bold;line-height: 18px;font-family: "Arial", "SimSun";}
+
+.t12w {font-size: 12px;color: #FFFFFF;line-height: 18px;font-family: "Arial", "SimSun";}
+
+.t12y {font-size: 12px;color: #FFFFCC;line-height: 18px;font-family: "Arial", "SimSun";}
+
+.t14wb {font-size: 14px;color: #FFFFFF;font-weight: bold;font-family: "Arial";}
+
+.t14gb {font-size: 14px;color: #666666;font-weight: bold;font-family: "Arial";}
+
+.t14r {font-size: 14px;color: #FF0000;font-family: "Arial", "SimSun";}
+
+.t14b {font-size: 14px;color: #000000;font-weight: bold;font-family: "SimHei";}
+
+a.link_12g:link {font-size: 12px;line-height: 17px;color: #656565;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_12g:active {font-size: 12px;line-height: 17px;color: #656565;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_12g:visited {font-size: 12px;line-height: 17px;color: #656565;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_12g:hover {font-size: 12px;line-height: 17px;color: #343434;text-decoration: none;font-family: "Arial", "SimSun";}
+
+a.link_12g_red:link {font-size: 12px;line-height: 17px;color: #ff0000;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_12g_red:active {font-size: 12px;line-height: 17px;color: #ff0000;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_12g_red:visited {font-size: 12px;line-height: 17px;color: #ff0000;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_12g_red:hover {font-size: 12px;line-height: 17px;color: #ff0000;text-decoration: none;font-family: "Arial", "SimSun";}
+
+a.link_12g2:link {font-size: 12px;line-height: 17px;color: #444444;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_12g2:active {font-size: 12px;line-height: 17px;color: #444444;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_12g2:visited {font-size: 12px;line-height: 17px;color: #444444;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_12g2:hover {font-size: 12px;line-height: 17px;color: #1E1E1E;text-decoration: none;font-family: "Arial", "SimSun";}
+
+a.link_12g3:link {font-size: 12px;line-height: 17px;color: #575757;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_12g3:active {font-size: 12px;line-height: 17px;color: #575757;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_12g3:visited {font-size: 12px;line-height: 17px;color: #575757;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_12g3:hover {font-size: 12px;line-height: 17px;color: #1E1E1E;text-decoration: none;font-family: "Arial", "SimSun";}
+
+a.link_12o:link {font-size: 12px;color: #FF3C00;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_12o:active {font-size: 12px;color: #FF3C00;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_12o:visited {font-size: 12px;color: #FF3C00;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_12o:hover {font-size: 12px;color: #FF0000;text-decoration: none;font-family: "Arial", "SimSun";}
+
+a.link_12w:link {font-size: 12px;color: #FFFFFF;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_12w:active {font-size: 12px;color: #FFFFFF;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_12w:visited {font-size: 12px;color: #FFFFFF;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_12w:hover {font-size: 12px;color: #FFF885;text-decoration: none;font-family: "Arial", "SimSun";}
+
+a.link_12o2:link {font-size: 12px;color: #FF5600;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_12o2:active {font-size: 12px;color: #FF5600;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_12o2:visited {font-size: 12px;color: #FF5600;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_12o2:hover {font-size: 12px;color: #FF0000;text-decoration: none;font-family: "Arial", "SimSun";}
+
+a.link_12o3:link {font-size: 12px;color: #CC6600;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_12o3:active {font-size: 12px;color: #CC6600;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_12o3:visited {font-size: 12px;color: #CC6600;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_12o3:hover {font-size: 12px;color: #AC3100;text-decoration: none;font-family: "Arial", "SimSun";}
+
+a.link_12blue:link {font-size: 12px;color: #0F4E8D;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_12blue:active {font-size: 12px;color: #0F4E8D;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_12blue:visited {font-size: 12px;color: #0F4E8D;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_12blue:hover {font-size: 12px;color: #062376;text-decoration: none;font-family: "Arial", "SimSun";}
+
+a.link_12blue3:link {font-size: 12px;color: #009DFF;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_12blue3:active {font-size: 12px;color: #009DFF;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_12blue3:visited {font-size: 12px;color: #009DFF;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_12blue3:hover {font-size: 12px;color: #035FBE;text-decoration: none;font-family: "Arial", "SimSun";}
+
+.black_1 { font-family: "宋体"; FONT-SIZE: 12px; COLOR: #000000; TEXT-DECORATION: none}
+a.black_1:link { font-family: "宋体"; FONT-SIZE: 12px; COLOR: #000000; TEXT-DECORATION: none}
+a.black_1:visited { font-family: "宋体"; FONT-SIZE: 12px; COLOR:#000000; TEXT-DECORATION: none}
+a.black_1:hover { font-family: "宋体"; FONT-SIZE: 12px; COLOR: #ff0000; TEXT-DECORATION: none}
+
+a.link_12blue2b:link {font-size: 12px;color: #009DFF;text-decoration: none;font-weight: bold;font-family: "Arial", "SimSun";}
+a.link_12blue2b:active {font-size: 12px;color: #009DFF;text-decoration: none;font-weight: bold;font-family: "Arial", "SimSun";}
+a.link_12blue2b:visited {font-size: 12px;color: #009DFF;font-weight: bold;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_12blue2b:hover {font-size: 12px;color: #035FBE;text-decoration: none;font-weight: bold;font-family: "Arial", "SimSun";}
+
+a.link_more:link {font-size: 12px;line-height: 17px;color: #493C0F;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_more:active {font-size: 12px;line-height: 17px;color: #493C0F;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_more:visited {font-size: 12px;line-height: 17px;color: #493C0F;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_more:hover {font-size: 12px;line-height: 17px;color: #493C0F;text-decoration: none;font-family: "Arial", "SimSun";}
+
+a.link_13g:link {font-size: 12px;line-height: 17px;color: #2B4101;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_13g:active {font-size: 12px;line-height: 17px;color: #2B4101;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_13g:visited {font-size: 12px;line-height: 17px;color: #2B4101;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_13g:hover {font-size: 12px;line-height: 17px;color:#656565;text-decoration: none;font-family: "Arial", "SimSun";}
+
+a.link_13g_red:link {font-size: 12px;line-height: 17px;color: #ff0000;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_13g_red:active {font-size: 12px;line-height: 17px;color: #ff0000;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_13g_red:visited {font-size: 12px;line-height: 17px;color: #ff0000;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_13g_red:hover {font-size: 12px;line-height: 17px;color:#ff0000;text-decoration: none;font-family: "Arial", "SimSun";}
+
+a.link_14g:link {font-size: 12px;line-height: 17px;color: #000000;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_14g:active {font-size: 12px;line-height: 17px;color: #000000;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_14g:visited {font-size: 12px;line-height: 17px;color: #000000;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_14g:hover {font-size: 12px;line-height: 17px;color:#000000;text-decoration: none;font-family: "Arial", "SimSun";}
+
+a.link_15g:link {font-size: 12px;line-height: 17px;color: #2B4101;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_15g:active {font-size: 12px;line-height: 17px;color: #2B4101;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_15g:visited {font-size: 12px;line-height: 17px;color: #2B4101;text-decoration: none;font-family: "Arial", "SimSun";}
+a.link_15g:hover {font-size: 12px;line-height: 17px;color:#2B4101;text-decoration: none;font-family: "Arial", "SimSun";}
+
+.input {border: 1px solid D44700;background-color: #FFFFFF;font-size: 12px;height: 18px;width: 107px;}
+
+.input2 {border: 1px solid #999999;background-color: #FFFFFF;font-size: 12px;height: 200px;width: 479px;}
+
+.input3 {border: 1px solid #666666;background-color: #FFFFFF;font-size: 12px;height: 13px;width: 13px;}
+
+.input4 {border: 1px solid #999999;background-color: #FFFFFF;font-size: 12px;height: 14px;width: 120px;}
+
+.input5 {border: 1px solid #999999;background-color: #FFFFFF;font-size: 12px;height: 18px;width: 200px;color: #333333;}
+
+.input6 {border: 1px solid #999999;background-color: #FFFFFF;font-size: 12px;height: 18px;width: 330px;color: #333333;}
+
+.input7 {border: 1px solid #999999;background-color: #FFFFFF;font-size: 12px;height: 18px;width: 250px;color: #333333;}
+
+.input8 {border: 1px solid #999999;background-color: #FFFFFF;font-size: 12px;height: 18px;width: 150px;color: #333333;}
+
+.input9 {border: 1px solid #999999;background-color: #FFFFFF;font-size: 9pt;height: 20px; width: 150px; color: #333333;}
+
+.button01 {font-size: 12px;color: 666666;background-position: center center;white-space: normal;
+    letter-spacing: 1px;border: thin none #FFFFFF;height: 19px;width: 41px;
+	background-image: url(../images/button_01.gif);background-repeat: no-repeat;}
+
+.button02 {font-size: 12px;color: FF9900;background-position: center center;white-space: normal;
+	letter-spacing: 6px;border: thin none #FFFFFF;height: 21px;width: 60px;
+	background-image: url(../images/button_02.gif);background-repeat: no-repeat;
+	text-align: center;text-indent: 10pt;vertical-align: bottom;}
+
+.button03 {font-size: 12px;color: 009DFF;background-position: center center;white-space: normal;
+	letter-spacing: 6px;border: thin none #FFFFFF;height: 21px;width: 60px;
+	background-image: url(../images/button_03.gif);background-repeat: no-repeat;
+	text-align: center;text-indent: 10pt;vertical-align: bottom;}
+
+.button04 {font-size: 12px;color: FF9900;background-position: center center;white-space: normal;
+	letter-spacing: 2px;border: thin none #FFFFFF;height: 21px;width: 95px;
+	background-image: url(../images/button_04.gif);background-repeat: no-repeat;
+	text-align: center;text-indent: 10pt;vertical-align: bottom;}.table {
+	border: 1px solid #BFBFBF;
+}
+
+.dsss { font-family: "宋体"; FONT-SIZE: 14px; COLOR: #000000; TEXT-DECORATION: none;}
+a.dsss:hover { font-family: "宋体"; FONT-SIZE: 14px; COLOR: #0219F8; TEXT-DECORATION: underline;}
+
+.td_list {
+	BORDER-RIGHT: #000000 1px solid; BORDER-bottom: #000000 1px solid; FONT-SIZE: 9pt; HEIGHT: 20px
+}
+.table_border{
+	BORDER-top: #000000 1px solid; BORDER-left: #000000 1px solid;
+}
+
+td {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #444444;
+}
+
+.14orange {
+	font-size: 14px;
+	color: #FF6600;
+	font-weight: bold;
+
+}
+.12Bold {
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 18px;
+
+
+}
+.12gray {
+	font-size: 12px;
+	color: #333333;
+	font-weight: bold;
+}
+.12red {
+	font-size: 12px;
+	color: #FF0000;
+	font-weight: bold;
+}
+.form1 {
+	font-size: 11px;
+	border: thin inset;
+	height: 19px;
+
+
+}
+a:link {
+	text-decoration: none;
+	color: #4A7CA8;
+}
+a:hover {
+	color: #C0252B;
+	text-decoration: none;
+
+}
+a:active {
+	color: #4B4B4B;
+}
+a:visited {
+	text-decoration: none;
+	color: #4A7CA8;
+
+}
+.12orange {
+	font-size: 12px;
+	color: #FF7F40;
+}
+.14 {
+	font-size: 14px;
+	font-weight: normal;
+}
+.12blue1 {
+	font-size: 12px;
+	color: #A5C9E8;
+}
+.12blue2 {
+	font-size: 12px;
+	color: #4A7CA8;
+}
+.12green1 {
+	font-size: 12px;
+	color: #588B4C;
+}
+.12green2 {
+
+	font-size: 12px;
+	color: #649A56;
+}
+.12yellow1 {
+
+	font-size: 12px;
+	color: #B7810E;
+}
+.12orangeB {
+	font-size: 12px;
+	color: #FF6600;
+	font-weight: bold;
+
+}
+.14red {
+
+	font-size: 14px;
+	color: #FF0000;
+	font-weight: bold;
+}
+.12white {
+	color: #F9F9F9;
+}
+.14whiteB {
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.14B {
+
+	font-size: 14px;
+	font-weight: bold;
+}
+.12whiteB {
+
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.icon-grid {
+ 	background-image:url(../images/common/grid.png) !important;
+}
+
+.icon-tool {
+ 	background-image:url(../images/common/tool.gif) !important;
+}
+
+.icon-pic {
+ 	background-image:url(../images/common/picture.png) !important;
+}
+
+.icon-file {
+ 	background-image:url(../images/common/file.png) !important;
+}
+
+.icon-screen {
+ 	background-image:url(../images/common/screen.jpg) !important;
+}

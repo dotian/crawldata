@@ -1,0 +1,72 @@
+2014-03-06 11:27:51,254
+--INFO:存储过程：[usp_mining_Select_EmployeeByEmpId];参数：['admin']
+
+2014-03-06 11:27:52,560
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-03-06 11:28:06,319
+--INFO:存储过程：[select CateId,CategoryName,ClassId,CreateDate from dbo.CategoryInfo where ClassId = 2]
+
+2014-03-06 11:42:05,051
+--INFO:存储过程：[usp_mining_Select_EmployeeByEmpId];参数：['admin']
+
+2014-03-06 11:42:05,101
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-03-06 12:10:16,171
+--INFO:存储过程：[select CateId,CategoryName,ClassId,CreateDate from dbo.CategoryInfo where ClassId = 2]
+
+2014-03-06 12:10:18,341
+--INFO:存储过程：[select CateId,CategoryName,ClassId,CreateDate from dbo.CategoryInfo where ClassId = 2]
+
+2014-03-06 12:10:19,102
+--INFO:存储过程：[select CateId,CategoryName,ClassId,CreateDate from dbo.CategoryInfo where ClassId = 1]
+
+2014-03-06 12:19:43,537
+--INFO:存储过程：[usp_mining_Select_EmployeeByEmpId];参数：['admin']
+
+2014-03-06 12:19:43,598
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-03-06 12:35:51,896
+--INFO:存储过程：[usp_mining_Select_EmployeeByEmpId];参数：['admin']
+
+2014-03-06 12:35:51,943
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-03-06 13:07:29,874
+--INFO:存储过程：[usp_mining_Select_EmployeeByEmpId];参数：['admin']
+
+2014-03-06 13:07:29,906
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-03-06 13:25:45,686
+--INFO:存储过程：[usp_mining_Select_EmployeeByEmpId];参数：['admin']
+
+2014-03-06 13:25:45,732
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-03-06 14:00:29,605
+--INFO:存储过程：[usp_mining_Select_EmployeeByEmpId];参数：['admin']
+
+2014-03-06 14:00:29,659
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-03-06 14:06:11,773
+--INFO:存储过程：[usp_mining_Select_EmployeeByEmpId];参数：['admin']
+
+2014-03-06 14:06:11,819
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-03-06 14:08:40,210
+--INFO:存储过程：[usp_mining_Select_EmployeeByEmpId];参数：['admin']
+
+2014-03-06 14:08:40,261
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-03-06 14:14:33,104
+--INFO:存储过程：[usp_mining_Select_EmployeeByEmpId];参数：['admin']
+
+2014-03-06 14:14:33,154
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F1F25EA3-1115-4DF1-BAA3-804790BACF04}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataCrawler.Model</RootNamespace>
+    <AssemblyName>DataCrawler.Model</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Crawler\CategoryInfo.cs" />
+    <Compile Include="Crawler\CategorySiteRelation.cs" />
+    <Compile Include="Crawler\DataTag.cs" />
+    <Compile Include="Crawler\Employee.cs" />
+    <Compile Include="Crawler\EmployeeCustomer.cs" />
+    <Compile Include="Crawler\Forum.cs" />
+    <Compile Include="Crawler\HKSiteData.cs" />
+    <Compile Include="Crawler\ModelArgs.cs" />
+    <Compile Include="Crawler\ProjectDetailModel.cs" />
+    <Compile Include="Crawler\ProjectList.cs" />
+    <Compile Include="Crawler\ProjectTagRelation.cs" />
+    <Compile Include="Crawler\QueryDataModelParms.cs" />
+    <Compile Include="Crawler\QueryJson.cs" />
+    <Compile Include="Crawler\SiteDataModel.cs" />
+    <Compile Include="Crawler\SiteData_RunRecord.cs" />
+    <Compile Include="Crawler\SiteList.cs" />
+    <Compile Include="Crawler\TagList.cs" />
+    <Compile Include="Crawler\Template.cs" />
+    <Compile Include="Hankook\ContendTB.cs" />
+    <Compile Include="Hankook\CustomerInfo.cs" />
+    <Compile Include="Hankook\HTQSB_Info.cs" />
+    <Compile Include="Hankook\HuaTiInfo.cs" />
+    <Compile Include="Hankook\PieData.cs" />
+    <Compile Include="Hankook\PieReport.cs" />
+    <Compile Include="Hankook\ProjectInfo.cs" />
+    <Compile Include="Hankook\TopicReport.cs" />
+    <Compile Include="Hankook\ShowDataInfo.cs" />
+    <Compile Include="Hankook\QueryHankookArgs.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

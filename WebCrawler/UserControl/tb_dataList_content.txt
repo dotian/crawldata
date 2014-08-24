@@ -1,0 +1,36 @@
+﻿<tr>
+    <td>
+        <input type='checkbox' id='#SD_Id' value='#SD_Id' onclick='ck_one_click(this.id);' />
+    </td>
+    <td class='style_content'>
+        <span style='color:red'>#Analysis</span>
+        <span style='color:red;'>&nbsp;#Hot</span>
+        #Title
+        <span style='color: #875805;'>&nbsp;同</span>
+        <br />标签:<span style='color:red;'>&nbsp;#Tag2</span>
+    </td>
+    <td class='style_content'>
+        #Content
+    </td>
+    <td align='center'>
+        #CreateDate
+    </td>
+    <td style='padding-left: 15px;'>
+        <a  runat='server' onserverclick='a_analysis_1_Click' href='#'>正</a>&nbsp;<a runat='server'
+            onserverclick='a_analysis_2_Click' href='#'>中</a> &nbsp;<a  runat='server' onserverclick='a_analysis_3_Click'
+                href='#'>负</a> &nbsp;<a  runat='server' onserverclick='a_analysis_4_Click' href='#'>争</a>&nbsp;
+                <a  runat='server' onlick='a_hot_5_Click' href='#'>热</a>
+        <br />
+        <a class='a_id_tag' href='#' onserverclick a_batchTag_click >标签</a>&nbsp;<a  href='#' runat='server' onserverclick='a_attention_Click'>关注</a>&nbsp;
+        <a  href='#' runat='server' onserverclick='a_examine_Click'>审核</a>&nbsp;<a  href='#' runat='server' onserverclick='a_delete_Click'>删除</a>
+    </td>
+    <td align='center'>
+        <a href='#SrcUrl' target='_blank'>镜</a>
+    </td>
+    <td align='center'>
+        #SiteName
+    </td>
+    <td>
+        正在处理
+    </td>
+</tr>

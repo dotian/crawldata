@@ -1,0 +1,11 @@
+H:\2014Year\服务器应用程序\WebMining\LogNet\bin\Debug\LogNet.dll
+H:\2014Year\服务器应用程序\WebMining\LogNet\bin\Debug\LogNet.pdb
+H:\2014Year\服务器应用程序\WebMining\LogNet\bin\Debug\log4net.dll
+H:\2014Year\服务器应用程序\WebMining\LogNet\obj\Debug\LogNet.dll
+H:\2014Year\服务器应用程序\WebMining\LogNet\obj\Debug\LogNet.pdb
+H:\2014Year\服务器应用程序\WebMining\LogNet\obj\Debug\LogNet.csprojResolveAssemblyReference.cache
+H:\2015年所有整理\Web程序\WebCrawler\LogNet\bin\Debug\LogNet.dll
+H:\2015年所有整理\Web程序\WebCrawler\LogNet\bin\Debug\LogNet.pdb
+H:\2015年所有整理\Web程序\WebCrawler\LogNet\bin\Debug\log4net.dll
+H:\2015年所有整理\Web程序\WebCrawler\LogNet\obj\Debug\LogNet.dll
+H:\2015年所有整理\Web程序\WebCrawler\LogNet\obj\Debug\LogNet.pdb

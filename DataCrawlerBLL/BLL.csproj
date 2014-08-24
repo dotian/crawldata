@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9AB6B4C8-FBAA-4073-9B6B-387742C8FEBD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataCrawler.BLL</RootNamespace>
+    <AssemblyName>DataCrawler.BLL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Crawler\AesEncrypt.cs" />
+    <Compile Include="Crawler\BusinessManager.cs" />
+    <Compile Include="Crawler\CategoryBLL.cs" />
+    <Compile Include="Crawler\ContendBLL.cs" />
+    <Compile Include="Crawler\DataAnalysisBLL.cs" />
+    <Compile Include="Crawler\EmployeeBLL.cs" />
+    <Compile Include="Crawler\HelperExcel.cs" />
+    <Compile Include="Crawler\Md5Helper.cs" />
+    <Compile Include="Crawler\PageBLL.cs" />
+    <Compile Include="Crawler\ProjectListBLL.cs" />
+    <Compile Include="Crawler\PullDataBLL.cs" />
+    <Compile Include="Crawler\ReadExcelBLL.cs" />
+    <Compile Include="Crawler\SiteDataBLL.cs" />
+    <Compile Include="Crawler\SiteListBLL.cs" />
+    <Compile Include="Crawler\SitsDataRetrieveBLL.cs" />
+    <Compile Include="Crawler\TagBLL.cs" />
+    <Compile Include="Crawler\TagInfoBLL.cs" />
+    <Compile Include="Crawler\TestDecration.cs" />
+    <Compile Include="Hankook\CustomerBLL.cs" />
+    <Compile Include="Hankook\ReportBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestAction.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LogNet\LogNet.csproj">
+      <Project>{AEFCD2D9-2B5F-40EF-BA20-D8668E082649}</Project>
+      <Name>LogNet</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataCrawlerModel\Model.csproj">
+      <Project>{F1F25EA3-1115-4DF1-BAA3-804790BACF04}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataCrawlerDAL\DAL.csproj">
+      <Project>{64B90ADF-56A0-4359-88B2-D9C2460F364D}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

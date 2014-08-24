@@ -1,0 +1,2165 @@
+2014-01-17 11:16:21,735
+--INFO:存储过程：[usp_mining_Select_ProjectListRunStatus]
+
+2014-01-17 11:16:28,602
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-01-17 11:16:31,359
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-01-17 11:16:33,632
+--INFO:存储过程：[usp_mining_Select_ProjectListRunStatus]
+
+2014-01-17 11:18:21,317
+--INFO:存储过程：[usp_mining_Select_ProjectListRunStatus]
+
+2014-01-17 11:21:22,144
+--INFO:存储过程：[usp_mining_Select_ProjectListRunStatus]
+
+2014-01-17 11:22:31,836
+--INFO:存储过程：[usp_mining_Select_ProjectListRunStatus]
+
+2014-01-17 11:22:59,666
+--INFO:存储过程：[usp_mining_Select_ProjectListRunStatus]
+
+2014-01-17 11:23:41,433
+--INFO:存储过程：[usp_mining_Select_ProjectListRunStatus]
+
+2014-01-17 11:24:18,719
+--INFO:存储过程：[usp_mining_Select_ProjectListRunStatus]
+
+2014-01-17 11:25:08,197
+--INFO:存储过程：[usp_mining_Select_ProjectListRunStatus]
+
+2014-01-17 11:28:05,988
+--INFO:存储过程：[usp_mining_Select_ProjectListRunStatus]
+
+2014-01-17 11:28:33,623
+--INFO:存储过程：[usp_mining_Select_ProjectListRunStatus]
+
+2014-01-17 11:29:27,318
+--INFO:存储过程：[usp_mining_Select_ProjectListRunStatus]
+
+2014-01-17 11:30:24,365
+--INFO:存储过程：[usp_mining_Select_ProjectListRunStatus]
+
+2014-01-17 11:30:36,916
+--INFO:存储过程：[usp_mining_Select_ProjectListRunStatus]
+
+2014-01-17 11:30:55,800
+--INFO:存储过程：[select CateId,CategoryName,ClassId from dbo.CategoryInfo]
+
+2014-01-17 11:31:02,680
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-17 11:31:05,584
+--INFO:存储过程：[usp_mining_select_customerBySearch];参数：['0','']
+
+2014-01-17 11:31:05,693
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-17 11:32:04,200
+--INFO:存储过程：[usp_mining_select_contendProjectByName];参数：['']
+
+2014-01-17 11:32:04,231
+--INFO:存储过程：[usp_mining_select_contendProjectByName];参数：['']
+
+2014-01-17 11:32:29,276
+--INFO:存储过程：[usp_mining_select_contendProjectByName];参数：['']
+
+2014-01-17 11:32:29,288
+--INFO:存储过程：[usp_mining_select_contendProjectByName];参数：['']
+
+2014-01-17 11:32:31,224
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-17 11:32:32,519
+--INFO:存储过程：[usp_mining_select_customerBySearch];参数：['0','']
+
+2014-01-17 11:32:32,522
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-17 11:32:33,617
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-17 12:22:39,909
+--INFO:存储过程：[usp_minmig_select_customer_ByCustomerId];参数：['admin']
+
+2014-01-17 12:22:40,316
+--INFO:存储过程：[usp_minmig_select_customer_ByCustomerId];参数：['admin']
+
+2014-01-17 12:22:46,054
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['3']
+
+2014-01-17 12:22:46,144
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['3','2013-11-18','2014-01-17','sitedata','1','0','','1','1','0','0']
+
+2014-01-17 12:22:47,081
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['3','2013-11-18','2014-01-17','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-17 12:22:54,918
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-17 12:22:54,921
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-18','2014-01-17','sitedata','1','0','','1','1','0','0']
+
+2014-01-17 12:22:54,966
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-18','2014-01-17','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-17 12:22:56,881
+--INFO:存储过程：[usp_mining_report_htsqlypm];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:22:57,700
+--INFO:存储过程：[usp_mining_report_fmhtsqlypm];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:22:57,788
+--INFO:存储过程：[usp_mining_report_cfhtpm];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:22:58,231
+--INFO:存储过程：[usp_mining_report_fmcfhtpm];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:22:58,276
+--INFO:存储过程：[usp_mining_report_gmjslly];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:22:59,259
+--INFO:存储过程：[usp_mining_report_gdxhtsl];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:22:59,445
+--INFO:存储过程：[usp_mining_report_htslqst];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:22:59,970
+--INFO:存储过程：[usp_mining_report_fmhtslqst];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:23:00,158
+--INFO:存储过程：[usp_mining_report_htqsb];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:23:05,228
+--INFO:存储过程：[usp_mining_report_htsqlypm];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:23:05,327
+--INFO:存储过程：[usp_mining_report_fmhtsqlypm];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:23:05,401
+--INFO:存储过程：[usp_mining_report_cfhtpm];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:23:05,467
+--INFO:存储过程：[usp_mining_report_fmcfhtpm];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:23:05,504
+--INFO:存储过程：[usp_mining_report_gmjslly];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:23:05,645
+--INFO:存储过程：[usp_mining_report_gdxhtsl];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:23:05,795
+--INFO:存储过程：[usp_mining_report_htslqst];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:23:05,958
+--INFO:存储过程：[usp_mining_report_fmhtslqst];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:23:06,122
+--INFO:存储过程：[usp_mining_report_htqsb];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:23:11,801
+--INFO:存储过程：[usp_mining_report_htsqlypm];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:23:11,891
+--INFO:存储过程：[usp_mining_report_fmhtsqlypm];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:23:11,966
+--INFO:存储过程：[usp_mining_report_cfhtpm];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:23:12,030
+--INFO:存储过程：[usp_mining_report_fmcfhtpm];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:23:12,066
+--INFO:存储过程：[usp_mining_report_gmjslly];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:23:12,214
+--INFO:存储过程：[usp_mining_report_gdxhtsl];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:23:12,364
+--INFO:存储过程：[usp_mining_report_htslqst];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:23:12,563
+--INFO:存储过程：[usp_mining_report_fmhtslqst];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:23:12,735
+--INFO:存储过程：[usp_mining_report_htqsb];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:25:56,223
+--INFO:存储过程：[usp_minmig_select_customer_ByCustomerId];参数：['admin']
+
+2014-01-17 12:25:58,439
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-17 12:25:58,443
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-18','2014-01-17','sitedata','1','0','','1','1','0','0']
+
+2014-01-17 12:25:58,478
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-18','2014-01-17','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-17 12:26:00,227
+--INFO:存储过程：[usp_mining_report_htsqlypm];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:26:00,325
+--INFO:存储过程：[usp_mining_report_fmhtsqlypm];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:26:00,403
+--INFO:存储过程：[usp_mining_report_cfhtpm];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:26:00,480
+--INFO:存储过程：[usp_mining_report_fmcfhtpm];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:26:00,526
+--INFO:存储过程：[usp_mining_report_gmjslly];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:26:00,910
+--INFO:存储过程：[usp_mining_report_gdxhtsl];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:26:01,065
+--INFO:存储过程：[usp_mining_report_htslqst];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:26:01,259
+--INFO:存储过程：[usp_mining_report_fmhtslqst];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:26:01,432
+--INFO:存储过程：[usp_mining_report_htqsb];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:26:07,799
+--INFO:存储过程：[usp_mining_report_htsqlypm];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:26:07,926
+--INFO:存储过程：[usp_mining_report_fmhtsqlypm];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:26:08,002
+--INFO:存储过程：[usp_mining_report_cfhtpm];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:26:08,072
+--INFO:存储过程：[usp_mining_report_fmcfhtpm];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:26:08,110
+--INFO:存储过程：[usp_mining_report_gmjslly];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:26:08,260
+--INFO:存储过程：[usp_mining_report_gdxhtsl];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:26:08,423
+--INFO:存储过程：[usp_mining_report_htslqst];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:26:08,617
+--INFO:存储过程：[usp_mining_report_fmhtslqst];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:26:08,796
+--INFO:存储过程：[usp_mining_report_htqsb];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:26:15,056
+--INFO:存储过程：[usp_mining_report_htsqlypm];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:26:15,176
+--INFO:存储过程：[usp_mining_report_fmhtsqlypm];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:26:15,263
+--INFO:存储过程：[usp_mining_report_cfhtpm];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:26:15,331
+--INFO:存储过程：[usp_mining_report_fmcfhtpm];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:26:15,370
+--INFO:存储过程：[usp_mining_report_gmjslly];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:26:15,523
+--INFO:存储过程：[usp_mining_report_gdxhtsl];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:26:15,691
+--INFO:存储过程：[usp_mining_report_htslqst];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:26:15,878
+--INFO:存储过程：[usp_mining_report_fmhtslqst];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 12:26:16,081
+--INFO:存储过程：[usp_mining_report_htqsb];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 14:30:56,929
+--INFO:存储过程：[usp_mining_Select_EmployeeByEmpId];参数：['admin']
+
+2014-01-17 14:31:06,355
+--INFO:存储过程：[usp_mining_Select_EmployeeByEmpId];参数：['admin']
+
+2014-01-17 14:31:06,506
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-01-17 14:31:15,872
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['11','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 14:31:16,056
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['11','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 14:31:16,143
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 11 and RunStatus=1]
+
+2014-01-17 14:31:27,734
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['8','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 14:31:27,795
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['8','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 14:31:27,849
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 8 and RunStatus=1]
+
+2014-01-17 14:31:31,435
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['8','3','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 14:31:31,453
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['8','13','1','3','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 14:31:31,534
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 8 and RunStatus=1]
+
+2014-01-17 14:31:33,844
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['8','2','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 14:31:33,887
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['8','13','1','2','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 14:31:33,909
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 8 and RunStatus=1]
+
+2014-01-17 14:31:36,939
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['8','5','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 14:31:37,001
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['8','13','1','5','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 14:31:37,094
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 8 and RunStatus=1]
+
+2014-01-17 14:31:39,702
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['8','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 14:31:39,725
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['8','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 14:31:39,745
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 8 and RunStatus=1]
+
+2014-01-17 14:31:45,515
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['10','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 14:31:45,575
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['10','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 14:31:45,632
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 10 and RunStatus=1]
+
+2014-01-17 14:31:48,819
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['10','2','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 14:31:48,881
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['10','13','1','2','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 14:31:48,935
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 10 and RunStatus=1]
+
+2014-01-17 14:31:50,895
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['10','2','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 14:31:50,933
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['10','13','1','2','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 14:31:50,952
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 10 and RunStatus=1]
+
+2014-01-17 14:31:52,870
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['10','2','0','','','2014/1/18 14:31:52','-1','0','1','0']
+
+2014-01-17 14:31:52,875
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['10','2','0','','','2014/1/18 14:31:52','-1','0','0','1']
+
+2014-01-17 14:31:52,960
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['10','13','1','2','0','','','2014/1/18 14:31:52','-1','0','1','0']
+
+2014-01-17 14:31:53,109
+--ERROR:GetSiteDateCountService
+
+System.InvalidOperationException: 已有打开的与此命令相关联的 DataReader，必须首先将它关闭。
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ValidateConnectionForExecute(SqlCommand command)
+   在 System.Data.SqlClient.SqlConnection.ValidateConnectionForExecute(String method, SqlCommand command)
+   在 System.Data.SqlClient.SqlCommand.ValidateCommand(String method, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   在 RionSoft.IBRS.Business.DAL.IBRSCommonDAL.ExecuteScalar(String argStoredProcedure, SqlParameter[] argPara) 位置 H:\2015年所有整理\Web程序\WebCrawler\DataCrawlerDAL\Crawler\IBRSCommonDAL.cs:行号 158
+   在 DataCrawler.DAL.Crawler.ServerDaLAction.GetSiteDateCountService(QueryDataModelParms queryDataParms) 位置 H:\2015年所有整理\Web程序\WebCrawler\DataCrawlerDAL\Crawler\ServerDaLAction.cs:行号 721
+2014-01-17 14:31:53,386
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['10','13','1','2','0','','','2014/1/18 14:31:52','-1','0','0','1']
+
+2014-01-17 14:31:53,602
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['10','2','0','','','2014/1/18 14:31:53','-1','1','-1','0']
+
+2014-01-17 14:31:53,620
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['10','13','1','2','0','','','2014/1/18 14:31:53','-1','1','-1','0']
+
+2014-01-17 14:31:54,356
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['10','2','0','','','2014/1/18 14:31:54','-1','2','-1','0']
+
+2014-01-17 14:31:54,382
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['10','13','1','2','0','','','2014/1/18 14:31:54','-1','2','-1','0']
+
+2014-01-17 14:32:04,650
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 14:32:04,745
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 14:32:04,907
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 14:32:09,647
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014/1/18 14:32:09','-1','0','1','0']
+
+2014-01-17 14:32:09,683
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014/1/18 14:32:09','-1','0','1','0']
+
+2014-01-17 14:32:11,170
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014/1/18 14:32:11','-1','0','0','1']
+
+2014-01-17 14:32:11,203
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014/1/18 14:32:11','-1','0','0','1']
+
+2014-01-17 14:32:18,186
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014/1/18 14:32:18','-1','0','0','1']
+
+2014-01-17 14:32:18,236
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','6','1','1','0','','','2014/1/18 14:32:18','-1','0','0','1']
+
+2014-01-17 14:34:03,437
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['6','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 14:34:03,523
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['6','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 14:34:03,558
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 6 and RunStatus=1]
+
+2014-01-17 14:34:24,704
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['6','【微散文3】午后的中山陵','http://club.china.com/data/thread/3799/2766/48/38/5_1.html','散文随笔','2013-12-23 12:00:00','1']
+
+2014-01-17 14:34:25,497
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['6','论坛发帖获得高点击率的技巧','http://club.china.com/data/thread/26444983/2763/68/03/3_1.html','技巧讨论','2013-08-29 12:00:00','1']
+
+2014-01-17 14:34:25,533
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['6','著名收藏家田太华的万米书画情怀与中国艺术梦','http://club.china.com/data/thread/4411624/2766/59/71/2_1.html','人文天下','2013-12-17 12:00:00','1']
+
+2014-01-17 14:34:25,569
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['6','强烈要求12月26日央视1套播出电视剧《毛泽东》','http://club.china.com/data/thread/12171906/2766/46/34/3_1.html','网上谈兵','2013-12-12 12:00:00','1']
+
+2014-01-17 14:34:25,607
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['6','借鉴与抄袭的区别','http://club.china.com/data/thread/3226998/2721/34/42/7_1.html','公务员','2013-12-23 12:00:00','1']
+
+2014-01-17 14:34:25,644
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['6','中奖了，韩泰轮胎鼓包','http://club.autohome.com.cn/bbs/thread-c-442-26838105-1.html','汽车之家','2013-12-23 12:00:00','1']
+
+2014-01-17 14:34:47,312
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['6','听说小米3开卖了，刚刚预约了1台。#我爱小米手机#因为拥有他就能随手拍出碉堡了的大片！10月15日中午12点，希望能顺利抢到1台！@小米手机分享预约地址：http://t.cn/zRbOjGq想想想想去旅行丶','http://app.weibo.com/t/feed/cUcI1A2','新浪微博','2013-12-31 12:00:00','2']
+
+2014-01-17 14:34:47,351
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['6','听说小米3开卖了，刚刚预约了1台。#我爱小米手机#因为他是迄今为止工艺最出色的小米手机！10月15日中午12点，希望能顺利抢到1台！@小米手机分享预约地址：http://t.cn/zRbO1SP丫头','http://app.weibo.com/t/feed/cUcI1A2','新浪微博','2013-12-31 12:00:00','2']
+
+2014-01-17 14:34:47,369
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['6','哈哈入手全新原封未激活的5C！从安卓1.6用到4.2！实在是用得要吐了！恰逢苹果出了如此高性价比的的iphone你说能不试试么？虽然有些说5C很山寨什么的，我觉得只敢总比非要把塑料做成金属感的某星手机强！而且我很清楚三千元的iphone5决定用得舒服过同价位的安卓，希望能一年不换机','http://app.weibo.com/t/feed/1C66Xn','新浪微博','2013-12-31 12:00:00','2']
+
+2014-01-17 14:34:47,544
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['6','听说小米3开卖了，刚刚预约了1台。#我爱小米手机#因为他配备3050mAh大电池，续航能力超强！10月15日中午12点，希望能顺利抢到1台！@小米手机分享预约地址：http://t.cn/zRbB9wG手机@广东移动10086官方微博','http://app.weibo.com/t/feed/cUcI1A2','新浪微博','2013-12-31 12:00:00','2']
+
+2014-01-17 14:34:47,575
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['6','听说小米3开卖了，刚刚预约了1台。#我爱小米手机#因为他是迄今为止最快的小米手机！10月15日中午12点，希望能顺利抢到1台！@小米手机分享预约地址：http://t.cn/zjqLYzI小米手机@鱼在_水中游','http://app.weibo.com/t/feed/cUcI1A1','新浪微博','2013-12-31 12:00:00','2']
+
+2014-01-17 14:34:47,617
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['6','听说小米3开卖了，刚刚预约了1台。#我爱小米手机#因为拥有他就能随手拍出碉堡了的大片！10月15日中午12点，希望能顺利抢到1台！@小米手机分享预约地址：http://t.cn/zRbjmmX丶Allan','http://app.weibo.com/t/feed/cUcI1A1','新浪微博','2013-12-31 12:00:00','2']
+
+2014-01-17 14:34:47,645
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['6','听说小米3开卖了，刚刚预约了1台。#我爱小米手机#因为他是迄今为止工艺最出色的小米手机！10月15日中午12点，希望能顺利抢到1台！@小米手机分享预约地址：http://t.cn/zjqLYzI风patience','http://app.weibo.com/t/feed/cUcI1A2','新浪微博','2013-12-31 12:00:00','2']
+
+2014-01-17 14:34:47,663
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['6','听说小米3开卖了，刚刚预约了1台。#我爱小米手机#因为拥有他就能随手拍出碉堡了的大片！10月15日中午12点，希望能顺利抢到1台!','http://app.weibo.com/t/feed/cUcI1A2','新浪微博','2013-12-31 12:00:00','2']
+
+2014-01-17 14:34:47,685
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['6','听说小米3开卖了，刚刚预约了1台。#我爱小米手机#因为他是迄今为止最快的小米手机！10月15日中午12点，希望能顺利抢到1台！@小米手机分享预约地址：http://t.cn/zRbYaJr姐姐@2000微加幸福','http://app.weibo.com/t/feed/cUcI1A3','新浪微博','2013-12-31 12:00:00','2']
+
+2014-01-17 14:34:47,721
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['6','【苹果iPhone全球移动互联网使用量首次超过诺基亚】网络统计公司StatCounter今天公布了2013年1月的最新移动互联网统计数据。今年1月iPhone首次取代诺基亚的位置，成为互联网使用量最大的设备，诺基亚手机在2012年的移动互联网使用量从去年1月份的37.67%跌落至今年的22.15%。','http://app.weibo.com/t/feed/3auC5p4','新浪微博','2013-12-31 12:00:00','2']
+
+2014-01-17 14:34:56,052
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['6',' AT胎 Vs 雪地胎的暗中较量——愉快的周末雪乡自驾游作业1','http://baa.bitauto.com/hunan/thread-4910813.html#40439809','易车网','2013-12-19 12:00:00','2']
+
+2014-01-17 14:34:56,121
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['6',' AT胎 Vs 雪地胎的暗中较量——愉快的周末雪乡自驾游作业1','http://baa.bitauto.com/zj/thread-4910819.html#40439882','易车网','2013-12-19 12:00:00','2']
+
+2014-01-17 14:34:56,159
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['6',' AT胎 Vs 雪地胎的暗中较量——愉快的周末雪乡自驾游作业1','http://bbs.xgo.com.cn/thread-1473538-1-1.html','汽车点评网','2013-12-19 12:00:00','2']
+
+2014-01-17 14:34:56,196
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['6',' AT胎 Vs 雪地胎的暗中较量——愉快的周末雪乡自驾游作业1','http://club2011.auto.163.com/post/100012861665.html','网易','2013-12-19 12:00:00','2']
+
+2014-01-17 14:35:03,718
+--INFO:存储过程：[usp_mining_Select_ProjectListRunStatus]
+
+2014-01-17 14:35:10,429
+--INFO:存储过程：[usp_mining_Select_ProjetTagRelationByProlectId];参数：['6']
+
+2014-01-17 14:35:18,473
+--INFO:存储过程：[usp_mining_Select_ProjetTagRelationByProlectId];参数：['6']
+
+2014-01-17 14:35:18,474
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['6','11']
+
+2014-01-17 14:35:18,477
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['6','10']
+
+2014-01-17 14:35:18,477
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['6','9']
+
+2014-01-17 14:35:18,478
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['6','8']
+
+2014-01-17 14:35:18,478
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['6','7']
+
+2014-01-17 14:35:18,479
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['6','6']
+
+2014-01-17 14:35:18,479
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['6','5']
+
+2014-01-17 14:35:18,480
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['6','4']
+
+2014-01-17 14:35:18,480
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['6','3']
+
+2014-01-17 14:35:18,482
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['6','2']
+
+2014-01-17 14:35:18,483
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['6','20']
+
+2014-01-17 14:35:18,483
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['6','44']
+
+2014-01-17 14:35:18,483
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['6','43']
+
+2014-01-17 14:35:22,082
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-01-17 14:35:27,289
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['6','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 14:35:27,327
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['6','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 14:35:27,387
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 6 and RunStatus=1]
+
+2014-01-17 14:35:32,969
+--INFO:存储过程：[usp_mining_update_datatagBySD_Id];参数：['59334','','售后质量','','','','']
+
+2014-01-17 14:35:34,752
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['6','1','0','','','2014/1/18 14:35:34','-1','1','-1','0']
+
+2014-01-17 14:35:34,779
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['6','13','1','1','0','','','2014/1/18 14:35:34','-1','1','-1','0']
+
+2014-01-17 14:35:36,987
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['6','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 14:35:37,009
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['6','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 14:35:37,031
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 6 and RunStatus=1]
+
+2014-01-17 15:03:18,595
+--INFO:存储过程：[usp_mining_Select_EmployeeByEmpId];参数：['admin']
+
+2014-01-17 15:03:18,650
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-01-17 15:03:28,451
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['13','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:03:28,531
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['13','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:03:28,561
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 13 and RunStatus=1]
+
+2014-01-17 15:03:41,842
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['13','【微散文3】午后的中山陵','http://club.china.com/data/thread/3799/2766/48/38/5_1.html','散文随笔','2013-12-23 12:00:00','3']
+
+2014-01-17 15:03:41,901
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['13','论坛发帖获得高点击率的技巧','http://club.china.com/data/thread/26444983/2763/68/03/3_1.html','技巧讨论','2013-08-29 12:00:00','3']
+
+2014-01-17 15:03:41,980
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['13','著名收藏家田太华的万米书画情怀与中国艺术梦','http://club.china.com/data/thread/4411624/2766/59/71/2_1.html','人文天下','2013-12-17 12:00:00','3']
+
+2014-01-17 15:03:42,017
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['13','强烈要求12月26日央视1套播出电视剧《毛泽东》','http://club.china.com/data/thread/12171906/2766/46/34/3_1.html','网上谈兵','2013-12-12 12:00:00','3']
+
+2014-01-17 15:03:42,053
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['13','借鉴与抄袭的区别','http://club.china.com/data/thread/3226998/2721/34/42/7_1.html','公务员','2013-12-23 12:00:00','3']
+
+2014-01-17 15:03:42,091
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['13','中奖了，韩泰轮胎鼓包','http://club.autohome.com.cn/bbs/thread-c-442-26838105-1.html','汽车之家','2013-12-23 12:00:00','3']
+
+2014-01-17 15:03:48,310
+--INFO:存储过程：[usp_mining_Select_ProjectListRunStatus]
+
+2014-01-17 15:03:53,311
+--INFO:存储过程：[usp_mining_Select_ProjetTagRelationByProlectId];参数：['6']
+
+2014-01-17 15:03:58,203
+--INFO:存储过程：[usp_mining_Select_ProjetTagRelationByProlectId];参数：['13']
+
+2014-01-17 15:04:02,876
+--INFO:存储过程：[usp_mining_Select_ProjetTagRelationByProlectId];参数：['13']
+
+2014-01-17 15:04:02,878
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['13','11']
+
+2014-01-17 15:04:02,879
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['13','10']
+
+2014-01-17 15:04:02,880
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['13','9']
+
+2014-01-17 15:04:02,881
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['13','8']
+
+2014-01-17 15:04:02,881
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['13','7']
+
+2014-01-17 15:04:02,882
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['13','6']
+
+2014-01-17 15:04:02,882
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['13','5']
+
+2014-01-17 15:04:02,883
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['13','4']
+
+2014-01-17 15:04:02,884
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['13','3']
+
+2014-01-17 15:04:02,885
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['13','2']
+
+2014-01-17 15:04:02,885
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['13','17']
+
+2014-01-17 15:04:02,886
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['13','16']
+
+2014-01-17 15:04:02,886
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['13','15']
+
+2014-01-17 15:04:02,887
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['13','14']
+
+2014-01-17 15:04:02,887
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['13','13']
+
+2014-01-17 15:04:02,888
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['13','20']
+
+2014-01-17 15:04:05,488
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-01-17 15:04:09,441
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['13','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:04:09,473
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['13','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:04:09,531
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 13 and RunStatus=1]
+
+2014-01-17 15:04:13,768
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['13','3','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:04:13,790
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['13','13','1','3','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:04:13,827
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 13 and RunStatus=1]
+
+2014-01-17 15:04:18,141
+--INFO:存储过程：[usp_mining_update_datatagBySD_Id];参数：['59349','','','售后质量','','','']
+
+2014-01-17 15:04:48,827
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['13','【微散文3】午后的中山陵','http://club.china.com/data/thread/3799/2766/48/38/5_1.html','散文随笔','2013-12-23 12:00:00','1']
+
+2014-01-17 15:04:48,866
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['13','论坛发帖获得高点击率的技巧','http://club.china.com/data/thread/26444983/2763/68/03/3_1.html','技巧讨论','2013-08-29 12:00:00','1']
+
+2014-01-17 15:04:48,907
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['13','著名收藏家田太华的万米书画情怀与中国艺术梦','http://club.china.com/data/thread/4411624/2766/59/71/2_1.html','人文天下','2013-12-17 12:00:00','1']
+
+2014-01-17 15:04:48,953
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['13','强烈要求12月26日央视1套播出电视剧《毛泽东》','http://club.china.com/data/thread/12171906/2766/46/34/3_1.html','网上谈兵','2013-12-12 12:00:00','1']
+
+2014-01-17 15:04:48,996
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['13','借鉴与抄袭的区别','http://club.china.com/data/thread/3226998/2721/34/42/7_1.html','公务员','2013-12-23 12:00:00','1']
+
+2014-01-17 15:04:49,047
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['13','中奖了，韩泰轮胎鼓包','http://club.autohome.com.cn/bbs/thread-c-442-26838105-1.html','汽车之家','2013-12-23 12:00:00','1']
+
+2014-01-17 15:04:52,221
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['13','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:04:52,242
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['13','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:04:52,263
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 13 and RunStatus=1]
+
+2014-01-17 15:04:55,007
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['13','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:04:55,024
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['13','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:04:55,045
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 13 and RunStatus=1]
+
+2014-01-17 15:04:57,027
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['13','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:04:57,051
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['13','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:04:57,073
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 13 and RunStatus=1]
+
+2014-01-17 15:05:03,284
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['13','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:05:03,315
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['13','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:05:03,362
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 13 and RunStatus=1]
+
+2014-01-17 15:05:19,420
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['13',' AT胎 Vs 雪地胎的暗中较量——愉快的周末雪乡自驾游作业1','http://baa.bitauto.com/hunan/thread-4910813.html#40439809','易车网','2013-12-19 12:00:00','1']
+
+2014-01-17 15:05:19,465
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['13',' AT胎 Vs 雪地胎的暗中较量——愉快的周末雪乡自驾游作业1','http://baa.bitauto.com/zj/thread-4910819.html#40439882','易车网','2013-12-19 12:00:00','1']
+
+2014-01-17 15:05:19,503
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['13',' AT胎 Vs 雪地胎的暗中较量——愉快的周末雪乡自驾游作业1','http://bbs.xgo.com.cn/thread-1473538-1-1.html','汽车点评网','2013-12-19 12:00:00','1']
+
+2014-01-17 15:05:19,540
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['13',' AT胎 Vs 雪地胎的暗中较量——愉快的周末雪乡自驾游作业1','http://club2011.auto.163.com/post/100012861665.html','网易','2013-12-19 12:00:00','1']
+
+2014-01-17 15:05:30,346
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['13','听说小米3开卖了，刚刚预约了1台。#我爱小米手机#因为拥有他就能随手拍出碉堡了的大片！10月15日中午12点，希望能顺利抢到1台！@小米手机分享预约地址：http://t.cn/zRbOjGq想想想想去旅行丶','http://app.weibo.com/t/feed/cUcI1A2','新浪微博','2013-12-31 12:00:00','1']
+
+2014-01-17 15:05:30,404
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['13','听说小米3开卖了，刚刚预约了1台。#我爱小米手机#因为他是迄今为止工艺最出色的小米手机！10月15日中午12点，希望能顺利抢到1台！@小米手机分享预约地址：http://t.cn/zRbO1SP丫头','http://app.weibo.com/t/feed/cUcI1A2','新浪微博','2013-12-31 12:00:00','1']
+
+2014-01-17 15:05:30,422
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['13','哈哈入手全新原封未激活的5C！从安卓1.6用到4.2！实在是用得要吐了！恰逢苹果出了如此高性价比的的iphone你说能不试试么？虽然有些说5C很山寨什么的，我觉得只敢总比非要把塑料做成金属感的某星手机强！而且我很清楚三千元的iphone5决定用得舒服过同价位的安卓，希望能一年不换机','http://app.weibo.com/t/feed/1C66Xn','新浪微博','2013-12-31 12:00:00','1']
+
+2014-01-17 15:05:30,459
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['13','听说小米3开卖了，刚刚预约了1台。#我爱小米手机#因为他配备3050mAh大电池，续航能力超强！10月15日中午12点，希望能顺利抢到1台！@小米手机分享预约地址：http://t.cn/zRbB9wG手机@广东移动10086官方微博','http://app.weibo.com/t/feed/cUcI1A2','新浪微博','2013-12-31 12:00:00','1']
+
+2014-01-17 15:05:30,477
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['13','听说小米3开卖了，刚刚预约了1台。#我爱小米手机#因为他是迄今为止最快的小米手机！10月15日中午12点，希望能顺利抢到1台！@小米手机分享预约地址：http://t.cn/zjqLYzI小米手机@鱼在_水中游','http://app.weibo.com/t/feed/cUcI1A1','新浪微博','2013-12-31 12:00:00','1']
+
+2014-01-17 15:05:30,514
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['13','听说小米3开卖了，刚刚预约了1台。#我爱小米手机#因为拥有他就能随手拍出碉堡了的大片！10月15日中午12点，希望能顺利抢到1台！@小米手机分享预约地址：http://t.cn/zRbjmmX丶Allan','http://app.weibo.com/t/feed/cUcI1A1','新浪微博','2013-12-31 12:00:00','1']
+
+2014-01-17 15:05:30,531
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['13','听说小米3开卖了，刚刚预约了1台。#我爱小米手机#因为他是迄今为止工艺最出色的小米手机！10月15日中午12点，希望能顺利抢到1台！@小米手机分享预约地址：http://t.cn/zjqLYzI风patience','http://app.weibo.com/t/feed/cUcI1A2','新浪微博','2013-12-31 12:00:00','1']
+
+2014-01-17 15:05:30,549
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['13','听说小米3开卖了，刚刚预约了1台。#我爱小米手机#因为拥有他就能随手拍出碉堡了的大片！10月15日中午12点，希望能顺利抢到1台!','http://app.weibo.com/t/feed/cUcI1A2','新浪微博','2013-12-31 12:00:00','1']
+
+2014-01-17 15:05:30,567
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['13','听说小米3开卖了，刚刚预约了1台。#我爱小米手机#因为他是迄今为止最快的小米手机！10月15日中午12点，希望能顺利抢到1台！@小米手机分享预约地址：http://t.cn/zRbYaJr姐姐@2000微加幸福','http://app.weibo.com/t/feed/cUcI1A3','新浪微博','2013-12-31 12:00:00','1']
+
+2014-01-17 15:05:30,605
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['13','【苹果iPhone全球移动互联网使用量首次超过诺基亚】网络统计公司StatCounter今天公布了2013年1月的最新移动互联网统计数据。今年1月iPhone首次取代诺基亚的位置，成为互联网使用量最大的设备，诺基亚手机在2012年的移动互联网使用量从去年1月份的37.67%跌落至今年的22.15%。','http://app.weibo.com/t/feed/3auC5p4','新浪微博','2013-12-31 12:00:00','1']
+
+2014-01-17 15:05:33,258
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['13','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:05:33,283
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['13','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:05:33,306
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 13 and RunStatus=1]
+
+2014-01-17 15:09:55,366
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['13','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:09:55,440
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['13','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:09:55,464
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 13 and RunStatus=1]
+
+2014-01-17 15:13:44,988
+--INFO:存储过程：[usp_mining_Select_EmployeeByEmpId];参数：['admin']
+
+2014-01-17 15:13:50,363
+--INFO:存储过程：[usp_mining_Select_EmployeeByEmpId];参数：['admin']
+
+2014-01-17 15:13:50,398
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-01-17 15:13:56,772
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-01-17 15:14:02,847
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['14','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:14:02,888
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['14','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:14:02,925
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 14 and RunStatus=1]
+
+2014-01-17 15:14:12,143
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['14','【微散文3】午后的中山陵','http://club.china.com/data/thread/3799/2766/48/38/5_1.html','散文随笔','2013-12-23 12:00:00','3']
+
+2014-01-17 15:14:12,222
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['14','论坛发帖获得高点击率的技巧','http://club.china.com/data/thread/26444983/2763/68/03/3_1.html','技巧讨论','2013-08-29 12:00:00','3']
+
+2014-01-17 15:14:12,274
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['14','著名收藏家田太华的万米书画情怀与中国艺术梦','http://club.china.com/data/thread/4411624/2766/59/71/2_1.html','人文天下','2013-12-17 12:00:00','3']
+
+2014-01-17 15:14:12,313
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['14','强烈要求12月26日央视1套播出电视剧《毛泽东》','http://club.china.com/data/thread/12171906/2766/46/34/3_1.html','网上谈兵','2013-12-12 12:00:00','3']
+
+2014-01-17 15:14:12,357
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['14','借鉴与抄袭的区别','http://club.china.com/data/thread/3226998/2721/34/42/7_1.html','公务员','2013-12-23 12:00:00','3']
+
+2014-01-17 15:14:12,394
+--INFO:存储过程：[usp_mining_Insert_ImportSiteDataBy_ProjectId];参数：['14','中奖了，韩泰轮胎鼓包','http://club.autohome.com.cn/bbs/thread-c-442-26838105-1.html','汽车之家','2013-12-23 12:00:00','3']
+
+2014-01-17 15:14:20,357
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['14','3','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:14:20,384
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['14','13','1','3','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:14:20,413
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 14 and RunStatus=1]
+
+2014-01-17 15:14:35,841
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['14','3','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:14:35,867
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['14','13','1','3','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:14:35,889
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 14 and RunStatus=1]
+
+2014-01-17 15:14:39,570
+--INFO:存储过程：[usp_mining_Select_ProjectListRunStatus]
+
+2014-01-17 15:14:42,212
+--INFO:存储过程：[usp_mining_Select_ProjetTagRelationByProlectId];参数：['14']
+
+2014-01-17 15:14:44,225
+--INFO:存储过程：[usp_mining_Select_ProjetTagRelationByProlectId];参数：['14']
+
+2014-01-17 15:14:44,226
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['14','11']
+
+2014-01-17 15:14:44,227
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['14','10']
+
+2014-01-17 15:14:44,227
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['14','9']
+
+2014-01-17 15:14:44,228
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['14','8']
+
+2014-01-17 15:14:44,228
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['14','7']
+
+2014-01-17 15:14:44,229
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['14','6']
+
+2014-01-17 15:14:44,229
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['14','5']
+
+2014-01-17 15:14:44,230
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['14','4']
+
+2014-01-17 15:14:44,232
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['14','3']
+
+2014-01-17 15:14:44,233
+--INFO:存储过程：[usp_mining_Insert_ProjectTagByProjectId];参数：['14','2']
+
+2014-01-17 15:14:49,516
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['14','3','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:14:49,544
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['14','13','1','3','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:14:49,565
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 14 and RunStatus=1]
+
+2014-01-17 15:14:56,495
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['14','3','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:14:56,514
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['14','13','1','3','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:14:56,539
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 14 and RunStatus=1]
+
+2014-01-17 15:15:13,658
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['14','3','0','','','2014-01-17 15:15:13','-1','0','-1','-1']
+
+2014-01-17 15:15:13,682
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['14','13','1','3','0','','','2014-01-17 15:15:13','-1','0','-1','-1']
+
+2014-01-17 15:15:13,761
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 14 and RunStatus=1]
+
+2014-01-17 15:15:15,252
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['14','3','0','','','2014-01-17 15:15:15','-1','0','-1','-1']
+
+2014-01-17 15:15:15,313
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['14','13','1','3','0','','','2014-01-17 15:15:15','-1','0','-1','-1']
+
+2014-01-17 15:15:15,339
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 14 and RunStatus=1]
+
+2014-01-17 15:15:18,773
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['14','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:15:18,800
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['14','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:15:18,820
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 14 and RunStatus=1]
+
+2014-01-17 15:15:20,138
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['14','1','0','','','2014-01-17 15:15:20','-1','0','-1','-1']
+
+2014-01-17 15:15:20,200
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['14','13','1','1','0','','','2014-01-17 15:15:20','-1','0','-1','-1']
+
+2014-01-17 15:15:20,225
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 14 and RunStatus=1]
+
+2014-01-17 15:15:23,697
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['14','3','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:15:23,721
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['14','13','1','3','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:15:23,744
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 14 and RunStatus=1]
+
+2014-01-17 15:15:31,584
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-01-17 15:15:34,700
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['14','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:15:34,735
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['14','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:15:34,787
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 14 and RunStatus=1]
+
+2014-01-17 15:15:38,121
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['14','3','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:15:38,147
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['14','13','1','3','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:15:38,168
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 14 and RunStatus=1]
+
+2014-01-17 15:15:42,792
+--INFO:存储过程：[usp_mining_update_datatagBySD_Id];参数：['59364','促销','','','','','']
+
+2014-01-17 15:16:31,450
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['14','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:16:31,471
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['14','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:16:31,491
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 14 and RunStatus=1]
+
+2014-01-17 15:16:36,048
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['14','3','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:16:36,075
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['14','13','1','3','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 15:16:36,097
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 14 and RunStatus=1]
+
+2014-01-17 15:22:09,968
+--ERROR:customer.aspx Page_Load
+
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 WebCrawler.customer.Page_Load(Object sender, EventArgs e) 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\customer.aspx.cs:行号 29
+2014-01-17 15:22:46,705
+--ERROR:analysis.aspx Page_Load
+
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 WebCrawler.analysis.Page_Load(Object sender, EventArgs e) 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\analysis.aspx.cs:行号 27
+2014-01-17 15:22:59,176
+--INFO:存储过程：[usp_minmig_select_customer_ByCustomerId];参数：['admin']
+
+2014-01-17 15:23:01,368
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['2']
+
+2014-01-17 15:23:01,385
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['2','2013-11-18','2014-01-17','sitedata','1','0','','1','1','0','0']
+
+2014-01-17 15:23:01,444
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['2','2013-11-18','2014-01-17','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-17 15:23:13,799
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['2','2013-11-18','2014-01-17','sitedata','1','0','','1','0','0','0']
+
+2014-01-17 15:23:13,834
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['2','2013-11-18','2014-01-17','sitedata','1','20','1','0','','1','0','0','0']
+
+2014-01-17 15:24:40,679
+--ERROR:customer.aspx Page_Load
+
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 WebCrawler.customer.PrepareBind() 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\customer.aspx.cs:行号 128
+   在 WebCrawler.customer.Page_Load(Object sender, EventArgs e) 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\customer.aspx.cs:行号 43
+2014-01-17 15:24:40,688
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['2']
+
+2014-01-17 15:24:40,688
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['2','2013-11-18','2014-01-17','sitedata','1','0','','1','1','0','0']
+
+2014-01-17 15:24:40,708
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['2','2013-11-18','2014-01-17','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-17 15:25:24,703
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['2']
+
+2014-01-17 15:25:24,704
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['2','2013-11-18','2014-01-17','sitedata','1','0','','1','1','0','0']
+
+2014-01-17 15:25:24,725
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['2','2013-11-18','2014-01-17','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-17 16:19:33,032
+--INFO:存储过程：[usp_minmig_select_customer_ByCustomerId];参数：['admin']
+
+2014-01-17 16:19:39,092
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-17 16:19:39,294
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-18','2014-01-17','sitedata','1','0','','1','1','0','0']
+
+2014-01-17 16:19:40,217
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-18','2014-01-17','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-17 16:19:43,680
+--INFO:存储过程：[usp_mining_report_htsqlypm];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 16:19:44,058
+--INFO:存储过程：[usp_mining_report_fmhtsqlypm];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 16:19:44,165
+--INFO:存储过程：[usp_mining_report_cfhtpm];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 16:19:44,304
+--INFO:存储过程：[usp_mining_report_fmcfhtpm];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 16:19:44,347
+--INFO:存储过程：[usp_mining_report_gmjslly];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 16:19:45,623
+--INFO:存储过程：[usp_mining_report_gdxhtsl];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 16:19:45,860
+--INFO:存储过程：[usp_mining_report_htslqst];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 16:19:46,950
+--INFO:存储过程：[usp_mining_report_fmhtslqst];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 16:19:47,223
+--INFO:存储过程：[usp_mining_report_htqsb];参数：['2013-11-18','2014-01-17','4']
+
+2014-01-17 16:20:20,363
+--INFO:存储过程：[usp_mining_report_htsqlypm];参数：['2013-11-04','2014-01-17','4']
+
+2014-01-17 16:20:20,493
+--INFO:存储过程：[usp_mining_report_fmhtsqlypm];参数：['2013-11-04','2014-01-17','4']
+
+2014-01-17 16:20:20,567
+--INFO:存储过程：[usp_mining_report_cfhtpm];参数：['2013-11-04','2014-01-17','4']
+
+2014-01-17 16:20:20,631
+--INFO:存储过程：[usp_mining_report_fmcfhtpm];参数：['2013-11-04','2014-01-17','4']
+
+2014-01-17 16:20:20,668
+--INFO:存储过程：[usp_mining_report_gmjslly];参数：['2013-11-04','2014-01-17','4']
+
+2014-01-17 16:20:20,810
+--INFO:存储过程：[usp_mining_report_gdxhtsl];参数：['2013-11-04','2014-01-17','4']
+
+2014-01-17 16:20:20,959
+--INFO:存储过程：[usp_mining_report_htslqst];参数：['2013-11-04','2014-01-17','4']
+
+2014-01-17 16:20:21,145
+--INFO:存储过程：[usp_mining_report_fmhtslqst];参数：['2013-11-04','2014-01-17','4']
+
+2014-01-17 16:20:21,321
+--INFO:存储过程：[usp_mining_report_htqsb];参数：['2013-11-04','2014-01-17','4']
+
+2014-01-17 16:20:31,637
+--INFO:存储过程：[usp_mining_report_htsqlypm];参数：['2013-10-28','2014-01-17','4']
+
+2014-01-17 16:20:31,729
+--INFO:存储过程：[usp_mining_report_fmhtsqlypm];参数：['2013-10-28','2014-01-17','4']
+
+2014-01-17 16:20:31,803
+--INFO:存储过程：[usp_mining_report_cfhtpm];参数：['2013-10-28','2014-01-17','4']
+
+2014-01-17 16:20:31,870
+--INFO:存储过程：[usp_mining_report_fmcfhtpm];参数：['2013-10-28','2014-01-17','4']
+
+2014-01-17 16:20:31,907
+--INFO:存储过程：[usp_mining_report_gmjslly];参数：['2013-10-28','2014-01-17','4']
+
+2014-01-17 16:20:32,049
+--INFO:存储过程：[usp_mining_report_gdxhtsl];参数：['2013-10-28','2014-01-17','4']
+
+2014-01-17 16:20:32,196
+--INFO:存储过程：[usp_mining_report_htslqst];参数：['2013-10-28','2014-01-17','4']
+
+2014-01-17 16:20:32,361
+--INFO:存储过程：[usp_mining_report_fmhtslqst];参数：['2013-10-28','2014-01-17','4']
+
+2014-01-17 16:20:32,550
+--INFO:存储过程：[usp_mining_report_htqsb];参数：['2013-10-28','2014-01-17','4']
+
+2014-01-17 16:20:38,283
+--INFO:存储过程：[usp_mining_report_htsqlypm];参数：['2013-10-28','2014-01-17','4']
+
+2014-01-17 16:20:38,383
+--INFO:存储过程：[usp_mining_report_fmhtsqlypm];参数：['2013-10-28','2014-01-17','4']
+
+2014-01-17 16:20:38,457
+--INFO:存储过程：[usp_mining_report_cfhtpm];参数：['2013-10-28','2014-01-17','4']
+
+2014-01-17 16:20:38,523
+--INFO:存储过程：[usp_mining_report_fmcfhtpm];参数：['2013-10-28','2014-01-17','4']
+
+2014-01-17 16:20:38,560
+--INFO:存储过程：[usp_mining_report_gmjslly];参数：['2013-10-28','2014-01-17','4']
+
+2014-01-17 16:20:38,705
+--INFO:存储过程：[usp_mining_report_gdxhtsl];参数：['2013-10-28','2014-01-17','4']
+
+2014-01-17 16:20:38,855
+--INFO:存储过程：[usp_mining_report_htslqst];参数：['2013-10-28','2014-01-17','4']
+
+2014-01-17 16:20:39,018
+--INFO:存储过程：[usp_mining_report_fmhtslqst];参数：['2013-10-28','2014-01-17','4']
+
+2014-01-17 16:20:39,183
+--INFO:存储过程：[usp_mining_report_htqsb];参数：['2013-10-28','2014-01-17','4']
+
+2014-01-17 16:43:46,828
+--INFO:存储过程：[usp_mining_Select_EmployeeByEmpId];参数：['admin']
+
+2014-01-17 16:43:47,038
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-01-17 16:44:00,033
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['13','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 16:44:00,112
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['13','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 16:44:00,170
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 13 and RunStatus=1]
+
+2014-01-17 16:44:26,525
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['13','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 16:44:26,546
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['13','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 16:44:26,573
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 13 and RunStatus=1]
+
+2014-01-17 16:52:30,181
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['13','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 16:52:30,204
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['13','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 16:52:30,263
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 13 and RunStatus=1]
+
+2014-01-17 16:56:27,356
+--INFO:存储过程：[usp_mining_Select_EmployeeByEmpId];参数：['admin']
+
+2014-01-17 16:56:27,408
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-01-17 16:56:37,739
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 16:56:37,795
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 16:56:37,915
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 16:56:45,665
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['13','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 16:56:45,727
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['13','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 16:56:45,753
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 13 and RunStatus=1]
+
+2014-01-17 16:57:54,070
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['13','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 16:57:54,090
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['13','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 16:57:54,113
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 13 and RunStatus=1]
+
+2014-01-17 17:00:36,055
+--INFO:存储过程：[usp_mining_Select_EmployeeByEmpId];参数：['admin']
+
+2014-01-17 17:00:36,107
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-01-17 17:00:40,473
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['13','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:00:40,514
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['13','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:00:40,569
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 13 and RunStatus=1]
+
+2014-01-17 17:04:05,141
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['13','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:04:05,178
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['13','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:04:05,223
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 13 and RunStatus=1]
+
+2014-01-17 17:04:47,404
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['13','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:04:47,423
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['13','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:04:47,445
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 13 and RunStatus=1]
+
+2014-01-17 17:05:05,372
+--ERROR:BindSelectTagHtml
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 WebCrawler.Admin.datadetail.BindSelectTagHtml() 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\Admin\datadetail.aspx.cs:行号 102
+2014-01-17 17:05:05,456
+--ERROR:datadetail.aspx Bind
+
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 WebCrawler.Admin.datadetail.Page_Load(Object sender, EventArgs e) 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\Admin\datadetail.aspx.cs:行号 69
+2014-01-17 17:05:05,486
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:05:05,513
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:05:05,520
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 17:05:37,884
+--INFO:存储过程：[usp_mining_Select_EmployeeByEmpId];参数：['admin']
+
+2014-01-17 17:05:37,921
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-01-17 17:05:42,975
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['13','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:05:42,997
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['13','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:05:43,045
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 13 and RunStatus=1]
+
+2014-01-17 17:07:40,965
+--INFO:存储过程：[usp_mining_Select_EmployeeByEmpId];参数：['admin']
+
+2014-01-17 17:07:41,039
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-01-17 17:09:41,124
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['13','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:09:41,148
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['13','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:09:41,191
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 13 and RunStatus=1]
+
+2014-01-17 17:10:10,711
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['13','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:10:10,742
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['13','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:10:10,768
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 13 and RunStatus=1]
+
+2014-01-17 17:10:13,603
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['13','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:10:13,627
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['13','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:10:13,651
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 13 and RunStatus=1]
+
+2014-01-17 17:10:46,323
+--ERROR:datadetail.aspx Bind
+
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 WebCrawler.Admin.datadetail.Page_Load(Object sender, EventArgs e) 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\Admin\datadetail.aspx.cs:行号 50
+2014-01-17 17:10:46,358
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:10:46,390
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:10:46,414
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 17:11:48,673
+--INFO:存储过程：[usp_mining_update_datatagBySD_Id];参数：['59200','新品负面','','','小类1_2','小类2_1','小类3_2']
+
+2014-01-17 17:11:49,215
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014/1/18 17:11:49','-1','0','-1','-1']
+
+2014-01-17 17:11:49,251
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014/1/18 17:11:49','-1','0','-1','-1']
+
+2014-01-17 17:12:05,770
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['13','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:12:05,814
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['13','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:12:05,837
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 13 and RunStatus=1]
+
+2014-01-17 17:20:34,858
+--ERROR:datadetail.aspx Bind
+
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 WebCrawler.Admin.datadetail.Page_Load(Object sender, EventArgs e) 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\Admin\datadetail.aspx.cs:行号 50
+2014-01-17 17:20:34,915
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:20:35,608
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:20:35,831
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 17:21:11,556
+--INFO:存储过程：[usp_mining_update_datatagBySD_Id];参数：['59199','促销','配套信息','售后质量','小类1_2','小类2_2','小类3_2']
+
+2014-01-17 17:21:16,478
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:21:16,518
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:21:16,525
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 17:21:22,886
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['13','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:21:22,919
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['13','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:21:22,979
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 13 and RunStatus=1]
+
+2014-01-17 17:23:04,062
+--ERROR:datadetail.aspx Bind
+
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 WebCrawler.Admin.datadetail.Page_Load(Object sender, EventArgs e) 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\Admin\datadetail.aspx.cs:行号 50
+2014-01-17 17:23:04,112
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:23:04,155
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:23:04,279
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 17:25:32,868
+--ERROR:datadetail.aspx Bind
+
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 WebCrawler.Admin.datadetail.Page_Load(Object sender, EventArgs e) 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\Admin\datadetail.aspx.cs:行号 50
+2014-01-17 17:25:32,903
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:25:32,936
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:25:32,958
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 17:27:06,915
+--INFO:存储过程：[usp_mining_Select_EmployeeByEmpId];参数：['admin']
+
+2014-01-17 17:27:06,958
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-01-17 17:27:12,533
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['13','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:27:12,573
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['13','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:27:12,670
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 13 and RunStatus=1]
+
+2014-01-17 17:27:24,085
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['14','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:27:24,142
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['14','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:27:24,181
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 14 and RunStatus=1]
+
+2014-01-17 17:27:28,075
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['14','3','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:27:28,210
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['14','13','1','3','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:27:28,249
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 14 and RunStatus=1]
+
+2014-01-17 17:28:53,197
+--ERROR:datadetail.aspx Bind
+
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 WebCrawler.Admin.datadetail.Page_Load(Object sender, EventArgs e) 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\Admin\datadetail.aspx.cs:行号 50
+2014-01-17 17:28:53,224
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:28:53,253
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:29:02,374
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 17:29:34,607
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['14','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:29:34,631
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['14','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:29:36,850
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 14 and RunStatus=1]
+
+2014-01-17 17:30:00,210
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['14','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:30:00,256
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['14','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:30:27,766
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 14 and RunStatus=1]
+
+2014-01-17 17:35:23,000
+--INFO:存储过程：[usp_mining_Select_EmployeeByEmpId];参数：['admin']
+
+2014-01-17 17:35:23,055
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-01-17 17:35:28,052
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['14','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:35:28,097
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['14','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:35:28,162
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 14 and RunStatus=1]
+
+2014-01-17 17:35:32,276
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['14','3','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:35:32,295
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['14','13','1','3','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:35:32,323
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 14 and RunStatus=1]
+
+2014-01-17 17:36:02,322
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['14','3','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:36:02,345
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['14','13','1','3','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:36:02,367
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 14 and RunStatus=1]
+
+2014-01-17 17:40:18,903
+--INFO:存储过程：[usp_mining_Select_EmployeeByEmpId];参数：['admin']
+
+2014-01-17 17:40:18,960
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-01-17 17:40:22,951
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['14','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:40:22,998
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['14','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:40:25,608
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 14 and RunStatus=1]
+
+2014-01-17 17:40:30,362
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['14','3','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:40:30,385
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['14','13','1','3','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:41:33,081
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 14 and RunStatus=1]
+
+2014-01-17 17:46:09,094
+--ERROR:datadetail.aspx Bind
+
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 WebCrawler.Admin.datadetail.Page_Load(Object sender, EventArgs e) 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\Admin\datadetail.aspx.cs:行号 50
+2014-01-17 17:46:09,137
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:46:09,174
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:46:09,194
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 17:46:13,721
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['14','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:46:13,750
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['14','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:46:13,769
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 14 and RunStatus=1]
+
+2014-01-17 17:46:17,550
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['14','3','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:46:17,583
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['14','13','1','3','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:46:17,616
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 14 and RunStatus=1]
+
+2014-01-17 17:46:22,658
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['14','3','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:46:22,681
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['14','13','1','3','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 17:46:22,707
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 14 and RunStatus=1]
+
+2014-01-17 17:46:29,461
+--INFO:存储过程：[usp_mining_update_datatagBySD_Id];参数：['59363','促销','','','','','']
+
+2014-01-17 17:46:29,698
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['14','3','0','','','2014/1/18 17:46:29','-1','0','-1','-1']
+
+2014-01-17 17:46:29,717
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['14','13','1','3','0','','','2014/1/18 17:46:29','-1','0','-1','-1']
+
+2014-01-17 18:13:14,711
+--INFO:存储过程：[usp_mining_Select_EmployeeByEmpId];参数：['admin']
+
+2014-01-17 18:13:14,792
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-01-17 18:13:20,205
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['14','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:13:20,283
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['14','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:13:20,311
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 14 and RunStatus=1]
+
+2014-01-17 18:13:23,712
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['14','3','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:13:23,743
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['14','13','1','3','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:13:23,767
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 14 and RunStatus=1]
+
+2014-01-17 18:13:25,686
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['14','3','0','','','2014/1/18 18:13:25','-1','0','0','1']
+
+2014-01-17 18:13:25,935
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['14','13','1','3','0','','','2014/1/18 18:13:25','-1','0','0','1']
+
+2014-01-17 18:13:26,635
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['14','3','0','','','2014/1/18 18:13:26','-1','1','-1','0']
+
+2014-01-17 18:13:26,660
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['14','13','1','3','0','','','2014/1/18 18:13:26','-1','1','-1','0']
+
+2014-01-17 18:13:38,689
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:13:38,753
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:13:38,771
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 18:13:41,513
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014/1/18 18:13:41','-1','0','0','1']
+
+2014-01-17 18:13:41,558
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014/1/18 18:13:41','-1','0','0','1']
+
+2014-01-17 18:13:42,336
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014/1/18 18:13:42','-1','1','-1','0']
+
+2014-01-17 18:13:42,400
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014/1/18 18:13:42','-1','1','-1','0']
+
+2014-01-17 18:13:44,184
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014/1/18 18:13:44','-1','2','-1','0']
+
+2014-01-17 18:13:44,220
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014/1/18 18:13:44','-1','2','-1','0']
+
+2014-01-17 18:13:45,232
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014/1/18 18:13:45','-1','0','0','1']
+
+2014-01-17 18:13:45,279
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014/1/18 18:13:45','-1','0','0','1']
+
+2014-01-17 18:19:50,025
+--ERROR:datadetail.aspx Bind
+
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 WebCrawler.Admin.datadetail.Page_Load(Object sender, EventArgs e) 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\Admin\datadetail.aspx.cs:行号 50
+2014-01-17 18:19:50,090
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:19:50,123
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:19:50,142
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 18:19:54,505
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:19:54,532
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:19:54,540
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 18:21:26,469
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:21:26,498
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:21:26,509
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 18:22:30,027
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:22:30,055
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:22:30,064
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 18:22:31,217
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:22:31,250
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:22:31,257
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 18:23:49,395
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:23:49,437
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:23:49,446
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 18:24:39,048
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:24:39,080
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:24:39,086
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 18:29:01,929
+--INFO:存储过程：[usp_mining_update_datatagBySD_Id];参数：['59198','','','','','','小类3_2']
+
+2014-01-17 18:29:06,118
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:29:06,150
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:29:06,156
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 18:29:09,130
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014/1/18 18:29:09','-1','0','0','1']
+
+2014-01-17 18:29:09,156
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014/1/18 18:29:09','-1','0','0','1']
+
+2014-01-17 18:29:09,474
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014/1/18 18:29:09','-1','1','-1','0']
+
+2014-01-17 18:29:09,539
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014/1/18 18:29:09','-1','1','-1','0']
+
+2014-01-17 18:35:33,470
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:35:33,520
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:35:33,552
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 18:37:51,684
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:37:51,712
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:37:51,732
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 18:39:24,984
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:39:25,019
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:39:25,025
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 18:40:04,629
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:40:04,656
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:40:04,661
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 18:41:09,833
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:41:09,877
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:41:09,886
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 18:41:24,224
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:41:24,252
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:41:24,259
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 18:44:25,120
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:44:25,170
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:44:25,179
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 18:54:01,958
+--ERROR:datadetail.aspx Bind
+
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 WebCrawler.Admin.datadetail.Page_Load(Object sender, EventArgs e) 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\Admin\datadetail.aspx.cs:行号 50
+2014-01-17 18:54:01,992
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:54:02,025
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:54:02,042
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 18:54:04,396
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014/1/18 18:54:04','-1','1','-1','0']
+
+2014-01-17 18:54:04,422
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014/1/18 18:54:04','-1','1','-1','0']
+
+2014-01-17 18:56:03,619
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:56:03,649
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:56:03,655
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 18:56:14,348
+--INFO:存储过程：[usp_mining_update_datatagBySD_Id];参数：['59197','','','','','小类2_2','小类3_1']
+
+2014-01-17 18:56:16,188
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014/1/18 18:56:16','-1','1','-1','0']
+
+2014-01-17 18:56:16,267
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014/1/18 18:56:16','-1','1','-1','0']
+
+2014-01-17 18:56:22,100
+--INFO:存储过程：[usp_mining_update_datatagBySD_Id];参数：['59198','','','','小类1_2','小类2_2','']
+
+2014-01-17 18:56:23,379
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014/1/18 18:56:23','-1','1','-1','0']
+
+2014-01-17 18:56:23,418
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014/1/18 18:56:23','-1','1','-1','0']
+
+2014-01-17 18:56:24,643
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014/1/18 18:56:24','-1','1','-1','0']
+
+2014-01-17 18:56:24,679
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014/1/18 18:56:24','-1','1','-1','0']
+
+2014-01-17 18:56:25,459
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014/1/18 18:56:25','-1','2','-1','0']
+
+2014-01-17 18:56:25,497
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014/1/18 18:56:25','-1','2','-1','0']
+
+2014-01-17 18:56:26,131
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014/1/18 18:56:26','-1','1','-1','0']
+
+2014-01-17 18:56:26,174
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014/1/18 18:56:26','-1','1','-1','0']
+
+2014-01-17 18:57:55,176
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:57:55,204
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:57:55,240
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 18:57:56,929
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014/1/18 18:57:56','-1','1','-1','0']
+
+2014-01-17 18:57:56,960
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014/1/18 18:57:56','-1','1','-1','0']
+
+2014-01-17 18:58:14,692
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014/1/18 18:58:14','-1','1','-1','0']
+
+2014-01-17 18:58:14,746
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014/1/18 18:58:14','-1','1','-1','0']
+
+2014-01-17 18:58:16,141
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014/1/18 18:58:16','-1','2','-1','0']
+
+2014-01-17 18:58:16,168
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014/1/18 18:58:16','-1','2','-1','0']
+
+2014-01-17 18:58:16,860
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014/1/18 18:58:16','-1','1','-1','0']
+
+2014-01-17 18:58:16,900
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014/1/18 18:58:16','-1','1','-1','0']
+
+2014-01-17 18:58:59,857
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:58:59,898
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:58:59,911
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 18:59:53,709
+--ERROR:datadetail.aspx Bind
+
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 WebCrawler.Admin.datadetail.Page_Load(Object sender, EventArgs e) 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\Admin\datadetail.aspx.cs:行号 50
+2014-01-17 18:59:53,753
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:59:53,830
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 18:59:53,876
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 19:01:04,096
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 19:01:04,124
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 19:01:04,130
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 19:01:24,133
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 19:01:24,163
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 19:01:24,170
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 19:02:03,623
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 19:02:03,651
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 19:02:03,657
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 19:02:27,512
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 19:02:27,567
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 19:02:27,580
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 19:02:58,102
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 19:02:58,131
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 19:02:58,137
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 19:04:04,337
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 19:04:04,368
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 19:04:04,374
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 19:04:40,279
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 19:04:40,306
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 19:04:40,313
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 19:04:54,510
+--INFO:存储过程：[usp_mining_update_datatagBySD_Id];参数：['59195','配套信息','售后质量','小类1_2','','小类3_2','新品负面']
+
+2014-01-17 19:04:54,535
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014/1/18 19:04:54','-1','0','-1','-1']
+
+2014-01-17 19:04:54,588
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014/1/18 19:04:54','-1','0','-1','-1']
+
+2014-01-17 19:04:57,111
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014/1/18 19:04:57','-1','0','0','1']
+
+2014-01-17 19:04:57,149
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014/1/18 19:04:57','-1','0','0','1']
+
+2014-01-17 19:04:58,774
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014/1/18 19:04:58','-1','1','-1','0']
+
+2014-01-17 19:04:58,809
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014/1/18 19:04:58','-1','1','-1','0']
+
+2014-01-17 19:05:17,060
+--INFO:存储过程：[usp_mining_update_datatagBySD_Id];参数：['27890','配套信息','售后质量','小类1_2','小类2_2','小类3_2','促销']
+
+2014-01-17 19:05:17,153
+--INFO:存储过程：[usp_mining_update_datatagBySD_Id];参数：['27837','配套信息','售后质量','小类1_2','小类2_2','小类3_2','促销']
+
+2014-01-17 19:05:17,154
+--INFO:存储过程：[usp_mining_update_datatagBySD_Id];参数：['27820','配套信息','售后质量','小类1_2','小类2_2','小类3_2','促销']
+
+2014-01-17 19:05:17,166
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014/1/18 19:05:17','-1','1','-1','0']
+
+2014-01-17 19:05:17,215
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014/1/18 19:05:17','-1','1','-1','0']
+
+2014-01-17 19:06:16,106
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 19:06:16,135
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 19:06:16,142
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 19:06:25,259
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014/1/18 19:06:25','-1','1','-1','0']
+
+2014-01-17 19:06:25,319
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014/1/18 19:06:25','-1','1','-1','0']
+
+2014-01-17 19:06:33,685
+--INFO:存储过程：[usp_mining_update_datatagBySD_Id];参数：['59197','','','','小类2_2','','']
+
+2014-01-17 19:06:33,686
+--INFO:存储过程：[usp_mining_update_datatagBySD_Id];参数：['59198','','','','小类2_2','','']
+
+2014-01-17 19:06:33,697
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014/1/18 19:06:33','-1','1','-1','0']
+
+2014-01-17 19:06:33,736
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014/1/18 19:06:33','-1','1','-1','0']
+
+2014-01-17 19:06:44,551
+--INFO:存储过程：[usp_mining_update_datatagBySD_Id];参数：['27988','','','','','小类3_2','']
+
+2014-01-17 19:06:44,556
+--INFO:存储过程：[usp_mining_update_datatagBySD_Id];参数：['59195','','','','','小类3_2','']
+
+2014-01-17 19:06:44,569
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014/1/18 19:06:44','-1','1','-1','0']
+
+2014-01-17 19:06:44,610
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014/1/18 19:06:44','-1','1','-1','0']
+
+2014-01-17 19:12:21,637
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 19:12:21,669
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 19:12:21,676
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 19:14:15,069
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 19:14:15,098
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 19:14:15,106
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 19:15:17,229
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 19:15:17,259
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 19:15:17,266
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 19:15:20,505
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 19:15:20,547
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 19:15:20,555
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+
+2014-01-17 19:16:34,051
+--INFO:存储过程：[usp_mining_update_datatagBySD_Id];参数：['59191','新品负面','配套信息','售后质量','小类1_2','小类2_2','小类3_2']
+
+2014-01-17 19:18:25,591
+--INFO:存储过程：[usp_mining_Select_ProjectDataCountByProjectId];参数：['4','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 19:18:25,633
+--INFO:存储过程：[usp_mining_Select_ProjectDataByProjectId];参数：['4','13','1','1','0','','','2014-01-18 00:00:00','-1','0','-1','-1']
+
+2014-01-17 19:18:25,653
+--INFO:存储过程：[select ProjectName from ProjectList where ProjectId = 4 and RunStatus=1]
+

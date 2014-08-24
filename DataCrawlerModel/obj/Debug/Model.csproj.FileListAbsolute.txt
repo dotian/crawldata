@@ -1,0 +1,12 @@
+H:\2014Year\服务器应用程序\WebMining\Model\bin\Debug\DataCrawler.Model.dll
+H:\2014Year\服务器应用程序\WebMining\Model\bin\Debug\DataCrawler.Model.pdb
+H:\2014Year\服务器应用程序\WebMining\Model\obj\Debug\DataCrawler.Model.dll
+H:\2014Year\服务器应用程序\WebMining\Model\obj\Debug\DataCrawler.Model.pdb
+H:\2014Year\服务器应用程序\WebMining\DataCrawlerModel\bin\Debug\DataCrawler.Model.dll
+H:\2014Year\服务器应用程序\WebMining\DataCrawlerModel\bin\Debug\DataCrawler.Model.pdb
+H:\2014Year\服务器应用程序\WebMining\DataCrawlerModel\obj\Debug\DataCrawler.Model.dll
+H:\2014Year\服务器应用程序\WebMining\DataCrawlerModel\obj\Debug\DataCrawler.Model.pdb
+H:\2015年所有整理\Web程序\WebCrawler\DataCrawlerModel\bin\Debug\DataCrawler.Model.dll
+H:\2015年所有整理\Web程序\WebCrawler\DataCrawlerModel\bin\Debug\DataCrawler.Model.pdb
+H:\2015年所有整理\Web程序\WebCrawler\DataCrawlerModel\obj\Debug\DataCrawler.Model.dll
+H:\2015年所有整理\Web程序\WebCrawler\DataCrawlerModel\obj\Debug\DataCrawler.Model.pdb

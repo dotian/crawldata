@@ -1,0 +1,1166 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1">
+    <title></title>
+    <link href="../Styles/ShowData.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/lyoatMenu.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/datadetail.css" rel="stylesheet" type="text/css" />
+    <link href="../Common/My97DatePicker/skin/WdatePicker.css" rel="stylesheet" type="text/css" />
+    <script src="../Common/My97DatePicker/WdatePicker.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery-1.4.1.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery.cookie.js" type="text/javascript"></script>
+    <script src="../Common/JS/sitedate_addtagDoalog.js" type="text/javascript"></script>
+    <script src="../Common/JS/sitedata_show.js" type="text/javascript"></script>
+    <script src="../Common/JS/datadetail.js" type="text/javascript"></script>
+    <style type="text/css">
+        .style3
+        {
+            text-align: left;
+            padding-left: 2px;
+            width: 477px;
+            visibility: visible;
+        }
+        #tb_tagList tr
+        {
+            line-height: 20px;
+        }
+        #tb_tagList
+        {
+            margin: 2px;
+            border-top: 1px solid #99BBE8;
+            border-left: 1px solid #99BBE8;
+        }
+        #tb_tagList td, th
+        {
+            border-right: 1px solid #c9d4e5;
+            border-bottom: 1px solid #c9d4e5;
+            padding-left: 5px;
+            padding-top: 2px;
+            vertical-align: middle;
+        }
+        #dv_tag_content div
+        {
+            margin: 0px auto;
+        }
+        
+        
+        #tb_dataList_t tr
+        {
+            line-height: 20px;
+        }
+        #tb_dataList_t
+        {
+            margin: 2px 0px 2px 2px;
+            width: auto;
+            border-top: 1px solid #99BBE8;
+            border-left: 1px solid #99BBE8;
+        }
+        #tb_dataList_t td, th
+        {
+            border-right: 1px solid #c9d4e5;
+            border-bottom: 1px solid #c9d4e5;
+            padding-left: 5px;
+            padding-top: 2px;
+            vertical-align: middle;
+            text-align: left;
+        }
+        .style4
+        {
+            width: 313px;
+        }
+        .style5
+        {
+            padding-left: 5px;
+            width: 313px;
+        }
+        .style6
+        {
+            width: 353px;
+        }
+        .style7
+        {
+            width: 106px;
+        }
+        .style8
+        {
+            width: 88px;
+        }
+        .style9
+        {
+            width: 43px;
+        }
+        .style10
+        {
+            width: 165px;
+        }
+    </style>
+    <script type="text/javascript">
+
+        function checkType() {
+            var pid = $("#hid_projectId").val().trim();
+            pid = parseInt(pid);
+            if (pid <= 0) {
+                alert('没有找到要导入的项目');
+                return false;
+            }
+            var seldataType = $("#select_dataType").val();
+            seldataType = parseInt(seldataType);
+            if (seldataType <= 0) {
+                alert("请选择导入的数据类型");
+                return false;
+            }
+
+            var fileName = $("#fileUpload1").val();
+            if (fileName == "") {
+                alert("请选择要导入的文件路径");
+                return false;
+            }
+            var selDataName = $("#select_dataType").find("option:selected").text();
+            if (confirm("确定要导入" + selDataName + "数据吗")) {
+                //得到上传文件的值
+
+                //返回String对象中子字符串最后出现的位置.
+                var seat = fileName.lastIndexOf(".");
+                //返回位于String对象中指定位置的子字符串并转换为小写.
+                var extension = fileName.substring(seat).toLowerCase();
+                //判断允许上传的文件格式
+                if (extension != ".xls" && extension != ".xlsx") {
+                    alert("不支持" + extension + "文件的上传!");
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+        }
+
+        // show  显示批量打标签
+        function img_batchtTags_click() {
+            //传过去选中的Sdid
+            //传过去 项目Id
+            var ids = $("#hid_ck_DateIds").val();
+            if (ids.length <= 0) {
+                alert("没有选中要打标签的数据!");
+                return false;
+            }
+
+            var sel_count = parseInt($("#hid_sel_count").val());
+
+            var tagTitleCount = "";
+            var m = $("#dv_tag_content"); //标签 内容
+
+            var ctrl_sp1 = $(m).find("span:eq(0)");
+            var ctrl_sp2 = $(m).find("span:eq(1)");
+            var ctrl_sp3 = $(m).find("span:eq(2)");
+            var ctrl_sp4 = $(m).find("span:eq(3)");
+            var ctrl_sp5 = $(m).find("span:eq(4)");
+            var ctrl_sp6 = $(m).find("span:eq(5)");
+
+            if (sel_count <= 0) {
+                alert("没有给该项目分配标签!");
+                return false;
+            }
+
+
+            if (sel_count > 0) {
+                var sel_sp_1 = $("#sp_tag_1").html();
+                $(ctrl_sp1).html(sel_sp_1);
+            }
+
+
+            if (sel_count > 1) {
+                var sel_sp_2 = $("#sp_tag_2").html();
+                $(ctrl_sp2).html(sel_sp_2);
+            }
+
+            if (sel_count > 2) {
+                var sel_sp_3 = $("#sp_tag_3").html();
+                $(ctrl_sp3).html(sel_sp_3);
+            }
+            if (sel_count > 3) {
+                var sel_sp_4 = $("#sp_tag_4").html();
+                $(ctrl_sp4).html(sel_sp_4);
+            }
+            if (sel_count > 4) {
+                var sel_sp_5 = $("#sp_tag_5").html();
+                $(ctrl_sp5).html(sel_sp_5);
+            }
+            if (sel_count > 5) {
+                var sel_sp_6 = $("#sp_tag_6").html();
+                $(ctrl_sp6).html(sel_sp_6 + " <br />");
+            }
+
+            $("#show").css("display", "block");
+        }
+
+        // //批量 提交
+        function batchatagGroup() {
+            var b_issubmit = false;
+
+            $("#txt_mess").val($("#show").html());
+            var ids = $("#hid_ck_DateIds").val();
+            var sel_count = parseInt($("#hid_sel_count").val());
+            var tagTitleCount = "";
+            var m = $("#dv_tag_content"); //这里是 td
+            var ctrl_sp1 = $(m).find("div:eq(1)").find("span");
+            var ctrl_sp2 = $(m).find("div:eq(2)").find("span");
+            var ctrl_sp3 = $(m).find("div:eq(3)").find("span");
+            var ctrl_sp4 = $(m).find("div:eq(4)").find("span");
+            var ctrl_sp5 = $(m).find("div:eq(5)").find("span");
+            var ctrl_sp6 = $(m).find("div:eq(6)").find("span");
+            if (sel_count <= 0) {
+                alert("没有给该项目分配标签!");
+                return false;
+            }
+            var tag_1 = "";
+            var tag_2 = "";
+            var tag_3 = "";
+            var tag_4 = "";
+            var tag_5 = "";
+            var tag_6 = "";
+            if (sel_count > 0) {
+                var tag_1_id = $(ctrl_sp1).find("select").val();
+                if (tag_1_id != "") {
+                    tag_1 = $(ctrl_sp1).find("option:selected").text().trim();
+
+                }
+            }
+
+            if (sel_count > 1) {
+                var tag_2_id = $(ctrl_sp2).find("select").val();
+                if (tag_2_id != "") {
+                    tag_2 = $(ctrl_sp2).find("option:selected").text().trim();
+                }
+            }
+
+            if (sel_count > 2) {
+                var tag_3_id = $(ctrl_sp3).find("select").val();
+                if (tag_3_id != "") {
+                    tag_3 = $(ctrl_sp3).find("select").find("option:selected").text().trim();
+                }
+            }
+
+            if (sel_count > 3) {
+                var tag_4_id = $(ctrl_sp4).find("select").val();
+                if (tag_4_id != "") {
+                    tag_4 = $(ctrl_sp4).find("select").find("option:selected").text().trim();
+                    $(ctrl_sp4).html(tag_4).css("color", "green");
+                }
+            }
+            if (sel_count > 4) {
+                var tag_5_id = $(ctrl_sp5).find("select").val();
+                if (tag_5_id != "") {
+                    tag_5 = $(ctrl_sp5).find("select").find("option:selected").text().trim();
+                }
+            }
+
+            if (sel_count > 5) {
+                var tag_6_id = $(ctrl_sp6).find("select").val();
+                if (tag_6_id != "") {
+                    tag_6 = $(ctrl_sp6).find("select").find("option:selected").text().trim();
+                }
+            }
+
+            // 得到标签的Id,以及该条记录的Id,进行tag处理
+            var tag_mess = tag_1 + "|" + tag_2 + "|" + tag_3 + "|" + tag_4 + "|" + tag_5 + "|" + tag_6;
+            if (ids.length > 0 && tag_mess.length > 0) {
+                b_issubmit = true;
+            } else {
+                b_issubmit = false;
+            }
+
+            if (b_issubmit) {
+                // 为true 正式提交, 提交成功以后下面的数据重新绑定
+                $.ajax({
+                    type: "POST",
+                    url: "ashxHelp/HandlerbarchTagAction.ashx",
+                    data: "piids=1&sd_id=" + ids + "&tagStr=" + tag_mess,
+                    async: false,
+                    success: function (msg) {
+                        if (parseInt(msg) > 0) {
+                            //成功提交, 然后重新绑定 当前的数据
+                            var jsonStr = getQueryJson_click();
+                            $("#hid_ck_DateIds").val("");
+                            //查出所有的数据
+                            datadetail.img_hot_click(jsonStr, function (data) {
+                                Bind(data.value);
+                            });
+                        } else {
+                            alert("打标签失败!");
+                        }
+                    }
+                });
+            }
+            $("#show").css("display", "none");
+        }
+
+        function closetag() {
+            $("#show").css("display", "none");
+        }
+    </script>
+    <script type="text/javascript">
+
+        function btn_batchTag_click() {
+            //得到选中的Tag集合
+            var tagId = $("#txt_tag").val().trim();
+            var sd_ids = $("#hid_ck_DateIds").val().trim();
+            var projectid = $("#hid_projectId").val().trim();
+
+            if (tagId.lenth <= 1) {
+                alert("请选中标签");
+                return false;
+            }
+            if (sd_ids.lenth <= 1) {
+                alert("请重新选择要打标签的数据");
+                return false;
+            }
+            $.post("ashxHelp/HandlerbarchTagAction.ashx", { tagId: tagId, sd_ids: sd_ids, pid: projectid }, function (b) {
+                if (b > 0) {
+                    //$("body").css("backgroundColor", "white");
+                    alert("操作成功");
+                    var pid = $("#hid_projectId").val();
+                    var p = $("#hid_pageIndex").val();
+                    var dataType = $("#select_dataType").val();
+                    hidetagdiv();
+                    getReloadJson_click();
+                } else {
+                    alert("操作失败");
+                }
+            });
+        }
+    </script>
+    <script type="text/javascript">
+        function sp_tag_t(t) {
+            var b_v = $(t).text();
+            var sel_count = parseInt($("#hid_sel_count").val());
+            var tagTitleCount = "";
+            var m = $(t).parent().parent().parent(); //这里是 td
+            var ctrl_sp1 = $(m).find("div:eq(0)").find("span");
+            var ctrl_sp2 = $(m).find("div:eq(1)").find("span");
+            var ctrl_sp3 = $(m).find("div:eq(2)").find("span");
+            var ctrl_sp4 = $(m).find("div:eq(3)").find("span");
+            var ctrl_sp5 = $(m).find("div:eq(4)").find("span");
+            var ctrl_sp6 = $(m).find("div:eq(5)").find("span");
+
+            if (sel_count <= 0) {
+                alert("没有给该项目分配标签!");
+                return false;
+            }
+            if (b_v == "标签") {
+                $("#hid_savetag").val("false");
+                if (sel_count > 0) {
+                    var sel_sp_1 = $("#sp_tag_1").html();
+                    $(m).find("div:eq(0)").find("span").html(sel_sp_1);
+                }
+                if (sel_count > 1) {
+                    var sel_sp_2 = $("#sp_tag_2").html();
+                    $(m).find("div:eq(1)").find("span").html(sel_sp_2);
+                }
+                if (sel_count > 2) {
+                    var sel_sp_3 = $("#sp_tag_3").html();
+                    $(m).find("div:eq(2)").find("span").html(sel_sp_3);
+                }
+                if (sel_count > 3) {
+                    var sel_sp_4 = $("#sp_tag_4").html();
+                    $(m).find("div:eq(3)").find("span").html(sel_sp_4);
+                }
+                if (sel_count > 4) {
+                    var sel_sp_5 = $("#sp_tag_5").html();
+                    $(m).find("div:eq(4)").find("span").html(sel_sp_5);
+                }
+                if (sel_count > 5) {
+                    var sel_sp_6 = $("#sp_tag_6").html();
+                    $(m).find("div:eq(5)").find("span").html(sel_sp_6);
+                }
+
+                $(t).text("保存");
+
+            } else {
+                $("#hid_savetag").val("true");
+                var tag_1 = "";
+                var tag_2 = "";
+                var tag_3 = "";
+                var tag_4 = "";
+                var tag_5 = "";
+                var tag_6 = "";
+                if (sel_count > 0) {
+                    var tag_1_id = $(ctrl_sp1).find("select").val();
+                    if (tag_1_id != "") {
+                        tag_1 = $(ctrl_sp1).find("option:selected").text().trim();
+                        $(ctrl_sp1).html(tag_1).css("color", "green");
+                    } else {
+                        //var str = $("#sp_tag_title_1").text().trim().replace("[", "").replace("]", "");
+                        $(ctrl_sp1).html("&nbsp;");
+                    }
+                }
+
+                if (sel_count > 1) {
+                    var tag_2_id = $(ctrl_sp2).find("select").val();
+                    if (tag_2_id != "") {
+                        tag_2 = $(ctrl_sp2).find("option:selected").text().trim();
+                        $(ctrl_sp2).html(tag_2).css("color", "green"); ;
+                    } else {
+                        //var str = $("#sp_tag_title_2").text().trim().replace("[", "").replace("]", "");
+                        $(ctrl_sp2).html("&nbsp;");
+                    }
+                }
+                if (sel_count > 2) {
+                    var tag_3_id = $(ctrl_sp3).find("select").val();
+                    if (tag_3_id != "") {
+                        tag_3 = $(ctrl_sp3).find("select").find("option:selected").text().trim();
+                        $(ctrl_sp3).html(tag_3).css("color", "green");
+                    } else {
+                        //var str = $("#sp_tag_title_3").text().trim().replace("[", "").replace("]", "");
+                        $(ctrl_sp3).html("&nbsp;");
+                    }
+                }
+
+                if (sel_count > 3) {
+                    var tag_4_id = $(ctrl_sp4).find("select").val();
+                    if (tag_4_id != "") {
+                        tag_4 = $(ctrl_sp4).find("select").find("option:selected").text().trim();
+                        $(ctrl_sp4).html(tag_4).css("color", "green");
+                    } else {
+                        //var str = $("#sp_tag_title_4").text().trim().replace("[", "").replace("]", "");
+                        $(ctrl_sp4).html("&nbsp;");
+                    }
+                }
+                if (sel_count > 4) {
+                    var tag_5_id = $(ctrl_sp5).find("select").val();
+                    if (tag_5_id != "") {
+                        tag_5 = $(ctrl_sp5).find("select").find("option:selected").text().trim();
+                        $(ctrl_sp5).html(tag_5).css("color", "green");
+                    } else {
+                        //var str = $("#sp_tag_title_5").text().trim().replace("[", "").replace("]", "");
+                        $(ctrl_sp5).html("&nbsp;");
+                    }
+                }
+                if (sel_count > 5) {
+                    var tag_6_id = $(ctrl_sp6).find("select").val();
+
+                    if (tag_6_id != "") {
+                        tag_6 = $(ctrl_sp6).find("select").find("option:selected").text().trim();
+                        $(ctrl_sp6).html(tag_6).css("color", "green");
+                    } else {
+                        //var str = $("#sp_tag_title_6").text().trim().replace("[", "").replace("]", "");
+                        $(ctrl_sp6).html("&nbsp;");
+                    }
+
+                }
+
+                // 得到标签的Id,以及该条记录的Id,进行tag处理
+                var tag_mess = tag_1 + "|" + tag_2 + "|" + tag_3 + "|" + tag_4 + "|" + tag_5 + "|" + tag_6;
+                $(t).text("标签");
+                if (tag_mess.length <= 6) {
+                    $(ctrl_sp1).text($("#sp_tag_title_1").text().trim().replace("[", "").replace("]", ""));
+                    $(ctrl_sp2).text($("#sp_tag_title_2").text().trim().replace("[", "").replace("]", ""));
+                    $(ctrl_sp3).text($("#sp_tag_title_3").text().trim().replace("[", "").replace("]", ""));
+                    $(ctrl_sp4).text($("#sp_tag_title_4").text().trim().replace("[", "").replace("]", ""));
+                    $(ctrl_sp5).text($("#sp_tag_title_5").text().trim().replace("[", "").replace("]", ""));
+                    $(ctrl_sp6).text($("#sp_tag_title_6").text().trim().replace("[", "").replace("]", ""));
+                    return false;
+                }
+
+                var sd_id = $(m).parent().find("input[type='checkbox']").attr("id");
+
+                $.ajax({
+                    type: "POST",
+                    url: "ashxHelp/HandlerbarchTagAction.ashx",
+                    data: "sd_id=" + sd_id + "&tagStr=" + tag_mess,
+                    async: false,
+                    success: function (msg) {
+                        if (parseInt(msg) > 0) {
+                            //打标签成功
+
+                        } else {
+                            alert("打标签失败!");
+                        }
+                    }
+                });
+            }
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <div id="show" style="width: 99%; height: 99%; display: none; position: absolute;
+        z-index: 99; top: 0px; left: 0px; background: url('../Image/bg.png'); text-align: center;">
+        <div id="alt" style="width: 500px; height: 200px; margin: 250px auto 0 auto; position: relative;
+            overflow: hidden; background: #FFF;">
+            <div style="width: 100%; height: 28px; background: url('../Image/bg_c.jpg') repeat-x;
+                position: relative;">
+                <div style="width: 100%; height: 26px; text-align: center; font-size: large; font-weight: bold;
+                    padding-top: 5px;">
+                    <span>批量打标签</span></div>
+                <div style="width: 24px; height: 26px; float: right; position: absolute; top: 0px;
+                    right: 5px;">
+                    <span><a href="#" style="display: block; width: 20px; height: 20px; background: url('../Image/close.jpg') no-repeat;
+                        float: right; margin: 4px;" onclick="javascipt:closetag()" id="close"></a></span>
+                </div>
+            </div>
+            <div style="width: 90%; height: 40px; margin: 0px auto;">
+                <div id="dv_tag_title" style="width: 100%; font-size: 80%;">
+                    <h2>
+                        <span id='sp_tag_title_1'>[测分类一]</span></h2>
+                </div>
+                <div id="dv_tag_content" style="width: 100%; text-align: center;">
+                    <div style='margin: 0px auto; width: 500px; height: 100%;'>
+                        <div style='float: left; width: 490px;'>
+                            <span></span>
+                        </div>
+                    </div>
+                    </br><div style='width: 50px; visibility: hidden;'>
+                        <span><a href='#' id='sp_tag_t_main' style='text-decoration: underline;'>标签</a></span></div>
+                </div>
+            </div>
+            <div style="margin: 40px auto 0px auto; width: 200px;">
+                <img alt="" src="../Image/tijiao.jpg" style="position: relative;" onclick="javascipt:batchatagGroup()" />
+            </div>
+        </div>
+    </div>
+    <form name="form1" method="post" action="datadetail.aspx?pid=4&amp;p=1" id="form1"
+    enctype="multipart/form-data">
+    <div>
+        <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+        <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJOTgwNzM3OTE1D2QWBgIDDxYCHglpbm5lcmh0bWwFODxoMj48c3BhbiBpZD0nc3BfdGFnX3RpdGxlXzEnPlvmtYvliIbnsbvkuIBdPC9zcGFuPjwvaDI+ZAIFDxYCHwAFhQI8ZGl2IHN0eWxlPSdtYXJnaW46IDBweCBhdXRvO3dpZHRoOjUwMHB4O2hlaWdodDoxMDAlOyc+PGRpdiBzdHlsZT0nZmxvYXQ6bGVmdDt3aWR0aDo0OTBweDsnID48c3Bhbj48L3NwYW4+PC9kaXY+PC9kaXY+PC9icj48ZGl2IHN0eWxlPSd3aWR0aDo1MHB4O3Zpc2liaWxpdHk6aGlkZGVuOyc+PHNwYW4+PGEgaHJlZj0nIycgaWQ9J3NwX3RhZ190X21haW4nIHN0eWxlPSd0ZXh0LWRlY29yYXRpb246dW5kZXJsaW5lOyc+5qCH562+PC9hPjwvc3Bhbj48L2Rpdj5kAgcPFgIeB2VuY3R5cGUFE211bHRpcGFydC9mb3JtLWRhdGEWCgIZDxYCHwAFBumfqeazsGQCGw8WAh8AZWQCHQ8WAh8ABfeDAjx0YWJsZSBpZD0ndGJfZGF0YUxpc3QnIHN0eWxlPSd3aWR0aDogMTI3MHB4OycgY2VsbHBhZGRpbmc9JzAnIGNlbGxzcGFjaW5nPScwJz4gICAgICAgICAgICAgPHRyPjx0aCBzdHlsZT0nd2lkdGg6IDIlOyc+PGlucHV0IHR5cGU9J2NoZWNrYm94JyBpZD0nY2tfYWxsJyB2YWx1ZT0nJyBvbmNsaWNrPSdja19hbGxfY2xpY2soKTsnIC8+PC90aD4gICAgICAgICAgICA8dGggc3R5bGU9J3dpZHRoOiAyMiU7Jz7luJblrZDkuLvpopg8L3RoPjx0aCBzdHlsZT0nd2lkdGg6IDQzJTt0ZXh0LWFsaWduOmNlbnRlcjsnPuagh+etvuWkhOeQhjxiciAvPjxzcGFuIGlkPSdzcF90YWdfdGl0bGVfMSc+W+a1i+WIhuexu+S4gF08L3NwYW4+PC90aD4gICAgICAgICAgICA8dGggc3R5bGU9J3dpZHRoOiAxMiU7Jz7mk43kvZw8L3RoPjx0aCBzdHlsZT0nd2lkdGg6IDQlO3RleHQtYWxpZ246Y2VudGVyOyc+6ZWcPC90aD48dGggc3R5bGU9J3dpZHRoOiA4JTt0ZXh0LWFsaWduOmNlbnRlcjsnPuWqkuS9k+WQjTwvdGg+PHRoIHN0eWxlPSd3aWR0aDogOCU7dGV4dC1hbGlnbjpjZW50ZXI7Jz7mipPlj5bml6XmnJ88L3RoPjwvdHI+PHRyPjx0ZD48aW5wdXQgdHlwZT0nY2hlY2tib3gnIGlkPSc1OTE5MCcgdmFsdWU9JzU5MTkwJyBvbmNsaWNrPSdja19vbmVfY2xpY2sodGhpcy5pZCk7JyAvPjwvdGQ+ICAgICAgICAgICAgPHRkIGNsYXNzPSdzdHlsZV9jb250ZW50Jz48c3BhbiBzdHlsZT0nY29sb3I6cmVkJz4o5q2jKTwvc3Bhbj48c3BhbiBzdHlsZT0nY29sb3I6cmVkOyc+PC9zcGFuPuacieS6m+eIse+8jOS9oOaXoOazlei/mO+8gSAgICAgICAgICAgIDxkaXYgc3R5bGU9J2Zsb2F0OnJpZ2h0O21hcmdpbi1yaWdodDozcHg7Jz48c3BhbiBzdHlsZT0nY29sb3I6ICM4NzU4MDU7Jz7lkIw8L3NwYW4+PHNwYW4gc3R5bGU9J2NvbG9yOiAjODc1ODA1OycgY2xhc3M9J3N0eWxlX2NvbnRlbnQnIG9ubW91c2VvdmVyPSdzcF9jb250ZW50X21vdXNlb3Zlcih0aGlzKTsnIG9ubW91c2VvdXQ9J3NwX2NvbnRlbnRfbW91c2VvdXQodGhpcyk7Jz7or6Y8L3NwYW4+PGlucHV0IHR5cGU9J2hpZGRlbicgdmFsdWU9J+S6sueIseeahOWtqeWtkO+8muS7iuaZqOS9oOWcqOahjOS4iueVmeS6huW8oOaegeeugOefreeahOWtl+adoe+8jOS+v+WllOS9oOaDs+imgeeahOW5uOemj+WOu+S6huOAguaIkeWcqOmalOWjgeWNp+WupOmHjOWQrOS9oOWTreS6huW+iOmVv+eahOaXtumXtO+8jOWPiOS9juWjsOe7meeUt+WPi+aJk+eUteivne+8jOm7mOm7mOWcsOaUtuaLvuWlveiHquW3seeahOS4nOilv++8jOWHhuWkh+WDj+aYqOaZmuWQteaetuaXtuivtOeahOmCo+agt++8jOW9u+W6leS4jui/meS4quWutuaWree7neadpeW+gO+8jOi/h+iHqueUseiHquWcqOeahOeUn+a0u+OAguS9oOWcqOWtl+adoeS4iuWRiuivieWmiOWmiO+8jOS9oOS8mui/mOa4hTIy5bm05p2l5L2g5qyg54i25q+N55qE5LiA5YiH4oCU4oCU5Lul6YeR6ZKx55qE5b2i5byP44CC5L2g5piv5ZWG5a2m6Zmi55qE5a2m55Sf77yM5bqU5piv5q+U5aaI5aaI6IO95pu05YeG56Gu5Zyw566X5Ye677yM5L2gMjLlubTmnaXmiYDoirHmjonnmoTniLbmr43nmoTlt6XotYTvvIznlJroh7PliKnmga/jgILku6XkvaDnmoTog73lipvvvIzlpojlpojkuZ/nm7jkv6HvvIzkvaDkvJrov57mnKzluKbmga/lnLDkuIDlubbov5jmuIXjgILlj6/mmK/vvIzkurLniLHnmoTlranlrZDvvIzkvaDnmoTogIHluIjlv5jkuoblkYror4nkvaDvvIzku7vkvZXnnIvotbfmnaXlpoLnnJ/nkIbkuIDmoLfnmoTlhazlvI/vvIzpg73mnInlroPpgILnlKjnmoTojIPlm7TjgILogIzlnKjniLHov5nkuIDpoobln5/ph4zvvIzov4Tku4rov5jmsqHmnInku7vkvZXkurrvvIzog73lpJ/nsr7noa7lnLDnrpflh7rlroPnmoTku7flgLzjgILlsLHlg4/kvaDkuI3og73ku4Xku4Xlh63kuIDkuKrmi6XmirHvvIzkuIDmrL7pppbppbDjgILkuIDlj6XnlJzoqIDvvIzkuIDku7booaPmnI3vvIzlsLHorqTlrprkvaDogIzku4rnmoTnlLflj4vvvIzmmK/lgLzlvpfkvaDnu4jouqvkvp3pnaDnmoTkvLTkvqPjgILlm6DkuLrvvIzmnInkupvniLHvvIzkvaDnnIvkuI3liLDvvIzkuZ/mkbjkuI3nnYDvvIznlJroh7PkuI0uLi4nIC8+PGRpdj48L3RkPiAgICAgICAgICAgIDwvdGQ+PHRkIHN0eWxlPSd0ZXh0LWFsaWduOmNlbnRlcjsnPjxkaXYgc3R5bGU9J2Zsb2F0OmxlZnQ7d2lkdGg6NDkwcHg7JyA+PHNwYW4+5rWL5YiG57G75LiAPC9zcGFuPjwvZGl2PiA8ZGl2IHN0eWxlPSdmbG9hdDpsZWZ0O3dpZHRoOjUwcHg7Jz48c3Bhbj48YSBocmVmPScjJyBzdHlsZT0ndGV4dC1kZWNvcmF0aW9uOnVuZGVybGluZTsnIG9uY2xpY2s9J3NwX3RhZ190KHRoaXMpOyc+5qCH562+PC9hPjwvc3Bhbj48L2Rpdj48L3RkPiAgICAgICAgICAgIDx0ZCBzdHlsZT0ncGFkZGluZy1sZWZ0OiAxNXB4Oyc+ICAgICAgICAgICAgPGEgb25jbGljaz0nYV9hbmFseXNpc19DbGljaygxLHRoaXMpOycgaHJlZj0nIyc+5q2jPC9hPiZuYnNwOzxhIG9uY2xpY2s9J2FfYW5hbHlzaXNfQ2xpY2soMix0aGlzKTsnaHJlZj0nIyc+5LitPC9hPiAmbmJzcDs8YSBydW5hdD0nc2VydmVyJyBvbmNsaWNrPSdhX2FuYWx5c2lzX0NsaWNrKDMsdGhpcyk7JyBocmVmPScjJz7otJ88L2E+ICAgICAgICAgICAgICZuYnNwOzxhIG9uY2xpY2s9J2FfYW5hbHlzaXNfQ2xpY2soNCx0aGlzKTsnIGhyZWY9JyMnPuS6iTwvYT4mbmJzcDsgPGEgb25jbGljaz0nYV9ob3RfNV9DbGljaygxLHRoaXMpOycgaHJlZj0nIyc+54OtPC9hPiA8YnIgLz4gICAgICAgICAgICA8YSAgaHJlZj0nIycgIG9uY2xpY2s9J2FfYXR0ZW50aW9uX2NsaWNrKDEsdGhpcyk7Jz7lhbPms6g8L2E+Jm5ic3A7ICAgICAgICAgICAgPGEgaHJlZj0nIycgcnVuYXQ9J3NlcnZlcicgb25jbGljaz0nYV9leGFtaW5lX0NsaWNrKDIsdGhpcyk7Jz7lrqHmoLg8L2E+Jm5ic3A7PGEgIGhyZWY9JyMnIHJ1bmF0PSdzZXJ2ZXInIG9uY2xpY2s9J2FfZGVsZXRlX0NsaWNrKDk5LHRoaXMpOyc+5Yig6ZmkPC9hPjwvdGQ+ICAgICAgICAgICAgPHRkIHN0eWxlPSd0ZXh0LWFsaWduOmNlbnRlcjsnPjxhIGhyZWY9J2h0dHA6Ly9jbHViLmNoaW5hLmNvbS9kYXRhL3RocmVhZC8yNzE2OTE1NzYvMjc2Mi82NC80NC8zXzEuaHRtbCcgdGFyZ2V0PSdfYmxhbmsnPumVnDwvYT48L3RkPjx0ZCBzdHlsZT0ndGV4dC1hbGlnbjpjZW50ZXI7Jz7lqYblqrPlhbPns7s8L3RkPjx0ZCBzdHlsZT0ndGV4dC1hbGlnbjpjZW50ZXI7Jz4gMjAxMy0wNy0yNzwvdGQ+PC90cj48dHI+PHRkPjxpbnB1dCB0eXBlPSdjaGVja2JveCcgaWQ9JzU5MTg4JyB2YWx1ZT0nNTkxODgnIG9uY2xpY2s9J2NrX29uZV9jbGljayh0aGlzLmlkKTsnIC8+PC90ZD4gICAgICAgICAgICA8dGQgY2xhc3M9J3N0eWxlX2NvbnRlbnQnPjxzcGFuIHN0eWxlPSdjb2xvcjpyZWQnPjwvc3Bhbj48c3BhbiBzdHlsZT0nY29sb3I6cmVkOyc+PC9zcGFuPuaYr+eUt+S6uuWwseimgeS4ijEwMOWxgu+8geS6rOWfujEuLi4gICAgICAgICAgICA8ZGl2IHN0eWxlPSdmbG9hdDpyaWdodDttYXJnaW4tcmlnaHQ6M3B4Oyc+PHNwYW4gc3R5bGU9J2NvbG9yOiAjODc1ODA1Oyc+5ZCMPC9zcGFuPjxzcGFuIHN0eWxlPSdjb2xvcjogIzg3NTgwNTsnIGNsYXNzPSdzdHlsZV9jb250ZW50JyBvbm1vdXNlb3Zlcj0nc3BfY29udGVudF9tb3VzZW92ZXIodGhpcyk7JyBvbm1vdXNlb3V0PSdzcF9jb250ZW50X21vdXNlb3V0KHRoaXMpOyc+6K+mPC9zcGFuPjxpbnB1dCB0eXBlPSdoaWRkZW4nIHZhbHVlPSfpgqPkuKrigKbigKbmiJHnmoTmiYvlnKjpoqTmipbvvIHvvIHvvIHmt7HlnLPkuqzln7oxMDDlopnkvZPigKbigKbmg4rnjrDigKbigKbigJzkuK3lm73pn7PotoXpmYjmpZrnlJ/liqDmsrnoirHnlJ/lipvmjLrvvIHigJ3nnLzliY3ov5nkuIDluZXnnJ/mmK/mg4rlkYbkuobmpbzkuLvlkozmiYDmnInnu4/ov4fov5nph4znmoTlsI/kvJnkvLTvvIHlj6/og73kvZzkuLrlsI/kvJnkvLTnmoTkvaDov5jmnKjmnInmpoLlv7XvvIzmiJHlj6rmg7Por7TvvJrlkIzlrabvvIzov5nmpbzvvIzpq5g0NDEuOOexs++8ge+8ge+8ge+8ge+8ge+8ge+8geaIkeabtOaDs+ivtO+8jOi/meagh+ivre+8jOi2s+i2s+S6ruS6hjXliIbpkp/vvIHvvIHvvIHvvIHvvIHvvIExMDDlsYLnmoTlpKfmpbzllYrvvIzpnLjmsJTjgIHmg4rkurrjgIHlpKfmiYvnrJTvvIHmpbzkuLvliJrkuIvnj63mraPlpZTlm57lrrbvvIznqoHnhLbnnLzliY3kuIDpgZPlhYnvvIzngbznno7kuobmiJHvvIHvvIHvvIHvvIHov5nvvIzov5nvvIzov5nvvIznnIvliLDkuobnnLzliY3ov5nkuIDluZXvvIzmiJHnmoTkuIvlt7Tlt7Lnu4/ot4zliLDlnLDkuIrkuobvvIzmiJHouqvovrnmiYDmnInnmoTooYzkurrlnKjliqDmsrnmoIfor63kuq7lh7rpgqMz56eS5LmL5YaF5a6a5L2P5LqG77yM5Lu/5L2b5ZGo5Zu05bCx5q2k5a6a5qC844CC5o6l552A4oCcV09X77yB5oiR6Z2g77yB5pOm77yB5ZWK77yB4oCd5ZKU5ZqT5ZKU5ZqT55qE54Wn55u45aOw6aG/5pe254uC5oul5YWl6ICz77yB55y85YmN55qE5a6P5Lyf5aOu6KeC55qE5aWH5pmv77yM5oiR5oOz5Y+q5pyJ6Lqr5Li05YW25aKD5omN6IO95oSf5Y+X5Yiw6YKj56eN5Luw5pyb5beN5bOo55qE5oO25oGQ5ZWK77yB77yB77yB77yB5Lu/5L2b572u6Lqr55uX5qKm56m66Ze044CC5LuK5aSp5Yqg54+t5Yqg55qE5aSq5YC85LqGfn7pu5HlpJznu5nkuobmiJHkuIDlj4zpu5HoibLnmoTnnLznnZvvvIzmiJHku4rmmZrlsLHnlKjlroPmnaXms6jop4bov5nml6AuLi4nIC8+PGRpdj48L3RkPiAgICAgICAgICAgIDwvdGQ+PHRkIHN0eWxlPSd0ZXh0LWFsaWduOmNlbnRlcjsnPjxkaXYgc3R5bGU9J2Zsb2F0OmxlZnQ7d2lkdGg6NDkwcHg7JyA+PHNwYW4+5rWL5YiG57G75LiAPC9zcGFuPjwvZGl2PiA8ZGl2IHN0eWxlPSdmbG9hdDpsZWZ0O3dpZHRoOjUwcHg7Jz48c3Bhbj48YSBocmVmPScjJyBzdHlsZT0ndGV4dC1kZWNvcmF0aW9uOnVuZGVybGluZTsnIG9uY2xpY2s9J3NwX3RhZ190KHRoaXMpOyc+5qCH562+PC9hPjwvc3Bhbj48L2Rpdj48L3RkPiAgICAgICAgICAgIDx0ZCBzdHlsZT0ncGFkZGluZy1sZWZ0OiAxNXB4Oyc+ICAgICAgICAgICAgPGEgb25jbGljaz0nYV9hbmFseXNpc19DbGljaygxLHRoaXMpOycgaHJlZj0nIyc+5q2jPC9hPiZuYnNwOzxhIG9uY2xpY2s9J2FfYW5hbHlzaXNfQ2xpY2soMix0aGlzKTsnaHJlZj0nIyc+5LitPC9hPiAmbmJzcDs8YSBydW5hdD0nc2VydmVyJyBvbmNsaWNrPSdhX2FuYWx5c2lzX0NsaWNrKDMsdGhpcyk7JyBocmVmPScjJz7otJ88L2E+ICAgICAgICAgICAgICZuYnNwOzxhIG9uY2xpY2s9J2FfYW5hbHlzaXNfQ2xpY2soNCx0aGlzKTsnIGhyZWY9JyMnPuS6iTwvYT4mbmJzcDsgPGEgb25jbGljaz0nYV9ob3RfNV9DbGljaygxLHRoaXMpOycgaHJlZj0nIyc+54OtPC9hPiA8YnIgLz4gICAgICAgICAgICA8YSAgaHJlZj0nIycgIG9uY2xpY2s9J2FfYXR0ZW50aW9uX2NsaWNrKDEsdGhpcyk7Jz7lhbPms6g8L2E+Jm5ic3A7ICAgICAgICAgICAgPGEgaHJlZj0nIycgcnVuYXQ9J3NlcnZlcicgb25jbGljaz0nYV9leGFtaW5lX0NsaWNrKDIsdGhpcyk7Jz7lrqHmoLg8L2E+Jm5ic3A7PGEgIGhyZWY9JyMnIHJ1bmF0PSdzZXJ2ZXInIG9uY2xpY2s9J2FfZGVsZXRlX0NsaWNrKDk5LHRoaXMpOyc+5Yig6ZmkPC9hPjwvdGQ+ICAgICAgICAgICAgPHRkIHN0eWxlPSd0ZXh0LWFsaWduOmNlbnRlcjsnPjxhIGhyZWY9J2h0dHA6Ly9jbHViLmNoaW5hLmNvbS9kYXRhL3RocmVhZC8yNDczNzQ4MTEvMjc2Ni8zNy8wNS85XzEuaHRtbCcgdGFyZ2V0PSdfYmxhbmsnPumVnDwvYT48L3RkPjx0ZCBzdHlsZT0ndGV4dC1hbGlnbjpjZW50ZXI7Jz7ngYzmsLTlrqLmoIg8L3RkPjx0ZCBzdHlsZT0ndGV4dC1hbGlnbjpjZW50ZXI7Jz4gMjAxMy0xMi0wOTwvdGQ+PC90cj48dHI+PHRkPjxpbnB1dCB0eXBlPSdjaGVja2JveCcgaWQ9JzU5MTg3JyB2YWx1ZT0nNTkxODcnIG9uY2xpY2s9J2NrX29uZV9jbGljayh0aGlzLmlkKTsnIC8+PC90ZD4gICAgICAgICAgICA8dGQgY2xhc3M9J3N0eWxlX2NvbnRlbnQnPjxzcGFuIHN0eWxlPSdjb2xvcjpyZWQnPjwvc3Bhbj48c3BhbiBzdHlsZT0nY29sb3I6cmVkOyc+PC9zcGFuPui/t+S6uuWkj+WknOWlveinguaYn+aYn+epuuS9nOWTgeaLjeaRhOivpuinozQgICAgICAgICAgICA8ZGl2IHN0eWxlPSdmbG9hdDpyaWdodDttYXJnaW4tcmlnaHQ6M3B4Oyc+PHNwYW4gc3R5bGU9J2NvbG9yOiAjODc1ODA1Oyc+5ZCMPC9zcGFuPjxzcGFuIHN0eWxlPSdjb2xvcjogIzg3NTgwNTsnIGNsYXNzPSdzdHlsZV9jb250ZW50JyBvbm1vdXNlb3Zlcj0nc3BfY29udGVudF9tb3VzZW92ZXIodGhpcyk7JyBvbm1vdXNlb3V0PSdzcF9jb250ZW50X21vdXNlb3V0KHRoaXMpOyc+6K+mPC9zcGFuPjxpbnB1dCB0eXBlPSdoaWRkZW4nIHZhbHVlPSflm5vjgIHmmJ/nqbrmkYTlvbHkuK3liY3mma/nmoTooaXlhYnlgJ/nlKjkuobot6/nga/mnaXkuLrmiJHnmoTliY3mma/ooaXlhYnnhLblkI7lsLHmmK/liY3mma/nmoTooaXlhYnvvIzlm6DkuLrlupnml4HliJrlpb3mnInnm4/ot6/nga/vvIzmiJHlsLHmsr7lhYnlgJ/nlKjkuobot6/nga/mnaXkuLrmiJHnmoTliY3mma/ooaXlhYnvvIzlpoLkuIrlm77jgILpl6rlhYnnga/miYvliqjpl6rlhYnooaXlhYnogIzlrozlhajmsqHmnInkurrpgKDnga/lhYnnmoTlnLDmlrnvvIzliJnmmK/miJHoh6rlt7HooaXlhYnjgILkuIrlm77ph4fnlKjkuobkuYvliY3or7TliLDnmoTpl6rlhYnnga/miYvliqjpl6rlhYnooaXlhYnvvIzkuIvlm77liJnmmK/nlKjlpLTnga/ooaXlhYnjgILnlKjlpLTnga/ooaXlhYnlkIjpgILnmoTnu5nliY3mma/ooaXlhYnvvIzorqnnhafniYfmm7Tliqjkurrmm7TogJDnnIvjgIInIC8+PGRpdj48L3RkPiAgICAgICAgICAgIDwvdGQ+PHRkIHN0eWxlPSd0ZXh0LWFsaWduOmNlbnRlcjsnPjxkaXYgc3R5bGU9J2Zsb2F0OmxlZnQ7d2lkdGg6NDkwcHg7JyA+PHNwYW4+5rWL5YiG57G75LiAPC9zcGFuPjwvZGl2PiA8ZGl2IHN0eWxlPSdmbG9hdDpsZWZ0O3dpZHRoOjUwcHg7Jz48c3Bhbj48YSBocmVmPScjJyBzdHlsZT0ndGV4dC1kZWNvcmF0aW9uOnVuZGVybGluZTsnIG9uY2xpY2s9J3NwX3RhZ190KHRoaXMpOyc+5qCH562+PC9hPjwvc3Bhbj48L2Rpdj48L3RkPiAgICAgICAgICAgIDx0ZCBzdHlsZT0ncGFkZGluZy1sZWZ0OiAxNXB4Oyc+ICAgICAgICAgICAgPGEgb25jbGljaz0nYV9hbmFseXNpc19DbGljaygxLHRoaXMpOycgaHJlZj0nIyc+5q2jPC9hPiZuYnNwOzxhIG9uY2xpY2s9J2FfYW5hbHlzaXNfQ2xpY2soMix0aGlzKTsnaHJlZj0nIyc+5LitPC9hPiAmbmJzcDs8YSBydW5hdD0nc2VydmVyJyBvbmNsaWNrPSdhX2FuYWx5c2lzX0NsaWNrKDMsdGhpcyk7JyBocmVmPScjJz7otJ88L2E+ICAgICAgICAgICAgICZuYnNwOzxhIG9uY2xpY2s9J2FfYW5hbHlzaXNfQ2xpY2soNCx0aGlzKTsnIGhyZWY9JyMnPuS6iTwvYT4mbmJzcDsgPGEgb25jbGljaz0nYV9ob3RfNV9DbGljaygxLHRoaXMpOycgaHJlZj0nIyc+54OtPC9hPiA8YnIgLz4gICAgICAgICAgICA8YSAgaHJlZj0nIycgIG9uY2xpY2s9J2FfYXR0ZW50aW9uX2NsaWNrKDEsdGhpcyk7Jz7lhbPms6g8L2E+Jm5ic3A7ICAgICAgICAgICAgPGEgaHJlZj0nIycgcnVuYXQ9J3NlcnZlcicgb25jbGljaz0nYV9leGFtaW5lX0NsaWNrKDIsdGhpcyk7Jz7lrqHmoLg8L2E+Jm5ic3A7PGEgIGhyZWY9JyMnIHJ1bmF0PSdzZXJ2ZXInIG9uY2xpY2s9J2FfZGVsZXRlX0NsaWNrKDk5LHRoaXMpOyc+5Yig6ZmkPC9hPjwvdGQ+ICAgICAgICAgICAgPHRkIHN0eWxlPSd0ZXh0LWFsaWduOmNlbnRlcjsnPjxhIGhyZWY9J2h0dHA6Ly9jbHViLmNoaW5hLmNvbS9kYXRhL3RocmVhZC8yNjQ0NDk4My8yNzYzLzE2LzYyLzRfMS5odG1sJyB0YXJnZXQ9J19ibGFuayc+6ZWcPC9hPjwvdGQ+PHRkIHN0eWxlPSd0ZXh0LWFsaWduOmNlbnRlcjsnPuaKgOW3p+iuqOiuujwvdGQ+PHRkIHN0eWxlPSd0ZXh0LWFsaWduOmNlbnRlcjsnPiAyMDEzLTA4LTEzPC90ZD48L3RyPjx0cj48dGQ+PGlucHV0IHR5cGU9J2NoZWNrYm94JyBpZD0nNTkxODYnIHZhbHVlPSc1OTE4Nicgb25jbGljaz0nY2tfb25lX2NsaWNrKHRoaXMuaWQpOycgLz48L3RkPiAgICAgICAgICAgIDx0ZCBjbGFzcz0nc3R5bGVfY29udGVudCc+PHNwYW4gc3R5bGU9J2NvbG9yOnJlZCc+PC9zcGFuPjxzcGFuIHN0eWxlPSdjb2xvcjpyZWQ7Jz48L3NwYW4+6ZW/5Z+O5aSW77yM5a+l5buT55qE5LiN5q2i5piv5LqR54Of44CCICAgICAgICAgICAgPGRpdiBzdHlsZT0nZmxvYXQ6cmlnaHQ7bWFyZ2luLXJpZ2h0OjNweDsnPjxzcGFuIHN0eWxlPSdjb2xvcjogIzg3NTgwNTsnPuWQjDwvc3Bhbj48c3BhbiBzdHlsZT0nY29sb3I6ICM4NzU4MDU7JyBjbGFzcz0nc3R5bGVfY29udGVudCcgb25tb3VzZW92ZXI9J3NwX2NvbnRlbnRfbW91c2VvdmVyKHRoaXMpOycgb25tb3VzZW91dD0nc3BfY29udGVudF9tb3VzZW91dCh0aGlzKTsnPuivpjwvc3Bhbj48aW5wdXQgdHlwZT0naGlkZGVuJyB2YWx1ZT0nJyAvPjxkaXY+PC90ZD4gICAgICAgICAgICA8L3RkPjx0ZCBzdHlsZT0ndGV4dC1hbGlnbjpjZW50ZXI7Jz48ZGl2IHN0eWxlPSdmbG9hdDpsZWZ0O3dpZHRoOjQ5MHB4OycgPjxzcGFuPua1i+WIhuexu+S4gDwvc3Bhbj48L2Rpdj4gPGRpdiBzdHlsZT0nZmxvYXQ6bGVmdDt3aWR0aDo1MHB4Oyc+PHNwYW4+PGEgaHJlZj0nIycgc3R5bGU9J3RleHQtZGVjb3JhdGlvbjp1bmRlcmxpbmU7JyBvbmNsaWNrPSdzcF90YWdfdCh0aGlzKTsnPuagh+etvjwvYT48L3NwYW4+PC9kaXY+PC90ZD4gICAgICAgICAgICA8dGQgc3R5bGU9J3BhZGRpbmctbGVmdDogMTVweDsnPiAgICAgICAgICAgIDxhIG9uY2xpY2s9J2FfYW5hbHlzaXNfQ2xpY2soMSx0aGlzKTsnIGhyZWY9JyMnPuatozwvYT4mbmJzcDs8YSBvbmNsaWNrPSdhX2FuYWx5c2lzX0NsaWNrKDIsdGhpcyk7J2hyZWY9JyMnPuS4rTwvYT4gJm5ic3A7PGEgcnVuYXQ9J3NlcnZlcicgb25jbGljaz0nYV9hbmFseXNpc19DbGljaygzLHRoaXMpOycgaHJlZj0nIyc+6LSfPC9hPiAgICAgICAgICAgICAmbmJzcDs8YSBvbmNsaWNrPSdhX2FuYWx5c2lzX0NsaWNrKDQsdGhpcyk7JyBocmVmPScjJz7kuok8L2E+Jm5ic3A7IDxhIG9uY2xpY2s9J2FfaG90XzVfQ2xpY2soMSx0aGlzKTsnIGhyZWY9JyMnPueDrTwvYT4gPGJyIC8+ICAgICAgICAgICAgPGEgIGhyZWY9JyMnICBvbmNsaWNrPSdhX2F0dGVudGlvbl9jbGljaygxLHRoaXMpOyc+5YWz5rOoPC9hPiZuYnNwOyAgICAgICAgICAgIDxhIGhyZWY9JyMnIHJ1bmF0PSdzZXJ2ZXInIG9uY2xpY2s9J2FfZXhhbWluZV9DbGljaygyLHRoaXMpOyc+5a6h5qC4PC9hPiZuYnNwOzxhICBocmVmPScjJyBydW5hdD0nc2VydmVyJyBvbmNsaWNrPSdhX2RlbGV0ZV9DbGljayg5OSx0aGlzKTsnPuWIoOmZpDwvYT48L3RkPiAgICAgICAgICAgIDx0ZCBzdHlsZT0ndGV4dC1hbGlnbjpjZW50ZXI7Jz48YSBocmVmPSdodHRwOi8vY2x1Yi5jaGluYS5jb20vZGF0YS90aHJlYWQvMzc5OS8yNzY2LzQ2LzczLzFfMS5odG1sJyB0YXJnZXQ9J19ibGFuayc+6ZWcPC9hPjwvdGQ+PHRkIHN0eWxlPSd0ZXh0LWFsaWduOmNlbnRlcjsnPuaVo+aWh+maj+eslDwvdGQ+PHRkIHN0eWxlPSd0ZXh0LWFsaWduOmNlbnRlcjsnPiAyMDEzLTEyLTIzPC90ZD48L3RyPjx0cj48dGQ+PGlucHV0IHR5cGU9J2NoZWNrYm94JyBpZD0nNTkxODUnIHZhbHVlPSc1OTE4NScgb25jbGljaz0nY2tfb25lX2NsaWNrKHRoaXMuaWQpOycgLz48L3RkPiAgICAgICAgICAgIDx0ZCBjbGFzcz0nc3R5bGVfY29udGVudCc+PHNwYW4gc3R5bGU9J2NvbG9yOnJlZCc+PC9zcGFuPjxzcGFuIHN0eWxlPSdjb2xvcjpyZWQ7Jz48L3NwYW4+5qKm5oiI5oiI6ZW/56+H5bCP6K+044CK54ix5oOF5Yqr5b2V44CL54mH5q6177yaICAgICAgICAgICAgPGRpdiBzdHlsZT0nZmxvYXQ6cmlnaHQ7bWFyZ2luLXJpZ2h0OjNweDsnPjxzcGFuIHN0eWxlPSdjb2xvcjogIzg3NTgwNTsnPuWQjDwvc3Bhbj48c3BhbiBzdHlsZT0nY29sb3I6ICM4NzU4MDU7JyBjbGFzcz0nc3R5bGVfY29udGVudCcgb25tb3VzZW92ZXI9J3NwX2NvbnRlbnRfbW91c2VvdmVyKHRoaXMpOycgb25tb3VzZW91dD0nc3BfY29udGVudF9tb3VzZW91dCh0aGlzKTsnPuivpjwvc3Bhbj48aW5wdXQgdHlwZT0naGlkZGVuJyB2YWx1ZT0n6ZW/56+H5bCP6K+044CK54ix5oOF5Yqr5b2V44CL54mH5q6177ya4oCc5oiI5Y2O44CC5L2g5a6e5Zyo5piv5aSq5Y6J5a6z44CC5pep55+l6YGT6L+Z5qC35oiR5bCx5LiN55So5oSB6YKj5LmI5aSa5aSp77yM5beu54K55oqK5aS05Y+R5Lmf5oSB55m944CC4oCd6LWw5Ye65rWB6Iqz5qW844CC6ZmG5paH6aaZ55qE5b+D5oOF5LiA55u06YO95aSE5LqO6Z2e5bi45YW05aWL5oSJ5oKm55qE54q25oCB44CC5aSn5ZOl55qE6aG95Zu677yM6Ieq5bex5Y+I5ZOt5Y+I6Ze555qE5p2f5omL5peg562W77yM5Y206KKr5oiI5Y2O5LiA6KeB6Z2i5LiJ6KiA5Lik6K+t55qE5bCx5Yqe5aal44CC546w5Zyo77yM5bGF54S26L+e5LuW55qE6YKj5Lqb54uX5bGB5YWE5byf5Lmf5pS25ou+55qE5pyN5pyN5biW5biW44CC5Zi75Zi777yM5oiI5Y2O77yM5oiR54ix5q275L2g5LqG77yB5aW55LiA5LiL5YW05aWL55qE6Lez6LW35p2l5b2T6KGX5oqK5oiI5Y2O55qE6ISW5a2Q5pCC5L2P44CC4oCc6L+Z5LmI5aSa5Lq655yL552A5oiR5Lus77yM6ZmG5paH6aaZ5L2g55av5LqG77yf4oCd5oiI5Y2O5bem5Y+z55yL55yL77yM5L2O5aOw5ZC86YGT44CC4oCc5LiA5Liq5aSn5a2m55Sf56uf54S25LiN55+l6YGT5a6z576e5Lik5a2X5piv5oCO5LmI5YaZ55qE44CC6L+Y5LiN5b+r5LiL5p2l77yf4oCd4oCc5Zi75Zi744CC5oiR5Y+q5a2m5Lya5YaZ5bCB5bu65Lik5Liq5a2X44CC4oCd6ZmG5paH6aaZ5Zyo5Zek5Zek55qE56yR77yM6L+Y5L2c54q26KaB5Lqy5oiI5Y2O44CC4oCc5oiI5Y2O77yM6YKj5L2g5pWZ5pWZ5oiR5a6z576e5Lik5a2X5piv5oCO5LmI5YaZ55qE77yf5ZGK6K+J5oiR77yM5oiR5Li65LuA5LmI6KaB5a6z576e77yf4oCd5oiI5Y2O5LiA5pys5q2j57uP55qE6YGT77ya4oCc5pei54S25L2g6YO96L+Z5LmI6K+077yM5Y+N5q2j6L+Z6YeM55qE5Lq65Lmf6K6k5LiN5b6X5oiR77yM6YKj5oiR5Lus5bCx5Zyo6L+Z6KGX5LiK5YGa54ix77yM5p2l5Liq5b2T5LuK5pyA5rWB6KGM55qE6KGM5Li66Im65pyv5aaC5L2V77yf4oCd4oCcLi4uJyAvPjxkaXY+PC90ZD4gICAgICAgICAgICA8L3RkPjx0ZCBzdHlsZT0ndGV4dC1hbGlnbjpjZW50ZXI7Jz48ZGl2IHN0eWxlPSdmbG9hdDpsZWZ0O3dpZHRoOjQ5MHB4OycgPjxzcGFuPua1i+WIhuexu+S4gDwvc3Bhbj48L2Rpdj4gPGRpdiBzdHlsZT0nZmxvYXQ6bGVmdDt3aWR0aDo1MHB4Oyc+PHNwYW4+PGEgaHJlZj0nIycgc3R5bGU9J3RleHQtZGVjb3JhdGlvbjp1bmRlcmxpbmU7JyBvbmNsaWNrPSdzcF90YWdfdCh0aGlzKTsnPuagh+etvjwvYT48L3NwYW4+PC9kaXY+PC90ZD4gICAgICAgICAgICA8dGQgc3R5bGU9J3BhZGRpbmctbGVmdDogMTVweDsnPiAgICAgICAgICAgIDxhIG9uY2xpY2s9J2FfYW5hbHlzaXNfQ2xpY2soMSx0aGlzKTsnIGhyZWY9JyMnPuatozwvYT4mbmJzcDs8YSBvbmNsaWNrPSdhX2FuYWx5c2lzX0NsaWNrKDIsdGhpcyk7J2hyZWY9JyMnPuS4rTwvYT4gJm5ic3A7PGEgcnVuYXQ9J3NlcnZlcicgb25jbGljaz0nYV9hbmFseXNpc19DbGljaygzLHRoaXMpOycgaHJlZj0nIyc+6LSfPC9hPiAgICAgICAgICAgICAmbmJzcDs8YSBvbmNsaWNrPSdhX2FuYWx5c2lzX0NsaWNrKDQsdGhpcyk7JyBocmVmPScjJz7kuok8L2E+Jm5ic3A7IDxhIG9uY2xpY2s9J2FfaG90XzVfQ2xpY2soMSx0aGlzKTsnIGhyZWY9JyMnPueDrTwvYT4gPGJyIC8+ICAgICAgICAgICAgPGEgIGhyZWY9JyMnICBvbmNsaWNrPSdhX2F0dGVudGlvbl9jbGljaygxLHRoaXMpOyc+5YWz5rOoPC9hPiZuYnNwOyAgICAgICAgICAgIDxhIGhyZWY9JyMnIHJ1bmF0PSdzZXJ2ZXInIG9uY2xpY2s9J2FfZXhhbWluZV9DbGljaygyLHRoaXMpOyc+5a6h5qC4PC9hPiZuYnNwOzxhICBocmVmPScjJyBydW5hdD0nc2VydmVyJyBvbmNsaWNrPSdhX2RlbGV0ZV9DbGljayg5OSx0aGlzKTsnPuWIoOmZpDwvYT48L3RkPiAgICAgICAgICAgIDx0ZCBzdHlsZT0ndGV4dC1hbGlnbjpjZW50ZXI7Jz48YSBocmVmPSdodHRwOi8vY2x1Yi5jaGluYS5jb20vZGF0YS90aHJlYWQvMTExODAxNTYvMjc2Ni81MC82Mi83XzEuaHRtbCcgdGFyZ2V0PSdfYmxhbmsnPumVnDwvYT48L3RkPjx0ZCBzdHlsZT0ndGV4dC1hbGlnbjpjZW50ZXI7Jz7lsI/or7Tmspnpvpk8L3RkPjx0ZCBzdHlsZT0ndGV4dC1hbGlnbjpjZW50ZXI7Jz4gMjAxMy0xMi0xNDwvdGQ+PC90cj48dHI+PHRkPjxpbnB1dCB0eXBlPSdjaGVja2JveCcgaWQ9JzU5MTg0JyB2YWx1ZT0nNTkxODQnIG9uY2xpY2s9J2NrX29uZV9jbGljayh0aGlzLmlkKTsnIC8+PC90ZD4gICAgICAgICAgICA8dGQgY2xhc3M9J3N0eWxlX2NvbnRlbnQnPjxzcGFuIHN0eWxlPSdjb2xvcjpyZWQnPjwvc3Bhbj48c3BhbiBzdHlsZT0nY29sb3I6cmVkOyc+PC9zcGFuPuaDs+aDs+avm+azveS4nOWQjOW/l+aJgOWPl+eahOWnlOWxiO+8jOW4jC4uLiAgICAgICAgICAgIDxkaXYgc3R5bGU9J2Zsb2F0OnJpZ2h0O21hcmdpbi1yaWdodDozcHg7Jz48c3BhbiBzdHlsZT0nY29sb3I6ICM4NzU4MDU7Jz7lkIw8L3NwYW4+PHNwYW4gc3R5bGU9J2NvbG9yOiAjODc1ODA1OycgY2xhc3M9J3N0eWxlX2NvbnRlbnQnIG9ubW91c2VvdmVyPSdzcF9jb250ZW50X21vdXNlb3Zlcih0aGlzKTsnIG9ubW91c2VvdXQ9J3NwX2NvbnRlbnRfbW91c2VvdXQodGhpcyk7Jz7or6Y8L3NwYW4+PGlucHV0IHR5cGU9J2hpZGRlbicgdmFsdWU9J+aDs+aDs+avm+azveS4nOWQjOW/l+eahOe7j+WOhu+8jOWwseWdmuWumuS6huS4gOS4quS/oeW/te+8muecn+eQhuW+gOW+gOaYr+aOjOaPoeWcqOWwkeaVsOS6uuaJi+mHjOeahOOAguWNs+S+v+aYr+mdqeWRveWQjOW/l++8jOW+gOW+gOaYr+S4jeS7mOWHuuihgOeahOS7o+S7t++8jOaYr+S4jeS8mui9u+aYk+WcsOaOpeWPl+ato+ehrueahOaAneaDs+eahOOAguS7mOWHuuS7o+S7t+eahOi/h+eoi++8jOWFtuWunuaYr+S5n+WAn+WKqeWPjeWvueWKm+mHj+a4hemZpOWdmuaMgemUmeivr+aAneaDs+iAheeahOS4gOS4qui/h+eoi+OAguayoeWKnuazle+8jOeOsOWunuWwsei/meS5iOS4pemFt+OAguavlOaWueivtO+8jOW9k+S4reWbveW5tOi9u+eahOmprOWFi+aAneS4u+S5ieiAheeDreiht+S6juaQnuWfjuW4guW3peS6uui/kOWKqOaXtu+8jOavm+azveS4nOWQjOW/l+mAmui/h+iHquW3seWHuuiJsueahOWunui3teWPkeeOsO+8jOWfjuW4guW3peS6uui/kOWKqOW5tuS4jeiDveS7juagueacrOS4iuino+WGs+mXrumimO+8jOS7luWwseS4jeWGjea/gOi/m+OAguaJgOS7peS4reWFseS6jOWkp+Wbm+Wkp+mDveayoeacieWPguWKoOOAgueUmuiHs+i/nuS4reWkruWnlOWRmOmDveayoeaciemAieS4iuOAguS9huS7luayoeacieaUvuW8g+OAguW9k+avm+azveS4nOWQjOW/l+WPkeeOsOWSjOWbveawkeWFmuWQiOS9nOaYr+S4gOS4quato+ehrueahOmAlOW+hOaXtu+8jOS7luWwseenr+aegeWPguS4ju+8jOeUmuiHs+aIkOS4uuWbveawkeWFmueahOS4reWkruWuo+S8oOmDqOS7o+eQhumDqOmVv+OAgueEtuiAjOW9k+S7luWPkeeOsOWNlee6r+eahOWQiOS9nOS5n+W5tuS4jeino+WGs+mXrumimOaXtu+8jOWwseWPiOWvu+aJvuaWsOeahOaWueWQke+8jOenr+aegeWPguS4juWIsOWGnOawkei/kOWKqOS4reOAguWboOatpO+8jOS7luWcqOWbveWFseWQiOS9nOW8gOWni+aXtuenr+aege+8jOmrmOa9ruaXtumAgOWHuu+8jOaYvuW+l+mdnuW4uOS4jeWQiOe+pOOAguWPr+aYr+W9k+avm+azveS4nOWQjOW/l+WPkeeOsOWGnC4uLicgLz48ZGl2PjwvdGQ+ICAgICAgICAgICAgPC90ZD48dGQgc3R5bGU9J3RleHQtYWxpZ246Y2VudGVyOyc+PGRpdiBzdHlsZT0nZmxvYXQ6bGVmdDt3aWR0aDo0OTBweDsnID48c3Bhbj7mtYvliIbnsbvkuIA8L3NwYW4+PC9kaXY+IDxkaXYgc3R5bGU9J2Zsb2F0OmxlZnQ7d2lkdGg6NTBweDsnPjxzcGFuPjxhIGhyZWY9JyMnIHN0eWxlPSd0ZXh0LWRlY29yYXRpb246dW5kZXJsaW5lOycgb25jbGljaz0nc3BfdGFnX3QodGhpcyk7Jz7moIfnrb48L2E+PC9zcGFuPjwvZGl2PjwvdGQ+ICAgICAgICAgICAgPHRkIHN0eWxlPSdwYWRkaW5nLWxlZnQ6IDE1cHg7Jz4gICAgICAgICAgICA8YSBvbmNsaWNrPSdhX2FuYWx5c2lzX0NsaWNrKDEsdGhpcyk7JyBocmVmPScjJz7mraM8L2E+Jm5ic3A7PGEgb25jbGljaz0nYV9hbmFseXNpc19DbGljaygyLHRoaXMpOydocmVmPScjJz7kuK08L2E+ICZuYnNwOzxhIHJ1bmF0PSdzZXJ2ZXInIG9uY2xpY2s9J2FfYW5hbHlzaXNfQ2xpY2soMyx0aGlzKTsnIGhyZWY9JyMnPui0nzwvYT4gICAgICAgICAgICAgJm5ic3A7PGEgb25jbGljaz0nYV9hbmFseXNpc19DbGljayg0LHRoaXMpOycgaHJlZj0nIyc+5LqJPC9hPiZuYnNwOyA8YSBvbmNsaWNrPSdhX2hvdF81X0NsaWNrKDEsdGhpcyk7JyBocmVmPScjJz7ng608L2E+IDxiciAvPiAgICAgICAgICAgIDxhICBocmVmPScjJyAgb25jbGljaz0nYV9hdHRlbnRpb25fY2xpY2soMSx0aGlzKTsnPuWFs+azqDwvYT4mbmJzcDsgICAgICAgICAgICA8YSBocmVmPScjJyBydW5hdD0nc2VydmVyJyBvbmNsaWNrPSdhX2V4YW1pbmVfQ2xpY2soMix0aGlzKTsnPuWuoeaguDwvYT4mbmJzcDs8YSAgaHJlZj0nIycgcnVuYXQ9J3NlcnZlcicgb25jbGljaz0nYV9kZWxldGVfQ2xpY2soOTksdGhpcyk7Jz7liKDpmaQ8L2E+PC90ZD4gICAgICAgICAgICA8dGQgc3R5bGU9J3RleHQtYWxpZ246Y2VudGVyOyc+PGEgaHJlZj0naHR0cDovL2NsdWIuY2hpbmEuY29tL2RhdGEvdGhyZWFkLzEwMTUvMjc2Ni83NC8wNC85XzEuaHRtbCcgdGFyZ2V0PSdfYmxhbmsnPumVnDwvYT48L3RkPjx0ZCBzdHlsZT0ndGV4dC1hbGlnbjpjZW50ZXI7Jz7lhpvkuovlj7Lmnpc8L3RkPjx0ZCBzdHlsZT0ndGV4dC1hbGlnbjpjZW50ZXI7Jz4gMjAxMy0xMi0yMzwvdGQ+PC90cj48dHI+PHRkPjxpbnB1dCB0eXBlPSdjaGVja2JveCcgaWQ9JzU5MTgzJyB2YWx1ZT0nNTkxODMnIG9uY2xpY2s9J2NrX29uZV9jbGljayh0aGlzLmlkKTsnIC8+PC90ZD4gICAgICAgICAgICA8dGQgY2xhc3M9J3N0eWxlX2NvbnRlbnQnPjxzcGFuIHN0eWxlPSdjb2xvcjpyZWQnPjwvc3Bhbj48c3BhbiBzdHlsZT0nY29sb3I6cmVkOyc+PC9zcGFuPjIwMTPlubTnmoTmoKHlm63mlofljJbkvKDlqpIgICAgICAgICAgICA8ZGl2IHN0eWxlPSdmbG9hdDpyaWdodDttYXJnaW4tcmlnaHQ6M3B4Oyc+PHNwYW4gc3R5bGU9J2NvbG9yOiAjODc1ODA1Oyc+5ZCMPC9zcGFuPjxzcGFuIHN0eWxlPSdjb2xvcjogIzg3NTgwNTsnIGNsYXNzPSdzdHlsZV9jb250ZW50JyBvbm1vdXNlb3Zlcj0nc3BfY29udGVudF9tb3VzZW92ZXIodGhpcyk7JyBvbm1vdXNlb3V0PSdzcF9jb250ZW50X21vdXNlb3V0KHRoaXMpOyc+6K+mPC9zcGFuPjxpbnB1dCB0eXBlPSdoaWRkZW4nIHZhbHVlPSfku4rlpKnnmoTkvKDlqpLvvIzlt7Hnu4/mmK/kuIDnp43lt6jlpKfnmoTkuqfkuJrjgILlroPml6LmmK/kuIDnp43np5HmioDnmoTkuqfnianvvIzlj4jmmK/kuIDnp43mlofljJbnjrDosaHvvIzlroPml6LmnI3ku47kuo7lrpjmlrnvvIzlj4jmnI3ku47kuo7msJHpl7TvvIzlroPml6LmmK/njrDlrp7nlJ/mtLvnmoTnnJ/lrp7lj43mmKDvvIzlj4jmmK/lvZPku6PnpL7kvJrnmoQt6Jma5ouf5LiW55WMLueahOWItumAoOiAheOAgueOsOS7o+S8oOWqkuS4jeS7heS7heaYr+S4gOS4quS/oeaBr+eahOi9veS9k++8jOWug+W3see7j+aWueaWuemdoumdoua4l+mAj+i/m+S6hui/meS4quekvuS8muWSjOS6uuexu+eahOeUn+a0u++8jOWug+aXouaYr+ekvuS8muaWh+WMlueahOmHjeimgee7hOaIkOmDqOWIhu+8jOWPiOaYr+S4quS9k+ekvuS8muWMlueahOmHjeimgeW9seWTjeWboOe0oO+8jOW5tumAmui/h+i/meagt+eahOmAlOW+hOWPiOi/m+S4gOatpeW9seWTjeaVtOS4quekvuS8muOAguWcqOi/meagt+eahOS4lueVjOWkp+iDjOaZr+S4i++8jOagoeWbreaWh+WMluS8oOWqkumAkOa4kOaIkOS4uuS6huWkp+WtpuagoeWbreWSjOWtpuagoeaVmeWtpueahOS4gOS4qumHjeimgee7hOaIkOmDqOWIhuOAguWvueS6juWcqOagoeWkp+WtpueUn+adpeivtO+8jOagoeWbreaWh+WMluS8oOWqkuaYr+S7luS7rOaOpeinpuWklueVjOS6i+eJqeacgOS4u+imgeWSjOmHjeimgeeahOa4oOmBk+OAgumaj+edgOekvuS8muS/oeaBr+WMluaKgOacr+WMlueahOWkp+a9rua2jOWKqOWQkeWJje+8jOWkp+WtpuagoeWbreS4reeahOS8oOaSreWqkuS7i+aXpeebiuaIkOS4uuWtpuagoeaVmeiCsueahOmHjeimgee7hOaIkOmDqOWIhu+8jOWPguS4juWIsOaVtOS4quaVmeiCsua0u+WKqOS4reWOu+OAguagoeWbreaWh+WMluS8oOWqkuaYr+agoeWbreWGhemDqOWPiuWtpuagoeS4juekvuS8mui/m+ihjOS6pOa1geOAgeS8oOaSreS/oeaBr+eahOW3peWFt++8jOWug+aYr+WFqOaWueS9jeWPjeW6lOW4iOeUn+WtpuS5oOOAgeW3peS9nOOAgS4uLicgLz48ZGl2PjwvdGQ+ICAgICAgICAgICAgPC90ZD48dGQgc3R5bGU9J3RleHQtYWxpZ246Y2VudGVyOyc+PGRpdiBzdHlsZT0nZmxvYXQ6bGVmdDt3aWR0aDo0OTBweDsnID48c3Bhbj7mtYvliIbnsbvkuIA8L3NwYW4+PC9kaXY+IDxkaXYgc3R5bGU9J2Zsb2F0OmxlZnQ7d2lkdGg6NTBweDsnPjxzcGFuPjxhIGhyZWY9JyMnIHN0eWxlPSd0ZXh0LWRlY29yYXRpb246dW5kZXJsaW5lOycgb25jbGljaz0nc3BfdGFnX3QodGhpcyk7Jz7moIfnrb48L2E+PC9zcGFuPjwvZGl2PjwvdGQ+ICAgICAgICAgICAgPHRkIHN0eWxlPSdwYWRkaW5nLWxlZnQ6IDE1cHg7Jz4gICAgICAgICAgICA8YSBvbmNsaWNrPSdhX2FuYWx5c2lzX0NsaWNrKDEsdGhpcyk7JyBocmVmPScjJz7mraM8L2E+Jm5ic3A7PGEgb25jbGljaz0nYV9hbmFseXNpc19DbGljaygyLHRoaXMpOydocmVmPScjJz7kuK08L2E+ICZuYnNwOzxhIHJ1bmF0PSdzZXJ2ZXInIG9uY2xpY2s9J2FfYW5hbHlzaXNfQ2xpY2soMyx0aGlzKTsnIGhyZWY9JyMnPui0nzwvYT4gICAgICAgICAgICAgJm5ic3A7PGEgb25jbGljaz0nYV9hbmFseXNpc19DbGljayg0LHRoaXMpOycgaHJlZj0nIyc+5LqJPC9hPiZuYnNwOyA8YSBvbmNsaWNrPSdhX2hvdF81X0NsaWNrKDEsdGhpcyk7JyBocmVmPScjJz7ng608L2E+IDxiciAvPiAgICAgICAgICAgIDxhICBocmVmPScjJyAgb25jbGljaz0nYV9hdHRlbnRpb25fY2xpY2soMSx0aGlzKTsnPuWFs+azqDwvYT4mbmJzcDsgICAgICAgICAgICA8YSBocmVmPScjJyBydW5hdD0nc2VydmVyJyBvbmNsaWNrPSdhX2V4YW1pbmVfQ2xpY2soMix0aGlzKTsnPuWuoeaguDwvYT4mbmJzcDs8YSAgaHJlZj0nIycgcnVuYXQ9J3NlcnZlcicgb25jbGljaz0nYV9kZWxldGVfQ2xpY2soOTksdGhpcyk7Jz7liKDpmaQ8L2E+PC90ZD4gICAgICAgICAgICA8dGQgc3R5bGU9J3RleHQtYWxpZ246Y2VudGVyOyc+PGEgaHJlZj0naHR0cDovL2NsdWIuY2hpbmEuY29tL2RhdGEvdGhyZWFkLzQ0MTE2MjQvMjc1Ny8yOC8wMC80XzEuaHRtbCcgdGFyZ2V0PSdfYmxhbmsnPumVnDwvYT48L3RkPjx0ZCBzdHlsZT0ndGV4dC1hbGlnbjpjZW50ZXI7Jz7kurrmloflpKnkuIs8L3RkPjx0ZCBzdHlsZT0ndGV4dC1hbGlnbjpjZW50ZXI7Jz4gMjAxMy0wMy0wNTwvdGQ+PC90cj48dHI+PHRkPjxpbnB1dCB0eXBlPSdjaGVja2JveCcgaWQ9JzU5MTgyJyB2YWx1ZT0nNTkxODInIG9uY2xpY2s9J2NrX29uZV9jbGljayh0aGlzLmlkKTsnIC8+PC90ZD4gICAgICAgICAgICA8dGQgY2xhc3M9J3N0eWxlX2NvbnRlbnQnPjxzcGFuIHN0eWxlPSdjb2xvcjpyZWQnPjwvc3Bhbj48c3BhbiBzdHlsZT0nY29sb3I6cmVkOyc+PC9zcGFuPuS7iuWQjuS4reWbveWGjeaJv+ivuuS7u+S9leaDheWGteS4i+mDveS4jS4uLiAgICAgICAgICAgIDxkaXYgc3R5bGU9J2Zsb2F0OnJpZ2h0O21hcmdpbi1yaWdodDozcHg7Jz48c3BhbiBzdHlsZT0nY29sb3I6ICM4NzU4MDU7Jz7lkIw8L3NwYW4+PHNwYW4gc3R5bGU9J2NvbG9yOiAjODc1ODA1OycgY2xhc3M9J3N0eWxlX2NvbnRlbnQnIG9ubW91c2VvdmVyPSdzcF9jb250ZW50X21vdXNlb3Zlcih0aGlzKTsnIG9ubW91c2VvdXQ9J3NwX2NvbnRlbnRfbW91c2VvdXQodGhpcyk7Jz7or6Y8L3NwYW4+PGlucHV0IHR5cGU9J2hpZGRlbicgdmFsdWU9J+aXpeacrOato+WcqOeUqOS4juS4reWbveS4uuaVjO+8jOadpeWNj+WKqee+juWbveeahOaJvOWItuS4reWbveeahOaImOeVpe+8jOS7juiAjOiuqOWlvee+juWbve+8jOaNouWPlue+juWbveaUvuadvuWvueaXpeacrOaOp+WItu+8jOm7mOiuuOaIluaUr+aMgeaXpeacrOS/ruazleS/ruWuquWunueOsOaXpeacrOWbveWutuato+W4uOWMlueahOebrueahOOAguaMieeFp+eOsOWcqOeahOS4lueVjOagvOWxgOadpeiusuaXpeacrOWunueOsOWbveWutuato+W4uOWMluaYr+aXpeacrOato+WcqOWKquWKm++8jOS5n+acgOe7iOiDveWkn+WunueOsOeahOOAguS9huaXpeacrOS4jeS7heS7heaYr+S4uuS6huWunueOsOWbveWutuato+W4uOWMlu+8jOaXpeacrOS4u+imgeeahOebrueahOi/mOaYr+imgeWunueOsOaXpeacrOaYlOaXpeeahOKAnOWkp+aXpeacrOW4neWbveaipuKAneS7juaWsOWunueOsOaXpeacrOeahOWGm+S6i+W8uuWbveaipu+8jOmHjeeOsOWuieWAjeeahOKAnOWAvOW+l+mqhOWCsuWSjOWwiumHjeeahOaXpeacrOS+teeVpeWOhuWPsuKAneS5n+WwseaYr+aXpeacrOeahOWvueWkluS+teeVpeaJqeW8oOWPsuOAguW9k+S7iuS4lueVjO+8jOaXpeacrOato+W4uOWMluWQjuWunueOsOWFtuW4uOinhOWMluijheWkh+eahOWGm+S6i+W8uuWbveWcsOS9je+8jOaXpeacrOS4jeeUqOmdnuWkmuWkp+WKsuWwseiDveWunueOsOOAguS9huayoeacieaguOeahOaXpeacrOWGm+S6i+W8uuWbveWvueaXpeacrOeahOmHjuW/g+ayoeWkmuWkp+eahOW4ruWKqe+8jOWFt+Wkh+W4uOinhOW8uuWbveWGm+Wkh+eahOaXpeacrOS4jeaVouWSjOS4reS/hOi/meagt+Wkp+aguOWkp+WbveWvueaKl+OAgui/meagt+eahOayoeacieaguOatpueahOW8uuWkp++8jOWvueS6juaDs+aBouWkjeaYlOaXpei+ieeFjOS+teeVpeWOhuWPsueahOaXpeacrO+8jOaYr+ayoeWKnuazleWunueOsOeahO+8jOWPquacieWFt+Wkh+W8uuWkp+aguOatpueahOaXpeacrOaJjeiDveaBouWkjeaYlOaXpeKAnOi+ieeFjOKAneOAgumCo+S5iOaXpeacrOWcqC4uLicgLz48ZGl2PjwvdGQ+ICAgICAgICAgICAgPC90ZD48dGQgc3R5bGU9J3RleHQtYWxpZ246Y2VudGVyOyc+PGRpdiBzdHlsZT0nZmxvYXQ6bGVmdDt3aWR0aDo0OTBweDsnID48c3Bhbj7mtYvliIbnsbvkuIA8L3NwYW4+PC9kaXY+IDxkaXYgc3R5bGU9J2Zsb2F0OmxlZnQ7d2lkdGg6NTBweDsnPjxzcGFuPjxhIGhyZWY9JyMnIHN0eWxlPSd0ZXh0LWRlY29yYXRpb246dW5kZXJsaW5lOycgb25jbGljaz0nc3BfdGFnX3QodGhpcyk7Jz7moIfnrb48L2E+PC9zcGFuPjwvZGl2PjwvdGQ+ICAgICAgICAgICAgPHRkIHN0eWxlPSdwYWRkaW5nLWxlZnQ6IDE1cHg7Jz4gICAgICAgICAgICA8YSBvbmNsaWNrPSdhX2FuYWx5c2lzX0NsaWNrKDEsdGhpcyk7JyBocmVmPScjJz7mraM8L2E+Jm5ic3A7PGEgb25jbGljaz0nYV9hbmFseXNpc19DbGljaygyLHRoaXMpOydocmVmPScjJz7kuK08L2E+ICZuYnNwOzxhIHJ1bmF0PSdzZXJ2ZXInIG9uY2xpY2s9J2FfYW5hbHlzaXNfQ2xpY2soMyx0aGlzKTsnIGhyZWY9JyMnPui0nzwvYT4gICAgICAgICAgICAgJm5ic3A7PGEgb25jbGljaz0nYV9hbmFseXNpc19DbGljayg0LHRoaXMpOycgaHJlZj0nIyc+5LqJPC9hPiZuYnNwOyA8YSBvbmNsaWNrPSdhX2hvdF81X0NsaWNrKDEsdGhpcyk7JyBocmVmPScjJz7ng608L2E+IDxiciAvPiAgICAgICAgICAgIDxhICBocmVmPScjJyAgb25jbGljaz0nYV9hdHRlbnRpb25fY2xpY2soMSx0aGlzKTsnPuWFs+azqDwvYT4mbmJzcDsgICAgICAgICAgICA8YSBocmVmPScjJyBydW5hdD0nc2VydmVyJyBvbmNsaWNrPSdhX2V4YW1pbmVfQ2xpY2soMix0aGlzKTsnPuWuoeaguDwvYT4mbmJzcDs8YSAgaHJlZj0nIycgcnVuYXQ9J3NlcnZlcicgb25jbGljaz0nYV9kZWxldGVfQ2xpY2soOTksdGhpcyk7Jz7liKDpmaQ8L2E+PC90ZD4gICAgICAgICAgICA8dGQgc3R5bGU9J3RleHQtYWxpZ246Y2VudGVyOyc+PGEgaHJlZj0naHR0cDovL2NsdWIuY2hpbmEuY29tL2RhdGEvdGhyZWFkLzEyMTcxOTA2LzI3NjYvNzMvMTYvM18xLmh0bWwnIHRhcmdldD0nX2JsYW5rJz7plZw8L2E+PC90ZD48dGQgc3R5bGU9J3RleHQtYWxpZ246Y2VudGVyOyc+572R5LiK6LCI5YW1PC90ZD48dGQgc3R5bGU9J3RleHQtYWxpZ246Y2VudGVyOyc+IDIwMTMtMTItMjI8L3RkPjwvdHI+PHRyPjx0ZD48aW5wdXQgdHlwZT0nY2hlY2tib3gnIGlkPSc1OTE4MScgdmFsdWU9JzU5MTgxJyBvbmNsaWNrPSdja19vbmVfY2xpY2sodGhpcy5pZCk7JyAvPjwvdGQ+ICAgICAgICAgICAgPHRkIGNsYXNzPSdzdHlsZV9jb250ZW50Jz48c3BhbiBzdHlsZT0nY29sb3I6cmVkJz48L3NwYW4+PHNwYW4gc3R5bGU9J2NvbG9yOnJlZDsnPjwvc3Bhbj7lqYblqrPnm7jlpITmnInnp5jor4DmiJHlkozlqYblqYblkITmnInigJwuLi4gICAgICAgICAgICA8ZGl2IHN0eWxlPSdmbG9hdDpyaWdodDttYXJnaW4tcmlnaHQ6M3B4Oyc+PHNwYW4gc3R5bGU9J2NvbG9yOiAjODc1ODA1Oyc+5ZCMPC9zcGFuPjxzcGFuIHN0eWxlPSdjb2xvcjogIzg3NTgwNTsnIGNsYXNzPSdzdHlsZV9jb250ZW50JyBvbm1vdXNlb3Zlcj0nc3BfY29udGVudF9tb3VzZW92ZXIodGhpcyk7JyBvbm1vdXNlb3V0PSdzcF9jb250ZW50X21vdXNlb3V0KHRoaXMpOyc+6K+mPC9zcGFuPjxpbnB1dCB0eXBlPSdoaWRkZW4nIHZhbHVlPSflvZPlubTmiJHnlJ/kuIvkuoblpbPlhL/vvIzmg5/mgZDlqYblqYblv4Pph4zmnInmg7Pms5XvvIzosIHnn6XmiJHmmK/lurjkurroh6rmibDvvIzlqYblqYbkuIDlkKzor7TmiJHnlJ/kuobkuKrlpbPlhL/vvIzotbbntKfmiorlubPml7blvojlsJHlh7rpl6jnmoTlhazlhazkuZ/mi4nmnaXvvIzkvZPkvZPpnaLpnaLlnLDkuLrlrZnlpbPov4fkuobkuKrmu6HmnIjjgILmiJHnmoTkvZnmgrjmtojpmaTkuobvvIzlr7nlqYblqYbkuZ/lpJrkuoblh6DliIbmlazmhI/jgILjgIDjgIDkuLrkuobluK7nnYDluKblranlrZDvvIzlqYblqYblkozmiJHku6zlsI/kvY/kuobkuIDmrrXvvIzkvb/lh7rkuoblpbnnmoTnrKzkuozmi5vigJzmiqTlqrPkuI3miqTlhL/igJ3jgILjgIDjgIDmiJHlkozkuIjlpKvomb3msqHlkLXov4fmnrbvvIzkvYblnKjmlZnogrLlranlrZDnmoTpl67popjkuIrljbTluLjmnInkuonorrrvvIzmiJHkuLvlvKDmnInkuKXmnInmnb7lnLDmlZnlranlrZDvvIzogIzkuIjlpKvliJnkuLvlvKDlrr3mnb7miZPlpLTjgILlqYblqYbnn6XpgZPmiJHku6znmoTliIbmraflkI7vvIzlvojpg5Hph43lnLDlr7nkuIjlpKvor7TvvJrigJzlsI/nkZ7or7TlvpfmnInpgZPnkIbvvIzkuKXmmK/niLHmnb7mmK/lrrPvvIzkvaDor6XlkKzlsI/nkZ7nmoQh4oCd44CA44CA5Lmf6K645aSn5a626YO95LiN5Lya5oOz5Yiw5oiR55qE5amG5amG5Lya5aaC5L2V5aSn5bqm77yM6L+Z5q2j5piv5amG5amG55qE56ys5LiJ5oub4oCU4oCU4oCc5pqX5Zyw6YeM57uZ55qE6ZKx57ud5LiN6KaB4oCd44CC44CA44CA5LiA5qyh77yM5LiI5aSr5LuO4oCc56eB5oi/6ZKx4oCd6YeM5o6P5Ye6NTAw5YWD57uZ5amG5amG77yM5amG5amG5ouS57ud5LqG77yM6L+Y57uZ5LuW5LiK5LqG5LiA6K++77ya4oCc5oiR5LiN6KaB77yM5pS25LiK6L+Z6ZKx5bCx562J5LqO5ZKx5aiY5L+p5ZCI5LyZ6aqX5bCP55Ge77yM6L+Y5ZKL5a+55b6X6LW35aW54oCd55+l6YGT5LqG6L+Z5LqL5ZCO77yM5oiR5bey5a6M5YWo5oqK5amG5amG5b2T5LqyLi4uJyAvPjxkaXY+PC90ZD4gICAgICAgICAgICA8L3RkPjx0ZCBzdHlsZT0ndGV4dC1hbGlnbjpjZW50ZXI7Jz48ZGl2IHN0eWxlPSdmbG9hdDpsZWZ0O3dpZHRoOjQ5MHB4OycgPjxzcGFuPua1i+WIhuexu+S4gDwvc3Bhbj48L2Rpdj4gPGRpdiBzdHlsZT0nZmxvYXQ6bGVmdDt3aWR0aDo1MHB4Oyc+PHNwYW4+PGEgaHJlZj0nIycgc3R5bGU9J3RleHQtZGVjb3JhdGlvbjp1bmRlcmxpbmU7JyBvbmNsaWNrPSdzcF90YWdfdCh0aGlzKTsnPuagh+etvjwvYT48L3NwYW4+PC9kaXY+PC90ZD4gICAgICAgICAgICA8dGQgc3R5bGU9J3BhZGRpbmctbGVmdDogMTVweDsnPiAgICAgICAgICAgIDxhIG9uY2xpY2s9J2FfYW5hbHlzaXNfQ2xpY2soMSx0aGlzKTsnIGhyZWY9JyMnPuatozwvYT4mbmJzcDs8YSBvbmNsaWNrPSdhX2FuYWx5c2lzX0NsaWNrKDIsdGhpcyk7J2hyZWY9JyMnPuS4rTwvYT4gJm5ic3A7PGEgcnVuYXQ9J3NlcnZlcicgb25jbGljaz0nYV9hbmFseXNpc19DbGljaygzLHRoaXMpOycgaHJlZj0nIyc+6LSfPC9hPiAgICAgICAgICAgICAmbmJzcDs8YSBvbmNsaWNrPSdhX2FuYWx5c2lzX0NsaWNrKDQsdGhpcyk7JyBocmVmPScjJz7kuok8L2E+Jm5ic3A7IDxhIG9uY2xpY2s9J2FfaG90XzVfQ2xpY2soMSx0aGlzKTsnIGhyZWY9JyMnPueDrTwvYT4gPGJyIC8+ICAgICAgICAgICAgPGEgIGhyZWY9JyMnICBvbmNsaWNrPSdhX2F0dGVudGlvbl9jbGljaygxLHRoaXMpOyc+5YWz5rOoPC9hPiZuYnNwOyAgICAgICAgICAgIDxhIGhyZWY9JyMnIHJ1bmF0PSdzZXJ2ZXInIG9uY2xpY2s9J2FfZXhhbWluZV9DbGljaygyLHRoaXMpOyc+5a6h5qC4PC9hPiZuYnNwOzxhICBocmVmPScjJyBydW5hdD0nc2VydmVyJyBvbmNsaWNrPSdhX2RlbGV0ZV9DbGljayg5OSx0aGlzKTsnPuWIoOmZpDwvYT48L3RkPiAgICAgICAgICAgIDx0ZCBzdHlsZT0ndGV4dC1hbGlnbjpjZW50ZXI7Jz48YSBocmVmPSdodHRwOi8vY2x1Yi5jaGluYS5jb20vZGF0YS90aHJlYWQvMjcxNjkxNTc2LzI3NjIvNjYvMzUvMl8xLmh0bWwnIHRhcmdldD0nX2JsYW5rJz7plZw8L2E+PC90ZD48dGQgc3R5bGU9J3RleHQtYWxpZ246Y2VudGVyOyc+5amG5aqz5YWz57O7PC90ZD48dGQgc3R5bGU9J3RleHQtYWxpZ246Y2VudGVyOyc+IDIwMTMtMDctMjg8L3RkPjwvdHI+PHRyPjx0ZD48aW5wdXQgdHlwZT0nY2hlY2tib3gnIGlkPSc1OTE4MCcgdmFsdWU9JzU5MTgwJyBvbmNsaWNrPSdja19vbmVfY2xpY2sodGhpcy5pZCk7JyAvPjwvdGQ+ICAgICAgICAgICAgPHRkIGNsYXNzPSdzdHlsZV9jb250ZW50Jz48c3BhbiBzdHlsZT0nY29sb3I6cmVkJz48L3NwYW4+PHNwYW4gc3R5bGU9J2NvbG9yOnJlZDsnPjwvc3Bhbj7lkIPmsLTmnpznmoTmioDlt6ct5rC05p6c55qE5q2j56Gu5ZCD5rOVICAgICAgICAgICAgPGRpdiBzdHlsZT0nZmxvYXQ6cmlnaHQ7bWFyZ2luLXJpZ2h0OjNweDsnPjxzcGFuIHN0eWxlPSdjb2xvcjogIzg3NTgwNTsnPuWQjDwvc3Bhbj48c3BhbiBzdHlsZT0nY29sb3I6ICM4NzU4MDU7JyBjbGFzcz0nc3R5bGVfY29udGVudCcgb25tb3VzZW92ZXI9J3NwX2NvbnRlbnRfbW91c2VvdmVyKHRoaXMpOycgb25tb3VzZW91dD0nc3BfY29udGVudF9tb3VzZW91dCh0aGlzKTsnPuivpjwvc3Bhbj48aW5wdXQgdHlwZT0naGlkZGVuJyB2YWx1ZT0n5ZCD5rC05p6c55qE5oqA5benLeawtOaenOeahOato+ehruWQg+azleWQg+awtOaenOeahOaKgOW3py3msLTmnpznmoTmraPnoa7lkIPms5XlkIPmsLTmnpznmoTmioDlt6ct5rC05p6c55qE5q2j56Gu5ZCD5rOV5ZCD5rC05p6c55qE5oqA5benLeawtOaenOeahOato+ehruWQg+azlScgLz48ZGl2PjwvdGQ+ICAgICAgICAgICAgPC90ZD48dGQgc3R5bGU9J3RleHQtYWxpZ246Y2VudGVyOyc+PGRpdiBzdHlsZT0nZmxvYXQ6bGVmdDt3aWR0aDo0OTBweDsnID48c3Bhbj7mtYvliIbnsbvkuIA8L3NwYW4+PC9kaXY+IDxkaXYgc3R5bGU9J2Zsb2F0OmxlZnQ7d2lkdGg6NTBweDsnPjxzcGFuPjxhIGhyZWY9JyMnIHN0eWxlPSd0ZXh0LWRlY29yYXRpb246dW5kZXJsaW5lOycgb25jbGljaz0nc3BfdGFnX3QodGhpcyk7Jz7moIfnrb48L2E+PC9zcGFuPjwvZGl2PjwvdGQ+ICAgICAgICAgICAgPHRkIHN0eWxlPSdwYWRkaW5nLWxlZnQ6IDE1cHg7Jz4gICAgICAgICAgICA8YSBvbmNsaWNrPSdhX2FuYWx5c2lzX0NsaWNrKDEsdGhpcyk7JyBocmVmPScjJz7mraM8L2E+Jm5ic3A7PGEgb25jbGljaz0nYV9hbmFseXNpc19DbGljaygyLHRoaXMpOydocmVmPScjJz7kuK08L2E+ICZuYnNwOzxhIHJ1bmF0PSdzZXJ2ZXInIG9uY2xpY2s9J2FfYW5hbHlzaXNfQ2xpY2soMyx0aGlzKTsnIGhyZWY9JyMnPui0nzwvYT4gICAgICAgICAgICAgJm5ic3A7PGEgb25jbGljaz0nYV9hbmFseXNpc19DbGljayg0LHRoaXMpOycgaHJlZj0nIyc+5LqJPC9hPiZuYnNwOyA8YSBvbmNsaWNrPSdhX2hvdF81X0NsaWNrKDEsdGhpcyk7JyBocmVmPScjJz7ng608L2E+IDxiciAvPiAgICAgICAgICAgIDxhICBocmVmPScjJyAgb25jbGljaz0nYV9hdHRlbnRpb25fY2xpY2soMSx0aGlzKTsnPuWFs+azqDwvYT4mbmJzcDsgICAgICAgICAgICA8YSBocmVmPScjJyBydW5hdD0nc2VydmVyJyBvbmNsaWNrPSdhX2V4YW1pbmVfQ2xpY2soMix0aGlzKTsnPuWuoeaguDwvYT4mbmJzcDs8YSAgaHJlZj0nIycgcnVuYXQ9J3NlcnZlcicgb25jbGljaz0nYV9kZWxldGVfQ2xpY2soOTksdGhpcyk7Jz7liKDpmaQ8L2E+PC90ZD4gICAgICAgICAgICA8dGQgc3R5bGU9J3RleHQtYWxpZ246Y2VudGVyOyc+PGEgaHJlZj0naHR0cDovL2NsdWIuY2hpbmEuY29tL2RhdGEvdGhyZWFkLzI2NDQ0OTgzLzI3NjEvNzYvNTYvOV8xLmh0bWwnIHRhcmdldD0nX2JsYW5rJz7plZw8L2E+PC90ZD48dGQgc3R5bGU9J3RleHQtYWxpZ246Y2VudGVyOyc+5oqA5ben6K6o6K66PC90ZD48dGQgc3R5bGU9J3RleHQtYWxpZ246Y2VudGVyOyc+IDIwMTMtMDYtMjk8L3RkPjwvdHI+PHRyPjx0ZD48aW5wdXQgdHlwZT0nY2hlY2tib3gnIGlkPSc1OTE3OScgdmFsdWU9JzU5MTc5JyBvbmNsaWNrPSdja19vbmVfY2xpY2sodGhpcy5pZCk7JyAvPjwvdGQ+ICAgICAgICAgICAgPHRkIGNsYXNzPSdzdHlsZV9jb250ZW50Jz48c3BhbiBzdHlsZT0nY29sb3I6cmVkJz48L3NwYW4+PHNwYW4gc3R5bGU9J2NvbG9yOnJlZDsnPjwvc3Bhbj7lj4LliqDkuobliJvkuJbnmoTlvoHmloflpKfotZvvvIxETkYuLi4gICAgICAgICAgICA8ZGl2IHN0eWxlPSdmbG9hdDpyaWdodDttYXJnaW4tcmlnaHQ6M3B4Oyc+PHNwYW4gc3R5bGU9J2NvbG9yOiAjODc1ODA1Oyc+5ZCMPC9zcGFuPjxzcGFuIHN0eWxlPSdjb2xvcjogIzg3NTgwNTsnIGNsYXNzPSdzdHlsZV9jb250ZW50JyBvbm1vdXNlb3Zlcj0nc3BfY29udGVudF9tb3VzZW92ZXIodGhpcyk7JyBvbm1vdXNlb3V0PSdzcF9jb250ZW50X21vdXNlb3V0KHRoaXMpOyc+6K+mPC9zcGFuPjxpbnB1dCB0eXBlPSdoaWRkZW4nIHZhbHVlPSflkKzor7RETkbnmoTlvoHmlofov5jkuI3plJnvvIzmiJHlsLHlj4LliqDkuobjgILkuLvopoHmmK/oh6rlt7HllpzmrKLov5nkuKrmuLjmiI/llYrvvIzpobrkvr/lhpnlhpnvvIzkuZ/orrjog73miJDlkaLjgILov5jog73lpJrngrnnsonkuJ3vvIzlpJrotZrngrnpkrHvvIzorqnoh6rlt7HnmoTkuablpJrngrnkurrnnIvllYrjgILoi7Hpm4TogZTnm5/kuZ/lsJ3or5XkuobvvIzmsqHpgqPllaXjgILov5nmrKFETkbluIzmnJvmnInnu5PmnpzlkKfjgILjgIDjgIBETkbov5nkuKrmuLjmiI/mr5Toi7Hpm4TogZTnm5/mnKzouqvmm7TniZvkuIDngrnlkKfvvIxETkbkuZ/nrpfmmK/kuJbnlYzmlLblhaXnrKzkuozvvIzkuprmtLLmlLblhaXnrKzkuIDnmoTmuLjmiI/kuobjgILku5bku6zmm7Tlpb3kuIDngrnvvIzlm6DkuLpETkblrp7pmYXkuIrkuIDnm7TluIzmnJvog73lgZrmuLjmiI/mlofljJblkajovrnvvIzkuYvliY3lh7rniYjov4dETkbnmoTkuabvvIznjrDlnKjov5jopoHlho3liqDmiorlipvjgILmiYDku6VETkblvoHmlofvvIzohb7orq/muLjmiI/lkozliJvkuJbmm7TkuIvmnKzvvIwyNeS4h+eahOe6r+WllumHke+8jOWJjeS4ieWQjeWMheWHuueJiO+8jOa5luWMl+WwkeWEv+i/meagt+eahOWHuueJiOekvuOAgua5luWMl+WwkeWEv+WYm++8jOWwseaYr+Wcn+ixhueahOOAiuaWl+egtOOAi+eahOmCo+S4quWHuueJiOekvu+8jOi/mOS4jemUmeWTh35+fuS4u+imgeaYr+iyjOS8vOWllumHkeWwseaYr+WllumHke+8jOS4jeeul+S5sOS6hueJiOadg+eahOiyjOS8vO+8jOaJgOS7pei/meeCueS4jemUmeWVin7kuIfkuIDkuI3lsI/lv4PlvpflpZbph5HlkaLjgIDjgIDnjrDlnKjliJvkuJbnmoTlvoHmlofpg73mmK/lkozohb7orq/kuIDkvJnnmoTvvIzmuLjmiI/nu5notYTmupDvvIzkuYvliY3jgIroi7Hpm4TogZTnm5/kuYvosIHkuI7kuonplIvjgIvml6XplIDllK7ov4fkuIfnmoTvvIzov5jmnIlDRueahOmCoy4uLicgLz48ZGl2PjwvdGQ+ICAgICAgICAgICAgPC90ZD48dGQgc3R5bGU9J3RleHQtYWxpZ246Y2VudGVyOyc+PGRpdiBzdHlsZT0nZmxvYXQ6bGVmdDt3aWR0aDo0OTBweDsnID48c3Bhbj7mtYvliIbnsbvkuIA8L3NwYW4+PC9kaXY+IDxkaXYgc3R5bGU9J2Zsb2F0OmxlZnQ7d2lkdGg6NTBweDsnPjxzcGFuPjxhIGhyZWY9JyMnIHN0eWxlPSd0ZXh0LWRlY29yYXRpb246dW5kZXJsaW5lOycgb25jbGljaz0nc3BfdGFnX3QodGhpcyk7Jz7moIfnrb48L2E+PC9zcGFuPjwvZGl2PjwvdGQ+ICAgICAgICAgICAgPHRkIHN0eWxlPSdwYWRkaW5nLWxlZnQ6IDE1cHg7Jz4gICAgICAgICAgICA8YSBvbmNsaWNrPSdhX2FuYWx5c2lzX0NsaWNrKDEsdGhpcyk7JyBocmVmPScjJz7mraM8L2E+Jm5ic3A7PGEgb25jbGljaz0nYV9hbmFseXNpc19DbGljaygyLHRoaXMpOydocmVmPScjJz7kuK08L2E+ICZuYnNwOzxhIHJ1bmF0PSdzZXJ2ZXInIG9uY2xpY2s9J2FfYW5hbHlzaXNfQ2xpY2soMyx0aGlzKTsnIGhyZWY9JyMnPui0nzwvYT4gICAgICAgICAgICAgJm5ic3A7PGEgb25jbGljaz0nYV9hbmFseXNpc19DbGljayg0LHRoaXMpOycgaHJlZj0nIyc+5LqJPC9hPiZuYnNwOyA8YSBvbmNsaWNrPSdhX2hvdF81X0NsaWNrKDEsdGhpcyk7JyBocmVmPScjJz7ng608L2E+IDxiciAvPiAgICAgICAgICAgIDxhICBocmVmPScjJyAgb25jbGljaz0nYV9hdHRlbnRpb25fY2xpY2soMSx0aGlzKTsnPuWFs+azqDwvYT4mbmJzcDsgICAgICAgICAgICA8YSBocmVmPScjJyBydW5hdD0nc2VydmVyJyBvbmNsaWNrPSdhX2V4YW1pbmVfQ2xpY2soMix0aGlzKTsnPuWuoeaguDwvYT4mbmJzcDs8YSAgaHJlZj0nIycgcnVuYXQ9J3NlcnZlcicgb25jbGljaz0nYV9kZWxldGVfQ2xpY2soOTksdGhpcyk7Jz7liKDpmaQ8L2E+PC90ZD4gICAgICAgICAgICA8dGQgc3R5bGU9J3RleHQtYWxpZ246Y2VudGVyOyc+PGEgaHJlZj0naHR0cDovL2NsdWIuY2hpbmEuY29tL2RhdGEvdGhyZWFkLzExMTgwMTU2LzI3NjYvNDYvMzcvOV8xLmh0bWwnIHRhcmdldD0nX2JsYW5rJz7plZw8L2E+PC90ZD48dGQgc3R5bGU9J3RleHQtYWxpZ246Y2VudGVyOyc+5bCP6K+05rKZ6b6ZPC90ZD48dGQgc3R5bGU9J3RleHQtYWxpZ246Y2VudGVyOyc+IDIwMTMtMTItMTI8L3RkPjwvdHI+PHRyPjx0ZD48aW5wdXQgdHlwZT0nY2hlY2tib3gnIGlkPSc1OTE3OCcgdmFsdWU9JzU5MTc4JyBvbmNsaWNrPSdja19vbmVfY2xpY2sodGhpcy5pZCk7JyAvPjwvdGQ+ICAgICAgICAgICAgPHRkIGNsYXNzPSdzdHlsZV9jb250ZW50Jz48c3BhbiBzdHlsZT0nY29sb3I6cmVkJz48L3NwYW4+PHNwYW4gc3R5bGU9J2NvbG9yOnJlZDsnPjwvc3Bhbj7miJHnmoTlpKfpm7fmiJHnmoTlrrbvvIjnu4jlrqHnqL/vvIkgICAgICAgICAgICA8ZGl2IHN0eWxlPSdmbG9hdDpyaWdodDttYXJnaW4tcmlnaHQ6M3B4Oyc+PHNwYW4gc3R5bGU9J2NvbG9yOiAjODc1ODA1Oyc+5ZCMPC9zcGFuPjxzcGFuIHN0eWxlPSdjb2xvcjogIzg3NTgwNTsnIGNsYXNzPSdzdHlsZV9jb250ZW50JyBvbm1vdXNlb3Zlcj0nc3BfY29udGVudF9tb3VzZW92ZXIodGhpcyk7JyBvbm1vdXNlb3V0PSdzcF9jb250ZW50X21vdXNlb3V0KHRoaXMpOyc+6K+mPC9zcGFuPjxpbnB1dCB0eXBlPSdoaWRkZW4nIHZhbHVlPSfmiJHnmoTlpKfpm7fmiJHnmoTlrrbvvIjnu4jlrqHnqL/vvInliJjmr5PmsJHlhaXlhqzku6XmnaXvvIzlpKnmsqHngrnlhaXlhqznmoTmoLflrZDjgILlm5vlraPkubHkuobvvIznjofmgKflh7rni6zmnInnmoTmsJTosaHnianlgJnmnaXjgILml6Dpo47ml6Dpm6jvvIzlkozmmpblpoLmmKXjgILlh4bnoa7ngrnorrLvvIzmmK/np4vnmoTlu7bnu63vvIznp4vnmoTlvpzlvonjgILopoHkuI3vvIzlub/lnLrljJfkvqfnmoTpgqPlh6DmoKrov47mmKXoirHvvIzmgI7kuYjkvJrnu73mlL7nm5vlvIDlkaLjgILliY3lh6DlpKnlm57ogIHlrrbvvIzmnKzor6Xnqb/miLTmo4nooaPvvIzkvYblpKnnqbrmnJfmmbTvvIzmmpbpmLPmu4vnlJ/vvIzlsLHoiI3ljrvkuobkuI3lsJHooYzlm4rjgILogIHlrrbmnKzmnaXmr5TnjrDlnKjnmoTlt6XkvZzlnLDopoHlhrfkupvvvIzlm57liLDogIHlrrbvvIzlsLHmjqXliLDkuoblprvnmoTnlLXor53vvIzlpbnpl67miJHlhrfkuI3lhrfvvIzopoHmmK/lhrfkuobvvIzorqnmiJHnqb/kuIrlvJ/lvJ/nmoTlpKfooaPjgILlm57lrrbml7bvvIzlpKfkvoTlrZDpl67miJHotbDov4flsI/mtLzlnLDpgqPmnaHot6/msqHvvIzmiJHor7TmsqHmnInjgILkuo7mmK/vvIzku5blvoTnm7TlsIbovablvIDliLDljr/ln47mlrDmianlsZXnmoTkuJzkvqfjgILpgqPph4zlj5jljJblvojlpKfvvIzkuIDmnaHljZfljJfotK/pgJrnmoTmn4/msrnooZfpnaLvvIzplb/luqbotoXov4fkuInlhazph4zvvIzlpb3lrr3mlZ7lpb3msJTmtL7jgILln47plYfljJblu7rorr7mraXkvJDvvIzlnKjogIHlrrbot6jotorlvI/ov4jov5vjgILljp/mnInnmoTln47luILpqqjmnrbvvIzmi4nnmoTlpb3lrr3ms5vvvIzlpb3njrDku6PjgILliLDkuoblsI/mtLzlnLDkuI7ogIDljZPkuYvpl7TnmoTljLrln5/vvIzmlrDkv67kuobkuIDmnaHlrr3pmJTlpKfpgZPvvIzot6/nmoTkuKTovrnvvIzlt7Lnu4/nu7/ljJbliLDkvY3kuobvvIzml6DlpLTmoJHmjLrnq4vkuKTovrnvvIzov5jmnInmmoLmlrDnmoTnga/mnYbjgILlkKwuLi4nIC8+PGRpdj48L3RkPiAgICAgICAgICAgIDwvdGQ+PHRkIHN0eWxlPSd0ZXh0LWFsaWduOmNlbnRlcjsnPjxkaXYgc3R5bGU9J2Zsb2F0OmxlZnQ7d2lkdGg6NDkwcHg7JyA+PHNwYW4+5rWL5YiG57G75LiAPC9zcGFuPjwvZGl2PiA8ZGl2IHN0eWxlPSdmbG9hdDpsZWZ0O3dpZHRoOjUwcHg7Jz48c3Bhbj48YSBocmVmPScjJyBzdHlsZT0ndGV4dC1kZWNvcmF0aW9uOnVuZGVybGluZTsnIG9uY2xpY2s9J3NwX3RhZ190KHRoaXMpOyc+5qCH562+PC9hPjwvc3Bhbj48L2Rpdj48L3RkPiAgICAgICAgICAgIDx0ZCBzdHlsZT0ncGFkZGluZy1sZWZ0OiAxNXB4Oyc+ICAgICAgICAgICAgPGEgb25jbGljaz0nYV9hbmFseXNpc19DbGljaygxLHRoaXMpOycgaHJlZj0nIyc+5q2jPC9hPiZuYnNwOzxhIG9uY2xpY2s9J2FfYW5hbHlzaXNfQ2xpY2soMix0aGlzKTsnaHJlZj0nIyc+5LitPC9hPiAmbmJzcDs8YSBydW5hdD0nc2VydmVyJyBvbmNsaWNrPSdhX2FuYWx5c2lzX0NsaWNrKDMsdGhpcyk7JyBocmVmPScjJz7otJ88L2E+ICAgICAgICAgICAgICZuYnNwOzxhIG9uY2xpY2s9J2FfYW5hbHlzaXNfQ2xpY2soNCx0aGlzKTsnIGhyZWY9JyMnPuS6iTwvYT4mbmJzcDsgPGEgb25jbGljaz0nYV9ob3RfNV9DbGljaygxLHRoaXMpOycgaHJlZj0nIyc+54OtPC9hPiA8YnIgLz4gICAgICAgICAgICA8YSAgaHJlZj0nIycgIG9uY2xpY2s9J2FfYXR0ZW50aW9uX2NsaWNrKDEsdGhpcyk7Jz7lhbPms6g8L2E+Jm5ic3A7ICAgICAgICAgICAgPGEgaHJlZj0nIycgcnVuYXQ9J3NlcnZlcicgb25jbGljaz0nYV9leGFtaW5lX0NsaWNrKDIsdGhpcyk7Jz7lrqHmoLg8L2E+Jm5ic3A7PGEgIGhyZWY9JyMnIHJ1bmF0PSdzZXJ2ZXInIG9uY2xpY2s9J2FfZGVsZXRlX0NsaWNrKDk5LHRoaXMpOyc+5Yig6ZmkPC9hPjwvdGQ+ICAgICAgICAgICAgPHRkIHN0eWxlPSd0ZXh0LWFsaWduOmNlbnRlcjsnPjxhIGhyZWY9J2h0dHA6Ly9jbHViLmNoaW5hLmNvbS9kYXRhL3RocmVhZC8zNzk5LzI3NjYvNDYvNzQvNl8xLmh0bWwnIHRhcmdldD0nX2JsYW5rJz7plZw8L2E+PC90ZD48dGQgc3R5bGU9J3RleHQtYWxpZ246Y2VudGVyOyc+5pWj5paH6ZqP56yUPC90ZD48dGQgc3R5bGU9J3RleHQtYWxpZ246Y2VudGVyOyc+IDIwMTMtMTItMTM8L3RkPjwvdHI+PHRyPjx0ZD48aW5wdXQgdHlwZT0nY2hlY2tib3gnIGlkPSc1OTE3NycgdmFsdWU9JzU5MTc3JyBvbmNsaWNrPSdja19vbmVfY2xpY2sodGhpcy5pZCk7JyAvPjwvdGQ+ICAgICAgICAgICAgPHRkIGNsYXNzPSdzdHlsZV9jb250ZW50Jz48c3BhbiBzdHlsZT0nY29sb3I6cmVkJz48L3NwYW4+PHNwYW4gc3R5bGU9J2NvbG9yOnJlZDsnPjwvc3Bhbj7ml6XkuJPlrrbmjIflh7rpkpPpsbzlspvlupTlvZLov5jkuK3lm73nvo4uLi4gICAgICAgICAgICA8ZGl2IHN0eWxlPSdmbG9hdDpyaWdodDttYXJnaW4tcmlnaHQ6M3B4Oyc+PHNwYW4gc3R5bGU9J2NvbG9yOiAjODc1ODA1Oyc+5ZCMPC9zcGFuPjxzcGFuIHN0eWxlPSdjb2xvcjogIzg3NTgwNTsnIGNsYXNzPSdzdHlsZV9jb250ZW50JyBvbm1vdXNlb3Zlcj0nc3BfY29udGVudF9tb3VzZW92ZXIodGhpcyk7JyBvbm1vdXNlb3V0PSdzcF9jb250ZW50X21vdXNlb3V0KHRoaXMpOyc+6K+mPC9zcGFuPjxpbnB1dCB0eXBlPSdoaWRkZW4nIHZhbHVlPSfml6XmnKzmqKrmu6jluILnq4vlpKflrablkI3oqonmlZnmjojnn6LlkLnmmYvlhYjnlJ/kvZXln7nlv6Dml6XmnKzmqKrmu6jluILnq4vlpKflrablkI3oqonmlZnmjojnn6LlkLnmmYvlhYjnlJ/mmK/ml6XmnKzlvZPku6Pml6XkuK3lhbPns7vlj7LkuJPlrrbvvIzku4rlubQxMeaciO+8jOS7luW6lOS4reWbveekvuS8muenkeWtpumZouWbvemZheS4reWbveWtpueglOeptuS4reW/g+eahOmCgOivt+adpeWNjuiuv+mXru+8jOW5tuWcqOWtpuacr+eglOiuqOS8muS4iuWPkeihqOiuuuaWh+OAiuS5kuS5k+WkluS6pOS4juS4ree+juWcqOmSk+mxvOWym+S4iueahOWNmuW8iOKAlOKAlOWGsue7s+W9kui/mDQw5bm05Zue6aG+44CL44CC6K+l6K665paH5piv5pel5pys5a2m6ICF56ys5LiA5qyh5LuO5Lit576O5pel5LiJ6KeS5YWz57O755qE6KeS5bqm5o6i6K6o6ZKT6bG85bKb6Zeu6aKY44CC56yU6ICF5Zyo55+i5ZC55pmL6K6/6Zeu5pyf6Ze077yM5bCx5LuW55qE6L+R5pyf56CU56m25oiQ5p6c5ZKM5Zu95YaF5rCR5LyX5YWz5b+D55qE6K+d6aKY5LiO5YW25YGa5LqG5Lqk5rWB44CC55+i5ZC55pmL6K6k5Li677yM5Y+R5bGV5Lit5pel5YWz57O76aaW5YWI5bqU5bCK6YeN5ZKM5om/6K6k5Y6G5Y+y5LqL5a6e77yM5om/6K6k44CK5rOi5pav5Z2m5YWs5ZGK44CL55qE5Yaz5a6a77yM6YCA5Zue44CK5rOi6Iyo5Z2m5YWs5ZGK44CL57qm5a6a55qE5LqL5oOF5LiK44CC4oCc5Lit5Zu95LiN5piv576O5Zu95pWM5Lq677yM576O5Zu95a+55pel5pys5Lmf5LiN5YWo55uY5L+h5Lu74oCd5L2V5Z+55b+g77ya6K6w5b6X5oKoMjAwNeW5tOadpeeglOeptuS4reW/g+S9nOaKpeWRiuaXtu+8jOiwiOWIsOS4reaXpeaBouWkjemCpuS6pOiwiOWIpOaXtueahOS4gOS4quaciei2o+eahOe7huiKgu+8muavm+azveS4nOS4u+W4remAgee7meeUsOS4reinkuiNo+mmluebuOS4gOWll+OAiualmui+numbhuazqOOAi+OAguaCqOe7j+i/h+a3seWFpeeglOeptuaPkOWHuu+8jOmCo+aYr+WboOS4uueUsOS4remmli4uLicgLz48ZGl2PjwvdGQ+ICAgICAgICAgICAgPC90ZD48dGQgc3R5bGU9J3RleHQtYWxpZ246Y2VudGVyOyc+PGRpdiBzdHlsZT0nZmxvYXQ6bGVmdDt3aWR0aDo0OTBweDsnID48c3Bhbj7mtYvliIbnsbvkuIA8L3NwYW4+PC9kaXY+IDxkaXYgc3R5bGU9J2Zsb2F0OmxlZnQ7d2lkdGg6NTBweDsnPjxzcGFuPjxhIGhyZWY9JyMnIHN0eWxlPSd0ZXh0LWRlY29yYXRpb246dW5kZXJsaW5lOycgb25jbGljaz0nc3BfdGFnX3QodGhpcyk7Jz7moIfnrb48L2E+PC9zcGFuPjwvZGl2PjwvdGQ+ICAgICAgICAgICAgPHRkIHN0eWxlPSdwYWRkaW5nLWxlZnQ6IDE1cHg7Jz4gICAgICAgICAgICA8YSBvbmNsaWNrPSdhX2FuYWx5c2lzX0NsaWNrKDEsdGhpcyk7JyBocmVmPScjJz7mraM8L2E+Jm5ic3A7PGEgb25jbGljaz0nYV9hbmFseXNpc19DbGljaygyLHRoaXMpOydocmVmPScjJz7kuK08L2E+ICZuYnNwOzxhIHJ1bmF0PSdzZXJ2ZXInIG9uY2xpY2s9J2FfYW5hbHlzaXNfQ2xpY2soMyx0aGlzKTsnIGhyZWY9JyMnPui0nzwvYT4gICAgICAgICAgICAgJm5ic3A7PGEgb25jbGljaz0nYV9hbmFseXNpc19DbGljayg0LHRoaXMpOycgaHJlZj0nIyc+5LqJPC9hPiZuYnNwOyA8YSBvbmNsaWNrPSdhX2hvdF81X0NsaWNrKDEsdGhpcyk7JyBocmVmPScjJz7ng608L2E+IDxiciAvPiAgICAgICAgICAgIDxhICBocmVmPScjJyAgb25jbGljaz0nYV9hdHRlbnRpb25fY2xpY2soMSx0aGlzKTsnPuWFs+azqDwvYT4mbmJzcDsgICAgICAgICAgICA8YSBocmVmPScjJyBydW5hdD0nc2VydmVyJyBvbmNsaWNrPSdhX2V4YW1pbmVfQ2xpY2soMix0aGlzKTsnPuWuoeaguDwvYT4mbmJzcDs8YSAgaHJlZj0nIycgcnVuYXQ9J3NlcnZlcicgb25jbGljaz0nYV9kZWxldGVfQ2xpY2soOTksdGhpcyk7Jz7liKDpmaQ8L2E+PC90ZD4gICAgICAgICAgICA8dGQgc3R5bGU9J3RleHQtYWxpZ246Y2VudGVyOyc+PGEgaHJlZj0naHR0cDovL2NsdWIuY2hpbmEuY29tL2RhdGEvdGhyZWFkLzEwMTMvMjc2Ni82Ny8yMi81XzEuaHRtbCcgdGFyZ2V0PSdfYmxhbmsnPumVnDwvYT48L3RkPjx0ZCBzdHlsZT0ndGV4dC1hbGlnbjpjZW50ZXI7Jz7kuK3ljY7lhpvlpIc8L3RkPjx0ZCBzdHlsZT0ndGV4dC1hbGlnbjpjZW50ZXI7Jz4gMjAxMy0xMi0yMDwvdGQ+PC90cj48L3RhYmxlPjxzY3JpcHQgc3JjPScuLi9Db21tb24vSlMvY29tbW9uanMuanMnIHR5cGU9J3RleHQvamF2YXNjcmlwdCc+PC9zY3JpcHQ+PHNjcmlwdCBzcmM9Jy4uL0NvbW1vbi9KUy9zaXRlZGF0YV9zaG93LmpzJyB0eXBlPSd0ZXh0L2phdmFzY3JpcHQnPjwvc2NyaXB0PjxzY3JpcHQgc3JjPScuLi9Db21tb24vSlMvbmV0UGFnZS5qcycgdHlwZT0ndGV4dC9qYXZhc2NyaXB0Jz48L3NjcmlwdD5kAh8PFgIfAAW7BDxhIGlkPSdhX2ZpcnN0UGFnZScgIHN0eWxlPSdtYXJnaW4tcmlnaHQ6NXB4Oyc+6aaW6aG1PC9hPiAgICAgICAgICAgICAgICAgPGEgaWQ9J2FfbGFzdFBhZ2UnICBzdHlsZT0nbWFyZ2luLXJpZ2h0OjVweDsnPuS4iuS4gOmhtTwvYT4gICAgICAgICAgICAgICAgIDxhIGlkPSdhX25leHRQYWdlJyBocmVmPScnIG9uY2xpY2s9J2FfbmV4dFBhZ2VfY2xpY2sodGhpcywxKTtyZXR1cm4gZmFsc2U7JyAgc3R5bGU9J21hcmdpbi1yaWdodDo1cHg7dGV4dC1kZWNvcmF0aW9uOnVuZGVybGluZTsgY3Vyc29yOmhhbmQ7Jz7kuIvkuIDpobU8L2E+ICAgICAgICAgICAgICAgICA8YSBpZD0nYV9maW5hbFBhZ2UnIGhyZWY9Jycgb25jbGljaz0nYV9maW5hbFBhZ2VfY2xpY2sodGhpcyk7cmV0dXJuIGZhbHNlOycgIHN0eWxlPSdtYXJnaW4tcmlnaHQ6NXB4O3RleHQtZGVjb3JhdGlvbjp1bmRlcmxpbmU7IGN1cnNvcjpoYW5kOyc+5bC+6aG1PC9hPiZuYnNwOyZuYnNwOyZuYnNwOyAgICAgICAgICAgICAgICAgPGEgaWQ9J3NwX3BhZ2VNZXNzJyBydW5hdD0nc2VydmVyJz7lvZPliY3nrKwx6aG1LOWFsTg3OOmhtTwvYT5kAjcPFgIfAAWFATxzZWxlY3Q+PG9wdGlvbiB2YWx1ZT0nJz4tLemAieaLqS0tPC9vcHRpb24+PG9wdGlvbiB2YWx1ZT0nb3BfMzUnPuWwj+exuzFfMjwvb3B0aW9uPjxvcHRpb24gdmFsdWU9J29wXzM0Jz7lsI/nsbsxXzE8L29wdGlvbj48L3NlbGVjdD5kZFoAdQZcgEKsVnMwZ3qfYF8lKhKD" />
+    </div>
+    <script type="text/javascript">
+//<![CDATA[
+        var theForm = document.forms['form1'];
+        if (!theForm) {
+            theForm = document.form1;
+        }
+        function __doPostBack(eventTarget, eventArgument) {
+            if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                theForm.__EVENTTARGET.value = eventTarget;
+                theForm.__EVENTARGUMENT.value = eventArgument;
+                theForm.submit();
+            }
+        }
+//]]>
+    </script>
+    <script type="text/javascript" src="/ajax/common.ashx"></script>
+    <script type="text/javascript" src="/ajax/WebCrawler.Admin.datadetail,WebCrawler.ashx"></script>
+    <div>
+        <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWGAK1ppXVCgLYre+XAQKc3JeVAgKdgejcCgLLqNuaBgKglLm5BgK71/WcDwL0oajACgK6iorLBwKTx5aGDALV3JGHCAL5u+CjDgKr4qGmDALy0oKgCwLwg/upBgKh/rPYAQK83pTHBgLO37jyCALl3KPqCgKg95umDAKXhMnWCQL/zKmAAgKmz9L1AgKAwbHtDhcZLtLf85zTE/kre/ZodynROnQr" />
+    </div>
+    <div id="div_showContent">
+        <table border="0" style="margin: 0px; padding: 0px;" cellpadding="0" cellspacing="0">
+            <tr>
+                <td id="div_td_content">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="margin: 0px auto; width: 1280px; height: auto;">
+        <div class="mian_middle" style="border: 2px solid #99BBE8; padding-left: 5px; width: 100%;">
+            <div>
+                <h4>
+                    搜索
+                </h4>
+                <hr style="margin: 0px;" />
+                <div id="div_search">
+                    <table id="table_search" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="style1">
+                                <span>时间:</span>
+                                <input name="txt_timeStart" type="text" id="txt_timeStart" class="Wdate" style="width: 90px;"
+                                    onfocus="WdatePicker()" />&nbsp;~&nbsp;
+                                <input name="txt_timeEnd" type="text" id="txt_timeEnd" class="Wdate" style="width: 90px;"
+                                    onfocus="WdatePicker()" />&nbsp;调性:
+                                <select name="select_analysis" id="select_analysis" class="Select_5">
+                                    <option selected="selected" value="-1">所有</option>
+                                    <option value="1">正</option>
+                                    <option value="2">中</option>
+                                    <option value="3">负</option>
+                                    <option value="4">争</option>
+                                </select>&nbsp; 数据类型:
+                                <select name="select_dataType" id="select_dataType" class="Select_5">
+                                    <option selected="selected" value="1">论坛</option>
+                                    <option value="2">新闻</option>
+                                    <option value="3">博客</option>
+                                    <option value="5">微博</option>
+                                </select>
+                            </td>
+                            <td class="style3">
+                                匹配词:&nbsp;<input name="txt_matchKey" type="text" id="txt_matchKey" />&nbsp;
+                                <select name="select_matchRule" id="select_matchRule">
+                                    <option selected="selected" value="0">标题及内容</option>
+                                    <option value="1">标题</option>
+                                    <option value="2">内容</option>
+                                </select>&nbsp;
+                                <input type="submit" name="btn_select" value="搜" onclick="return func_resetShowStatus();"
+                                    id="btn_select" style="width: 35px;" />&nbsp;
+                                <input type="submit" name="btn_goback" value="返回" onclick="return goback_click();"
+                                    id="btn_goback" class="Button_3" />&nbsp;
+                            </td>
+                        </tr>
+                        <tr style="height: 10px;">
+                            <td colspan="2">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style1">
+                                <input type="file" name="fileUpload1" id="fileUpload1" style="width: 229px; vertical-align: top" />&nbsp;
+                                <input type="submit" name="btn_importExcel" value="导入数据" onclick="return checkType();"
+                                    id="btn_importExcel" />&nbsp;
+                                <input type="submit" name="btnExport" value="导出数据" onclick="return btnExportParms();"
+                                    id="btnExport" />&nbsp;
+                                <input onclick="__doPostBack('btn_downloadTemplate','')" name="btn_downloadTemplate"
+                                    type="button" id="btn_downloadTemplate" value="下载模板" />
+                            </td>
+                            <td class="style3">
+                                <img alt="" src="../Image/img_btn_pi.jpg" onclick="img_batchtTags_click();" />&nbsp;
+                                <img alt="" src="../Image/attention.jpg" id="img_attention" onclick="return img_attention_click(1);" />
+                                &nbsp;
+                                <img alt="" src="../Image/hot.jpg" id="img_hot" onclick="return img_hot_click(1)" />
+                                &nbsp;
+                                <img alt="" src="../Image/showStatus_1.jpg" onclick="return QueryShowStatus(1);" />
+                                &nbsp;
+                                <img alt="" src="../Image/showStatus_2.jpg" onclick="return QueryShowStatus(2);" />&nbsp;
+                                <img alt="" src="../Image/showStatus_99.jpg" onclick="return QueryShowStatus(99);" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <hr style="margin-top: 8px;" />
+            <div id="div_data">
+                <div style="width: 200px; margin:0px auto; margin-bottom: 5px;">
+                    &nbsp;&nbsp;&nbsp; &nbsp;<span id="sp_projectName" style="font-size: 20px; color: blue;">韩泰</span>
+                </div>
+               
+                <div id="div_tb_dataList_t" style="margin-top: 3px; border: 0px; height: 600px; padding: 0px;">
+                   <div style=" width:810px; height:auto; margin:0px auto;"> <table id='tb_dataList_t' style='width: auto;' cellpadding='0' cellspacing='0'>
+                        <tr>
+                            <th style='width: 40px;'>
+                                <input type='checkbox' id='ck_all' value='' onclick='ck_all_click();' />
+                            </th>
+                            <th class="style4">
+                                帖子主题
+                            </th>
+                            <th style='text-align: center;' class="style6">
+                                标签处理<br />
+                                <span id='Span1'>[测分类一]</span>
+                            </th>
+                            <th class="style10">
+                                操作
+                            </th>
+                            <th style='text-align: center;' class="style9">
+                                镜
+                            </th>
+                            <th class="style8">
+                                媒体名
+                            </th>
+                            <th class="style7">
+                                抓取日期
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type='checkbox' id='59190' value='59190' onclick='ck_one_click(this.id);' />
+                            </td>
+                            <td class='style5'>
+                                <span style='color: red'>(正)</span><span style='color: red;'></span>有些爱，你无法还！
+                                <div style='float: right; margin-right: 3px;'>
+                                    <span style='color: #875805;'>同</span><span style='color: #875805;' class='style_content'
+                                        onmouseover='sp_content_mouseover(this);' onmouseout='sp_content_mouseout(this);'>详</span><input
+                                            type='hidden' value='亲爱的孩子：今晨你在桌上留了张极简短的字条，便奔你想要的幸福去了。我在隔壁卧室里听你哭了很长的时间，又低声给男友打电话，默默地收拾好自己的东西，准备像昨晚吵架时说的那样，彻底与这个家断绝来往，过自由自在的生活。你在字条上告诉妈妈，你会还清22年来你欠父母的一切——以金钱的形式。你是商学院的学生，应是比妈妈能更准确地算出，你22年来所花掉的父母的工资，甚至利息。以你的能力，妈妈也相信，你会连本带息地一并还清。可是，亲爱的孩子，你的老师忘了告诉你，任何看起来如真理一样的公式，都有它适用的范围。而在爱这一领域里，迄今还没有任何人，能够精确地算出它的价值。就像你不能仅仅凭一个拥抱，一款首饰。一句甜言，一件衣服，就认定你而今的男友，是值得你终身依靠的伴侣。因为，有些爱，你看不到，也摸不着，甚至不...' /><div>
+                            </td>
+                            </td>
+                            <td style='text-align: center;' class="style6">
+                                <span>测分类一</span>&nbsp; <span><a href='#' style='text-decoration: underline;' onclick='sp_tag_t(this);'>
+                                    标签</a></span>
+                            </td>
+                            <td style='padding-left: 15px;' class="style10">
+                                <a onclick='a_analysis_Click(1,this);' href='#'>正</a>&nbsp;<a onclick='a_analysis_Click(2,this);'
+                                    href='#'>中</a> &nbsp;<a runat='server' onclick='a_analysis_Click(3,this);' href='#'>负</a>
+                                &nbsp;<a onclick='a_analysis_Click(4,this);' href='#'>争</a>&nbsp; <a onclick='a_hot_5_Click(1,this);'
+                                    href='#'>热</a>
+                                <br />
+                                <a href='#' onclick='a_attention_click(1,this);'>关注</a>&nbsp; <a href='#' runat='server'
+                                    onclick='a_examine_Click(2,this);'>审核</a>&nbsp;<a href='#' runat='server' onclick='a_delete_Click(99,this);'>删除</a>
+                            </td>
+                            <td style='text-align: center;' class="style9">
+                                <a href='http://club.china.com/data/thread/271691576/2762/64/44/3_1.html' target='_blank'>
+                                    镜</a>
+                            </td>
+                            <td style='text-align: center;' class="style8">
+                                婆媳关系
+                            </td>
+                            <td style='text-align: center;' class="style7">
+                                2013-07-27
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type='checkbox' id='59188' value='59188' onclick='ck_one_click(this.id);' />
+                            </td>
+                            <td class='style5'>
+                                <span style='color: red'></span><span style='color: red;'></span>是男人就要上100层！京基1...
+                                <div style='float: right; margin-right: 3px;'>
+                                    <span style='color: #875805;'>同</span><span style='color: #875805;' class='style_content'
+                                        onmouseover='sp_content_mouseover(this);' onmouseout='sp_content_mouseout(this);'>详</span><input
+                                            type='hidden' value='那个……我的手在颤抖！！！深圳京基100墙体……惊现……“中国音超陈楚生加油花生力挺！”眼前这一幕真是惊呆了楼主和所有经过这里的小伙伴！可能作为小伙伴的你还木有概念，我只想说：同学，这楼，高441.8米！！！！！！！我更想说，这标语，足足亮了5分钟！！！！！！100层的大楼啊，霸气、惊人、大手笔！楼主刚下班正奔回家，突然眼前一道光，灼瞎了我！！！！这，这，这，看到了眼前这一幕，我的下巴已经跌到地上了，我身边所有的行人在加油标语亮出那3秒之内定住了，仿佛周围就此定格。接着“WOW！我靠！擦！啊！”咔嚓咔嚓的照相声顿时狂拥入耳！眼前的宏伟壮观的奇景，我想只有身临其境才能感受到那种仰望巍峨的惶恐啊！！！！仿佛置身盗梦空间。今天加班加的太值了~~黑夜给了我一双黑色的眼睛，我今晚就用它来注视这无...' /><div>
+                            </td>
+                            </td><td style='text-align: center;' class="style6">
+                                <span>测分类一</span>&nbsp; <span><a href='#' style='text-decoration: underline;' onclick='sp_tag_t(this);'>
+                                    标签</a></span>
+                            </td>
+                            <td style='padding-left: 15px;' class="style10">
+                                <a onclick='a_analysis_Click(1,this);' href='#'>正</a>&nbsp;<a onclick='a_analysis_Click(2,this);'
+                                    href='#'>中</a> &nbsp;<a runat='server' onclick='a_analysis_Click(3,this);' href='#'>负</a>
+                                &nbsp;<a onclick='a_analysis_Click(4,this);' href='#'>争</a>&nbsp; <a onclick='a_hot_5_Click(1,this);'
+                                    href='#'>热</a>
+                                <br />
+                                <a href='#' onclick='a_attention_click(1,this);'>关注</a>&nbsp; <a href='#' runat='server'
+                                    onclick='a_examine_Click(2,this);'>审核</a>&nbsp;<a href='#' runat='server' onclick='a_delete_Click(99,this);'>删除</a>
+                            </td>
+                            <td style='text-align: center;' class="style9">
+                                <a href='http://club.china.com/data/thread/247374811/2766/37/05/9_1.html' target='_blank'>
+                                    镜</a>
+                            </td>
+                            <td style='text-align: center;' class="style8">
+                                灌水客栈
+                            </td>
+                            <td style='text-align: center;' class="style7">
+                                2013-12-09
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type='checkbox' id='59187' value='59187' onclick='ck_one_click(this.id);' />
+                            </td>
+                            <td class='style5'>
+                                <span style='color: red'></span><span style='color: red;'></span>迷人夏夜好观星星空作品拍摄详解4
+                                <div style='float: right; margin-right: 3px;'>
+                                    <span style='color: #875805;'>同</span><span style='color: #875805;' class='style_content'
+                                        onmouseover='sp_content_mouseover(this);' onmouseout='sp_content_mouseout(this);'>详</span><input
+                                            type='hidden' value='四、星空摄影中前景的补光借用了路灯来为我的前景补光然后就是前景的补光，因为庙旁刚好有盏路灯，我就沾光借用了路灯来为我的前景补光，如上图。闪光灯手动闪光补光而完全没有人造灯光的地方，则是我自己补光。上图采用了之前说到的闪光灯手动闪光补光，下图则是用头灯补光。用头灯补光合适的给前景补光，让照片更动人更耐看。' /><div>
+                            </td>
+                            </td><td style='text-align: center;' class="style6">
+                                <span>测分类一</span>&nbsp; <span><a href='#' style='text-decoration: underline;' onclick='sp_tag_t(this);'>
+                                    标签</a></span>
+                            </td>
+                            <td style='padding-left: 15px;' class="style10">
+                                <a onclick='a_analysis_Click(1,this);' href='#'>正</a>&nbsp;<a onclick='a_analysis_Click(2,this);'
+                                    href='#'>中</a> &nbsp;<a runat='server' onclick='a_analysis_Click(3,this);' href='#'>负</a>
+                                &nbsp;<a onclick='a_analysis_Click(4,this);' href='#'>争</a>&nbsp; <a onclick='a_hot_5_Click(1,this);'
+                                    href='#'>热</a>
+                                <br />
+                                <a href='#' onclick='a_attention_click(1,this);'>关注</a>&nbsp; <a href='#' runat='server'
+                                    onclick='a_examine_Click(2,this);'>审核</a>&nbsp;<a href='#' runat='server' onclick='a_delete_Click(99,this);'>删除</a>
+                            </td>
+                            <td style='text-align: center;' class="style9">
+                                <a href='http://club.china.com/data/thread/26444983/2763/16/62/4_1.html' target='_blank'>
+                                    镜</a>
+                            </td>
+                            <td style='text-align: center;' class="style8">
+                                技巧讨论
+                            </td>
+                            <td style='text-align: center;' class="style7">
+                                2013-08-13
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type='checkbox' id='59186' value='59186' onclick='ck_one_click(this.id);' />
+                            </td>
+                            <td class='style5'>
+                                <span style='color: red'></span><span style='color: red;'></span>长城外，寥廓的不止是云烟。
+                                <div style='float: right; margin-right: 3px;'>
+                                    <span style='color: #875805;'>同</span><span style='color: #875805;' class='style_content'
+                                        onmouseover='sp_content_mouseover(this);' onmouseout='sp_content_mouseout(this);'>详</span><input
+                                            type='hidden' value='' /><div>
+                            </td>
+                            </td><td style='text-align: center;' class="style6">
+                                <span>测分类一</span>&nbsp; <span><a href='#' style='text-decoration: underline;' onclick='sp_tag_t(this);'>
+                                    标签</a></span>
+                            </td>
+                            <td style='padding-left: 15px;' class="style10">
+                                <a onclick='a_analysis_Click(1,this);' href='#'>正</a>&nbsp;<a onclick='a_analysis_Click(2,this);'
+                                    href='#'>中</a> &nbsp;<a runat='server' onclick='a_analysis_Click(3,this);' href='#'>负</a>
+                                &nbsp;<a onclick='a_analysis_Click(4,this);' href='#'>争</a>&nbsp; <a onclick='a_hot_5_Click(1,this);'
+                                    href='#'>热</a>
+                                <br />
+                                <a href='#' onclick='a_attention_click(1,this);'>关注</a>&nbsp; <a href='#' runat='server'
+                                    onclick='a_examine_Click(2,this);'>审核</a>&nbsp;<a href='#' runat='server' onclick='a_delete_Click(99,this);'>删除</a>
+                            </td>
+                            <td style='text-align: center;' class="style9">
+                                <a href='http://club.china.com/data/thread/3799/2766/46/73/1_1.html' target='_blank'>
+                                    镜</a>
+                            </td>
+                            <td style='text-align: center;' class="style8">
+                                散文随笔
+                            </td>
+                            <td style='text-align: center;' class="style7">
+                                2013-12-23
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type='checkbox' id='59185' value='59185' onclick='ck_one_click(this.id);' />
+                            </td>
+                            <td class='style5'>
+                                <span style='color: red'></span><span style='color: red;'></span>梦戈戈长篇小说《爱情劫录》片段：
+                                <div style='float: right; margin-right: 3px;'>
+                                    <span style='color: #875805;'>同</span><span style='color: #875805;' class='style_content'
+                                        onmouseover='sp_content_mouseover(this);' onmouseout='sp_content_mouseout(this);'>详</span><input
+                                            type='hidden' value='长篇小说《爱情劫录》片段：“戈华。你实在是太厉害。早知道这样我就不用愁那么多天，差点把头发也愁白。”走出流芳楼。陆文香的心情一直都处于非常兴奋愉悦的状态。大哥的顽固，自己又哭又闹的束手无策，却被戈华一见面三言两语的就办妥。现在，居然连他的那些狗屁兄弟也收拾的服服帖帖。嘻嘻，戈华，我爱死你了！她一下兴奋的跳起来当街把戈华的脖子搂住。“这么多人看着我们，陆文香你疯了？”戈华左右看看，低声吼道。“一个大学生竟然不知道害羞两字是怎么写的。还不快下来？”“嘻嘻。我只学会写封建两个字。”陆文香在嗤嗤的笑，还作状要亲戈华。“戈华，那你教教我害羞两字是怎么写的？告诉我，我为什么要害羞？”戈华一本正经的道：“既然你都这么说，反正这里的人也认不得我，那我们就在这街上做爱，来个当今最流行的行为艺术如何？”“...' /><div>
+                            </td>
+                            </td><td style='text-align: center;' class="style6">
+                                <span>测分类一</span>&nbsp; <span><a href='#' style='text-decoration: underline;' onclick='sp_tag_t(this);'>
+                                    标签</a></span>
+                            </td>
+                            <td style='padding-left: 15px;' class="style10">
+                                <a onclick='a_analysis_Click(1,this);' href='#'>正</a>&nbsp;<a onclick='a_analysis_Click(2,this);'
+                                    href='#'>中</a> &nbsp;<a runat='server' onclick='a_analysis_Click(3,this);' href='#'>负</a>
+                                &nbsp;<a onclick='a_analysis_Click(4,this);' href='#'>争</a>&nbsp; <a onclick='a_hot_5_Click(1,this);'
+                                    href='#'>热</a>
+                                <br />
+                                <a href='#' onclick='a_attention_click(1,this);'>关注</a>&nbsp; <a href='#' runat='server'
+                                    onclick='a_examine_Click(2,this);'>审核</a>&nbsp;<a href='#' runat='server' onclick='a_delete_Click(99,this);'>删除</a>
+                            </td>
+                            <td style='text-align: center;' class="style9">
+                                <a href='http://club.china.com/data/thread/11180156/2766/50/62/7_1.html' target='_blank'>
+                                    镜</a>
+                            </td>
+                            <td style='text-align: center;' class="style8">
+                                小说沙龙
+                            </td>
+                            <td style='text-align: center;' class="style7">
+                                2013-12-14
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type='checkbox' id='59184' value='59184' onclick='ck_one_click(this.id);' />
+                            </td>
+                            <td class='style5'>
+                                <span style='color: red'></span><span style='color: red;'></span>想想毛泽东同志所受的委屈，希...
+                                <div style='float: right; margin-right: 3px;'>
+                                    <span style='color: #875805;'>同</span><span style='color: #875805;' class='style_content'
+                                        onmouseover='sp_content_mouseover(this);' onmouseout='sp_content_mouseout(this);'>详</span><input
+                                            type='hidden' value='想想毛泽东同志的经历，就坚定了一个信念：真理往往是掌握在少数人手里的。即便是革命同志，往往是不付出血的代价，是不会轻易地接受正确的思想的。付出代价的过程，其实是也借助反对力量清除坚持错误思想者的一个过程。没办法，现实就这么严酷。比方说，当中国年轻的马克思主义者热衷于搞城市工人运动时，毛泽东同志通过自己出色的实践发现，城市工人运动并不能从根本上解决问题，他就不再激进。所以中共二大四大都没有参加。甚至连中央委员都没有选上。但他没有放弃。当毛泽东同志发现和国民党合作是一个正确的途径时，他就积极参与，甚至成为国民党的中央宣传部代理部长。然而当他发现单纯的合作也并不解决问题时，就又寻找新的方向，积极参与到农民运动中。因此，他在国共合作开始时积极，高潮时退出，显得非常不合群。可是当毛泽东同志发现农...' /><div>
+                            </td>
+                            </td><td style='text-align: center;' class="style6">
+                                <span>测分类一</span>&nbsp; <span><a href='#' style='text-decoration: underline;' onclick='sp_tag_t(this);'>
+                                    标签</a></span>
+                            </td>
+                            <td style='padding-left: 15px;' class="style10">
+                                <a onclick='a_analysis_Click(1,this);' href='#'>正</a>&nbsp;<a onclick='a_analysis_Click(2,this);'
+                                    href='#'>中</a> &nbsp;<a runat='server' onclick='a_analysis_Click(3,this);' href='#'>负</a>
+                                &nbsp;<a onclick='a_analysis_Click(4,this);' href='#'>争</a>&nbsp; <a onclick='a_hot_5_Click(1,this);'
+                                    href='#'>热</a>
+                                <br />
+                                <a href='#' onclick='a_attention_click(1,this);'>关注</a>&nbsp; <a href='#' runat='server'
+                                    onclick='a_examine_Click(2,this);'>审核</a>&nbsp;<a href='#' runat='server' onclick='a_delete_Click(99,this);'>删除</a>
+                            </td>
+                            <td style='text-align: center;' class="style9">
+                                <a href='http://club.china.com/data/thread/1015/2766/74/04/9_1.html' target='_blank'>
+                                    镜</a>
+                            </td>
+                            <td style='text-align: center;' class="style8">
+                                军事史林
+                            </td>
+                            <td style='text-align: center;' class="style7">
+                                2013-12-23
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type='checkbox' id='59183' value='59183' onclick='ck_one_click(this.id);' />
+                            </td>
+                            <td class='style5'>
+                                <span style='color: red'></span><span style='color: red;'></span>2013年的校园文化传媒
+                                <div style='float: right; margin-right: 3px;'>
+                                    <span style='color: #875805;'>同</span><span style='color: #875805;' class='style_content'
+                                        onmouseover='sp_content_mouseover(this);' onmouseout='sp_content_mouseout(this);'>详</span><input
+                                            type='hidden' value='今天的传媒，己经是一种巨大的产业。它既是一种科技的产物，又是一种文化现象，它既服从于官方，又服从于民间，它既是现实生活的真实反映，又是当代社会的-虚拟世界.的制造者。现代传媒不仅仅是一个信息的载体，它己经方方面面渗透进了这个社会和人类的生活，它既是社会文化的重要组成部分，又是个体社会化的重要影响因素，并通过这样的途径又进一步影响整个社会。在这样的世界大背景下，校园文化传媒逐渐成为了大学校园和学校教学的一个重要组成部分。对于在校大学生来说，校园文化传媒是他们接触外界事物最主要和重要的渠道。随着社会信息化技术化的大潮涌动向前，大学校园中的传播媒介日益成为学校教育的重要组成部分，参与到整个教育活动中去。校园文化传媒是校园内部及学校与社会进行交流、传播信息的工具，它是全方位反应师生学习、工作、...' /><div>
+                            </td>
+                            </td><td style='text-align: center;' class="style6">
+                                <span>测分类一</span>&nbsp; <span><a href='#' style='text-decoration: underline;' onclick='sp_tag_t(this);'>
+                                    标签</a></span>
+                            </td>
+                            <td style='padding-left: 15px;' class="style10">
+                                <a onclick='a_analysis_Click(1,this);' href='#'>正</a>&nbsp;<a onclick='a_analysis_Click(2,this);'
+                                    href='#'>中</a> &nbsp;<a runat='server' onclick='a_analysis_Click(3,this);' href='#'>负</a>
+                                &nbsp;<a onclick='a_analysis_Click(4,this);' href='#'>争</a>&nbsp; <a onclick='a_hot_5_Click(1,this);'
+                                    href='#'>热</a>
+                                <br />
+                                <a href='#' onclick='a_attention_click(1,this);'>关注</a>&nbsp; <a href='#' runat='server'
+                                    onclick='a_examine_Click(2,this);'>审核</a>&nbsp;<a href='#' runat='server' onclick='a_delete_Click(99,this);'>删除</a>
+                            </td>
+                            <td style='text-align: center;' class="style9">
+                                <a href='http://club.china.com/data/thread/4411624/2757/28/00/4_1.html' target='_blank'>
+                                    镜</a>
+                            </td>
+                            <td style='text-align: center;' class="style8">
+                                人文天下
+                            </td>
+                            <td style='text-align: center;' class="style7">
+                                2013-03-05
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type='checkbox' id='59182' value='59182' onclick='ck_one_click(this.id);' />
+                            </td>
+                            <td class='style5'>
+                                <span style='color: red'></span><span style='color: red;'></span>今后中国再承诺任何情况下都不...
+                                <div style='float: right; margin-right: 3px;'>
+                                    <span style='color: #875805;'>同</span><span style='color: #875805;' class='style_content'
+                                        onmouseover='sp_content_mouseover(this);' onmouseout='sp_content_mouseout(this);'>详</span><input
+                                            type='hidden' value='日本正在用与中国为敌，来协助美国的扼制中国的战略，从而讨好美国，换取美国放松对日本控制，默许或支持日本修法修宪实现日本国家正常化的目的。按照现在的世界格局来讲日本实现国家正常化是日本正在努力，也最终能够实现的。但日本不仅仅是为了实现国家正常化，日本主要的目的还是要实现日本昔日的“大日本帝国梦”从新实现日本的军事强国梦，重现安倍的“值得骄傲和尊重的日本侵略历史”也就是日本的对外侵略扩张史。当今世界，日本正常化后实现其常规化装备的军事强国地位，日本不用非多大劲就能实现。但没有核的日本军事强国对日本的野心没多大的帮助，具备常规强国军备的日本不敢和中俄这样大核大国对抗。这样的没有核武的强大，对于想恢复昔日辉煌侵略历史的日本，是没办法实现的，只有具备强大核武的日本才能恢复昔日“辉煌”。那么日本在...' /><div>
+                            </td>
+                            </td><td style='text-align: center;' class="style6">
+                                <span>测分类一</span>&nbsp; <span><a href='#' style='text-decoration: underline;' onclick='sp_tag_t(this);'>
+                                    标签</a></span>
+                            </td>
+                            <td style='padding-left: 15px;' class="style10">
+                                <a onclick='a_analysis_Click(1,this);' href='#'>正</a>&nbsp;<a onclick='a_analysis_Click(2,this);'
+                                    href='#'>中</a> &nbsp;<a runat='server' onclick='a_analysis_Click(3,this);' href='#'>负</a>
+                                &nbsp;<a onclick='a_analysis_Click(4,this);' href='#'>争</a>&nbsp; <a onclick='a_hot_5_Click(1,this);'
+                                    href='#'>热</a>
+                                <br />
+                                <a href='#' onclick='a_attention_click(1,this);'>关注</a>&nbsp; <a href='#' runat='server'
+                                    onclick='a_examine_Click(2,this);'>审核</a>&nbsp;<a href='#' runat='server' onclick='a_delete_Click(99,this);'>删除</a>
+                            </td>
+                            <td style='text-align: center;' class="style9">
+                                <a href='http://club.china.com/data/thread/12171906/2766/73/16/3_1.html' target='_blank'>
+                                    镜</a>
+                            </td>
+                            <td style='text-align: center;' class="style8">
+                                网上谈兵
+                            </td>
+                            <td style='text-align: center;' class="style7">
+                                2013-12-22
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type='checkbox' id='59181' value='59181' onclick='ck_one_click(this.id);' />
+                            </td>
+                            <td class='style5'>
+                                <span style='color: red'></span><span style='color: red;'></span>婆媳相处有秘诀我和婆婆各有“...
+                                <div style='float: right; margin-right: 3px;'>
+                                    <span style='color: #875805;'>同</span><span style='color: #875805;' class='style_content'
+                                        onmouseover='sp_content_mouseover(this);' onmouseout='sp_content_mouseout(this);'>详</span><input
+                                            type='hidden' value='当年我生下了女儿，惟恐婆婆心里有想法，谁知我是庸人自扰，婆婆一听说我生了个女儿，赶紧把平时很少出门的公公也拉来，体体面面地为孙女过了个满月。我的余悸消除了，对婆婆也多了几分敬意。　　为了帮着带孩子，婆婆和我们小住了一段，使出了她的第二招“护媳不护儿”。　　我和丈夫虽没吵过架，但在教育孩子的问题上却常有争论，我主张有严有松地教孩子，而丈夫则主张宽松打头。婆婆知道我们的分歧后，很郑重地对丈夫说：“小瑞说得有道理，严是爱松是害，你该听小瑞的!”　　也许大家都不会想到我的婆婆会如何大度，这正是婆婆的第三招——“暗地里给的钱绝不要”。　　一次，丈夫从“私房钱”里掏出500元给婆婆，婆婆拒绝了，还给他上了一课：“我不要，收上这钱就等于咱娘俩合伙骗小瑞，还咋对得起她”知道了这事后，我已完全把婆婆当亲...' /><div>
+                            </td>
+                            </td><td style='text-align: center;' class="style6">
+                                <span>测分类一</span>&nbsp; <span><a href='#' style='text-decoration: underline;' onclick='sp_tag_t(this);'>
+                                    标签</a></span>
+                            </td>
+                            <td style='padding-left: 15px;' class="style10">
+                                <a onclick='a_analysis_Click(1,this);' href='#'>正</a>&nbsp;<a onclick='a_analysis_Click(2,this);'
+                                    href='#'>中</a> &nbsp;<a runat='server' onclick='a_analysis_Click(3,this);' href='#'>负</a>
+                                &nbsp;<a onclick='a_analysis_Click(4,this);' href='#'>争</a>&nbsp; <a onclick='a_hot_5_Click(1,this);'
+                                    href='#'>热</a>
+                                <br />
+                                <a href='#' onclick='a_attention_click(1,this);'>关注</a>&nbsp; <a href='#' runat='server'
+                                    onclick='a_examine_Click(2,this);'>审核</a>&nbsp;<a href='#' runat='server' onclick='a_delete_Click(99,this);'>删除</a>
+                            </td>
+                            <td style='text-align: center;' class="style9">
+                                <a href='http://club.china.com/data/thread/271691576/2762/66/35/2_1.html' target='_blank'>
+                                    镜</a>
+                            </td>
+                            <td style='text-align: center;' class="style8">
+                                婆媳关系
+                            </td>
+                            <td style='text-align: center;' class="style7">
+                                2013-07-28
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type='checkbox' id='59180' value='59180' onclick='ck_one_click(this.id);' />
+                            </td>
+                            <td class='style5'>
+                                <span style='color: red'></span><span style='color: red;'></span>吃水果的技巧-水果的正确吃法
+                                <div style='float: right; margin-right: 3px;'>
+                                    <span style='color: #875805;'>同</span><span style='color: #875805;' class='style_content'
+                                        onmouseover='sp_content_mouseover(this);' onmouseout='sp_content_mouseout(this);'>详</span><input
+                                            type='hidden' value='吃水果的技巧-水果的正确吃法吃水果的技巧-水果的正确吃法吃水果的技巧-水果的正确吃法吃水果的技巧-水果的正确吃法' /><div>
+                            </td>
+                            </td><td style='text-align: center;' class="style6">
+                                <span>测分类一</span>&nbsp; <span><a href='#' style='text-decoration: underline;' onclick='sp_tag_t(this);'>
+                                    标签</a></span>
+                            </td>
+                            <td style='padding-left: 15px;' class="style10">
+                                <a onclick='a_analysis_Click(1,this);' href='#'>正</a>&nbsp;<a onclick='a_analysis_Click(2,this);'
+                                    href='#'>中</a> &nbsp;<a runat='server' onclick='a_analysis_Click(3,this);' href='#'>负</a>
+                                &nbsp;<a onclick='a_analysis_Click(4,this);' href='#'>争</a>&nbsp; <a onclick='a_hot_5_Click(1,this);'
+                                    href='#'>热</a>
+                                <br />
+                                <a href='#' onclick='a_attention_click(1,this);'>关注</a>&nbsp; <a href='#' runat='server'
+                                    onclick='a_examine_Click(2,this);'>审核</a>&nbsp;<a href='#' runat='server' onclick='a_delete_Click(99,this);'>删除</a>
+                            </td>
+                            <td style='text-align: center;' class="style9">
+                                <a href='http://club.china.com/data/thread/26444983/2761/76/56/9_1.html' target='_blank'>
+                                    镜</a>
+                            </td>
+                            <td style='text-align: center;' class="style8">
+                                技巧讨论
+                            </td>
+                            <td style='text-align: center;' class="style7">
+                                2013-06-29
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type='checkbox' id='59179' value='59179' onclick='ck_one_click(this.id);' />
+                            </td>
+                            <td class='style5'>
+                                <span style='color: red'></span><span style='color: red;'></span>参加了创世的征文大赛，DNF...
+                                <div style='float: right; margin-right: 3px;'>
+                                    <span style='color: #875805;'>同</span><span style='color: #875805;' class='style_content'
+                                        onmouseover='sp_content_mouseover(this);' onmouseout='sp_content_mouseout(this);'>详</span><input
+                                            type='hidden' value='听说DNF的征文还不错，我就参加了。主要是自己喜欢这个游戏啊，顺便写写，也许能成呢。还能多点粉丝，多赚点钱，让自己的书多点人看啊。英雄联盟也尝试了，没那啥。这次DNF希望有结果吧。　　DNF这个游戏比英雄联盟本身更牛一点吧，DNF也算是世界收入第二，亚洲收入第一的游戏了。他们更好一点，因为DNF实际上一直希望能做游戏文化周边，之前出版过DNF的书，现在还要再加把力。所以DNF征文，腾讯游戏和创世更下本，25万的纯奖金，前三名包出版，湖北少儿这样的出版社。湖北少儿嘛，就是土豆的《斗破》的那个出版社，还不错哇~~~主要是貌似奖金就是奖金，不算买了版权的貌似，所以这点不错啊~万一不小心得奖金呢　　现在创世的征文都是和腾讯一伙的，游戏给资源，之前《英雄联盟之谁与争锋》日销售过万的，还有CF的那...' /><div>
+                            </td>
+                            </td><td style='text-align: center;' class="style6">
+                                <span>测分类一</span>&nbsp; <span><a href='#' style='text-decoration: underline;' onclick='sp_tag_t(this);'>
+                                    标签</a></span>
+                            </td>
+                            <td style='padding-left: 15px;' class="style10">
+                                <a onclick='a_analysis_Click(1,this);' href='#'>正</a>&nbsp;<a onclick='a_analysis_Click(2,this);'
+                                    href='#'>中</a> &nbsp;<a runat='server' onclick='a_analysis_Click(3,this);' href='#'>负</a>
+                                &nbsp;<a onclick='a_analysis_Click(4,this);' href='#'>争</a>&nbsp; <a onclick='a_hot_5_Click(1,this);'
+                                    href='#'>热</a>
+                                <br />
+                                <a href='#' onclick='a_attention_click(1,this);'>关注</a>&nbsp; <a href='#' runat='server'
+                                    onclick='a_examine_Click(2,this);'>审核</a>&nbsp;<a href='#' runat='server' onclick='a_delete_Click(99,this);'>删除</a>
+                            </td>
+                            <td style='text-align: center;' class="style9">
+                                <a href='http://club.china.com/data/thread/11180156/2766/46/37/9_1.html' target='_blank'>
+                                    镜</a>
+                            </td>
+                            <td style='text-align: center;' class="style8">
+                                小说沙龙
+                            </td>
+                            <td style='text-align: center;' class="style7">
+                                2013-12-12
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type='checkbox' id='59178' value='59178' onclick='ck_one_click(this.id);' />
+                            </td>
+                            <td class='style5'>
+                                <span style='color: red'></span><span style='color: red;'></span>我的大雷我的家（终审稿）
+                                <div style='float: right; margin-right: 3px;'>
+                                    <span style='color: #875805;'>同</span><span style='color: #875805;' class='style_content'
+                                        onmouseover='sp_content_mouseover(this);' onmouseout='sp_content_mouseout(this);'>详</span><input
+                                            type='hidden' value='我的大雷我的家（终审稿）刘毓民入冬以来，天没点入冬的样子。四季乱了，率性出独有的气象物候来。无风无雨，和暖如春。准确点讲，是秋的延续，秋的徜徉。要不，广场北侧的那几株迎春花，怎么会绽放盛开呢。前几天回老家，本该穿戴棉衣，但天空朗晴，暖阳滋生，就舍去了不少行囊。老家本来比现在的工作地要冷些，回到老家，就接到了妻的电话，她问我冷不冷，要是冷了，让我穿上弟弟的大衣。回家时，大侄子问我走过小洼地那条路没，我说没有。于是，他径直将车开到县城新扩展的东侧。那里变化很大，一条南北贯通的柏油街面，长度超过三公里，好宽敞好气派。城镇化建设步伐，在老家跨越式迈进。原有的城市骨架，拉的好宽泛，好现代。到了小洼地与耀卓之间的区域，新修了一条宽阔大道，路的两边，已经绿化到位了，无头树挺立两边，还有暂新的灯杆。听...' /><div>
+                            </td>
+                            </td><td style='text-align: center;' class="style6">
+                                <span>测分类一</span>&nbsp; <span><a href='#' style='text-decoration: underline;' onclick='sp_tag_t(this);'>
+                                    标签</a></span>
+                            </td>
+                            <td style='padding-left: 15px;' class="style10">
+                                <a onclick='a_analysis_Click(1,this);' href='#'>正</a>&nbsp;<a onclick='a_analysis_Click(2,this);'
+                                    href='#'>中</a> &nbsp;<a runat='server' onclick='a_analysis_Click(3,this);' href='#'>负</a>
+                                &nbsp;<a onclick='a_analysis_Click(4,this);' href='#'>争</a>&nbsp; <a onclick='a_hot_5_Click(1,this);'
+                                    href='#'>热</a>
+                                <br />
+                                <a href='#' onclick='a_attention_click(1,this);'>关注</a>&nbsp; <a href='#' runat='server'
+                                    onclick='a_examine_Click(2,this);'>审核</a>&nbsp;<a href='#' runat='server' onclick='a_delete_Click(99,this);'>删除</a>
+                            </td>
+                            <td style='text-align: center;' class="style9">
+                                <a href='http://club.china.com/data/thread/3799/2766/46/74/6_1.html' target='_blank'>
+                                    镜</a>
+                            </td>
+                            <td style='text-align: center;' class="style8">
+                                散文随笔
+                            </td>
+                            <td style='text-align: center;' class="style7">
+                                2013-12-13
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type='checkbox' id='59177' value='59177' onclick='ck_one_click(this.id);' />
+                            </td>
+                            <td class='style5'>
+                                <span style='color: red'></span><span style='color: red;'></span>日专家指出钓鱼岛应归还中国美...
+                                <div style='float: right; margin-right: 3px;'>
+                                    <span style='color: #875805;'>同</span><span style='color: #875805;' class='style_content'
+                                        onmouseover='sp_content_mouseover(this);' onmouseout='sp_content_mouseout(this);'>详</span><input
+                                            type='hidden' value='日本横滨市立大学名誉教授矢吹晋先生何培忠日本横滨市立大学名誉教授矢吹晋先生是日本当代日中关系史专家，今年11月，他应中国社会科学院国际中国学研究中心的邀请来华访问，并在学术研讨会上发表论文《乒乓外交与中美在钓鱼岛上的博弈——冲绳归还40年回顾》。该论文是日本学者第一次从中美日三角关系的角度探讨钓鱼岛问题。笔者在矢吹晋访问期间，就他的近期研究成果和国内民众关心的话题与其做了交流。矢吹晋认为，发展中日关系首先应尊重和承认历史事实，承认《波斯坦公告》的决定，退回《波茨坦公告》约定的事情上。“中国不是美国敌人，美国对日本也不全盘信任”何培忠：记得您2005年来研究中心作报告时，谈到中日恢复邦交谈判时的一个有趣的细节：毛泽东主席送给田中角荣首相一套《楚辞集注》。您经过深入研究提出，那是因为田中首...' /><div>
+                            </td>
+                            </td><td style='text-align: center;' class="style6">
+                                <span>测分类一</span>&nbsp; <span><a href='#' style='text-decoration: underline;' onclick='sp_tag_t(this);'>
+                                    标签</a></span>
+                            </td>
+                            <td style='padding-left: 15px;' class="style10">
+                                <a onclick='a_analysis_Click(1,this);' href='#'>正</a>&nbsp;<a onclick='a_analysis_Click(2,this);'
+                                    href='#'>中</a> &nbsp;<a runat='server' onclick='a_analysis_Click(3,this);' href='#'>负</a>
+                                &nbsp;<a onclick='a_analysis_Click(4,this);' href='#'>争</a>&nbsp; <a onclick='a_hot_5_Click(1,this);'
+                                    href='#'>热</a>
+                                <br />
+                                <a href='#' onclick='a_attention_click(1,this);'>关注</a>&nbsp; <a href='#' runat='server'
+                                    onclick='a_examine_Click(2,this);'>审核</a>&nbsp;<a href='#' runat='server' onclick='a_delete_Click(99,this);'>删除</a>
+                            </td>
+                            <td style='text-align: center;' class="style9">
+                                <a href='http://club.china.com/data/thread/1013/2766/67/22/5_1.html' target='_blank'>
+                                    镜</a>
+                            </td>
+                            <td style='text-align: center;' class="style8">
+                                中华军备
+                            </td>
+                            <td style='text-align: center;' class="style7">
+                                2013-12-20
+                            </td>
+                        </tr>
+                    </table></div>
+                   
+                    <script src='../Common/JS/commonjs.js' type='text/javascript'></script>
+                    <script src='../Common/JS/sitedata_show.js' type='text/javascript'></script>
+                    <script src='../Common/JS/netPage.js' type='text/javascript'></script>
+                </div>
+            </div>
+            <div>
+                <div id="div_page" class="paging" style="float: left; margin-top: 10px; margin-left:240px;">
+                    <a id='a_firstPage' style='margin-right: 5px;'>首页</a> <a id='a_lastPage' style='margin-right: 5px;'>
+                        上一页</a> <a id='a_nextPage' href='' onclick='a_nextPage_click(this,1);return false;'
+                            style='margin-right: 5px; text-decoration: underline; cursor: hand;'>下一页</a>
+                    <a id='a_finalPage' href='' onclick='a_finalPage_click(this);return false;' style='margin-right: 5px;
+                        text-decoration: underline; cursor: hand;'>尾页</a>&nbsp;&nbsp;&nbsp; <a id='sp_pageMess'
+                            runat='server'>当前第1页,共878页</a></div>
+            </div>
+        </div>
+    </div>
+    <div style="visibility: hidden; position: absolute; bottom: 300px;">
+        <span style="visibility: hidden">hid_singleId 里面存放的是单个的 Idyle="visibility: hidden">hid_singleId
+            里面存放的是单个的 Id</span>
+        <input name="hid_singleId" type="hidden" id="hid_singleId" />
+        <span style="visibility: hidden;">hid_ck_DateIds 里面存放的是全选的Ids,以 逗号分隔开</span>
+        <input name="hid_ck_DateIds_1" type="hidden" id="hid_ck_DateIds_1" style="width: 600px;" />
+        <input name="hid_ck_DateIds" type="hidden" id="hid_ck_DateIds" style="width: 600px;" />
+        <span style="visibility: hidden">hid_showStatus 里面存放的是显示的状态 0未审核; 1预审核; 2已审核; 99已删除</span>
+        <input name="hid_showStatus" type="text" id="hid_showStatus" value="0" />
+        <input name="hid_attention" type="text" id="hid_attention" value="-1" />
+        <input name="hid_hot" type="text" id="hid_hot" value="-1" />
+        <input name="hid_sd_id" type="hidden" id="hid_sd_id" />
+        <input name="hid_projectId" type="hidden" id="hid_projectId" value="4" />
+        <span style="visibility: hidden">分页控件</span>
+        <input type="hidden" id="hid_pageIndex" value="1" />
+        <input name="hid_pageCount" type="hidden" id="hid_pageCount" value="878" />
+        <input name="hid_queryParms" type="hidden" id="hid_queryParms" />
+        <input name="hid_sel_count" type="hidden" id="hid_sel_count" value="1" />
+        <span id="sp_tag_1">
+            <select>
+                <option value=''>--选择--</option>
+                <option value='op_35'>小类1_2</option>
+                <option value='op_34'>小类1_1</option>
+            </select></span> <span id="sp_tag_2"></span><span id="sp_tag_3"></span><span id="sp_tag_4">
+            </span><span id="sp_tag_5"></span><span id="sp_tag_6"></span>
+        <input id="hid_savetag" type="hidden" value="true" />
+        <span>如果要查看打标签的内容,需要将这个 提上去</span>
+        <input type="hidden" id="txt_top_body" value="" style="width: 300px;" />
+        <input name="hid_batchGropTagStatus" type="hidden" id="hid_batchGropTagStatus" value="true" />
+        <input type="text" id="txt_mess" value="" />
+    </div>
+    </form>
+</body>
+</html>

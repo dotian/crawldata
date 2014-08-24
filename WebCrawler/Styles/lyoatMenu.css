@@ -1,0 +1,142 @@
+﻿
+
+body
+{
+    width: 1325px;
+    height: 800px;
+    font-size: 80%;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+.mian_left
+{
+    height: 800px;
+    width: 153px;
+    float: left;
+    border-top: 2px solid #99BBE8;
+    border-left: 2px solid #99BBE8;
+    border-right: 2px solid #99BBE8;
+    border-bottom: 2px solid #99BBE8;
+    margin: 0px;
+    padding: 0px;
+}
+.mian_middle
+{
+    height: 800px;
+    width: 1120px;
+    margin: 10px auto;
+    border-bottom: 2px solid #99BBE8;
+    background-color: #DFE8F6;
+}
+.mian_right
+{
+    height: 800px;
+    width: 1120px;
+    float: left;
+    border-top: 2px solid #99BBE8;
+    border-right: 2px solid #99BBE8;
+    border-bottom: 2px solid #99BBE8;
+    background-color: #DFE8F6;
+}
+.menu
+{
+    width: 150px;
+}
+
+.paging
+{
+    padding: 0px;
+    margin: 0px;
+    width: 400px;
+    margin-left: 5px;
+    margin-top:9px;
+}
+
+
+.div_contentLeft
+{
+    padding: 0px;
+    margin: 0px;
+    width: 29%;
+    height: 100%;
+    float: left;
+    border-top: 2px solid #99BBE8;
+    background-color: #DFE8F6;
+}
+
+.div_contentRight
+{
+    padding: 0px;
+    margin: 0px;
+    width: 70%;
+    height: 100%;
+    float: left;
+    border-top: 2px solid #99BBE8;
+    border-left: 2px solid #99BBE8;
+}
+.tb_manager
+{
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid #99BBE8;
+    width: 95%;
+    height: auto;
+    margin-left: 5px;
+    background-color: #DFE8F6;
+}
+
+.tb_manager tr
+{
+    height: 25px;
+}
+.tb_manager td
+{
+    border-width: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.td_left
+{
+    width: 20%;
+    text-align: right;
+}
+.td_right
+{
+    width: 80%;
+    text-align: left;
+}
+.td_right input[type="text"]
+{
+    width: 220px;
+}
+.td_button
+{
+    text-align: center;
+    vertical-align: bottom;
+    height: 30px;
+}
+
+
+#tb_dataList tr
+{
+    line-height: 20px;
+}
+#tb_dataList
+{
+    margin: 2px 0px 2px 2px;
+    width: 760px;
+    border-top: 1px solid #99BBE8;
+    border-left: 1px solid #99BBE8;
+}
+#tb_dataList td, th
+{
+    border-right: 1px solid #c9d4e5;
+    border-bottom: 1px solid #c9d4e5;
+    padding-left: 5px;
+    padding-top: 2px;
+    vertical-align: middle;
+    text-align: left;
+}

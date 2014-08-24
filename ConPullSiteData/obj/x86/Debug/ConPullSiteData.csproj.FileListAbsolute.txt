@@ -1,0 +1,17 @@
+H:\2014Year\服务器应用程序\WebMining\ConPullSiteData\bin\Debug\ConPullSiteData.exe.config
+H:\2014Year\服务器应用程序\WebMining\ConPullSiteData\bin\Debug\ConPullSiteData.exe.manifest
+H:\2014Year\服务器应用程序\WebMining\ConPullSiteData\bin\Debug\ConPullSiteData.application
+H:\2014Year\服务器应用程序\WebMining\ConPullSiteData\bin\Debug\ConPullSiteData.exe
+H:\2014Year\服务器应用程序\WebMining\ConPullSiteData\bin\Debug\ConPullSiteData.pdb
+H:\2014Year\服务器应用程序\WebMining\ConPullSiteData\bin\Debug\log4net.dll
+H:\2014Year\服务器应用程序\WebMining\ConPullSiteData\obj\x86\Debug\ConPullSiteData.exe.manifest
+H:\2014Year\服务器应用程序\WebMining\ConPullSiteData\obj\x86\Debug\ConPullSiteData.application
+H:\2014Year\服务器应用程序\WebMining\ConPullSiteData\obj\x86\Debug\ConPullSiteData.exe
+H:\2014Year\服务器应用程序\WebMining\ConPullSiteData\obj\x86\Debug\ConPullSiteData.pdb
+H:\2015年所有整理\Web程序\WebCrawler\ConPullSiteData\bin\Debug\ConPullSiteData.exe.config
+H:\2015年所有整理\Web程序\WebCrawler\ConPullSiteData\obj\x86\Debug\ConPullSiteData.exe
+H:\2015年所有整理\Web程序\WebCrawler\ConPullSiteData\obj\x86\Debug\ConPullSiteData.pdb
+H:\2015年所有整理\Web程序\WebCrawler\ConPullSiteData\bin\Debug\ConPullSiteData.exe
+H:\2015年所有整理\Web程序\WebCrawler\ConPullSiteData\bin\Debug\ConPullSiteData.pdb
+H:\2015年所有整理\Web程序\WebCrawler\ConPullSiteData\bin\Debug\log4net.dll
+H:\2015年所有整理\Web程序\WebCrawler\ConPullSiteData\obj\x86\Debug\ConPullSiteData.csprojResolveAssemblyReference.cache

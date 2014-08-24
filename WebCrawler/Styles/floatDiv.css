@@ -1,0 +1,10 @@
+﻿*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+body{font:12px/180% Arial,Lucida,Verdana,"宋体",Helvetica,sans-serif;}
+/* btnbox */
+.btnbox{float:left;width:84px;}
+.btnbox a.od{border:#849bca 2px solid;margin-top:2px;display:block;font-weight:bold;float:left;width:80px;color:#547bc9;line-height:25px;height:25px;text-align:center;text-decoration:none}
+.btnbox a.od{background:#eef1f8}
+.btnbox a.od:hover{background:#eee}
+#feedbox{border:#849bca 2px solid;margin:2px 0 0 2px;background:#edf1f8;float:left;overflow:hidden;width:500px;cursor:move;position:absolute;top:0px;left:0px;height:200px;filter:alpha(opacity=100);opacity:1;}
+#feedbox .main{padding:10px;}

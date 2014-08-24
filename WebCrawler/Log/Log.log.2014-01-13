@@ -1,0 +1,390 @@
+2014-01-13 14:49:16,997
+--INFO:存储过程：[usp_mining_Select_EmployeeByEmpId]
+
+2014-01-13 14:49:17,343
+--ERROR:GetEmpListService
+
+System.Data.SqlClient.SqlException: 找不到存储过程 ' usp_mining_select_employee'。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 RionSoft.IBRS.Business.DAL.IBRSCommonDAL.SelectData(String argStoredProcedure, SqlParameter[] argPara) 位置 H:\2015年所有整理\Web程序\WebCrawler\DataCrawlerDAL\Crawler\IBRSCommonDAL.cs:行号 93
+   在 DataCrawler.DAL.Crawler.EmployeeDAL.GetEmpListService() 位置 H:\2015年所有整理\Web程序\WebCrawler\DataCrawlerDAL\Crawler\EmployeeDAL.cs:行号 131
+2014-01-13 14:50:15,024
+--INFO:存储过程：[usp_mining_Select_EmployeeByEmpId]
+
+2014-01-13 14:50:15,034
+--ERROR:GetEmpListService
+
+System.Data.SqlClient.SqlException: 找不到存储过程 ' usp_mining_select_employee'。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 RionSoft.IBRS.Business.DAL.IBRSCommonDAL.SelectData(String argStoredProcedure, SqlParameter[] argPara) 位置 H:\2015年所有整理\Web程序\WebCrawler\DataCrawlerDAL\Crawler\IBRSCommonDAL.cs:行号 93
+   在 DataCrawler.DAL.Crawler.EmployeeDAL.GetEmpListService() 位置 H:\2015年所有整理\Web程序\WebCrawler\DataCrawlerDAL\Crawler\EmployeeDAL.cs:行号 131
+2014-01-13 14:51:29,822
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 14:55:13,130
+--ERROR:GetEmpListService
+
+System.Data.SqlClient.SqlException: 找不到存储过程 ' usp_mining_select_employee'。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 RionSoft.IBRS.Business.DAL.IBRSCommonDAL.SelectData(String argStoredProcedure, SqlParameter[] argPara) 位置 H:\2015年所有整理\Web程序\WebCrawler\DataCrawlerDAL\Crawler\IBRSCommonDAL.cs:行号 93
+   在 DataCrawler.DAL.Crawler.EmployeeDAL.GetEmpListService() 位置 H:\2015年所有整理\Web程序\WebCrawler\DataCrawlerDAL\Crawler\EmployeeDAL.cs:行号 131
+2014-01-13 14:56:30,048
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 14:58:54,793
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 15:02:44,131
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 15:03:03,368
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 15:03:50,404
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 15:04:25,985
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 15:05:21,875
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 15:06:01,632
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 15:06:15,520
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 15:06:50,998
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 15:42:34,601
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 15:43:47,402
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 15:44:21,226
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 15:45:26,680
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 15:45:41,321
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 15:46:57,459
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 15:47:26,518
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 15:47:55,915
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 15:48:35,443
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 15:49:06,671
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 15:50:04,749
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 15:50:14,807
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 15:50:33,575
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 15:50:50,642
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 15:51:41,527
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 15:51:53,412
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 15:52:42,955
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 15:52:54,129
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 15:55:39,882
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 15:56:18,928
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 15:56:28,679
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 15:57:00,776
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 15:58:09,292
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 15:58:54,706
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 15:59:47,304
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:00:53,678
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:06:55,576
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:08:25,306
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:09:24,573
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:09:32,263
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:10:04,516
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:10:35,121
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:11:13,725
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:11:36,343
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:12:49,973
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:15:01,424
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:15:15,674
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:15:27,278
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:16:51,655
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:16:58,217
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:17:32,341
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:19:11,248
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:21:07,692
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:21:35,697
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:21:44,358
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:22:35,848
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:24:48,667
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:27:03,510
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:28:42,953
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:31:18,677
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:31:57,609
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:32:36,489
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:36:42,306
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:37:41,465
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:38:54,023
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:39:52,459
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:40:08,654
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:40:19,546
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:40:51,943
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:41:24,751
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:41:33,145
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:43:15,277
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:43:57,675
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:44:19,232
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:45:02,188
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:47:15,271
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:47:35,309
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:47:51,869
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:48:03,809
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:49:59,094
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:58:38,678
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:59:34,178
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 16:59:58,212
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 17:00:28,031
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 17:00:34,136
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 17:02:37,629
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 17:03:11,600
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 17:03:29,491
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 17:04:41,754
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 17:12:15,423
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 17:15:33,871
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 17:16:43,459
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 17:33:30,790
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 17:37:56,599
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 17:39:24,951
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 17:39:51,829
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 17:40:18,384
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 17:41:10,099
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 18:08:54,533
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 18:11:20,801
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 18:12:07,989
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 18:13:16,683
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 18:20:46,240
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 18:20:49,165
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-13 18:20:51,610
+--INFO:存储过程：[usp_mining_select_employee]
+

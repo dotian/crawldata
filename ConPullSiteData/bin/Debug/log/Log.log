@@ -1,0 +1,114 @@
+2014-01-10 01:02:45,039
+--INFO:开启相关服务,程序正在运行中...
+
+2014-01-10 01:02:45,129
+--INFO:PullRunManagerThread 轮循拉数据开始
+
+2014-01-10 01:02:46,751
+--INFO:PullRunManagerThread 轮循拉数据成功
+
+2014-01-10 01:03:06,375
+--INFO:开启相关服务,程序正在运行中...
+
+2014-01-10 01:03:06,385
+--INFO:PullRunManagerThread 轮循拉数据开始
+
+2014-01-10 01:09:12,746
+--INFO:开启相关服务,程序正在运行中...
+
+2014-01-10 01:09:12,756
+--INFO:PullRunManagerThread 轮循拉数据开始
+
+2014-01-10 01:25:40,629
+--INFO:开启相关服务,程序正在运行中...
+
+2014-01-10 01:25:40,642
+--INFO:PullRunManagerThread 轮循拉数据开始
+
+2014-01-10 01:25:46,217
+--INFO:存储过程：[usp_mining_insert_siedateByRssData];参数：['优科豪马轮胎荣获2013中国金轮奖年度最佳高性能轮胎奖','The Yokohama Advan Neova Ado8 R tire was recently presented with the "2013 China Golden Wheels Best High-Performance Tire" award. The tire performs extremely well in a series of professional track tests on its safety, handling, comfort, fuel efficiency, as well as noise reduction.','http://hankook.xlmediawatch.com/main/Hankook.nsf/pub/DATA-9F7BGN','10','2014/1/7 0:00:00','2','中国轮胎商务网','1','2','新闻']
+
+2014-01-10 01:25:56,030
+--INFO:存储过程：[usp_mining_insert_siedateByRssData];参数：['固特异法国轮胎工厂工人占领工厂','On January 8, workers battling the closure of a Goodyear tire plant in northern France occupied the facility, a day after police intervened to free two plant managers held captive for a day. Sources say that Goodyear has been trying to shut the plant, which makes tires for farm equipment, for several years. But French law obligates companies to consult unions on their restructuring plans, and Goodyear got entangled in legal proceedings with the plant's workers.','http://hankook.xlmediawatch.com/main/Hankook.nsf/pub/DATA-9F7CN4','8','2014/1/8 0:00:00','2','腾讯网','1','2','新闻']
+
+2014-01-10 01:26:10,073
+--INFO:存储过程：[usp_mining_insert_siedateByRssData];参数：['西进！西进！107家韩企入渝安家','Chongqing is presently extremely popular among Korean enterprises and has received an investment of over $310 million from a total of 107 enterprises from the country, including Hankook Tire. Hankook Tire Chongqing subsidiary recently started its phase II project with the aim of building a passenger car tire production line. The initiative, with a scheduled investment of $298 million, is expected to be completed and put into operation at the end of 2014. It will be capable of producing six million semi-steel radial tires per year.','http://hankook.xlmediawatch.com/main/Hankook.nsf/pub/DATA-9F7BGM','4','2014/1/9 0:00:00','2','重庆商报','1','2','新闻']
+
+2014-01-10 01:26:11,440
+--INFO:存储过程：[usp_mining_insert_siedateByRssData];参数：['米其林新工程机械轮胎制造厂落成','Michelin recently completed a new OTR tire plant at Starr in a record time of 17 months. The new plant is one of three Michelin facilities worldwide capable of producing 63-inch radial tires. It will be dedicated to 57- and 63-inch versions of the firm's XRD line, according to Bruce Brackett, global earthmover tire manager. Michelin is also spending $200 million to expand its Starr rubber compounding and materials preparation plant that sits adjacent to the new OTR factory. The project should be completed in 2014.','http://hankook.xlmediawatch.com/main/Hankook.nsf/pub/DATA-9F76RY','6','2014/1/9 0:00:00','2','中国工业报','1','2','新闻']
+
+2014-01-10 01:26:12,109
+--INFO:存储过程：[usp_mining_insert_siedateByRssData];参数：['米其林替换胎市场增速高于整车——专访米其林中国轿车及轻卡轮胎市场部副总裁潘斯凯','Pascal Roche, Vice President and Marketing Director at Michelin China, expects tire sales to increase in the Chinese tire retail market. He said that Michelin sales increased in 2013 and owns a benign inventory. Michelin attaches great importance to responsible customers, while paying equal attention to every tire segment, he added. ','http://hankook.xlmediawatch.com/main/Hankook.nsf/pub/DATA-9F6BH7','6','2013/12/30 0:00:00','2','汽车与配件','1','2','新闻']
+
+2014-01-10 01:26:12,319
+--INFO:存储过程：[usp_mining_insert_siedateByRssData];参数：['韩泰轮胎中国高端配套增长迅猛','Over the past nine months of 2013, Hankook Tire posted remarkable sales results, especially in the Chinese market. During the third quarter of 2013, the tiremaker achieved global sales growth of 8.3% thanks to robust performance in the Chinese high-end tire segment. By the end of 2013, it owned up to 2,700 Chinese specialty stores, up from 2,000 in early 2013. In this year, its retail sales volume in China reportedly rose by 10% annually.','http://hankook.xlmediawatch.com/main/Hankook.nsf/pub/DATA-9F6BH6','4','2014/1/7 0:00:00','2','中国客车网','1','2','新闻']
+
+2014-01-10 01:26:16,968
+--INFO:存储过程：[usp_mining_insert_siedateByRssData];参数：['韩泰重庆乘用胎二期项目启建','Hankook Tire Chongqing subsidiary recently started its phase II project with the aim of building a passenger car tire production line. The initiative, which has a scheduled investment of $298 million, is expected to be completed and put into operation at the end of 2014. It will be capable of producing six million semi-steel radial tires per year.','http://hankook.xlmediawatch.com/main/Hankook.nsf/pub/DATA-9F67XF','4','2014/1/7 0:00:00','2','中国化工信息网','1','2','新闻']
+
+2014-01-10 01:26:17,040
+--INFO:存储过程：[usp_mining_insert_siedateByRssData];参数：['韩泰重庆乘用胎二期项目启建','Hankook Tire Chongqing subsidiary recently started its phase II project with the aim of building a passenger car tire production line. The initiative, which has a scheduled investment of $298 million, is expected to be completed and put into operation at the end of 2014. It will be capable of producing six million semi-steel radial tires per year.','http://hankook.xlmediawatch.com/main/Hankook.nsf/pub/DATA-9F67XE','4','2014/1/7 0:00:00','2','中国行业研究网','1','2','新闻']
+
+2014-01-10 01:26:17,104
+--INFO:存储过程：[usp_mining_insert_siedateByRssData];参数：['韩泰最新SUV轮胎将配套第三代宝马X5','Hankook Tire recently announced that it would supply its latest ultra-high-performance Ventus S1 evo2 SUV tire, size 225/55R18V XL, to the third-generation BMW X5, which is the fifth model from the BMW Group to use Hankook products as original equipment. The dynamic tire promises outstanding handling, safety, grip, as well as noise reduction performance. ','http://hankook.xlmediawatch.com/main/Hankook.nsf/pub/DATA-9F66RC','4','2014/1/15 0:00:00','2','汽车之友','1','2','新闻']
+
+2014-01-10 01:26:17,171
+--INFO:存储过程：[usp_mining_insert_siedateByRssData];参数：['江苏韩泰轮胎举行2014年《环境安全目标责任书》签订仪式','On January 3, the Hankook Jiangsu subsidiary held a signing ceremony for 2014 the "Letter of Responsibility for Environmental Safety". The event included the company vice president, party secretary and deputy general manager, as well as the deputy party secretary and labor union chairman.','http://hankook.xlmediawatch.com/main/Hankook.nsf/pub/DATA-9F5AAV','4','2014/1/7 0:00:00','2','淮海商报','1','2','新闻']
+
+2014-01-10 01:26:17,234
+--INFO:存储过程：[usp_mining_insert_siedateByRssData];参数：['那些2013版值得拥有的用品','','http://hankook.xlmediawatch.com/main/Hankook.nsf/pub/DATA-9F56R5','4','2014/1/1 0:00:00','2','汽车族','1','2','新闻']
+
+2014-01-10 01:26:17,295
+--INFO:存储过程：[usp_mining_insert_siedateByRssData];参数：['配套三大豪车 韩泰轮胎发力中国零售业','Hankook recently announced supply for the third-generation BMW X5. This cooperation is of strategic importance to the tiremaker in its process of tapping into the high-end tire segment, in which it has fared extremely well, especially in the Chinese market. The company has built cooperative relationships with the top three German luxury auto brands - BMW, Audi, and Mercedes-Benz. It is committed to expanding its presence and becoming the number one tire manufacturer in the country in the future.','http://hankook.xlmediawatch.com/main/Hankook.nsf/pub/DATA-9F57XC','4','2014/1/6 13:00:00','2','中国汽车报网','1','2','新闻']
+
+2014-01-10 01:26:17,357
+--INFO:存储过程：[usp_mining_insert_siedateByRssData];参数：['韩泰中国高端配套增长迅猛','Over the past nine months of 2013, Hankook Tire posted remarkable sales results, especially in the Chinese market. During the third quarter of 2013, the tiremaker achieved global sales growth of 8.3% thanks to robust performance in the Chinese high-end tire segment. By the end of 2013, it owned up to 2,700 Chinese specialty stores, up from 2,000 in early 2013. In this year, its retail sales volume in China reportedly rose by 10% annually.','http://hankook.xlmediawatch.com/main/Hankook.nsf/pub/DATA-9F57XA','4','2014/1/6 14:52:00','2','中国汽车工业协会','1','2','新闻']
+
+2014-01-10 01:26:17,421
+--INFO:存储过程：[usp_mining_insert_siedateByRssData];参数：['2013年韩泰轮胎中国零售市场销售额同比增长10%','Over the past nine months of 2013, Hankook Tire posted remarkable sales results, especially in the Chinese market. During the third quarter of 2013, the tiremaker achieved global sales growth of 8.3% thanks to robust performance in the Chinese high-end tire segment. By the end of 2013, it owned up to 2,700 Chinese specialty stores, up from 2,000 in early 2013. In this year, its retail sales volume in China reportedly rose by 10% annually.','http://hankook.xlmediawatch.com/main/Hankook.nsf/pub/DATA-9F57XB','4','2014/1/6 14:27:00','2','中国商用汽车网','1','2','新闻']
+
+2014-01-10 01:26:17,484
+--INFO:存储过程：[usp_mining_insert_siedateByRssData];参数：['韩泰轮胎二期项目开工','Hankook Tire Chongqing subsidiary recently started its phase II project with the aim of building a passenger car tire production line. The initiative, which has a scheduled investment of $298 million, is expected to be completed and put into operation at the end of 2014. It will be capable of producing six million semi-steel radial tires per year.','http://hankook.xlmediawatch.com/main/Hankook.nsf/pub/DATA-9F4CQT','4','2014/1/2 0:00:00','2','重庆对外贸易经济委员会','1','2','新闻']
+
+2014-01-10 01:26:17,552
+--INFO:存储过程：[usp_mining_insert_siedateByRssData];参数：['韩泰重庆乘用胎二期项目启建','Hankook Tire Chongqing subsidiary recently started its phase II project with the aim of building a passenger car tire production line. The initiative, which has a scheduled investment of $298 million, is expected to be completed and put into operation at the end of 2014. It will be capable of producing six million semi-steel radial tires per year.','http://hankook.xlmediawatch.com/main/Hankook.nsf/pub/DATA-9F4CQF','4','2014/1/6 0:00:00','2','中化新网','1','2','新闻']
+
+2014-01-10 01:26:17,613
+--INFO:存储过程：[usp_mining_insert_siedateByRssData];参数：['韩泰重庆乘用胎二期项目启建','Hankook Tire Chongqing subsidiary recently started its phase II project with the aim of building a passenger car tire production line. The initiative, which has a scheduled investment of $298 million, is expected to be completed and put into operation at the end of 2014. It will be capable of producing six million semi-steel radial tires per year.','http://hankook.xlmediawatch.com/main/Hankook.nsf/pub/DATA-9F4CQE','4','2014/1/6 0:00:00','2','中国化工报','1','2','新闻']
+
+2014-01-10 01:26:17,676
+--INFO:存储过程：[usp_mining_insert_siedateByRssData];参数：['韩泰中国高端配套增长迅猛','Over the past nine months of 2013, Hankook Tire posted remarkable sales results, especially in the Chinese market. During the third quarter of 2013, the tiremaker achieved global sales growth of 8.3% thanks to robust performance in the Chinese high-end tire segment. By the end of 2013, it owned up to 2,700 Chinese specialty stores, up from 2,000 in early 2013. In this year, its retail sales volume in China reportedly rose by 10% annually.','http://hankook.xlmediawatch.com/main/Hankook.nsf/pub/DATA-9F4CQQ','4','2014/1/6 0:00:00','2','中国卡车网','1','2','新闻']
+
+2014-01-10 01:26:17,738
+--INFO:存储过程：[usp_mining_insert_siedateByRssData];参数：['韩泰轮胎在华高端配套增长迅猛','Over the past nine months of 2013, Hankook Tire posted remarkable sales results, especially in the Chinese market. During the third quarter of 2013, the tiremaker achieved global sales growth of 8.3% thanks to robust performance in the Chinese high-end tire segment. By the end of 2013, it owned up to 2,700 Chinese specialty stores, up from 2,000 in early 2013. In this year, its retail sales volume in China reportedly rose by 10% annually.','http://hankook.xlmediawatch.com/main/Hankook.nsf/pub/DATA-9F4CQK','4','2014/1/6 8:46:00','2','慧聪网','1','2','新闻']
+
+2014-01-10 01:26:17,801
+--INFO:存储过程：[usp_mining_insert_siedateByRssData];参数：['韩泰中国高端配套增长迅猛','Over the past nine months of 2013, Hankook Tire posted remarkable sales results, especially in the Chinese market. During the third quarter of 2013, the tiremaker achieved global sales growth of 8.3% thanks to robust performance in the Chinese high-end tire segment. By the end of 2013, it owned up to 2,700 Chinese specialty stores, up from 2,000 in early 2013. In this year, its retail sales volume in China reportedly rose by 10% annually.','http://hankook.xlmediawatch.com/main/Hankook.nsf/pub/DATA-9F4CQJ','4','2014/1/6 9:33:00','2','慧聪网','1','2','新闻']
+
+2014-01-10 01:26:17,865
+--INFO:存储过程：[usp_mining_insert_siedateByRssData];参数：['韩泰中国高端配套增长迅猛','Over the past nine months of 2013, Hankook Tire posted remarkable sales results, especially in the Chinese market. During the third quarter of 2013, the tiremaker achieved global sales growth of 8.3% thanks to robust performance in the Chinese high-end tire segment. By the end of 2013, it owned up to 2,700 Chinese specialty stores, up from 2,000 in early 2013. In this year, its retail sales volume in China reportedly rose by 10% annually.','http://hankook.xlmediawatch.com/main/Hankook.nsf/pub/DATA-9F4CQH','4','2014/1/6 9:50:38','2','新华信汽车网','1','2','新闻']
+
+2014-01-10 01:26:17,940
+--INFO:存储过程：[usp_mining_insert_siedateByRssData];参数：['江苏韩泰轮胎举行2014年《环境安全目标责任书》签订仪式','On January 3, the Hankook Jiangsu subsidiary held a signing ceremony for 2014 the "Letter of Responsibility for Environmental Safety". The event included the company vice president, party secretary and deputy general manager, as well as the deputy party secretary and labor union chairman.','http://hankook.xlmediawatch.com/main/Hankook.nsf/pub/DATA-9F4CQD','4','2014/1/6 0:00:00','2','淮安日报','1','2','新闻']
+
+2014-01-10 01:26:18,016
+--INFO:存储过程：[usp_mining_insert_siedateByRssData];参数：['成功配套三大豪车品牌 韩泰发力零售市场','','http://hankook.xlmediawatch.com/main/Hankook.nsf/pub/DATA-9F4CQS','4','2014/1/3 14:16:00','2','和讯网','1','2','新闻']
+
+2014-01-10 01:26:18,089
+--INFO:存储过程：[usp_mining_insert_siedateByRssData];参数：['2013年韩泰轮胎中国零售市场销售额同比增长10%','Over the past nine months of 2013, Hankook Tire posted remarkable sales results, especially in the Chinese market. During the third quarter of 2013, the tiremaker achieved global sales growth of 8.3% thanks to robust performance in the Chinese high-end tire segment. By the end of 2013, it owned up to 2,700 Chinese specialty stores, up from 2,000 in early 2013. In this year, its retail sales volume in China reportedly rose by 10% annually.','http://hankook.xlmediawatch.com/main/Hankook.nsf/pub/DATA-9F4CQP','4','2014/1/6 0:00:00','2','第一商用车网','1','2','新闻']
+
+2014-01-10 01:26:18,158
+--INFO:存储过程：[usp_mining_insert_siedateByRssData];参数：['韩泰中国高端配套增长迅猛','Over the past nine months of 2013, Hankook Tire posted remarkable sales results, especially in the Chinese market. In the third quarter of 2013, the tiremaker achieved global sales growth of 8.3% thanks to robust performance in the Chinese high-end tire segment. By the end of 2013, it owned up to 2,700 Chinese specialty stores, up from 2,000 in early 2013. By this year, its retail sales volume in China had reportedly risen 10% annually.','http://hankook.xlmediawatch.com/main/Hankook.nsf/pub/DATA-9F4CQN','4','2014/1/6 0:00:00','2','盖世汽车网','1','2','新闻']
+
+2014-01-10 01:26:18,224
+--INFO:存储过程：[usp_mining_insert_siedateByRssData];参数：['韩泰中国高端配套增长迅猛','Over the past nine months of 2013, Hankook Tire posted remarkable sales results, especially in the Chinese market. During the third quarter of 2013, the tiremaker achieved global sales growth of 8.3% thanks to robust performance in the Chinese high-end tire segment. By the end of 2013, it owned up to 2,700 Chinese specialty stores, up from 2,000 in early 2013. In this year, its retail sales volume in China reportedly rose 10% annually.','http://hankook.xlmediawatch.com/main/Hankook.nsf/pub/DATA-9F4CQM','4','2014/1/6 7:10:14','2','21CN','1','2','新闻']
+
+2014-01-10 01:26:18,288
+--INFO:存储过程：[usp_mining_insert_siedateByRssData];参数：['韩泰中国高端配套增长迅猛','Over the past nine months of 2013, Hankook Tire posted remarkable sales results, especially in the Chinese market. During the third quarter of 2013, the tiremaker achieved global sales growth of 8.3% thanks to robust performance in the Chinese high-end tire segment. By the end of 2013, it owned up to 2,700 Chinese specialty stores, up from 2,000 in early 2013. In this year, its retail sales volume in China reportedly rose by 10% annually.','http://hankook.xlmediawatch.com/main/Hankook.nsf/pub/DATA-9F4CQL','4','2014/1/6 7:12:47','2','东方网','1','2','新闻']
+
+2014-01-10 01:26:28,644
+--INFO:韩泰 Rss 数据 获取成功!
+
+2014-01-10 01:26:28,706
+--INFO:PullRunManagerThread 轮循拉数据成功
+

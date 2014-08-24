@@ -1,0 +1,556 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CC4478DC-F462-4CA6-9824-75267C5497BD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebCrawler</RootNamespace>
+    <AssemblyName>WebCrawler</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+    <DocumentationFile>
+    </DocumentationFile>
+    <RegisterForComInterop>false</RegisterForComInterop>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ajax, Version=5.7.22.2, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Ajax.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxPro, Version=9.2.17.1, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxPro.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNetPager">
+      <HintPath>..\Libiary\AspNetPager.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>F:\svn管理器\ActionLM2013\联通音乐试听登录\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\customer.aspx" />
+    <Content Include="Admin\employee.aspx" />
+    <Content Include="Admin\add_project.aspx" />
+    <Content Include="Admin\add_category.aspx" />
+    <Content Include="Admin\category.aspx" />
+    <Content Include="Admin\contend.aspx" />
+    <Content Include="Admin\login.aspx" />
+    <Content Include="Admin\modifypwd.aspx" />
+    <Content Include="Admin\projectlist.aspx" />
+    <Content Include="Admin\taglist.aspx" />
+    <Content Include="Admin\VerifyCode.aspx" />
+    <Content Include="Admin\datadetail.aspx" />
+    <Content Include="analysis.aspx" />
+    <Content Include="bin\Ajax.dll" />
+    <Content Include="bin\AjaxPro.dll" />
+    <Content Include="bin\Interop.Excel.dll" />
+    <Content Include="bin\Microsoft.Office.Interop.Excel.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\office.dll" />
+    <Content Include="Common\JS\commonjs.js" />
+    <Content Include="Common\JS\datadetail.js" />
+    <Content Include="Common\JS\dateFormat.js" />
+    <Content Include="Common\JS\dialog.js" />
+    <Content Include="Common\JS\sitedate_addtagDoalog.js" />
+    <Content Include="Common\JS\forumSitelistValidate.js" />
+    <Content Include="Common\JS\js_delete.js" />
+    <Content Include="Common\JS\menu.js" />
+    <Content Include="Common\JS\sitedata_show.js" />
+    <Content Include="Common\mSelect\blueCircle_bg.gif" />
+    <Content Include="Common\mSelect\HTMLPage1.htm" />
+    <Content Include="Common\mSelect\HTMLPage2.htm" />
+    <Content Include="Common\mSelect\HTMLPage3.htm" />
+    <Content Include="Common\mSelect\JQSelect.css" />
+    <Content Include="Common\mSelect\mSelect.css" />
+    <Content Include="Common\mSelect\mSelect.js" />
+    <Content Include="Common\mSelect\orangeHeart_bg.gif" />
+    <Content Include="Common\mSelect\redLine_bg.gif" />
+    <Content Include="Common\mSelect\selectBG.gif" />
+    <Content Include="Common\mSelect\HTMLPage4.htm" />
+    <Content Include="Common\My97DatePicker\calendar.js" />
+    <Content Include="Common\My97DatePicker\lang\en.js" />
+    <Content Include="Common\My97DatePicker\lang\zh-cn.js" />
+    <Content Include="Common\My97DatePicker\lang\zh-tw.js" />
+    <Content Include="Common\My97DatePicker\skin\datePicker.gif" />
+    <Content Include="Common\My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="Common\My97DatePicker\skin\default\img.gif" />
+    <Content Include="Common\My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="Common\My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="Common\My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="Common\My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="Common\My97DatePicker\WdatePicker.js" />
+    <Content Include="css\common.css" />
+    <Content Include="css\css.css" />
+    <Content Include="css\cssmain.css" />
+    <Content Include="css\link.css" />
+    <Content Include="css\main.css" />
+    <Content Include="css\share.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\thickbox.css" />
+    <Content Include="customer.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Image\1.jpg" />
+    <Content Include="Image\2.jpg" />
+    <Content Include="Image\3.jpg" />
+    <Content Include="Image\add.gif" />
+    <Content Include="Image\add_click.jpg" />
+    <Content Include="Image\attention.jpg" />
+    <Content Include="Image\batch_tags.jpg" />
+    <Content Include="Image\bg.png" />
+    <Content Include="Image\bg_c.jpg" />
+    <Content Include="Image\B_tag.jpg" />
+    <Content Include="Image\close.jpg" />
+    <Content Include="Image\credit.jpg" />
+    <Content Include="Image\hot.jpg" />
+    <Content Include="Image\img_btn_pi.jpg" />
+    <Content Include="Image\login_b.jpg" />
+    <Content Include="Image\menu.gif" />
+    <Content Include="Image\pi.jpg" />
+    <Content Include="Image\reset.jpg" />
+    <Content Include="Image\showStatus_1.jpg" />
+    <Content Include="Image\showStatus_2.jpg" />
+    <Content Include="Image\showStatus_99.jpg" />
+    <Content Include="Image\testJpg.jpg" />
+    <Content Include="Image\tiao.jpg" />
+    <Content Include="Image\tijiao.jpg" />
+    <Content Include="img\back.jpg" />
+    <Content Include="img\background.jpg" />
+    <Content Include="img\bg.png" />
+    <Content Include="img\blue.png" />
+    <Content Include="img\close.jpg" />
+    <Content Include="img\green.png" />
+    <Content Include="img\head_split.jpg" />
+    <Content Include="img\hot.jpg" />
+    <Content Include="img\HT_2_btn1.png" />
+    <Content Include="img\HT_2_btn1_b.png" />
+    <Content Include="img\HT_2_btn2.png" />
+    <Content Include="img\HT_2_btn2_b.png" />
+    <Content Include="img\HT_2_btn3.png" />
+    <Content Include="img\HT_2_btn3_b.png" />
+    <Content Include="img\HT_2_btn4.png" />
+    <Content Include="img\hybg.jpg" />
+    <Content Include="img\hybg_hover.jpg" />
+    <Content Include="img\jzz.jpg" />
+    <Content Include="img\login.png" />
+    <Content Include="img\login1.png" />
+    <Content Include="img\main_title_bg.jpg" />
+    <Content Include="img\pointOut.png" />
+    <Content Include="img\puit.gif" />
+    <Content Include="img\red.png" />
+    <Content Include="img\reset.jpg" />
+    <Content Include="img\retplist.jpg" />
+    <Content Include="img\sjbb.jpg" />
+    <Content Include="img\small_1.jpg" />
+    <Content Include="img\small_2.jpg" />
+    <Content Include="img\small_4.jpg" />
+    <Content Include="img\small_6.jpg" />
+    <Content Include="img\small_9.jpg" />
+    <Content Include="img\small_green.jpg" />
+    <Content Include="img\small_img.jpg" />
+    <Content Include="img\small_img_02.jpg" />
+    <Content Include="img\small_orange.jpg" />
+    <Content Include="img\small_project_4.jpg" />
+    <Content Include="img\small_search.jpg" />
+    <Content Include="img\split_title.jpg" />
+    <Content Include="img\text_img.jpg" />
+    <Content Include="img\tiao.jpg" />
+    <Content Include="img\tiao_1.jpg" />
+    <Content Include="img\tijiao.jpg" />
+    <Content Include="img\weihuzhong.jpg" />
+    <Content Include="index.aspx" />
+    <Content Include="jzae\changelog.txt" />
+    <Content Include="jzae\demo\bg.gif" />
+    <Content Include="jzae\demo\demo.js" />
+    <Content Include="jzae\demo\projectTag.html" />
+    <Content Include="jzae\demo\screen.css" />
+    <Content Include="jzae\demo\tag.html" />
+    <Content Include="jzae\images\ajax-loader.gif" />
+    <Content Include="jzae\images\file.gif" />
+    <Content Include="jzae\images\folder-closed.gif" />
+    <Content Include="jzae\images\folder.gif" />
+    <Content Include="jzae\images\minus.gif" />
+    <Content Include="jzae\images\plus.gif" />
+    <Content Include="jzae\images\treeview-black-line.gif" />
+    <Content Include="jzae\images\treeview-black.gif" />
+    <Content Include="jzae\images\treeview-default-line.gif" />
+    <Content Include="jzae\images\treeview-default.gif" />
+    <Content Include="jzae\images\treeview-famfamfam-line.gif" />
+    <Content Include="jzae\images\treeview-famfamfam.gif" />
+    <Content Include="jzae\images\treeview-gray-line.gif" />
+    <Content Include="jzae\images\treeview-gray.gif" />
+    <Content Include="jzae\images\treeview-red-line.gif" />
+    <Content Include="jzae\images\treeview-red.gif" />
+    <Content Include="jzae\jquery.treeview.async.js" />
+    <Content Include="jzae\jquery.treeview.css" />
+    <Content Include="jzae\jquery.treeview.edit.js" />
+    <Content Include="jzae\jquery.treeview.js" />
+    <Content Include="jzae\jquery.treeview.sortable.js" />
+    <Content Include="jzae\lib\jquery.cookie.js" />
+    <Content Include="jzae\lib\jquery.js" />
+    <Content Include="projectview.aspx" />
+    <Content Include="Report\amcharts.js" />
+    <Content Include="Report\images\dragIcon.gif" />
+    <Content Include="Report\images\dragIconBlack.gif" />
+    <Content Include="Report\images\dragIconH.gif" />
+    <Content Include="Report\images\dragIconHBlack.gif" />
+    <Content Include="Report\images\export.png" />
+    <Content Include="Report\images\exportWhite.png" />
+    <Content Include="Report\images\lens.png" />
+    <Content Include="Report\images\lensWhite.png" />
+    <Content Include="Report\line_htslqst.js" />
+    <Content Include="Report\pie.js" />
+    <Content Include="Report\pie_gmjslly.js" />
+    <Content Include="Report\serial.js" />
+    <Content Include="Report\Style.css" />
+    <Content Include="Report\pie_gdxhtsl.js" />
+    <Content Include="Report\line_fmhtslqst.js" />
+    <Content Include="Report\line_zmhtqst.js" />
+    <Content Include="Report\line_fmhtqst.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery.cookie.js" />
+    <Content Include="Styles\datadetail.css" />
+    <Content Include="Styles\dialog.css" />
+    <Content Include="Styles\lyoatMenu.css" />
+    <Content Include="Styles\mydialog.css" />
+    <Content Include="Styles\ShowData.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Styles\floatDiv.css" />
+    <Content Include="UserControl\excelXmlTempRow.xml" />
+    <Content Include="UserControl\excelXmlTempContent.xml" />
+    <Content Include="UserControl\MenuUserControl.ascx" />
+    <Content Include="UserControl\tb_dataList_content.txt" />
+    <Content Include="view.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\customer.aspx.cs">
+      <DependentUpon>customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\customer.aspx.designer.cs">
+      <DependentUpon>customer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\employee.aspx.cs">
+      <DependentUpon>employee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\employee.aspx.designer.cs">
+      <DependentUpon>employee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\add_project.aspx.cs">
+      <DependentUpon>add_project.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\add_project.aspx.designer.cs">
+      <DependentUpon>add_project.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ashxHelp\BaseHandler.cs" />
+    <Compile Include="Admin\ashxHelp\deleteTagById.ashx.cs">
+      <DependentUpon>deleteTagById.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ashxHelp\handeltag.ashx.cs">
+      <DependentUpon>handeltag.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ashxHelp\HandleNewTagr.ashx.cs">
+      <DependentUpon>HandleNewTagr.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ashxHelp\HandlerAddContend.ashx.cs">
+      <DependentUpon>HandlerAddContend.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ashxHelp\HandlerbarchTagAction.ashx.cs">
+      <DependentUpon>HandlerbarchTagAction.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ashxHelp\HandlerCategory.ashx.cs">
+      <DependentUpon>HandlerCategory.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ashxHelp\HandlerDeleteDataById.ashx.cs">
+      <DependentUpon>HandlerDeleteDataById.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ashxHelp\HandlerLoadTag.ashx.cs">
+      <DependentUpon>HandlerLoadTag.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ashxHelp\HandlerLogin.ashx.cs">
+      <DependentUpon>HandlerLogin.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ashxHelp\HandlerreloadCurrentTable.ashx.cs">
+      <DependentUpon>HandlerreloadCurrentTable.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ashxHelp\helloord.ashx.cs">
+      <DependentUpon>helloord.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\add_category.aspx.cs">
+      <DependentUpon>add_category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\add_category.aspx.designer.cs">
+      <DependentUpon>add_category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ashxHelp\addTagById.ashx.cs">
+      <DependentUpon>addTagById.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ashxHelp\modifyTagById.ashx.cs">
+      <DependentUpon>modifyTagById.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\category.aspx.cs">
+      <DependentUpon>category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\category.aspx.designer.cs">
+      <DependentUpon>category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\contend.aspx.cs">
+      <DependentUpon>contend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\contend.aspx.designer.cs">
+      <DependentUpon>contend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\modifypwd.aspx.cs">
+      <DependentUpon>modifypwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\modifypwd.aspx.designer.cs">
+      <DependentUpon>modifypwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\projectlist.aspx.cs">
+      <DependentUpon>projectlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\projectlist.aspx.designer.cs">
+      <DependentUpon>projectlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\taglist.aspx.cs">
+      <DependentUpon>taglist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\taglist.aspx.designer.cs">
+      <DependentUpon>taglist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\VerifyCode.aspx.cs">
+      <DependentUpon>VerifyCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\VerifyCode.aspx.designer.cs">
+      <DependentUpon>VerifyCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\datadetail.aspx.cs">
+      <DependentUpon>datadetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\datadetail.aspx.designer.cs">
+      <DependentUpon>datadetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Handler\datadetail\BaseHandler.cs" />
+    <Compile Include="Admin\Handler\datadetail\nextPage_click.ashx.cs">
+      <DependentUpon>nextPage_click.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="analysis.aspx.cs">
+      <DependentUpon>analysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="analysis.aspx.designer.cs">
+      <DependentUpon>analysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customer.aspx.cs">
+      <DependentUpon>customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customer.aspx.designer.cs">
+      <DependentUpon>customer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExcelCommon.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ashxHelp\Help_CreateSiteDataTB.cs" />
+    <Compile Include="hankookAshx\login.ashx.cs">
+      <DependentUpon>login.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="hankookAshx\maintainSuggest.ashx.cs">
+      <DependentUpon>maintainSuggest.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="hankookAshx\projectviewskip.ashx.cs">
+      <DependentUpon>projectviewskip.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="projectview.aspx.cs">
+      <DependentUpon>projectview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="projectview.aspx.designer.cs">
+      <DependentUpon>projectview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\ForePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\Page.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControl\MenuUserControl.ascx.cs">
+      <DependentUpon>MenuUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\MenuUserControl.ascx.designer.cs">
+      <DependentUpon>MenuUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="view.aspx.cs">
+      <DependentUpon>view.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view.aspx.designer.cs">
+      <DependentUpon>view.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Admin\DataModel\Export\" />
+    <Folder Include="Admin\DataModel\Import\" />
+    <Folder Include="ExportData\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LogNet\LogNet.csproj">
+      <Project>{AEFCD2D9-2B5F-40EF-BA20-D8668E082649}</Project>
+      <Name>LogNet</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataCrawlerModel\Model.csproj">
+      <Project>{F1F25EA3-1115-4DF1-BAA3-804790BACF04}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataCrawlerBLL\BLL.csproj">
+      <Project>{9AB6B4C8-FBAA-4073-9B6B-387742C8FEBD}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataCrawlerDAL\DAL.csproj">
+      <Project>{64B90ADF-56A0-4359-88B2-D9C2460F364D}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\ashxHelp\helloord.ashx" />
+    <Content Include="Admin\ashxHelp\handeltag.ashx" />
+    <Content Include="Admin\ashxHelp\HandleNewTagr.ashx" />
+    <Content Include="Admin\ashxHelp\HandlerDeleteDataById.ashx" />
+    <Content Include="Admin\ashxHelp\HandlerbarchTagAction.ashx" />
+    <Content Include="Admin\ashxHelp\HandlerreloadCurrentTable.ashx" />
+    <Content Include="Admin\ashxHelp\HandlerLogin.ashx" />
+    <Content Include="Admin\ashxHelp\HandlerCategory.ashx" />
+    <Content Include="Admin\ashxHelp\HandlerLoadTag.ashx" />
+    <Content Include="Admin\ashxHelp\deleteTagById.ashx" />
+    <Content Include="Admin\ashxHelp\addTagById.ashx" />
+    <Content Include="Admin\ashxHelp\modifyTagById.ashx" />
+    <Content Include="Admin\ashxHelp\HandlerAddContend.ashx" />
+    <None Include="Admin\DataModel\datamodel.xls" />
+    <Content Include="Admin\Handler\datadetail\nextPage_click.ashx" />
+    <Content Include="hankookAshx\login.ashx" />
+    <Content Include="hankookAshx\maintainSuggest.ashx" />
+    <Content Include="log4net.config" />
+    <Content Include="hankookAshx\projectviewskip.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

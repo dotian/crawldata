@@ -1,0 +1,321 @@
+2014-03-05 13:29:39,644
+--INFO:存储过程：[usp_mining_Select_EmployeeByEmpId];参数：['admin']
+
+2014-03-05 13:29:40,569
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-03-05 13:29:47,445
+--INFO:存储过程：[select CateId,CategoryName,ClassId,CreateDate from dbo.CategoryInfo where ClassId = 1]
+
+2014-03-05 13:29:52,143
+--INFO:存储过程：[select CateId,CategoryName,ClassId,CreateDate from dbo.CategoryInfo where ClassId = 2]
+
+2014-03-05 13:29:54,398
+--INFO:存储过程：[select CateId,CategoryName,ClassId,CreateDate from dbo.CategoryInfo where ClassId = 3]
+
+2014-03-05 13:30:00,056
+--INFO:存储过程：[select CateId,CategoryName,ClassId,CreateDate from dbo.CategoryInfo where ClassId = 5]
+
+2014-03-05 13:30:01,327
+--INFO:存储过程：[select CateId,CategoryName,ClassId,CreateDate from dbo.CategoryInfo where ClassId = 3]
+
+2014-03-05 13:30:12,375
+--INFO:存储过程：[select CateId,CategoryName,ClassId,CreateDate from dbo.CategoryInfo where ClassId = 1]
+
+2014-03-05 13:30:18,533
+--INFO:存储过程：[select CateId,CategoryName,ClassId,CreateDate from dbo.CategoryInfo where ClassId = 2]
+
+2014-03-05 13:30:21,657
+--INFO:存储过程：[select CateId,CategoryName,ClassId,CreateDate from dbo.CategoryInfo where ClassId = 1]
+
+2014-03-05 13:38:04,500
+--INFO:存储过程：[select CateId,CategoryName,ClassId,CreateDate from dbo.CategoryInfo where ClassId = 1]
+
+2014-03-05 13:38:06,235
+--INFO:存储过程：[select CateId,CategoryName,ClassId,CreateDate from dbo.CategoryInfo where ClassId = 2]
+
+2014-03-05 13:38:07,731
+--INFO:存储过程：[select CateId,CategoryName,ClassId,CreateDate from dbo.CategoryInfo where ClassId = 3]
+
+2014-03-05 13:38:09,587
+--INFO:存储过程：[select CateId,CategoryName,ClassId,CreateDate from dbo.CategoryInfo where ClassId = 5]
+
+2014-03-05 13:38:11,731
+--INFO:存储过程：[select CateId,CategoryName,ClassId,CreateDate from dbo.CategoryInfo where ClassId = 3]
+
+2014-03-05 13:38:13,843
+--INFO:存储过程：[select CateId,CategoryName,ClassId,CreateDate from dbo.CategoryInfo where ClassId = 2]
+
+2014-03-05 13:38:15,083
+--INFO:存储过程：[select CateId,CategoryName,ClassId,CreateDate from dbo.CategoryInfo where ClassId = 1]
+
+2014-03-05 13:49:20,879
+--INFO:存储过程：[select CateId,CategoryName,ClassId,CreateDate from dbo.CategoryInfo where ClassId = 3]
+
+2014-03-05 13:49:20,880
+--INFO:存储过程：[select CateId,CategoryName,ClassId,CreateDate from dbo.CategoryInfo where ClassId = 3]
+
+2014-03-05 13:49:20,880
+--INFO:存储过程：[select CateId,CategoryName,ClassId,CreateDate from dbo.CategoryInfo where ClassId = 2]
+
+2014-03-05 13:49:20,884
+--INFO:存储过程：[select CateId,CategoryName,ClassId,CreateDate from dbo.CategoryInfo where ClassId = 2]
+
+2014-03-05 13:49:21,055
+--ERROR:GetCategoryListByClassIdService
+
+System.InvalidOperationException: ExecuteReader 要求已打开且可用的连接。连接的当前状态为正在连接。
+   在 System.Data.SqlClient.SqlConnection.GetOpenConnection(String method)
+   在 System.Data.SqlClient.SqlConnection.ValidateConnectionForExecute(String method, SqlCommand command)
+   在 System.Data.SqlClient.SqlCommand.ValidateCommand(String method, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 RionSoft.IBRS.Business.DAL.IBRSCommonDAL.SelectData(String argSqlText) 位置 H:\2015年所有整理\Web程序\WebCrawler\DataCrawlerDAL\Crawler\IBRSCommonDAL.cs:行号 77
+   在 DataCrawler.DAL.Crawler.CategoryDAL.GetCategoryListByClassIdService(Int32 classId) 位置 H:\2015年所有整理\Web程序\WebCrawler\DataCrawlerDAL\Crawler\CategoryDAL.cs:行号 130
+2014-03-05 13:49:21,058
+--ERROR:GetCategoryListByClassIdService
+
+System.InvalidOperationException: ExecuteReader 要求已打开且可用的连接。连接的当前状态为正在连接。
+   在 System.Data.SqlClient.SqlConnection.GetOpenConnection(String method)
+   在 System.Data.SqlClient.SqlConnection.ValidateConnectionForExecute(String method, SqlCommand command)
+   在 System.Data.SqlClient.SqlCommand.ValidateCommand(String method, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 RionSoft.IBRS.Business.DAL.IBRSCommonDAL.SelectData(String argSqlText) 位置 H:\2015年所有整理\Web程序\WebCrawler\DataCrawlerDAL\Crawler\IBRSCommonDAL.cs:行号 77
+   在 DataCrawler.DAL.Crawler.CategoryDAL.GetCategoryListByClassIdService(Int32 classId) 位置 H:\2015年所有整理\Web程序\WebCrawler\DataCrawlerDAL\Crawler\CategoryDAL.cs:行号 130
+2014-03-05 13:49:21,061
+--ERROR:GetCategoryListByClassIdService
+
+System.InvalidOperationException: ExecuteReader 要求已打开且可用的连接。连接的当前状态为正在连接。
+   在 System.Data.SqlClient.SqlConnection.GetOpenConnection(String method)
+   在 System.Data.SqlClient.SqlConnection.ValidateConnectionForExecute(String method, SqlCommand command)
+   在 System.Data.SqlClient.SqlCommand.ValidateCommand(String method, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 RionSoft.IBRS.Business.DAL.IBRSCommonDAL.SelectData(String argSqlText) 位置 H:\2015年所有整理\Web程序\WebCrawler\DataCrawlerDAL\Crawler\IBRSCommonDAL.cs:行号 77
+   在 DataCrawler.DAL.Crawler.CategoryDAL.GetCategoryListByClassIdService(Int32 classId) 位置 H:\2015年所有整理\Web程序\WebCrawler\DataCrawlerDAL\Crawler\CategoryDAL.cs:行号 130
+2014-03-05 13:49:22,710
+--INFO:存储过程：[select CateId,CategoryName,ClassId,CreateDate from dbo.CategoryInfo where ClassId = 2]
+
+2014-03-05 13:49:27,110
+--INFO:存储过程：[select CateId,CategoryName,ClassId,CreateDate from dbo.CategoryInfo where ClassId = 2]
+
+2014-03-05 13:49:28,325
+--INFO:存储过程：[select CateId,CategoryName,ClassId,CreateDate from dbo.CategoryInfo where ClassId = 3]
+
+2014-03-05 14:57:37,363
+--INFO:存储过程：[usp_mining_Select_EmployeeByEmpId];参数：['admin']
+
+2014-03-05 14:57:37,642
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-03-05 14:58:02,894
+--INFO:存储过程：[select CateId,CategoryName,ClassId,CreateDate from dbo.CategoryInfo where ClassId = 2]
+
+2014-03-05 14:58:08,598
+--INFO:存储过程：[select CateId,CategoryName,ClassId,CreateDate from dbo.CategoryInfo where ClassId = 3]
+
+2014-03-05 14:58:12,625
+--INFO:存储过程：[select CateId,CategoryName,ClassId,CreateDate from dbo.CategoryInfo where ClassId = 1]
+
+2014-03-05 14:58:23,174
+--INFO:存储过程：[usp_mining_Insert_ProjectList];参数：['测试1','0','的','','admin','2014-03-05 14:58:17','2014/4/5 0:00:00']
+
+2014-03-05 14:58:31,493
+--INFO:存储过程：[usp_mining_update_projectlistRc_Forum];参数：['15','1']
+
+2014-03-05 14:58:39,047
+--INFO:存储过程：[usp_mining_insert_PullInfo];参数：['15','1','5000']
+
+2014-03-05 14:58:50,419
+--INFO:15项目分配论坛站点1
+
+2014-03-05 14:58:57,589
+--INFO:存储过程：[usp_mining_update_projectlistRc_News];参数：['15','1']
+
+2014-03-05 14:58:57,752
+--ERROR:UpdateProjectListRC_NewsService
+
+System.Data.SqlClient.SqlException: 找不到存储过程 'usp_mining_update_projectlistRc_News'。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 RionSoft.IBRS.Business.DAL.IBRSCommonDAL.ExecuteNonQuery(String argStoredProcedure, SqlParameter[] argPara) 位置 H:\2015年所有整理\Web程序\WebCrawler\DataCrawlerDAL\Crawler\IBRSCommonDAL.cs:行号 113
+   在 DataCrawler.DAL.Crawler.ServerDaLAction.UpdateProjectListRC_NewsService(Int32 projectId, Int32 RC_value) 位置 H:\2015年所有整理\Web程序\WebCrawler\DataCrawlerDAL\Crawler\ServerDaLAction.cs:行号 268
+2014-03-05 14:58:59,907
+--INFO:存储过程：[usp_mining_insert_PullInfo];参数：['15','2','1000']
+
+2014-03-05 14:59:00,260
+--INFO:15项目分配新闻站点0
+
+2014-03-05 14:59:03,883
+--INFO:存储过程：[usp_mining_update_projectlistRc_Blog];参数：['15','1']
+
+2014-03-05 14:59:06,306
+--INFO:存储过程：[usp_mining_insert_PullInfo];参数：['15','3','1000']
+
+2014-03-05 14:59:06,812
+--INFO:15项目分配博客站点1
+
+2014-03-05 15:01:17,569
+--INFO:存储过程：[usp_mining_Select_EmployeeByEmpId];参数：['admin']
+
+2014-03-05 15:01:17,592
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-03-05 15:01:31,443
+--INFO:存储过程：[select CateId,CategoryName,ClassId,CreateDate from dbo.CategoryInfo where ClassId = 1]
+
+2014-03-05 15:01:34,339
+--INFO:存储过程：[select CateId,CategoryName,ClassId,CreateDate from dbo.CategoryInfo where ClassId = 2]
+
+2014-03-05 15:01:38,081
+--INFO:存储过程：[select CateId,CategoryName,ClassId,CreateDate from dbo.CategoryInfo where ClassId = 3]
+
+2014-03-05 15:01:44,684
+--INFO:存储过程：[usp_mining_Insert_ProjectList];参数：['测试2','0','的','','admin','2014-03-05 15:01:42','2014/4/5 0:00:00']
+
+2014-03-05 15:01:58,028
+--INFO:存储过程：[usp_mining_update_projectlistRc_Forum];参数：['16','1']
+
+2014-03-05 15:01:58,029
+--INFO:存储过程：[usp_mining_insert_PullInfo];参数：['16','1','5000']
+
+2014-03-05 15:01:58,032
+--INFO:16项目分配论坛站点1
+
+2014-03-05 15:02:14,994
+--INFO:存储过程：[usp_mining_update_projectlistRc_News];参数：['16','1']
+
+2014-03-05 15:03:07,742
+--INFO:存储过程：[usp_mining_update_projectlistRc_News];参数：['16','1']
+
+2014-03-05 15:03:12,321
+--INFO:存储过程：[usp_mining_insert_PullInfo];参数：['16','2','1000']
+
+2014-03-05 15:03:12,334
+--INFO:16项目分配新闻站点1
+
+2014-03-05 15:03:13,640
+--INFO:存储过程：[usp_mining_update_projectlistRc_Blog];参数：['16','1']
+
+2014-03-05 15:03:13,641
+--INFO:存储过程：[usp_mining_insert_PullInfo];参数：['16','3','1000']
+
+2014-03-05 15:03:13,642
+--INFO:16项目分配博客站点1
+
+2014-03-05 16:29:03,354
+--INFO:存储过程：[usp_mining_Select_EmployeeByEmpId];参数：['admin']
+
+2014-03-05 16:29:03,444
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-03-05 16:29:38,036
+--INFO:存储过程：[usp_mining_update_ProjectListStatus];参数：['16','0']
+
+2014-03-05 16:31:46,550
+--INFO:存储过程：[usp_mining_update_ProjectListStatus];参数：['16','1']
+
+2014-03-05 16:35:37,982
+--INFO:存储过程：[usp_mining_update_ProjectListStatus];参数：['16','0']
+
+2014-03-05 16:46:16,168
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-03-05 16:46:52,827
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-03-05 16:46:58,138
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-03-05 16:47:00,884
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-03-05 16:47:02,987
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-03-05 16:47:05,045
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-03-05 16:47:06,994
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-03-05 16:47:09,754
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-03-05 16:47:47,833
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-03-05 16:48:09,903
+--INFO:存储过程：[usp_mining_update_ProjectListStatus];参数：['16','1']
+
+2014-03-05 16:48:30,136
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-03-05 16:48:32,793
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-03-05 16:48:35,476
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-03-05 16:48:38,523
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-03-05 16:48:41,428
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-03-05 16:48:44,414
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-03-05 16:48:49,088
+--INFO:存储过程：[usp_mining_update_ProjectListStatus];参数：['16','0']
+
+2014-03-05 16:48:49,704
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-03-05 16:48:52,605
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-03-05 16:48:55,511
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-03-05 16:49:00,997
+--INFO:存储过程：[usp_mining_update_ProjectListStatus];参数：['16','1']
+
+2014-03-05 16:50:53,238
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-03-05 16:50:56,532
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-03-05 16:50:57,858
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-03-05 16:51:06,788
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+

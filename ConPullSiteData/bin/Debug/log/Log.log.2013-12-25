@@ -1,0 +1,65 @@
+2013-12-25 15:48:23,549
+--INFO:开启相关服务,程序正在运行中...
+
+2013-12-25 15:48:23,570
+--INFO:PullRunManagerThread 轮循拉数据开始
+
+2013-12-25 15:48:24,722
+--ERROR:PullRunManager
+
+System.Data.SqlClient.SqlException: 列名 'pulished' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 RionSoft.IBRS.Business.DAL.IBRSCommonDAL.ExecuteNonQuery(String argStoredProcedure, SqlParameter[] argPara) 位置 H:\2015年所有整理\Web程序\WebCrawler\ConPullSiteData\IBRSCommonDAL.cs:行号 140
+   在 DataCrawler.DAL.Crawler.PullDataDAL.InsertHankook(List`1 listRss) 位置 H:\2015年所有整理\Web程序\WebCrawler\ConPullSiteData\PullDataDAL.cs:行号 293
+   在 DataCrawler.BLL.Crawler.PullDataBLL.PullHanKookNewsRSSWork() 位置 H:\2015年所有整理\Web程序\WebCrawler\ConPullSiteData\PullDataBLL.cs:行号 65
+   在 DataCrawler.BLL.Crawler.PullDataBLL.PullRunManager() 位置 H:\2015年所有整理\Web程序\WebCrawler\ConPullSiteData\PullDataBLL.cs:行号 39
+2013-12-25 15:48:24,785
+--INFO:PullRunManagerThread 轮循拉数据成功
+
+2013-12-25 18:58:28,380
+--INFO:开启相关服务,程序正在运行中...
+
+2013-12-25 18:58:28,455
+--INFO:PullRunManagerThread 轮循拉数据开始
+
+2013-12-25 18:59:07,094
+--INFO:开启相关服务,程序正在运行中...
+
+2013-12-25 18:59:07,107
+--INFO:PullRunManagerThread 轮循拉数据开始
+
+2013-12-25 19:00:11,778
+--INFO:开启相关服务,程序正在运行中...
+
+2013-12-25 19:00:11,787
+--INFO:PullRunManagerThread 轮循拉数据开始
+
+2013-12-25 19:01:02,302
+--INFO:开启相关服务,程序正在运行中...
+
+2013-12-25 19:01:02,314
+--INFO:PullRunManagerThread 轮循拉数据开始
+
+2013-12-25 19:01:50,953
+--INFO:开启相关服务,程序正在运行中...
+
+2013-12-25 19:01:50,966
+--INFO:PullRunManagerThread 轮循拉数据开始
+
+2013-12-25 19:02:17,052
+--INFO:开启相关服务,程序正在运行中...
+
+2013-12-25 19:02:17,062
+--INFO:PullRunManagerThread 轮循拉数据开始
+
+2013-12-25 19:02:17,516
+--INFO:韩泰 Rss 数据 获取成功!
+

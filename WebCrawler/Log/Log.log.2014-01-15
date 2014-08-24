@@ -1,0 +1,1545 @@
+2014-01-15 11:02:08,807
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 11:04:31,784
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 11:10:55,648
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 11:12:49,192
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 11:16:55,315
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 11:17:02,011
+--INFO:存储过程：[usp_mining_insert_employee];参数：['git002','621771690339922920679160212221189066','8pkhpp','git002','1']
+
+2014-01-15 11:17:16,423
+--INFO:存储过程：[usp_mining_insert_employee];参数：['git003','1019729175977611780138408614324683196164','88ahw3','git003','1']
+
+2014-01-15 11:17:16,626
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 11:20:35,056
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 11:20:55,388
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 11:24:43,999
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 11:24:56,164
+--INFO:存储过程：[usp_mining_update_employee];参数：['git003','21895311621012021291053713513816141220235125','z641t6','git003','2']
+
+2014-01-15 11:24:56,612
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 11:38:30,553
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 11:38:55,508
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 11:38:58,842
+--INFO:存储过程：[usp_mining_delete_employeeByEmpId];参数：['git003']
+
+2014-01-15 11:38:58,957
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 11:38:59,005
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 11:39:17,599
+--INFO:存储过程：[usp_mining_insert_employee];参数：['git003','1631921099185201110121249165481682071167239','1415q0','git003','1']
+
+2014-01-15 11:40:09,597
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 11:40:12,129
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 11:40:25,156
+--INFO:存储过程：[usp_mining_insert_employee];参数：['git004','2021667118015117651373652246852223012325','6n1jyg','git004','1']
+
+2014-01-15 11:40:25,329
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 11:40:46,624
+--INFO:存储过程：[usp_mining_delete_employeeByEmpId];参数：['git004']
+
+2014-01-15 11:40:46,655
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 11:40:46,657
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 12:03:24,075
+--INFO:存储过程：[usp_mining_select_customerBySearch];参数：['','0']
+
+2014-01-15 12:03:24,558
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 12:07:37,423
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 12:17:18,831
+--INFO:存储过程：[usp_mining_select_customerBySearch];参数：['','0']
+
+2014-01-15 12:17:18,854
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 12:20:39,074
+--INFO:存储过程：[usp_mining_select_customerBySearch];参数：['','0']
+
+2014-01-15 12:20:39,091
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 12:20:51,587
+--INFO:存储过程：[usp_mining_select_customerBySearch];参数：['','0']
+
+2014-01-15 12:20:59,400
+--INFO:存储过程：[usp_mining_select_customerBySearch];参数：['hk001','0']
+
+2014-01-15 12:21:02,705
+--INFO:存储过程：[usp_mining_select_customerBySearch];参数：['hk001','1']
+
+2014-01-15 12:21:11,366
+--INFO:存储过程：[usp_mining_select_customerBySearch];参数：['hk001','0']
+
+2014-01-15 12:21:39,602
+--INFO:存储过程：[usp_mining_select_customerBySearch];参数：['','0']
+
+2014-01-15 12:21:39,619
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 12:21:47,140
+--INFO:存储过程：[usp_mining_select_customerBySearch];参数：['git008','1']
+
+2014-01-15 12:21:49,911
+--INFO:存储过程：[usp_mining_select_customerBySearch];参数：['git008','2']
+
+2014-01-15 12:21:52,731
+--INFO:存储过程：[usp_mining_select_customerBySearch];参数：['git008','1']
+
+2014-01-15 12:27:04,929
+--INFO:存储过程：[usp_mining_select_customerBySearch];参数：['git008','1']
+
+2014-01-15 12:27:06,057
+--INFO:存储过程：[usp_mining_select_customerBySearch];参数：['git008','1']
+
+2014-01-15 12:27:11,707
+--INFO:存储过程：[usp_mining_select_customerBySearch];参数：['','1']
+
+2014-01-15 12:27:17,808
+--INFO:存储过程：[usp_mining_select_customerBySearch];参数：['git008','0']
+
+2014-01-15 13:20:57,230
+--INFO:存储过程：[usp_mining_select_customerBySearch];参数：['0','']
+
+2014-01-15 13:20:57,278
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 13:43:08,448
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 13:43:12,500
+--INFO:存储过程：[usp_mining_select_customerBySearch];参数：['0','']
+
+2014-01-15 13:43:12,508
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 13:43:26,334
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 13:43:36,481
+--INFO:存储过程：[usp_mining_select_customerBySearch];参数：['0','']
+
+2014-01-15 13:43:36,494
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 13:51:59,178
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 14:03:46,661
+--INFO:存储过程：[usp_mining_select_customerBySearch];参数：['0','']
+
+2014-01-15 14:03:46,667
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 14:03:51,386
+--INFO:存储过程：[usp_mining_select_contendProjectByName];参数：['']
+
+2014-01-15 14:03:51,900
+--INFO:存储过程：[usp_mining_select_contendProjectByName];参数：['']
+
+2014-01-15 14:31:53,821
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 14:31:54,300
+--ERROR:datadetail.aspx Bind
+
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 WebCrawler.Admin.datadetail.Page_Load(Object sender, EventArgs e) 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\Admin\datadetail.aspx.cs:行号 47
+2014-01-15 14:32:05,762
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-01-15 14:32:15,175
+--INFO:存储过程：[usp_mining_Select_ProjectListRunStatus]
+
+2014-01-15 14:32:35,717
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 14:32:38,818
+--INFO:存储过程：[usp_mining_select_customerBySearch];参数：['0','']
+
+2014-01-15 14:32:38,824
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 14:32:40,237
+--INFO:存储过程：[usp_mining_select_contendProjectByName];参数：['']
+
+2014-01-15 14:32:40,242
+--INFO:存储过程：[usp_mining_select_contendProjectByName];参数：['']
+
+2014-01-15 14:32:42,993
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-01-15 14:32:48,842
+--INFO:存储过程：[select CateId,CategoryName,ClassId from dbo.CategoryInfo]
+
+2014-01-15 14:33:07,228
+--INFO:存储过程：[usp_mining_Select_ProjectListRunStatus]
+
+2014-01-15 14:33:16,295
+--INFO:存储过程：[usp_mining_Select_ProjectListRunStatus]
+
+2014-01-15 14:35:07,663
+--INFO:存储过程：[usp_mining_Select_ProjectListRunStatus]
+
+2014-01-15 14:35:29,187
+--INFO:存储过程：[usp_mining_Select_ProjectListRunStatus]
+
+2014-01-15 14:36:06,300
+--INFO:存储过程：[select CateId,CategoryName,ClassId from dbo.CategoryInfo]
+
+2014-01-15 14:36:10,864
+--INFO:存储过程：[usp_mining_Select_ProjectListRunStatus]
+
+2014-01-15 14:44:35,947
+--INFO:存储过程：[usp_mining_select_customerBySearch];参数：['0','']
+
+2014-01-15 14:44:35,949
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 14:45:29,254
+--INFO:存储过程：[usp_mining_select_customerBySearch];参数：['0','']
+
+2014-01-15 14:45:29,256
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 14:45:50,452
+--INFO:存储过程：[usp_mining_select_customerBySearch];参数：['0','']
+
+2014-01-15 14:45:50,457
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 14:46:31,348
+--INFO:存储过程：[usp_mining_select_customerBySearch];参数：['0','']
+
+2014-01-15 14:46:31,351
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 14:47:04,026
+--INFO:存储过程：[usp_mining_select_customerBySearch];参数：['0','']
+
+2014-01-15 14:47:04,028
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 14:47:16,287
+--INFO:存储过程：[usp_mining_select_customerBySearch];参数：['0','']
+
+2014-01-15 14:47:16,300
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 14:48:14,684
+--INFO:存储过程：[usp_mining_select_customerBySearch];参数：['0','']
+
+2014-01-15 14:48:14,686
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 14:49:19,023
+--INFO:存储过程：[usp_mining_select_customerBySearch];参数：['0','']
+
+2014-01-15 14:49:19,025
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 14:49:37,814
+--INFO:存储过程：[usp_mining_select_customerBySearch];参数：['0','']
+
+2014-01-15 14:49:37,815
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 14:49:53,443
+--INFO:存储过程：[usp_mining_select_customerBySearch];参数：['0','']
+
+2014-01-15 14:49:53,445
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 14:49:55,868
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 14:49:59,609
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-01-15 14:53:19,575
+--INFO:存储过程：[select CateId,CategoryName,ClassId from dbo.CategoryInfo]
+
+2014-01-15 14:54:06,871
+--INFO:存储过程：[select CateId,CategoryName,ClassId from dbo.CategoryInfo]
+
+2014-01-15 14:54:09,714
+--INFO:存储过程：[select CateId,CategoryName,ClassId from dbo.CategoryInfo]
+
+2014-01-15 14:54:43,304
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-01-15 14:54:50,987
+--INFO:存储过程：[usp_mining_Select_ProjectListRunStatus]
+
+2014-01-15 14:55:03,341
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-01-15 14:55:17,460
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 14:55:19,247
+--INFO:存储过程：[usp_mining_select_customerBySearch];参数：['0','']
+
+2014-01-15 14:55:19,248
+--INFO:存储过程：[usp_mining_select_employee]
+
+2014-01-15 14:55:20,750
+--INFO:存储过程：[usp_mining_select_contendProjectByName];参数：['']
+
+2014-01-15 14:55:20,771
+--INFO:存储过程：[usp_mining_select_contendProjectByName];参数：['']
+
+2014-01-15 14:55:23,461
+--INFO:存储过程：[select CateId,CategoryName,ClassId from dbo.CategoryInfo]
+
+2014-01-15 14:55:26,966
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','admin']
+
+2014-01-15 14:55:31,727
+--INFO:存储过程：[usp_mining_Select_ProjectListRunStatus]
+
+2014-01-15 15:24:58,385
+--INFO:存储过程：[usp_minmig_select_customer_ByCustomerId];参数：['admin']
+
+2014-01-15 15:25:01,997
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['3']
+
+2014-01-15 15:25:02,061
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['3','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 15:25:02,720
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['3','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 15:27:17,800
+--INFO:存储过程：[usp_minmig_select_customer_ByCustomerId];参数：['admin']
+
+2014-01-15 15:27:46,390
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['3']
+
+2014-01-15 15:27:49,716
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['3','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 15:27:49,754
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['3','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 15:28:32,903
+--INFO:存储过程：[usp_minmig_select_customer_ByCustomerId];参数：['admin']
+
+2014-01-15 15:28:40,862
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['3']
+
+2014-01-15 15:28:43,169
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['3','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 15:28:43,208
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['3','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 16:10:55,588
+--INFO:存储过程：[usp_minmig_select_customer_ByCustomerId];参数：['git001']
+
+2014-01-15 16:11:21,296
+--INFO:存储过程：[usp_minmig_select_customer_ByCustomerId];参数：['git001']
+
+2014-01-15 16:12:22,574
+--INFO:存储过程：[usp_minmig_select_customer_ByCustomerId];参数：['git000']
+
+2014-01-15 16:12:41,402
+--INFO:存储过程：[usp_minmig_select_customer_ByCustomerId];参数：['hk001']
+
+2014-01-15 16:12:49,850
+--INFO:存储过程：[usp_minmig_select_customer_ByCustomerId];参数：['hk001']
+
+2014-01-15 16:12:49,917
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 16:12:49,923
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 16:12:49,970
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 16:14:28,453
+--INFO:存储过程：[usp_mining_Select_EmployeeByEmpId];参数：['git001']
+
+2014-01-15 16:14:28,644
+--INFO:存储过程：[usp_mining_Select_ProjectList];参数：['0','','1','git001']
+
+2014-01-15 16:14:57,196
+--INFO:存储过程：[select CateId,CategoryName,ClassId,CreateDate from dbo.CategoryInfo where ClassId = 1]
+
+2014-01-15 16:15:01,270
+--INFO:存储过程：[usp_mining_Insert_ProjectList];参数：['苹果1','0','苹果+的','','git001','2014-01-15 16:15:01','2018/1/4 0:00:00']
+
+2014-01-15 16:15:01,397
+--INFO:存储过程：[usp_mining_insert_ProjectCate];参数：['13','6']
+
+2014-01-15 16:15:01,548
+--INFO:存储过程：[usp_mining_insert_PullInfo];参数：['13','1','5000']
+
+2014-01-15 16:15:01,627
+--INFO:13项目分配论坛站点2
+
+2014-01-15 16:15:36,674
+--INFO:存储过程：[select CateId,CategoryName,ClassId,CreateDate from dbo.CategoryInfo where ClassId = 2]
+
+2014-01-15 16:15:40,577
+--INFO:存储过程：[select CateId,CategoryName,ClassId,CreateDate from dbo.CategoryInfo where ClassId = 3]
+
+2014-01-15 16:15:43,196
+--INFO:存储过程：[usp_mining_Insert_ProjectList];参数：['苹果2','0','苹果+的','','git001','2014-01-15 16:15:43','2014/4/16 0:00:00']
+
+2014-01-15 16:15:43,197
+--INFO:存储过程：[usp_mining_insert_ProjectCate];参数：['14','6']
+
+2014-01-15 16:15:43,217
+--INFO:存储过程：[usp_mining_insert_PullInfo];参数：['14','1','5000']
+
+2014-01-15 16:15:43,218
+--INFO:14项目分配论坛站点2
+
+2014-01-15 16:15:43,218
+--INFO:存储过程：[usp_mining_insert_ProjectCate];参数：['14','2']
+
+2014-01-15 16:15:43,221
+--INFO:存储过程：[usp_mining_insert_PullInfo];参数：['14','2','1000']
+
+2014-01-15 16:15:43,221
+--INFO:14项目分配新闻站点1
+
+2014-01-15 16:15:43,221
+--INFO:存储过程：[usp_mining_insert_ProjectCate];参数：['14','5']
+
+2014-01-15 16:15:43,225
+--INFO:存储过程：[usp_mining_insert_PullInfo];参数：['14','3','1000']
+
+2014-01-15 16:15:43,225
+--INFO:14项目分配博客站点2
+
+2014-01-15 16:16:25,187
+--INFO:存储过程：[usp_minmig_select_customer_ByCustomerId];参数：['git000']
+
+2014-01-15 16:16:52,128
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['13']
+
+2014-01-15 16:16:52,133
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['13','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 16:16:52,159
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['13','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 16:16:55,592
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['13']
+
+2014-01-15 16:16:55,593
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['13','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 16:16:55,621
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['13','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 16:16:57,754
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['14']
+
+2014-01-15 16:16:57,755
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['14','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 16:16:57,789
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['14','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 16:19:24,068
+--INFO:存储过程：[usp_minmig_select_customer_ByCustomerId];参数：['hk001']
+
+2014-01-15 16:19:31,524
+--INFO:存储过程：[usp_minmig_select_customer_ByCustomerId];参数：['hk001']
+
+2014-01-15 16:19:42,587
+--INFO:存储过程：[usp_minmig_select_customer_ByCustomerId];参数：['hk001']
+
+2014-01-15 16:19:42,629
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 16:19:42,635
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 16:19:42,668
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 16:20:14,957
+--INFO:存储过程：[usp_minmig_select_customer_ByCustomerId];参数：['git000']
+
+2014-01-15 16:20:17,324
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['13']
+
+2014-01-15 16:20:17,325
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['13','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 16:20:17,356
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['13','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 16:20:19,844
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['14']
+
+2014-01-15 16:20:19,845
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['14','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 16:20:19,876
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['14','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 16:20:21,972
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['13']
+
+2014-01-15 16:20:21,974
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['13','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 16:20:22,006
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['13','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 16:20:23,387
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['13']
+
+2014-01-15 16:20:23,392
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['13','2013-11-16','2014-01-15','sitedata','1','0','','2','1','0','0']
+
+2014-01-15 16:20:23,421
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['13','2013-11-16','2014-01-15','sitedata','1','20','1','0','','2','1','0','0']
+
+2014-01-15 16:20:23,989
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['13']
+
+2014-01-15 16:20:23,990
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['13','2013-11-16','2014-01-15','sitedata','1','0','','2','2','0','0']
+
+2014-01-15 16:20:24,021
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['13','2013-11-16','2014-01-15','sitedata','1','20','1','0','','2','2','0','0']
+
+2014-01-15 16:20:24,992
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['13']
+
+2014-01-15 16:20:24,994
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['13','2013-11-16','2014-01-15','sitedata','1','0','','1','0','0','0']
+
+2014-01-15 16:20:25,025
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['13','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','0','0','0']
+
+2014-01-15 16:20:26,277
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['13']
+
+2014-01-15 16:20:26,278
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['13','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 16:20:26,305
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['13','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 16:20:27,248
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['13']
+
+2014-01-15 16:20:27,249
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['13','2013-11-16','2014-01-15','sitedata','1','0','','3','0','0','0']
+
+2014-01-15 16:20:27,284
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['13','2013-11-16','2014-01-15','sitedata','1','20','1','0','','3','0','0','0']
+
+2014-01-15 16:20:28,286
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['13']
+
+2014-01-15 16:20:28,287
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['13','2013-11-16','2014-01-15','sitedata','1','0','','5','0','0','0']
+
+2014-01-15 16:20:28,316
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['13','2013-11-16','2014-01-15','sitedata','1','20','1','0','','5','0','0','0']
+
+2014-01-15 16:20:29,927
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['13']
+
+2014-01-15 16:20:29,928
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['13','2013-11-16','2014-01-15','sitedata','1','0','','3','0','0','0']
+
+2014-01-15 16:20:29,957
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['13','2013-11-16','2014-01-15','sitedata','1','20','1','0','','3','0','0','0']
+
+2014-01-15 16:20:31,430
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['13']
+
+2014-01-15 16:20:31,431
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['13','2013-11-16','2014-01-15','sitedata','1','0','','2','0','0','0']
+
+2014-01-15 16:20:31,464
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['13','2013-11-16','2014-01-15','sitedata','1','20','1','0','','2','0','0','0']
+
+2014-01-15 16:20:32,568
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['13']
+
+2014-01-15 16:20:32,568
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['13','2013-11-16','2014-01-15','sitedata','1','0','','1','0','0','0']
+
+2014-01-15 16:20:32,598
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['13','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','0','0','0']
+
+2014-01-15 16:20:33,479
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['13']
+
+2014-01-15 16:20:33,480
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['13','2013-11-16','2014-01-15','sitedata','1','0','','3','0','0','0']
+
+2014-01-15 16:20:33,503
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['13','2013-11-16','2014-01-15','sitedata','1','20','1','0','','3','0','0','0']
+
+2014-01-15 16:20:34,533
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['13']
+
+2014-01-15 16:20:34,534
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['13','2013-11-16','2014-01-15','sitedata','1','0','','5','0','0','0']
+
+2014-01-15 16:20:34,556
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['13','2013-11-16','2014-01-15','sitedata','1','20','1','0','','5','0','0','0']
+
+2014-01-15 16:36:03,736
+--INFO:存储过程：[usp_minmig_select_customer_ByCustomerId];参数：['admin']
+
+2014-01-15 16:36:08,911
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 16:36:08,917
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 16:36:08,951
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 16:36:37,935
+--ERROR:customer.aspx Page_Load
+
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 WebCrawler.customer.PrepareBind() 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\customer.aspx.cs:行号 128
+   在 WebCrawler.customer.Page_Load(Object sender, EventArgs e) 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\customer.aspx.cs:行号 43
+2014-01-15 16:36:40,141
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 16:36:40,142
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 16:36:40,174
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 16:36:54,907
+--INFO:存储过程：[usp_minmig_select_customer_ByCustomerId];参数：['admin']
+
+2014-01-15 16:37:15,034
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 16:37:15,035
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 16:37:15,066
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 16:38:16,935
+--INFO:存储过程：[usp_minmig_select_customer_ByCustomerId];参数：['admin']
+
+2014-01-15 16:39:08,341
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 16:39:08,349
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 16:39:08,390
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 16:39:29,712
+--INFO:存储过程：[usp_minmig_select_customer_ByCustomerId];参数：['admin']
+
+2014-01-15 16:39:38,672
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 16:39:39,081
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 16:39:39,116
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 16:44:21,459
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 16:44:21,462
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 16:44:21,515
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 16:45:09,973
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 16:45:09,986
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 16:45:10,026
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 16:50:06,551
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 16:50:07,087
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 16:50:07,128
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 16:51:25,718
+--INFO:存储过程：[usp_minmig_select_customer_ByCustomerId];参数：['admin']
+
+2014-01-15 16:51:27,815
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 16:51:27,821
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 16:51:27,852
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 16:53:00,869
+--ERROR:customer.aspx Page_Load
+
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 WebCrawler.customer.PrepareBind() 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\customer.aspx.cs:行号 128
+   在 WebCrawler.customer.Page_Load(Object sender, EventArgs e) 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\customer.aspx.cs:行号 43
+2014-01-15 16:53:00,940
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 16:53:00,948
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 16:53:00,980
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 16:53:54,056
+--ERROR:customer.aspx Page_Load
+
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 WebCrawler.customer.PrepareBind() 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\customer.aspx.cs:行号 128
+   在 WebCrawler.customer.Page_Load(Object sender, EventArgs e) 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\customer.aspx.cs:行号 43
+2014-01-15 16:53:54,101
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 16:53:54,108
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 16:53:54,141
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 17:05:35,223
+--ERROR:customer.aspx Page_Load
+
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 WebCrawler.customer.PrepareBind() 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\customer.aspx.cs:行号 128
+   在 WebCrawler.customer.Page_Load(Object sender, EventArgs e) 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\customer.aspx.cs:行号 43
+2014-01-15 17:05:35,229
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 17:05:35,230
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 17:05:35,257
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 17:06:18,199
+--ERROR:customer.aspx Page_Load
+
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 WebCrawler.customer.PrepareBind() 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\customer.aspx.cs:行号 128
+   在 WebCrawler.customer.Page_Load(Object sender, EventArgs e) 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\customer.aspx.cs:行号 43
+2014-01-15 17:06:18,205
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 17:06:18,218
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 17:06:18,247
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 17:06:38,021
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 17:06:38,022
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 17:06:38,050
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 17:07:03,933
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 17:07:03,934
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 17:07:03,961
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 17:09:54,027
+--ERROR:customer.aspx Page_Load
+
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 WebCrawler.customer.PrepareBind() 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\customer.aspx.cs:行号 128
+   在 WebCrawler.customer.Page_Load(Object sender, EventArgs e) 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\customer.aspx.cs:行号 43
+2014-01-15 17:09:54,073
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['5']
+
+2014-01-15 17:09:54,088
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['5','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 17:09:54,684
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['5','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 17:11:37,908
+--ERROR:customer.aspx Page_Load
+
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 WebCrawler.customer.PrepareBind() 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\customer.aspx.cs:行号 128
+   在 WebCrawler.customer.Page_Load(Object sender, EventArgs e) 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\customer.aspx.cs:行号 43
+2014-01-15 17:11:37,954
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['5']
+
+2014-01-15 17:11:37,960
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['5','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 17:11:37,984
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['5','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 17:11:59,970
+--ERROR:customer.aspx Page_Load
+
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 WebCrawler.customer.PrepareBind() 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\customer.aspx.cs:行号 128
+   在 WebCrawler.customer.Page_Load(Object sender, EventArgs e) 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\customer.aspx.cs:行号 43
+2014-01-15 17:12:00,001
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 17:12:00,008
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 17:12:00,040
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 17:14:22,059
+--ERROR:analysis.aspx Page_Load
+
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 WebCrawler.analysis.PrepareBind() 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\analysis.aspx.cs:行号 100
+   在 WebCrawler.analysis.Page_Load(Object sender, EventArgs e) 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\analysis.aspx.cs:行号 38
+2014-01-15 17:14:22,102
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 17:14:22,138
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 17:19:29,790
+--ERROR:analysis.aspx Page_Load
+
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 WebCrawler.analysis.PrepareBind() 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\analysis.aspx.cs:行号 100
+   在 WebCrawler.analysis.Page_Load(Object sender, EventArgs e) 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\analysis.aspx.cs:行号 38
+2014-01-15 17:19:29,827
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 17:19:29,860
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 17:19:34,396
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','news','1','0','','2','1','0','0']
+
+2014-01-15 17:19:34,449
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','news','1','20','1','0','','2','1','0','0']
+
+2014-01-15 17:19:35,362
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','news','1','0','','2','2','0','0']
+
+2014-01-15 17:19:35,405
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','news','1','20','1','0','','2','2','0','0']
+
+2014-01-15 17:19:38,717
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','0','0','0']
+
+2014-01-15 17:19:38,802
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','0','0','0']
+
+2014-01-15 17:19:41,867
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','0','0','1']
+
+2014-01-15 17:19:41,990
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','0','0','1']
+
+2014-01-15 17:19:43,725
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 17:19:43,765
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 17:19:44,354
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','2','0','0']
+
+2014-01-15 17:19:44,397
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','2','0','0']
+
+2014-01-15 17:19:44,963
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','3','0','0']
+
+2014-01-15 17:19:45,001
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','3','0','0']
+
+2014-01-15 17:19:46,758
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','news','1','0','','2','2','0','0']
+
+2014-01-15 17:19:46,803
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','news','1','20','1','0','','2','2','0','0']
+
+2014-01-15 17:19:48,614
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 17:19:48,657
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 17:19:50,428
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','2','0','0']
+
+2014-01-15 17:19:50,465
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','2','0','0']
+
+2014-01-15 17:19:51,965
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','news','1','0','','2','2','0','0']
+
+2014-01-15 17:19:52,006
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','news','1','20','1','0','','2','2','0','0']
+
+2014-01-15 17:20:00,324
+--ERROR:customer.aspx Page_Load
+
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 WebCrawler.customer.PrepareBind() 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\customer.aspx.cs:行号 128
+   在 WebCrawler.customer.Page_Load(Object sender, EventArgs e) 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\customer.aspx.cs:行号 43
+2014-01-15 17:20:00,344
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 17:20:00,360
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 17:20:00,407
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 17:20:02,183
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 17:20:02,184
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','2','1','0','0']
+
+2014-01-15 17:20:02,226
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','2','1','0','0']
+
+2014-01-15 17:20:02,867
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 17:20:02,868
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','2','2','0','0']
+
+2014-01-15 17:20:02,911
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','2','2','0','0']
+
+2014-01-15 17:20:03,780
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 17:20:03,781
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','2','3','0','0']
+
+2014-01-15 17:20:03,842
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','2','3','0','0']
+
+2014-01-15 17:20:04,694
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 17:20:04,703
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','0','0','0']
+
+2014-01-15 17:20:04,734
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','0','0','0']
+
+2014-01-15 17:20:05,684
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 17:20:05,685
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 17:20:05,728
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 17:20:06,395
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 17:20:06,401
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','2','0','0']
+
+2014-01-15 17:20:06,435
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','2','0','0']
+
+2014-01-15 17:20:07,019
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 17:20:07,020
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','3','0','0']
+
+2014-01-15 17:20:07,054
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','3','0','0']
+
+2014-01-15 17:20:07,881
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 17:20:07,882
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','3','0','0','0']
+
+2014-01-15 17:20:07,922
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','3','0','0','0']
+
+2014-01-15 17:20:08,483
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 17:20:08,484
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','3','1','0','0']
+
+2014-01-15 17:20:08,522
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','3','1','0','0']
+
+2014-01-15 17:20:09,283
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 17:20:09,284
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','3','2','0','0']
+
+2014-01-15 17:20:09,326
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','3','2','0','0']
+
+2014-01-15 17:20:10,379
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 17:20:10,381
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','3','3','0','0']
+
+2014-01-15 17:20:10,416
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','3','3','0','0']
+
+2014-01-15 17:20:11,054
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 17:20:11,056
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','5','0','0','0']
+
+2014-01-15 17:20:11,098
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','5','0','0','0']
+
+2014-01-15 17:20:12,451
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 17:20:12,452
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','5','1','0','0']
+
+2014-01-15 17:20:12,498
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','5','1','0','0']
+
+2014-01-15 17:20:13,058
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 17:20:13,060
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','5','2','0','0']
+
+2014-01-15 17:20:13,104
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','5','2','0','0']
+
+2014-01-15 17:20:13,964
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 17:20:13,965
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','5','3','0','0']
+
+2014-01-15 17:20:14,008
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','5','3','0','0']
+
+2014-01-15 17:22:10,438
+--ERROR:analysis.aspx Page_Load
+
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 WebCrawler.analysis.PrepareBind() 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\analysis.aspx.cs:行号 100
+   在 WebCrawler.analysis.Page_Load(Object sender, EventArgs e) 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\analysis.aspx.cs:行号 38
+2014-01-15 17:22:10,500
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 17:22:10,534
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 17:22:52,852
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 17:22:52,880
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 17:22:54,365
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','2','1','0','0']
+
+2014-01-15 17:22:54,417
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','2','1','0','0']
+
+2014-01-15 17:22:55,438
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','2','2','0','0']
+
+2014-01-15 17:22:55,478
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','2','2','0','0']
+
+2014-01-15 17:22:56,242
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','0','0','0']
+
+2014-01-15 17:22:56,286
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','0','0','0']
+
+2014-01-15 17:22:57,405
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','3','0','0','0']
+
+2014-01-15 17:22:57,438
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','3','0','0','0']
+
+2014-01-15 17:22:58,710
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','5','0','0','0']
+
+2014-01-15 17:22:58,747
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','5','0','0','0']
+
+2014-01-15 17:22:59,724
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','2','1','0','0']
+
+2014-01-15 17:22:59,769
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','2','1','0','0']
+
+2014-01-15 17:23:01,220
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','2','2','0','0']
+
+2014-01-15 17:23:01,266
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','2','2','0','0']
+
+2014-01-15 17:23:01,682
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','2','3','0','0']
+
+2014-01-15 17:23:01,722
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','2','3','0','0']
+
+2014-01-15 17:23:04,423
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','2','3','0','0']
+
+2014-01-15 17:23:04,457
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','2','3','0','0']
+
+2014-01-15 17:23:05,916
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 17:23:05,919
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 17:23:05,945
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 17:51:17,391
+--ERROR:analysis.aspx Page_Load
+
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 WebCrawler.analysis.PrepareBind() 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\analysis.aspx.cs:行号 100
+   在 WebCrawler.analysis.Page_Load(Object sender, EventArgs e) 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\analysis.aspx.cs:行号 38
+2014-01-15 17:51:17,432
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 17:51:17,464
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 18:05:14,379
+--INFO:存储过程：[usp_minmig_update_customer_sitedata_mess];参数：['27988','12321']
+
+2014-01-15 18:05:18,444
+--INFO:存储过程：[usp_minmig_update_customer_sitedata_mess];参数：['27890','312321']
+
+2014-01-15 18:14:18,375
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 18:14:18,892
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 18:14:41,137
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 18:14:41,164
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 18:15:18,222
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 18:15:18,252
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 18:16:13,630
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 18:16:13,658
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 18:16:37,565
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 18:16:37,593
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 18:17:16,186
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 18:17:16,213
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 18:17:41,715
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 18:17:41,742
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 18:18:34,344
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 18:18:34,375
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 18:18:57,461
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 18:18:57,489
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 18:27:33,451
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 18:27:33,492
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','70','1','0','','1','1','0','0']
+
+2014-01-15 18:27:58,467
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 18:27:58,516
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 18:30:26,627
+--ERROR:customer.aspx Page_Load
+
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 WebCrawler.customer.PrepareBind() 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\customer.aspx.cs:行号 128
+   在 WebCrawler.customer.Page_Load(Object sender, EventArgs e) 位置 H:\2015年所有整理\Web程序\WebCrawler\WebCrawler\customer.aspx.cs:行号 43
+2014-01-15 18:30:26,658
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 18:30:26,707
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 18:30:26,759
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 18:30:36,454
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 18:30:36,455
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','2','1','0','0']
+
+2014-01-15 18:30:36,493
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','2','1','0','0']
+
+2014-01-15 18:30:37,898
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 18:30:37,899
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','2','2','0','0']
+
+2014-01-15 18:30:37,939
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','2','2','0','0']
+
+2014-01-15 18:30:39,578
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 18:30:39,579
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','2','1','0','0']
+
+2014-01-15 18:30:39,627
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','2','1','0','0']
+
+2014-01-15 18:30:51,690
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 18:30:51,694
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 18:30:51,727
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 18:30:54,410
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 18:30:54,411
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','2','0','0']
+
+2014-01-15 18:30:54,449
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','2','0','0']
+
+2014-01-15 18:30:58,798
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 18:30:58,800
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','2','2','0','0']
+
+2014-01-15 18:30:58,839
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','2','2','0','0']
+
+2014-01-15 18:31:00,356
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 18:31:00,360
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','2','1','0','0']
+
+2014-01-15 18:31:00,408
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','2','1','0','0']
+
+2014-01-15 18:31:11,132
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 18:31:11,133
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','2','0','0']
+
+2014-01-15 18:31:11,168
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','2','0','0']
+
+2014-01-15 18:31:17,638
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 18:31:17,641
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','2','1','0','0']
+
+2014-01-15 18:31:17,679
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','2','1','0','0']
+
+2014-01-15 18:31:20,122
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 18:31:20,161
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','2','20','1','0','','1','1','0','0']
+
+2014-01-15 18:31:22,912
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 18:31:22,951
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 18:31:27,051
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 18:31:27,052
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','2','2','0','0']
+
+2014-01-15 18:31:27,094
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','2','2','0','0']
+
+2014-01-15 18:31:29,369
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 18:31:29,372
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','1','0','0']
+
+2014-01-15 18:31:29,407
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','1','1','0','0']
+
+2014-01-15 18:31:32,002
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 18:31:32,003
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','2','0','0','0']
+
+2014-01-15 18:31:32,090
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','2','0','0','0']
+
+2014-01-15 18:31:57,921
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','0','0','0']
+
+2014-01-15 18:31:57,955
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','2','20','1','0','','1','0','0','0']
+
+2014-01-15 18:31:59,476
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','0','0','0']
+
+2014-01-15 18:31:59,512
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','3','20','1','0','','1','0','0','0']
+
+2014-01-15 18:32:00,683
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','0','0','0']
+
+2014-01-15 18:32:00,725
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','4','20','1','0','','1','0','0','0']
+
+2014-01-15 18:32:01,979
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','1','0','0','0']
+
+2014-01-15 18:32:02,018
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','5','20','1','0','','1','0','0','0']
+
+2014-01-15 18:32:05,000
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 18:32:05,002
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','2','0','0','0']
+
+2014-01-15 18:32:05,059
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','2','0','0','0']
+
+2014-01-15 18:33:05,917
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 18:33:05,918
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','2','2','0','0']
+
+2014-01-15 18:33:05,952
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','2','2','0','0']
+
+2014-01-15 18:33:08,904
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 18:33:08,904
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','2','1','0','0']
+
+2014-01-15 18:33:08,941
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','2','1','0','0']
+
+2014-01-15 18:33:15,876
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 18:33:15,877
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','2','2','0','0']
+
+2014-01-15 18:33:15,917
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','2','2','0','0']
+
+2014-01-15 18:33:25,024
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 18:33:25,025
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','2','1','0','0']
+
+2014-01-15 18:33:25,067
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','2','1','0','0']
+
+2014-01-15 18:36:52,484
+--INFO:存储过程：[usp_mining_select_customer_contendTopFour];参数：['4']
+
+2014-01-15 18:36:52,500
+--INFO:存储过程：[usp_minmig_select_customer_sitedataCount];参数：['4','2013-11-16','2014-01-15','sitedata','1','0','','2','2','0','0']
+
+2014-01-15 18:36:52,536
+--INFO:存储过程：[usp_minmig_select_customer_sitedata];参数：['4','2013-11-16','2014-01-15','sitedata','1','20','1','0','','2','2','0','0']
+
