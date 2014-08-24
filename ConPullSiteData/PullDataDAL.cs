@@ -15,7 +15,7 @@ namespace DataCrawler.DAL.Crawler
     {
         //获取正在运行的 项目,runstatus = 2, 0 是项目建立, 1 是分配分类,站点等,2 表示项目启动,3 是项目暂停 99是废弃
 
-        private static string sql_GetProjectsWithRunStatus1 = "select ProjectId,MatchingRuleType,MatchingRule from projectlist where RunStatus = 1 ";
+        private static string sql_GetProjectsWithRunStatus1 = "select ProjectId,MatchingRuleType,MatchingRule from projectlist where RunStatus = 1";
 
         private static string sql_GetActiveClassIdsByProjectId = "select distinct ClassId from ProjectDetail where projectid = @projectId and (runStatus = 0 or runStatus = 1) ";
 
@@ -48,8 +48,11 @@ namespace DataCrawler.DAL.Crawler
         {
             try
             {
+                Console.WriteLine("开始读取项目数据");
                 IBRSCommonDAL dal = new IBRSCommonDAL();
                 DataTable dt_1 = dal.SelectData(sql_GetProjectsWithRunStatus1);
+
+                Console.WriteLine("项目数据读取完成，开始读取class");
                 if (dt_1 != null)
                 {
                     foreach (DataRow row in dt_1.Rows)
@@ -87,11 +90,12 @@ namespace DataCrawler.DAL.Crawler
                                     }
 
                                     PullData2Next(projectId, kwyWord, classId, matchType);
-
-
                                 }
                             }
-
+                            else
+                            {
+                                Console.WriteLine("GetActiveClassIdsByProjectId returns null");
+                            }
                         }
                         catch (Exception ex)
                         {
@@ -99,7 +103,6 @@ namespace DataCrawler.DAL.Crawler
                         }
                     }
                 }
-
             }
             catch (Exception ex)
             {
@@ -111,6 +114,7 @@ namespace DataCrawler.DAL.Crawler
 
         public int PullData2Next(string projectId, string kwyWord, string classId, int matchType)
         {
+            Console.WriteLine(string.Format("开始读取项目{0}，class{1}", projectId, classId));
             string kwyWordWhere = GetWhereStr(kwyWord, matchType);
             int result = 0;
             string tableName = GetTableName(classId);
@@ -412,7 +416,8 @@ namespace DataCrawler.DAL.Crawler
                                 new SqlParameter("siteid",siteId),
                                 new SqlParameter("platename",plateName)
                             };
-                        // LogNet.LogBLL.Log("usp_mining_insert_SiteData", parameters);
+                        LogNet.LogBLL.Info(siteId.ToString());
+                        LogNet.LogBLL.Info(plateName);
                         result += new IBRSCommonDAL().ExecuteNonQuery("usp_mining_insert_SiteData", parameters);
 
                     }
