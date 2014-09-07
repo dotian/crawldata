@@ -33,7 +33,7 @@ namespace WebCrawler
             if (permissions == 3)
             {
                 //权限为 3的只有一个项目,客户临时账号
-                Response.Redirect("customer.aspx?type=sitedata&c=1&a=1");
+                Response.Redirect("customer.aspx?type=sitedata&c=0&a=2");
                  return;
             }
             if (permissions == 4)
