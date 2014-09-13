@@ -104,6 +104,11 @@ namespace WebCrawler
                 {
                     queryArgs.ProjectId = queryArgs.contendId;
                 }
+                else if (queryArgs.datatype == "report")
+                {
+                    queryArgs.ProjectId = 65;
+                }
+                
                 int recordCount = customerBLL.GetShowDataCountManager(queryArgs);
                 List<ShowDataInfo> list = customerBLL.GetShowDataListManager(queryArgs);
 
@@ -159,6 +164,7 @@ namespace WebCrawler
                 {
                     queryhankook.datatype = "sitedata";
                 }
+
                 if (Request.QueryString["a"] != null)
                 {
                     queryhankook.analysis = int.Parse(Request.QueryString["a"].ToString());
@@ -167,10 +173,16 @@ namespace WebCrawler
                 {
                     queryhankook.analysis = 0;
                 }
+
                 if (Request.QueryString["c"] != null)
                 {
                     queryhankook.sitetype = int.Parse(Request.QueryString["c"].ToString());
                 }
+                else
+                {
+                    queryhankook.sitetype = 2;
+                }
+
                 if (Request.QueryString["contendId"] != null)
                 {
                     int contendId = 0;
@@ -181,6 +193,7 @@ namespace WebCrawler
                 {
                     queryhankook.contendId = 0; //项目 关键字
                 }
+
                 queryhankook.ProjectId = int.Parse(this.hid_projectId.Value.Trim());
                 queryhankook.start = this.txt_startdate.Value.Trim();
                 queryhankook.end = this.txt_enddate.Value.Trim();
@@ -191,9 +204,9 @@ namespace WebCrawler
             }
             catch (Exception ex)
             {
-
                 LogNet.LogBLL.Error("customer.aspx GetQueryParms", ex);
             }
+
             return queryhankook;
         }
 

@@ -8,6 +8,7 @@ namespace DataCrawler.Model.Hankook
     public class QueryHankookArgs
     {
         public QueryHankookArgs() { }
+
         /// <summary>
         /// QueryHankookArgs 构造函数
         /// </summary>
@@ -84,10 +85,12 @@ namespace DataCrawler.Model.Hankook
         /// 页大小
         /// </summary>
         public int pagesize { get; set; }
+
         /// <summary>
         /// 数据类型 1论坛  2 新闻 3博客和微博(这里合并的)
         /// </summary>
         public int sitetype { get; set; }
+
         /// <summary>
         /// 调性 0 所有, 1正 2中 3负
         /// </summary>

@@ -176,15 +176,16 @@
             //aspnetpager 的样式
             $("#AspNetPager1").find("tr td").first().attr("valign", "middle");
 
-            var li_gb_id = $.cookie('li_gb_id');
-            if (li_gb_id != null) {
-                //var ctrl = document.getElementById("li_gb_id");
-                $(".greenImgBg").removeClass("greenImgBg").addClass("orangeImgBg");
-                $("#" + li_gb_id).removeClass("orangeImgBg").addClass("greenImgBg");
-            } else {
-                $(".greenImgBg").removeClass("greenImgBg").addClass("orangeImgBg");
-                $("#li_gb_2").removeClass("orangeImgBg").addClass("greenImgBg");
-            }
+            var c_UrlParam = getUrlParam("c");
+            var elementIndex = 1;
+
+            if (c_UrlParam == "2") { elementIndex = 1; }
+            else if (c_UrlParam == "1") { elementIndex = 2; }
+            else if (c_UrlParam == "3") { elementIndex = 3; }
+            else if (c_UrlParam == "5") { elementIndex = 4; }
+
+            $(".greenImgBg").removeClass("greenImgBg").addClass("orangeImgBg");
+            $("#li_gb_" + elementIndex).removeClass("orangeImgBg").addClass("greenImgBg");
 
             $(".nav_1 li").click(function () {
                 $(".greenImgBg").removeClass("greenImgBg").addClass("orangeImgBg");
@@ -192,10 +193,16 @@
                 $.cookie('li_gb_id', li_gb_id);
                 $("#" + li_gb_id).removeClass("orangeImgBg").addClass("greenImgBg");
             });
-
-
+            
             ShowLogImg();
         });
+
+        function getUrlParam(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]);
+            return null;
+        }
 
         function ShowLogImg() {
             var projecId = $("#hid_projectId").val();
@@ -216,7 +223,7 @@
                 $.cookie('li_gb_id', li_gb_id);
                 //记下这个ID
 
-                $(".greenImgBg").removeClass("greenImgBg").addClass("greenImgBg");
+                $(".greenImgBg").removeClass("greenImgBg").addClass("orangeImgBg");
                 $(this).removeClass("orangeImgBg").addClass("greenImgBg");
             });
         });
@@ -247,7 +254,7 @@
             <div class="nav">
                 <ul class="nav_1">
                     <%--  <li class="title" style="background-position: 0 -66px;">--%>
-                    <li class="orangeImgBg" id="li_gb_1"><a href="customer.aspx?type=sitedata&c=2&a=0">新闻
+                    <li class="greenImgBg" id="li_gb_1"><a href="customer.aspx?type=sitedata&c=2&a=0">新闻
                         News</a></li>
                     <li><span>img</span><label class="li_txtleft"><a href="customer.aspx?type=sitedata&c=2&a=1">正面
                         Positive</a></label></li>
@@ -258,7 +265,7 @@
                 </ul>
                 <ul class="nav_1">
                     <%-- <li class="title"> --%>
-                    <li class="greenImgBg" id="li_gb_2"><a href="customer.aspx?type=sitedata&c=1&a=0">论坛
+                    <li class="orangeImgBg" id="li_gb_2"><a href="customer.aspx?type=sitedata&c=1&a=0">论坛
                         BBS</a></li>
                     <li><span>img</span><label class="li_txtleft"><a href="customer.aspx?type=sitedata&c=1&a=1">正面
                         Positive</a></label></li>
@@ -267,7 +274,7 @@
                     <li><span>img</span><label class="li_txtleft"><a href="customer.aspx?type=sitedata&c=1&a=3">负面
                         Negative</a></label></li>
                 </ul>
-                <ul class="nav_1">
+                <ul class="nav_1" style="display: none">
                     <li class="orangeImgBg" id="li_gb_3"><a href="customer.aspx?type=sitedata&c=3&a=0">博客
                         BLOG</a></li>
                     <li><span>img</span><label class="li_txtleft"><a href="customer.aspx?type=sitedata&c=3&a=1">正面
@@ -304,7 +311,7 @@
                             style="color: #000"></a></li>
                 </ul>
                 <br />
-                <ul class="nav_5" style="display:none">
+                <ul class="nav_5" style="display: none">
                     <li class="title"><a href="view.aspx" target="_blank">数据分析 Report</a></li>
                 </ul>
             </div>
