@@ -1,9 +1,0 @@
-H:\2015年所有整理\Web程序\WebCrawler\DataCrawlerModel\bin\Release\DataCrawler.Model.dll
-H:\2015年所有整理\Web程序\WebCrawler\DataCrawlerModel\bin\Release\DataCrawler.Model.pdb
-H:\2015年所有整理\Web程序\WebCrawler\DataCrawlerModel\obj\Release\DataCrawler.Model.dll
-H:\2015年所有整理\Web程序\WebCrawler\DataCrawlerModel\obj\Release\DataCrawler.Model.pdb
-H:\2015年所有整理\Web程序\WebCrawler\DataCrawlerModel\obj\Release\Model.csprojResolveAssemblyReference.cache
-F:\crawl\数据挖掘系统2014-7-27\数据挖掘系统\WebCrawler\DataCrawlerModel\bin\Release\DataCrawler.Model.dll
-F:\crawl\数据挖掘系统2014-7-27\数据挖掘系统\WebCrawler\DataCrawlerModel\bin\Release\DataCrawler.Model.pdb
-F:\crawl\数据挖掘系统2014-7-27\数据挖掘系统\WebCrawler\DataCrawlerModel\obj\Release\DataCrawler.Model.dll
-F:\crawl\数据挖掘系统2014-7-27\数据挖掘系统\WebCrawler\DataCrawlerModel\obj\Release\DataCrawler.Model.pdb

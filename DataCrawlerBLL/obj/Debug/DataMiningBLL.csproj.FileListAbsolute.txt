@@ -1,4 +1,0 @@
-F:\svn管理器\ActionLM\服务器应用程序\WebMining\WebMiningBLL\bin\Debug\DataMiningBLL.dll
-F:\svn管理器\ActionLM\服务器应用程序\WebMining\WebMiningBLL\bin\Debug\DataMiningBLL.pdb
-F:\svn管理器\ActionLM\服务器应用程序\WebMining\WebMiningBLL\obj\Debug\DataMiningBLL.dll
-F:\svn管理器\ActionLM\服务器应用程序\WebMining\WebMiningBLL\obj\Debug\DataMiningBLL.pdb

@@ -1,4 +1,0 @@
-F:\svn管理器\ActionLM\服务器应用程序\WebMining\WebMiningDAL\bin\Debug\DataMiningDAL.dll
-F:\svn管理器\ActionLM\服务器应用程序\WebMining\WebMiningDAL\bin\Debug\DataMiningDAL.pdb
-F:\svn管理器\ActionLM\服务器应用程序\WebMining\WebMiningDAL\obj\Debug\DataMiningDAL.dll
-F:\svn管理器\ActionLM\服务器应用程序\WebMining\WebMiningDAL\obj\Debug\DataMiningDAL.pdb
