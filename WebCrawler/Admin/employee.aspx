@@ -139,13 +139,13 @@
         });
 
         function FiltValue(arr) {
-            var empId = arr[0].trim();
+            var empId = $.trim(arr[0]);
             if (empId == "员工账号") {
                 return;
             }
-            var empName = arr[1].trim();
-            var promession = arr[2].trim();
-            var createdate = arr[3].trim();
+            var empName = $.trim(arr[1]);
+            var promession = $.trim(arr[2]);
+            var createdate = $.trim(arr[3]);
 
             $("#txt_empId").val(empId);
             $("#txt_empName").val(empName);
@@ -162,12 +162,12 @@
         }
         function btn_addEmp_onclick() {
             $("#hid_valedate").val("0");
-            var empId = $("#txt_empId").val().trim();
-            var empName = $("#txt_empName").val().trim();
-            var pwd = $("#txt_newpwd").val().trim();
-            var pwd2 = $("#txt_newpwd2").val().trim();
+            var empId = $.trim($("#txt_empId").val());
+            var empName = $.trim($("#txt_empName").val());
+            var pwd = $.trim($("#txt_newpwd").val());
+            var pwd2 = $.trim($("#txt_newpwd2").val());
             var permission = $("#sel_permissions").val();
-            var createdate = $("#txt_createdate").val().trim();
+            var createdate = $.trim($("#txt_createdate").val());
             var b = vlaedateFunc(empId, empName, pwd, pwd2, permission, createdate);
             if (b) {
                 $("#hid_valedate").val("1");
@@ -219,12 +219,12 @@
 
         function btn_updateEmp_onclick() {
             $("#hid_valedate").val("0");
-            var empId = $("#txt_empId").val().trim();
-            var empName = $("#txt_empName").val().trim();
-            var pwd = $("#txt_newpwd").val().trim();
-            var pwd2 = $("#txt_newpwd2").val().trim();
+            var empId = $.trim($("#txt_empId").val());
+            var empName = $.trim($("#txt_empName").val());
+            var pwd = $.trim($("#txt_newpwd").val());
+            var pwd2 = $.trim($("#txt_newpwd2").val());
             var permission = $("#sel_permissions").val();
-            var createdate = $("#txt_createdate").val().trim();
+            var createdate = $.trim($("#txt_createdate").val());
             var b = vlaedateFunc(empId, empName, pwd, pwd2, permission, createdate);
             if (b) {
                 $("#hid_valedate").val("1");
@@ -233,7 +233,7 @@
         }
         function btn_deleteEmp_onclick() {
             $("#hid_valedate").val("0");
-            var empId = $("#txt_empId").val().trim();
+            var empId = $.trim($("#txt_empId").val());
             var b = true;
             if (empId == "") {
                 $("#txt_empId").next("span").first().text("数字或字母5-15位");

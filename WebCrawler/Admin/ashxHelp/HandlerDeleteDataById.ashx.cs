@@ -42,7 +42,7 @@ namespace WebCrawler.Admin.ashxHelp
         }
         public bool DeleteSiteDateBySd(int sd_id)
         {
-            int result = new SiteDataBLL().DeleteSiteDateBySd_idManager(sd_id);
+            int result = new SiteDataBLL().DeleteSiteDataBySd_idManager(sd_id);
                 //(int)EventSubmit(typeof(DataCrawler.BLL.Crawler.SiteDataBLL).FullName, "DeleteSiteDateBySd_idManager", new object[] { sd_id });
             return result > 0;
 

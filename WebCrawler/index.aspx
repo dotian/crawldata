@@ -40,9 +40,9 @@ td.name
 <script type="text/javascript" language="javascript">
     function login() {
 
-        var user = $("#user").val().trim();
-        var pwd = $("#pwd").val().trim();
-        var code = $("#rand").val().trim();
+        var user = $.trim($("#user").val());
+        var pwd = $.trim($("#pwd").val());
+        var code = $.trim($("#rand").val());
 
         $.post("hankookAshx/login.ashx", { username: user, pwd: pwd, code: code }, function (data) {
             if (data == "登录成功") {

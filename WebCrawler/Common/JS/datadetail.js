@@ -197,7 +197,7 @@ function a_lastPage_click(t) {
 function a_nextPage_click(t) {
     var pageCount = $("#hid_pageCount").val();
     pageCount = parseInt(pageCount);
-    var pageIndex = parseInt($("#hid_pageIndex").val().trim());
+    var pageIndex = parseInt($.trim($("#hid_pageIndex").val()));
     pageIndex++;
     pageIndex = pageIndex >= pageCount ? pageCount : pageIndex;
     $("#hid_pageIndex").val(pageIndex);

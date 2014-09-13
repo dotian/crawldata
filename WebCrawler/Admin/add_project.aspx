@@ -77,7 +77,7 @@
     <title></title>
     <script type="text/javascript">
         function show_rule() {
-          var v = $("#txt_MatchRule").val().trim();
+          var v = $.trim($("#txt_MatchRule").val());
           if (v.indexOf("@") >= 0 || v.indexOf("%") >= 0 || v.indexOf("'") >= 0 || v.indexOf(" ") >= 0) {
               alert("匹配词之中不能出现空格,%,',@");
               $("#txt_MatchRule").focus();
@@ -122,7 +122,7 @@
 
         function btn_addProject_click() {
             var projectname = $("#txt_ProjectName").val();
-            var matchRule = $("#txt_MatchRule").val().trim();
+            var matchRule = $.trim($("#txt_MatchRule").val());
             if (matchRule=="") {
                 alert("匹配规则不能为空!");
                 return false;
@@ -147,13 +147,13 @@
                 return false;
             }
            
-            var rssKey = $("#txtRssKey").val().trim();
+            var rssKey = $.trim($("#txtRssKey").val());
             //----------分类Id----------------------------------//
 
-                var sp_forum = $("#sp_forum").text().replace("论坛分类Id:","").trim();
-                var sp_news = $("#sp_news").text().replace("新闻分类Id:", "").trim();
-                var sp_blog = $("#sp_blog").text().replace("博客分类Id:", "").trim();
-                var sp_microblog = $("#sp_microblog").text().replace("微博分类Id:", "").trim();
+                var sp_forum = $.trim($("#sp_forum").text().replace("论坛分类Id:",""));
+                var sp_news = $.trim($("#sp_news").text().replace("新闻分类Id:", ""));
+                var sp_blog = $.trim($("#sp_blog").text().replace("博客分类Id:", ""));
+                var sp_microblog = $.trim($("#sp_microblog").text().replace("微博分类Id:", ""));
 
                 add_project.addProject_click(projectname, matchRule, selType, rssKey, endDate, empname, sp_forum, sp_news, sp_blog, sp_microblog, function (data) {
                     var projectId = parseInt(data.value);

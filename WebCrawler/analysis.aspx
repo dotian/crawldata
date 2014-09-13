@@ -61,7 +61,7 @@
 
         function openNote(i, k) {
             cid = i;
-            $("#note").val($(k).text().trim());
+            $("#note").val($.trim($(k).text()));
 
         }
 
@@ -108,7 +108,7 @@
             var ctrl = document.getElementById(ctrl_tr_id);
             // 查看当前的 url
 
-            if (txt.trim() == "") {
+            if ($.trim(txt) == "") {
                 $("#show").css("display", "none");
                 return;
             }
@@ -154,7 +154,7 @@
 
         $(document).ready(function () {
             $("#tb_data").find("td[name='td_suggest']").each(function () {
-                var sug = $(this).find("span").text().trim();
+                var sug = $.trim($(this).find("span").text());
 
                 var id = $(this).attr("id").replace("td_suggest_", "");
                 var html = "<img alt='' src='img/weihuzhong.jpg' style='position: relative; top: 0px; cursor: pointer;' ";

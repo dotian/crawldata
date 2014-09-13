@@ -16,11 +16,11 @@ $(document).ready(function () {
 });
 function FiltValue(arr) {
 
-    var siteid = arr[0].trim();
-    var sitename = arr[2].trim();
-    var platename = arr[3].trim();
+    var siteid = $.trim(arr[0]);
+    var sitename = $.trim(arr[2]);
+    var platename = $.trim(arr[3]);
 
-    var siteurl = arr[4].trim();
+    var siteurl = $.trim(arr[4]);
     siteurl = siteurl.substring(9, siteurl.indexOf("\" target="));
     var siteRank = Trim(arr[1]);
     if (siteid == "Õ¾µã±àºÅ") {

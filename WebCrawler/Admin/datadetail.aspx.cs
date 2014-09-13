@@ -520,7 +520,7 @@ namespace WebCrawler.Admin
             //showstatus = 99
             try
             {
-                int result = bllAction.DeleteSiteDateBySd_idManager(sd_id);
+                int result = bllAction.DeleteSiteDataBySd_idManager(sd_id);
                 return result > 0;
             }
             catch (Exception ex)
@@ -537,7 +537,7 @@ namespace WebCrawler.Admin
             //审核 showstatus = 2
             try
             {
-                int result = bllAction.DeleteSiteDateBySd_idManager(sd_id);
+                int result = bllAction.DeleteSiteDataBySd_idManager(sd_id);
                 return result > 0;
             }
             catch (Exception ex)

@@ -50,25 +50,25 @@
      <script src="../Common/JS/menu.js" type="text/javascript"></script>
     <script type="text/javascript">
         function btn_modifyPwd_click() {
-                var oriPwd = $("#txt_oriPwd").val().trim();
+                var oriPwd = $.trim($("#txt_oriPwd").val());
                 if (oriPwd == "") {
                     $("#txt_oriPwd").parent().find("span").text("*原始密码不能为空");
                     $("#txt_oriPwd").focus();
                     return false;
                 }
-                var pwd = $("#txt_pwd").val().trim();
+                var pwd = $.trim($("#txt_pwd").val());
                 if (oriPwd == "") {
                     $("#txt_pwd").parent().find("span").text("*新密码不能为空");
                     $("#txt_pwd").focus();
                     return false;
                 }
-                var pwd2 = $("#txt_pwd2").val().trim();
+                var pwd2 = $.trim($("#txt_pwd2").val());
                 if (oriPwd == "") {
                     $("#txt_pwd2").parent().find("span").text("*确认密码不能为空");
                     $("#txt_pwd2").focus();
                     return false;
                 }
-                var code = $("#txt_code").val().trim();
+                var code = $.trim($("#txt_code").val());
                 if (code == "") {
                     $("#txt_code").parent().find("span").text("*请输入验证码");
                     $("#txt_code").focus();
@@ -83,7 +83,7 @@
 
         //原始密码
         function valedate_txtpwdOri() {
-            var pwd = $(t).val().trim();
+            var pwd = $.trim($(t).val());
             var reg = /^\w{5,15}$/;
             if (pwd.length < 5 | pwd.length > 15 | !reg.test(pwd)) {
                 $(t).parent().find("span").text("*长度5~15位,只能使用字母或数字");
@@ -97,7 +97,7 @@
         }
         //新密码
         function valedate_txtpwd(t) {
-            var pwd = $(t).val().trim();
+            var pwd = $.trim($(t).val());
             var reg = /^\w{5,15}$/;
             if (pwd.length < 5 | pwd.length > 15 | !reg.test(pwd)) {
                 $(t).parent().find("span").text("*长度5~15位,只能使用字母或数字");
@@ -110,9 +110,9 @@
         }
         //新密码确认密码
         function valedate_txtpwd2(t) {
-            var pwd = $(t).val().trim();
+            var pwd = $.trim($(t).val());
             var reg = /^\w{5,15}$/;
-            var pwd1 = $("#txt_pwd").val().trim();
+            var pwd1 = $.trim($("#txt_pwd").val());
             if (pwd.length < 5 | pwd.length > 15 | !reg.test(pwd)) {
                 $(t).parent().find("span").text("*长度5~15位,只能使用字母或数字");
                 $("#hid_valedate").val("false");

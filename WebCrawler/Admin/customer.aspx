@@ -162,12 +162,12 @@
         }
         function btn_addCustomer_onclick() {
             $("#hid_valedate").val("0");
-            var customerId = $("#txt_customerId").val().trim();
+            var customerId = $.trim($("#txt_customerId").val());
 
-            var pwd = $("#txt_newpwd").val().trim();
-            var pwd2 = $("#txt_newpwd2").val().trim();
+            var pwd = $.trim($("#txt_newpwd").val());
+            var pwd2 = $.trim($("#txt_newpwd2").val());
             var permission = $("#sel_permissions").val();
-            var createdate = $("#txt_createdate").val().trim();
+            var createdate = $.trim($("#txt_createdate").val());
             var sel_empId = $("#sel_employee").val();
             var b = vlaedateFunc(sel_empId, customerId, pwd, pwd2, permission, createdate);
           

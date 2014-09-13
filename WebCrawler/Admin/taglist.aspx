@@ -90,7 +90,7 @@
                 return false;
             } else {
                 var m = $(t).parent().parent().find("span").first();
-                var tagValue = $(m).find("input[type='text']").first().val().trim();
+                var tagValue = $.trim($(m).find("input[type='text']").first().val());
                 if (tagValue == "") {
                     alert("标签内容不能为空");
                 } else {
@@ -124,7 +124,7 @@
                         }
                     } else {
                         var m = $(this).parent().parent().find("span").first();
-                        var new_tag = $(m).find("input[type='text']").first().val().trim();
+                        var new_tag = $.trim($(m).find("input[type='text']").first().val());
                         var tagId = $("#hid_tagId").val();
                         //这里 传递修改
                         $.post("ashxHelp/modifyTagById.ashx", { id: tagId, tagname: new_tag }, function (res) { });
@@ -168,7 +168,7 @@
                         return false;
                     } else {
                         var m = $(this).parent().parent().find("span").first();
-                        var tagValue = $(m).find("input[type='text']").first().val().trim();
+                        var tagValue = $.trim($(m).find("input[type='text']").first().val());
                         if (tagValue == "") {
                             alert("标签内容不能为空");
                         } else {
@@ -212,7 +212,7 @@
         }
 
         function btn_save_click(t) {
-            var tagValue = $(t).parent().parent().find("span").first().find("input[type='text']").val().trim();
+            var tagValue = $.trim($(t).parent().parent().find("span").first().find("input[type='text']").val());
             var htl = "<span>" + tagValue + "</span><span class='a_update'><a href='#' onclick='return a_update_registClick(this);'>修改</a></span><span class='a_delete'><a href='#' onclick='return a_delete_registClick(this);'>删除</a></span>";
 
             // 新增 二级 标签
@@ -245,7 +245,7 @@
                 var id = $(t).parent().parent().attr("id");
                 id = id.replace("tag_", "");
                 var m = $(t).parent().parent().find("span").first();
-                var new_tag = $(m).find("input[type='text']").first().val().trim();
+                var new_tag = $.trim($(m).find("input[type='text']").first().val());
                 if (new_tag == "") {
                     alert("标签不允许为空!");
                 } else {
@@ -302,7 +302,7 @@
         function sel_projectList_change() {
             //得到下拉列表的值,然后进行操作
             //得到 下拉列表的值
-            var pid = $("#sel_projectList").val().trim();
+            var pid = $.trim($("#sel_projectList").val());
             if (pid == "") {
                 $.cookie('pid', null);
                 //全部清空
@@ -360,7 +360,7 @@
 
         function btn_AllotProjectTag_click() {
             //得到项目的ProjectId
-            var projectId = $("#sel_projectList").val().trim();
+            var projectId = $.trim($("#sel_projectList").val());
             if (projectId == "") {
                 alert("请选择项目");
                 return false;

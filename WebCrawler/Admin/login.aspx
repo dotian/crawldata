@@ -55,19 +55,19 @@
         });
         function btn_login_click() {
             var loginValedate = true;
-            var username = $("#txt_name").val().trim();
+            var username = $.trim($("#txt_name").val());
             if (username == "") {
                 loginValedate = false;
                 alert("登录名不能为空!");
                 return false;
              }
-            var pwd = $("#txt_pwd").val().trim();
+            var pwd = $.trim($("#txt_pwd").val());
             if (pwd == "") {
                 loginValedate = false;
                 alert("密码不能为空!");
                 return false;
              }
-            var code = $("#txt_code").val().trim();
+            var code = $.trim($("#txt_code").val());
             if (code == "") {
                 loginValedate = false;
                 alert("验证码不能为空!");
@@ -92,7 +92,7 @@
         }
 
         function checkLogin(t,evt) {
-            var code = $(t).val().trim();
+            var code = $.trim($(t).val());
             if (code.length==4) {
                 evt = (evt) ? evt : ((window.event) ? window.event : "")
                 keyCode = evt.keyCode ? evt.keyCode : (evt.which ? evt.which : evt.charCode);

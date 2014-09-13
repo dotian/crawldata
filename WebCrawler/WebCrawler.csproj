@@ -41,11 +41,11 @@
   <ItemGroup>
     <Reference Include="Ajax, Version=5.7.22.2, Culture=neutral">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Ajax.dll</HintPath>
+      <HintPath>lib\Ajax.dll</HintPath>
     </Reference>
     <Reference Include="AjaxPro, Version=9.2.17.1, Culture=neutral">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\AjaxPro.dll</HintPath>
+      <HintPath>lib\AjaxPro.dll</HintPath>
     </Reference>
     <Reference Include="AspNetPager">
       <HintPath>..\Libiary\AspNetPager.dll</HintPath>
@@ -58,7 +58,7 @@
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -86,12 +86,6 @@
     <Content Include="Admin\VerifyCode.aspx" />
     <Content Include="Admin\datadetail.aspx" />
     <Content Include="analysis.aspx" />
-    <Content Include="bin\Ajax.dll" />
-    <Content Include="bin\AjaxPro.dll" />
-    <Content Include="bin\Interop.Excel.dll" />
-    <Content Include="bin\Microsoft.Office.Interop.Excel.dll" />
-    <Content Include="bin\Newtonsoft.Json.dll" />
-    <Content Include="bin\office.dll" />
     <Content Include="Common\JS\commonjs.js" />
     <Content Include="Common\JS\datadetail.js" />
     <Content Include="Common\JS\dateFormat.js" />
@@ -151,6 +145,8 @@
     <Content Include="Image\login_b.jpg" />
     <Content Include="Image\menu.gif" />
     <Content Include="Image\pi.jpg" />
+    <Content Include="Image\pi_hui.jpg" />
+    <Content Include="Image\pi_shan.jpg" />
     <Content Include="Image\reset.jpg" />
     <Content Include="Image\showStatus_1.jpg" />
     <Content Include="Image\showStatus_2.jpg" />
@@ -278,6 +274,12 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\ashxHelp\HandlerDeletePiAction.ashx.cs">
+      <DependentUpon>HandlerDeletePiAction.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ashxHelp\HandlerHuiPiAction.ashx.cs">
+      <DependentUpon>HandlerHuiPiAction.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\customer.aspx.cs">
       <DependentUpon>customer.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -507,6 +509,8 @@
     <Content Include="Admin\ashxHelp\addTagById.ashx" />
     <Content Include="Admin\ashxHelp\modifyTagById.ashx" />
     <Content Include="Admin\ashxHelp\HandlerAddContend.ashx" />
+    <Content Include="Admin\ashxHelp\HandlerDeletePiAction.ashx" />
+    <Content Include="Admin\ashxHelp\HandlerHuiPiAction.ashx" />
     <None Include="Admin\DataModel\datamodel.xls" />
     <Content Include="Admin\Handler\datadetail\nextPage_click.ashx" />
     <Content Include="hankookAshx\login.ashx" />

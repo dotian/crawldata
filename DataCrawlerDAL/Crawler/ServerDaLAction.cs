@@ -1045,7 +1045,7 @@ namespace DataCrawler.DAL.Crawler
 
         /*ashx  方法*/
 
-        public int DeleteSiteDateBySd_idService(int sd_id)
+        public int DeleteSiteDataBySd_idService(int sd_id)
         {
 
             int result = 0;

@@ -15,12 +15,12 @@
     <script src="../Common/JS/sitedata_show.js" type="text/javascript"></script>
     <script src="../Common/JS/datadetail.js" type="text/javascript"></script>
     <style type="text/css">
-         .style3
+        .style3
         {
             text-align: left;
             padding-left: 2px;
-            width: 477px;
-           visibility:visible;
+            width: 552px;
+            visibility: visible;
         }
         #tb_tagList tr
         {
@@ -42,17 +42,17 @@
         }
         #dv_tag_content div
         {
-            margin:0px auto;
+            margin: 0px auto;
         }
         #tb_dataList a
         {
-            color:Green;
+            color: Green;
         }
     </style>
     <script type="text/javascript">
 
         function checkType() {
-            var pid = $("#hid_projectId").val().trim();
+            var pid = $.trim($("#hid_projectId").val());
             pid = parseInt(pid);
             if (pid <= 0) {
                 alert('没有找到要导入的项目');
@@ -88,18 +88,87 @@
             }
         }
 
-       // show  显示批量打标签
+
+        //批量删除  #xiang_add  2014-4-26 12:48
+        function img_pi_shan_click(status) {
+
+            var ids = $("#hid_ck_DateIds").val();
+            if (ids.length <= 0) {
+                alert("没有选中要删除的数据!");
+                return false;
+            } else if (ids.length > 5000) {
+
+                alert("要删除的数据量过多, 请限制在 800条以内!");
+                return false;
+            }
+
+            if (confirm("确定要批量删除数据吗?")) {
+                $.ajax({
+                    type: "POST",
+                    url: "ashxHelp/HandlerDeletePiAction.ashx",
+                    data: "sd_id=" + ids,
+                    async: false,
+                    success: function (msg) {
+                        if (parseInt(msg) > 0) {
+                            //成功提交, 然后重新绑定 当前的数据
+                            var jsonStr = getQueryJson_click();
+                            $("#hid_ck_DateIds").val("");
+                            //查出所有的数据
+                            QueryShowStatus(99); //调用查询 "已删除 " 的按钮
+                        } else {
+                            alert("批量删除失败!");
+                        }
+                    }
+                }); // ajax 结束
+            }
+        }
+
+
+        //批量恢复数据,恢复数据以后, 数据状态为 0, 表示未审核
+        //  #xiang_add  2014-4-26 12:48
+        function img_pi_hui_click(status) {
+            var ids = $("#hid_ck_DateIds").val();
+            if (ids.length <= 0) {
+                alert("没有选中要恢复的数据!");
+                return false;
+            } else if (ids.length > 5000) {
+                alert("要恢复的数据量过多, 请限制在 800条以内!");
+                return false;
+            }
+
+            if (confirm("确定要恢复删除的数据吗?")) {
+                $.ajax({
+                    type: "POST",
+                    url: "ashxHelp/HandlerHuiPiAction.ashx",
+                    data: "sd_id=" + ids,
+                    async: false,
+                    success: function (msg) {
+                        if (parseInt(msg) > 0) {
+                            //成功提交, 然后重新绑定 当前的数据
+                            var jsonStr = getQueryJson_click();
+                            $("#hid_ck_DateIds").val("");
+                            //查出所有的数据
+                            QueryShowStatus(99); //调用查询 "已删除 " 的按钮
+                        } else {
+                            alert("批量恢复失败!");
+                        }
+                    }
+                }); // ajax 结束
+            }
+        }
+
+        // show  显示批量打标签
         function img_batchtTags_click() {
             //传过去选中的Sdid
             //传过去 项目Id
             var ids = $("#hid_ck_DateIds").val();
-            if (ids.length<=0) {
+            if (ids.length <= 0) {
                 alert("没有选中要打标签的数据!");
                 return false;
             }
-         
+
             var sel_count = parseInt($("#hid_sel_count").val());
-          
+
             var tagTitleCount = "";
             var m = $("#dv_tag_content"); //标签 内容
 
@@ -114,19 +183,19 @@
                 alert("没有给该项目分配标签!");
                 return false;
             }
-           
+
 
             if (sel_count > 0) {
                 var sel_sp_1 = $("#sp_tag_1").html();
                 $(ctrl_sp1).html(sel_sp_1);
             }
 
-           
+
             if (sel_count > 1) {
                 var sel_sp_2 = $("#sp_tag_2").html();
                 $(ctrl_sp2).html(sel_sp_2);
             }
-        
+
             if (sel_count > 2) {
                 var sel_sp_3 = $("#sp_tag_3").html();
                 $(ctrl_sp3).html(sel_sp_3);
@@ -174,54 +243,54 @@
             if (sel_count > 0) {
                 var tag_1_id = $(ctrl_sp1).find("select").val();
                 if (tag_1_id != "") {
-                    tag_1 = $(ctrl_sp1).find("option:selected").text().trim();
-                    
+                    tag_1 = $.trim($(ctrl_sp1).find("option:selected").text());
+
                 }
             }
 
             if (sel_count > 1) {
                 var tag_2_id = $(ctrl_sp2).find("select").val();
                 if (tag_2_id != "") {
-                    tag_2 = $(ctrl_sp2).find("option:selected").text().trim();
+                    tag_2 = $.trim($(ctrl_sp2).find("option:selected").text());
                 }
             }
 
             if (sel_count > 2) {
                 var tag_3_id = $(ctrl_sp3).find("select").val();
                 if (tag_3_id != "") {
-                    tag_3 = $(ctrl_sp3).find("select").find("option:selected").text().trim();
+                    tag_3 = $.trim($(ctrl_sp3).find("select").find("option:selected").text());
                 }
             }
 
             if (sel_count > 3) {
                 var tag_4_id = $(ctrl_sp4).find("select").val();
                 if (tag_4_id != "") {
-                    tag_4 = $(ctrl_sp4).find("select").find("option:selected").text().trim();
+                    tag_4 = $.trim($(ctrl_sp4).find("select").find("option:selected").text());
                     $(ctrl_sp4).html(tag_4).css("color", "green");
                 }
             }
             if (sel_count > 4) {
                 var tag_5_id = $(ctrl_sp5).find("select").val();
                 if (tag_5_id != "") {
-                    tag_5 = $(ctrl_sp5).find("select").find("option:selected").text().trim();
+                    tag_5 = $.trim($(ctrl_sp5).find("select").find("option:selected").text());
                 }
             }
 
             if (sel_count > 5) {
                 var tag_6_id = $(ctrl_sp6).find("select").val();
                 if (tag_6_id != "") {
-                    tag_6 = $(ctrl_sp6).find("select").find("option:selected").text().trim();
+                    tag_6 = $.trim($(ctrl_sp6).find("select").find("option:selected").text());
                 }
             }
-            
+
             // 得到标签的Id,以及该条记录的Id,进行tag处理
             var tag_mess = tag_1 + "|" + tag_2 + "|" + tag_3 + "|" + tag_4 + "|" + tag_5 + "|" + tag_6;
-            if (ids.length > 0 && tag_mess.length>5) {
+            if (ids.length > 0 && tag_mess.length > 5) {
                 b_issubmit = true;
             } else {
-               b_issubmit = false;
+                b_issubmit = false;
             }
-           
+
             if (b_issubmit) {
                 // 为true 正式提交, 提交成功以后下面的数据重新绑定
                 $.ajax({
@@ -252,12 +321,12 @@
         }
     </script>
     <script type="text/javascript">
-       
+
         function btn_batchTag_click() {
             //得到选中的Tag集合
-            var tagId = $("#txt_tag").val().trim();
-            var sd_ids = $("#hid_ck_DateIds").val().trim();
-            var projectid = $("#hid_projectId").val().trim();
+            var tagId = $.trim($("#txt_tag").val());
+            var sd_ids = $.trim($("#hid_ck_DateIds").val());
+            var projectid = $.trim($("#hid_projectId").val());
 
             if (tagId.lenth <= 1) {
                 alert("请选中标签");
@@ -282,20 +351,19 @@
             });
         }
     </script>
-
     <script type="text/javascript">
         function sp_tag_t(t) {
             var b_v = $(t).text();
             var sel_count = parseInt($("#hid_sel_count").val());
             var tagTitleCount = "";
-            var m = $(t).parent().parent().parent();//这里是 td
-           var ctrl_sp1 = $(m).find("div:eq(0)").find("span");
-           var ctrl_sp2 = $(m).find("div:eq(1)").find("span");
-           var ctrl_sp3 = $(m).find("div:eq(2)").find("span");
-           var ctrl_sp4 = $(m).find("div:eq(3)").find("span");
-           var ctrl_sp5 = $(m).find("div:eq(4)").find("span");
-           var ctrl_sp6 = $(m).find("div:eq(5)").find("span");
-      
+            var m = $(t).parent().parent().parent(); //这里是 td
+            var ctrl_sp1 = $(m).find("div:eq(0)").find("span");
+            var ctrl_sp2 = $(m).find("div:eq(1)").find("span");
+            var ctrl_sp3 = $(m).find("div:eq(2)").find("span");
+            var ctrl_sp4 = $(m).find("div:eq(3)").find("span");
+            var ctrl_sp5 = $(m).find("div:eq(4)").find("span");
+            var ctrl_sp6 = $(m).find("div:eq(5)").find("span");
+
             if (sel_count <= 0) {
                 alert("没有给该项目分配标签!");
                 return false;
@@ -328,7 +396,7 @@
                 }
                 $(t).text("保存");
             } else {
-                
+
                 $("#hid_savetag").val("true");
                 var tag_1 = "";
                 var tag_2 = "";
@@ -336,35 +404,32 @@
                 var tag_4 = "";
                 var tag_5 = "";
                 var tag_6 = "";
-              
+
                 if (sel_count > 0) {
                     var tag_1_id = $(ctrl_sp1).find("select").val();
                     if (tag_1_id != "") {
-                         tag_1 =  $(ctrl_sp1).find("option:selected").text().trim();
-                         $(ctrl_sp1).html(tag_1).css("color", "green");
-                     } else {
-                        //var str = $("#sp_tag_title_1").text().trim().replace("[", "").replace("]", "");
+                        tag_1 = $.trim($(ctrl_sp1).find("option:selected").text());
+                        $(ctrl_sp1).html(tag_1).css("color", "green");
+                    } else {
                         $(ctrl_sp1).html("&nbsp;");
                     }
                 }
-               
+
                 if (sel_count > 1) {
                     var tag_2_id = $(ctrl_sp2).find("select").val();
                     if (tag_2_id != "") {
-                        tag_2 =  $(ctrl_sp2).find("option:selected").text().trim();
-                         $(ctrl_sp2).html(tag_2).css("color", "green"); ;
-                     } else {
-                        //var str = $("#sp_tag_title_2").text().trim().replace("[", "").replace("]", "");
+                        tag_2 = $.trim($(ctrl_sp2).find("option:selected").text());
+                        $(ctrl_sp2).html(tag_2).css("color", "green"); ;
+                    } else {
                         $(ctrl_sp2).html("&nbsp;");
                     }
                 }
                 if (sel_count > 2) {
                     var tag_3_id = $(ctrl_sp3).find("select").val();
                     if (tag_3_id != "") {
-                        tag_3 =  $(ctrl_sp3).find("select").find("option:selected").text().trim();
+                        tag_3 = $.trim($(ctrl_sp3).find("select").find("option:selected").text());
                         $(ctrl_sp3).html(tag_3).css("color", "green");
                     } else {
-                        //var str = $("#sp_tag_title_3").text().trim().replace("[", "").replace("]", "");
                         $(ctrl_sp3).html("&nbsp;");
                     }
                 }
@@ -372,20 +437,18 @@
                 if (sel_count > 3) {
                     var tag_4_id = $(ctrl_sp4).find("select").val();
                     if (tag_4_id != "") {
-                        tag_4 = $(ctrl_sp4).find("select").find("option:selected").text().trim();
+                        tag_4 = $.trim($(ctrl_sp4).find("select").find("option:selected").text());
                         $(ctrl_sp4).html(tag_4).css("color", "green");
                     } else {
-                        //var str = $("#sp_tag_title_4").text().trim().replace("[", "").replace("]", "");
                         $(ctrl_sp4).html("&nbsp;");
                     }
                 }
                 if (sel_count > 4) {
                     var tag_5_id = $(ctrl_sp5).find("select").val();
                     if (tag_5_id != "") {
-                        tag_5 = $(ctrl_sp5).find("select").find("option:selected").text().trim();
+                        tag_5 = $.trim($(ctrl_sp5).find("select").find("option:selected").text());
                         $(ctrl_sp5).html(tag_5).css("color", "green");
                     } else {
-                        //var str = $("#sp_tag_title_5").text().trim().replace("[", "").replace("]", "");
                         $(ctrl_sp5).html("&nbsp;");
                     }
                 }
@@ -393,10 +456,9 @@
                     var tag_6_id = $(ctrl_sp6).find("select").val();
 
                     if (tag_6_id != "") {
-                        tag_6 = $(ctrl_sp6).find("select").find("option:selected").text().trim();
+                        tag_6 = $.trim($(ctrl_sp6).find("select").find("option:selected").text());
                         $(ctrl_sp6).html(tag_6).css("color", "green");
                     } else {
-                        //var str = $("#sp_tag_title_6").text().trim().replace("[", "").replace("]", "");
                         $(ctrl_sp6).html("&nbsp;");
                     }
 
@@ -406,37 +468,37 @@
                 var tag_mess = tag_1 + "|" + tag_2 + "|" + tag_3 + "|" + tag_4 + "|" + tag_5 + "|" + tag_6;
 
                 $(t).text("标签");
-               // alert(tag_mess.length);//5个 |
+                // alert(tag_mess.length);//5个 |
                 if (tag_mess.length <= 6) {
-                    if ($("#sp_tag_title_1").text().trim().replace("[", "").replace("]", "").length < 1) {
+                    if ($.trim($("#sp_tag_title_1").text()).replace("[", "").replace("]", "").length < 1) {
                         return false;
                     }
-                    $(ctrl_sp1).text($("#sp_tag_title_1").text().trim().replace("[", "").replace("]", ""));
-                    if ($("#sp_tag_title_2").text().trim().replace("[", "").replace("]", "").length < 1) {
+                    $(ctrl_sp1).text($.trim($("#sp_tag_title_1").text()).replace("[", "").replace("]", ""));
+                    if ($.trim($("#sp_tag_title_2").text()).replace("[", "").replace("]", "").length < 1) {
                         return false;
                     }
-                    $(ctrl_sp2).text($("#sp_tag_title_2").text().trim().replace("[", "").replace("]", ""));
-                    if ($("#sp_tag_title_3").text().trim().replace("[", "").replace("]", "").length < 1) {
+                    $(ctrl_sp2).text($.trim($("#sp_tag_title_2").text()).replace("[", "").replace("]", ""));
+                    if ($.trim($("#sp_tag_title_3").text()).replace("[", "").replace("]", "").length < 1) {
                         return false;
                     }
-                    $(ctrl_sp3).text($("#sp_tag_title_3").text().trim().replace("[", "").replace("]", ""));
-                    if ($("#sp_tag_title_4").text().trim().replace("[", "").replace("]", "").length < 1) {
+                    $(ctrl_sp3).text($.trim($("#sp_tag_title_3").text()).replace("[", "").replace("]", ""));
+                    if ($.trim($("#sp_tag_title_4").text()).replace("[", "").replace("]", "").length < 1) {
                         return false;
                     }
-                    $(ctrl_sp4).text($("#sp_tag_title_4").text().trim().replace("[", "").replace("]", ""));
-                    if ($("#sp_tag_title_5").text().trim().replace("[", "").replace("]", "").length < 1) {
+                    $(ctrl_sp4).text($.trim($("#sp_tag_title_4").text()).replace("[", "").replace("]", ""));
+                    if ($.trim($("#sp_tag_title_5").text()).replace("[", "").replace("]", "").length < 1) {
                         return false;
                     }
-                    $(ctrl_sp5).text($("#sp_tag_title_5").text().trim().replace("[", "").replace("]", ""));
-                    if ($("#sp_tag_title_6").text().trim().replace("[", "").replace("]", "").length<1) {
+                    $(ctrl_sp5).text($.trim($("#sp_tag_title_5").text()).replace("[", "").replace("]", ""));
+                    if ($.trim($("#sp_tag_title_6").text()).replace("[", "").replace("]", "").length < 1) {
                         return false;
                     }
-                    $(ctrl_sp6).text($("#sp_tag_title_6").text().trim().replace("[", "").replace("]", ""));
+                    $(ctrl_sp6).text($.trim($("#sp_tag_title_6").text()).replace("[", "").replace("]", ""));
                     return false;
                 }
-              
+
                 var sd_id = $(m).parent().find("input[type='checkbox']").attr("id");
-              
+
                 $.ajax({
                     type: "POST",
                     url: "ashxHelp/HandlerbarchTagAction.ashx",
@@ -444,8 +506,8 @@
                     async: false,
                     success: function (msg) {
                         if (parseInt(msg) > 0) {
-                             //打标签成功
-                           
+                            //打标签成功
+
                         } else {
                             alert("打标签失败!");
                         }
@@ -457,26 +519,30 @@
     </script>
 </head>
 <body>
-     <div id="show" style="width: 99%; height: 99%; display:none; position: absolute;
+    <div id="show" style="width: 99%; height: 99%; display: none; position: absolute;
         z-index: 99; top: 0px; left: 0px; background: url('../Image/bg.png'); text-align: center;">
-        <div runat="server" id="alt" style="width: 200px; height: 200px; margin: 250px auto 0 auto; position: relative;
-            overflow: hidden; background: #FFF;">
-            <div style="width: 100%; height: 28px; background: url('../Image/bg_c.jpg') repeat-x; position:relative;">
-                <div style="width:100%; height:26px; text-align:center; font-size:large; font-weight:bold; padding-top:5px;"><span>批量打标签</span></div>
-                <div style="width:24px; height:26px; float:right; position:absolute; top:0px; right:5px;"><span><a href="#" style="display: block; width: 20px; height: 20px; background: url('../Image/close.jpg') no-repeat;
-                    float: right; margin: 4px;" onclick="javascipt:closetag()" id="close"></a></span></div> 
+        <div runat="server" id="alt" style="width: 200px; height: 200px; margin: 250px auto 0 auto;
+            position: relative; overflow: hidden; background: #FFF;">
+            <div style="width: 100%; height: 28px; background: url('../Image/bg_c.jpg') repeat-x;
+                position: relative;">
+                <div style="width: 100%; height: 26px; text-align: center; font-size: large; font-weight: bold;
+                    padding-top: 5px;">
+                    <span>批量打标签</span></div>
+                <div style="width: 24px; height: 26px; float: right; position: absolute; top: 0px;
+                    right: 5px;">
+                    <span><a href="#" style="display: block; width: 20px; height: 20px; background: url('../Image/close.jpg') no-repeat;
+                        float: right; margin: 4px;" onclick="javascipt:closetag()" id="close"></a></span>
+                </div>
             </div>
-           
-           <div style=" width:90%; height:40px; margin:0px auto; ">
-              <div id="dv_tag_title" style=" width:auto; font-size:80%;" runat="server">
-              </div>
-              <div id="dv_tag_content" style=" width:auto; text-align:center;" runat="server" >
-              
-              </div>
-           </div>
-           <div style=" margin:40px auto 0px auto; width:200px;">
-            <img alt="" src="../Image/tijiao.jpg" style="position: relative;" onclick="javascipt:batchatagGroup()" />
-           </div>
+            <div style="width: 90%; height: 40px; margin: 0px auto;">
+                <div id="dv_tag_title" style="width: auto; font-size: 80%;" runat="server">
+                </div>
+                <div id="dv_tag_content" style="width: auto; text-align: center;" runat="server">
+                </div>
+            </div>
+            <div style="margin: 40px auto 0px auto; width: 200px;">
+                <img alt="" src="../Image/tijiao.jpg" style="position: relative;" onclick="javascipt:batchatagGroup()" />
+            </div>
         </div>
     </div>
     <form id="form1" runat="server">
@@ -489,7 +555,7 @@
         </table>
     </div>
     <div style="margin: 0px auto; width: 1280px; height: auto;">
-        <div class="mian_middle" style="border: 2px solid #99BBE8; padding-left: 5px; width:100%;">
+        <div class="mian_middle" style="border: 2px solid #99BBE8; padding-left: 5px; width: 100%;">
             <div>
                 <h4>
                     搜索
@@ -511,8 +577,8 @@
                                     <option value="3">负</option>
                                     <option value="4">争</option>
                                 </select>&nbsp; 数据类型:
-                                <asp:DropDownList ID="select_dataType" class="Select_5" runat="server" 
-                                    onselectedindexchanged="btn_select_Click" AutoPostBack="True">
+                                <asp:DropDownList ID="select_dataType" class="Select_5" runat="server" OnSelectedIndexChanged="btn_select_Click"
+                                    AutoPostBack="True">
                                     <asp:ListItem Value="1">论坛</asp:ListItem>
                                     <asp:ListItem Value="2">新闻</asp:ListItem>
                                     <asp:ListItem Value="3">博客</asp:ListItem>
@@ -555,7 +621,9 @@
                                 <img alt="" src="../Image/showStatus_1.jpg" onclick="return QueryShowStatus(1);" />
                                 &nbsp;
                                 <img alt="" src="../Image/showStatus_2.jpg" onclick="return QueryShowStatus(2);" />&nbsp;
-                                <img alt="" src="../Image/showStatus_99.jpg" onclick="return QueryShowStatus(99);" />
+                                <img alt="" src="../Image/showStatus_99.jpg" onclick="return QueryShowStatus(99);" />&nbsp;
+                                <img alt="" src="../Image/pi_shan.jpg" onclick="return img_pi_shan_click(99);">&nbsp;
+                                <img alt="" src="../Image/pi_hui.jpg" onclick="return img_pi_hui_click(0);">&nbsp;
                             </td>
                         </tr>
                     </table>
@@ -563,31 +631,51 @@
             </div>
             <hr style="margin-top: 8px;" />
             <div id="div_data">
-                <div style="width: 200px; float:left; margin-bottom: 5px;">
+                <div style="width: 200px; float: left; margin-bottom: 5px;">
                     &nbsp;&nbsp;&nbsp; &nbsp;<span id="sp_projectName" runat="server" style="font-size: 20px;
                         color: blue;">项目</span>
                 </div>
-               <div style="width: 848px; float: left;">
+                <div style="width: 848px; float: left;">
                     <span style="font-size: 20px;">
                         <%-- <img alt="" src="../Image/testJpg.jpg" onclick = "getQueryJson_click();" />--%>
                         <span runat="server" style="font-size: 70%;" id="sp_uploadresult"></span></span>
                 </div>
                 <div id="div_tb_dataList" runat="server" style="margin-top: 30px; border: 0px; height: 600px;
                     padding: 0px;">
-                   <table id='tb_dataList' style='width: auto;margin:0px auto;' cellpadding='0' cellspacing='0'>
-             <tr><th style='width: 41px;'><input type='checkbox' id='ck_all' value='' onclick='ck_all_click();' /></th>
-            <th style='width: 265px;'>帖子主题</th><th style='width: auto;text-align:center;'> 标签处理<br />#TagHead</th>
-            <th style='width: 154px;'>操作</th>
-            <th style='width: 41px;text-align:center;'>镜</th>
-            <th style='width: 81px;text-align:center;'>媒体名</th>
-            <th style='width: 81px;text-align:center;'>版块名</th>
-            <th style='width: 97px;text-align:center;'>抓取日期</th></tr>
+                    <table id='tb_dataList' style='width: auto; margin: 0px auto;' cellpadding='0' cellspacing='0'>
+                        <tr>
+                            <th style='width: 41px;'>
+                                <input type='checkbox' id='ck_all' value='' onclick='ck_all_click();' />
+                            </th>
+                            <th style='width: 265px;'>
+                                帖子主题
+                            </th>
+                            <th style='width: auto; text-align: center;'>
+                                标签处理<br />
+                                #TagHead
+                            </th>
+                            <th style='width: 154px;'>
+                                操作
+                            </th>
+                            <th style='width: 41px; text-align: center;'>
+                                镜
+                            </th>
+                            <th style='width: 81px; text-align: center;'>
+                                媒体名
+                            </th>
+                            <th style='width: 81px; text-align: center;'>
+                                版块名
+                            </th>
+                            <th style='width: 97px; text-align: center;'>
+                                抓取日期
+                            </th>
+                        </tr>
                     </table>
                     <script src="../Common/JS/commonjs.js" type="text/javascript"></script>
                 </div>
             </div>
             <div>
-                <div class="paging" runat="server" id="div_page" style="float: left; margin-top:10px;">
+                <div class="paging" runat="server" id="div_page" style="float: left; margin-top: 10px;">
                     <span id="a_firstPage" onclick="a_firstPage_click(this);" runat="server" style="margin-right: 5px;">
                         首页</span> <span id="a_lastPage" onclick="a_lastPage_click(this,-1);" runat="server"
                             style="margin-right: 5px;">上一页</span> <span id="a_nextPage" onclick="a_nextPage_click(this);"
@@ -598,7 +686,7 @@
             </div>
         </div>
     </div>
-    <div style="visibility:hidden; position: absolute; bottom: 300px;">
+    <div style="visibility: hidden; position: absolute; bottom: 300px;">
         <span style="visibility: hidden">hid_singleId 里面存放的是单个的 Idyle="visibility: hidden">hid_singleId
             里面存放的是单个的 Id</span>
         <input type="hidden" id="hid_singleId" runat="server" value="" />
@@ -616,18 +704,14 @@
         <input type="hidden" runat="server" id="hid_pageCount" value="0" />
         <input type="hidden" id="hid_queryParms" runat="server" value="" />
         <input id="hid_sel_count" type="hidden" runat="server" value="" />
-        <span id="sp_tag_1" runat="server"></span>
-        <span id="sp_tag_2" runat="server"></span>
-        <span id="sp_tag_3" runat="server"></span>
-        <span id="sp_tag_4" runat="server"></span>
-        <span id="sp_tag_5" runat="server"></span>
-        <span id="sp_tag_6" runat="server"></span>
-        <input id="hid_savetag" type="hidden"  value="true" />
+        <span id="sp_tag_1" runat="server"></span><span id="sp_tag_2" runat="server"></span>
+        <span id="sp_tag_3" runat="server"></span><span id="sp_tag_4" runat="server"></span>
+        <span id="sp_tag_5" runat="server"></span><span id="sp_tag_6" runat="server"></span>
+        <input id="hid_savetag" type="hidden" value="true" />
         <span>如果要查看打标签的内容,需要将这个 提上去</span>
-         <input type="hidden" id="txt_top_body" value="" style=" width:300px;" />
-
-         <input type="hidden" id="hid_batchGropTagStatus" runat="server" value="" />
-          <input type="text" id="txt_mess" value="" />
+        <input type="hidden" id="txt_top_body" value="" style="width: 300px;" />
+        <input type="hidden" id="hid_batchGropTagStatus" runat="server" value="" />
+        <input type="text" id="txt_mess" value="" />
     </div>
     </form>
 </body>

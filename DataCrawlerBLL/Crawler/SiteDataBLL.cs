@@ -26,10 +26,10 @@ namespace DataCrawler.BLL.Crawler
             return sqlDalAction.GetSiteDateCountService(queryDataParms);
         }
 
-        public int DeleteSiteDateBySd_idManager(int sd_id)
+        public int DeleteSiteDataBySd_idManager(int sd_id)
         {
             ServerDaLAction sqlDalAction = new ServerDaLAction();
-            return sqlDalAction.DeleteSiteDateBySd_idService(sd_id);
+            return sqlDalAction.DeleteSiteDataBySd_idService(sd_id);
         }
 
         public int UpdateSiteDate_Analysis_BySd_idManager(int sd_id, int analysis)

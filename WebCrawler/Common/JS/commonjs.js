@@ -86,7 +86,7 @@ function ck_single_click(id) {
 
     var b = $(ckbox).attr("checked");
     if (b) {
-        $("#hid_singleId").val($(ckbox).val().trim());
+        $("#hid_singleId").val($.trim($(ckbox).val()));
         //先将 所有的都不选中
         $("input:checkbox").each(function myfunction() {
             $(this).attr("checked", false);

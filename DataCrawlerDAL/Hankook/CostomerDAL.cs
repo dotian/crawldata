@@ -96,7 +96,7 @@ namespace DataCrawler.DAL.Hankook
                     new SqlParameter("file3",queryArgs.file3),
                     new SqlParameter("sitetype",queryArgs.sitetype),
                     new SqlParameter("analysis",queryArgs.analysis),
-                      new SqlParameter("attention",queryArgs.attention),
+                    new SqlParameter("attention",queryArgs.attention),
                     new SqlParameter("showstatus",queryArgs.showstatus)
                 };
                 IBRSCommonDAL dal = new IBRSCommonDAL();

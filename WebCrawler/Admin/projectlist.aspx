@@ -25,7 +25,7 @@
     <script type="text/javascript">
         function a_stopOrStartProject(t) {
            // a_stop_1013
-            var id = $(t).attr("id").trim().substring(7);
+            var id = $.trim($(t).attr("id")).substring(7);
             var title = $(t).text();
             if (title=="开启") {
                 if (confirm('确定要开启运行该项目吗?')) {
@@ -56,7 +56,7 @@
             }
         }
         function a_deleteProject(t) {
-            var id = $(t).attr("id").trim().substring(9);
+            var id = $.trim($(t).attr("id")).substring(9);
             if (confirm('确定要删除该项目吗?删除后无法恢复')) {
                 projectlist.a_deleteProject_click(id, function (data) {
                     var result = parseInt(data.value);

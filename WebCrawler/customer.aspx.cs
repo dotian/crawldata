@@ -24,21 +24,21 @@ namespace WebCrawler
                 try
                 {
                     object objProjectId = Session["projectId"];
-                    if ( objProjectId== null)
+                    if (objProjectId == null)
                     {
                         Response.Redirect("index.aspx");
                         return;
                     }
-                    if (Session["permissions"] == null||Convert.ToInt32(Session["permissions"])!=4)
+                    if (Session["permissions"] == null || Convert.ToInt32(Session["permissions"]) != 4)
                     {
                         this.img_retplist.Visible = false;
                     }
-                    string imgLogoPath = Server.MapPath("img/small_project_"+objProjectId+".jpg");
+                    string imgLogoPath = Server.MapPath("img/small_project_" + objProjectId + ".jpg");
                     if (!File.Exists(imgLogoPath))
                     {
                         this.div_logo.Visible = false;
                     }
-                   
+
                     this.hid_projectId.Value = objProjectId.ToString();
                     PrepareBind();
                     CheckExitsContendId();
@@ -100,15 +100,15 @@ namespace WebCrawler
         {
             try
             {
-                if (queryArgs.contendId>0)
+                if (queryArgs.contendId > 0)
                 {
                     queryArgs.ProjectId = queryArgs.contendId;
                 }
-                int rescordCount = customerBLL.GetShowDataCountManager(queryArgs);
+                int recordCount = customerBLL.GetShowDataCountManager(queryArgs);
                 List<ShowDataInfo> list = customerBLL.GetShowDataListManager(queryArgs);
 
                 this.AspNetPager1.PageSize = PageSize;
-                this.AspNetPager1.RecordCount = rescordCount;
+                this.AspNetPager1.RecordCount = recordCount;
 
                 this.rep_data.DataSource = list;
                 this.rep_data.DataBind();
@@ -127,11 +127,11 @@ namespace WebCrawler
             {
                 Response.Redirect("customer.aspx?type=sitedata&c=1&a=1");
             }
-            
+
             int projectId = Convert.ToInt32(Session["projectId"]);
             List<ContendTB> contendList = new CustomerBLL().GetContendTbListByProjectIdManager(projectId);
 
-            if (contendList.Count>0)
+            if (contendList.Count > 0)
             {
                 this.a_contendFhref.HRef = "customer.aspx?type=sitedata&c=2&a=1&contendId=" + contendList[0].ContendId;
             }
@@ -139,10 +139,10 @@ namespace WebCrawler
             {
                 this.a_contendFhref.HRef = "#";
             }
-           
+
             this.rep_contend.DataSource = contendList;
             this.rep_contend.DataBind();
-            
+
             //读取Url, 如果含有 project, 所得到的的项目Id, 要么是这个账号的项目, 要么是权限为4的账号项目
         }
 
@@ -209,20 +209,18 @@ namespace WebCrawler
             try
             {
                 QueryHankookArgs queryArgs = GetQueryParms();
-                queryArgs.pagesize = PageSize;
-                queryArgs.sitetype = 1;
+                // queryArgs.pagesize = PageSize;
+                // queryArgs.sitetype = 1;
                 queryArgs.pageIndex = this.AspNetPager1.CurrentPageIndex;
                 BindData(queryArgs);
 
                 //绑定一个项目的竞争社 前4种
-
-              
+                
                 //绑定的数据
 
             }
             catch (Exception ex)
             {
-
                 LogNet.LogBLL.Error("customer.aspx AspNetPager1_PageChanged", ex);
             }
         }

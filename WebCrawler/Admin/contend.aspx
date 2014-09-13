@@ -31,13 +31,13 @@
         function btn_addContend_Click() {
            //先进行验证
 
-            var projectId = $("#sel_ContendProject").val().trim();
+            var projectId = $.trim($("#sel_ContendProject").val());
             if (projectId == "") {
                 alert("请选择项目列表");
                 return false;
             }
 
-            var ids = $("#hid_ck_DateIds").val().trim();
+            var ids = $.trim($("#hid_ck_DateIds").val());
             if (ids=="") {
                 alert("请选择竞争社列表");
                 return false;

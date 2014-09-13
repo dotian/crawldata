@@ -24,8 +24,8 @@ public class Help_CreateSiteDataTB
             string html_head = @"<table id='tb_dataList' style='width: auto; margin:0px auto;' cellpadding='0' cellspacing='0'>
              <tr><th style='width: 41px;'><input type='checkbox' id='ck_all' value='' onclick='ck_all_click();' /></th>
             <th style='width: 265px;'>帖子主题</th><th style='width: auto;text-align:center;'>标签处理<br />#TagHead</th>
-            <th style='width: 154px;'>操作</th><th style='width: 41px;text-align:center;'>镜</th><th style='width: 81px;text-align:center;'>媒体名</th><th style='width: 97px;text-align:center;'>抓取日期</th></tr>";
-            return Regex.Replace(html_head, @"\r\n|\r|\n", ""); 
+            <th style='width: 154px;'>操作</th><th style='width: 41px;text-align:center;'>镜</th><th style='width: 81px;text-align:center;'>媒体名</th><th style='width: 81px;text-align:center;'>版块名</th><th style='width: 97px;text-align:center;'>抓取日期</th></tr>";
+            return Regex.Replace(html_head, @"\r\n|\r|\n", "");
         }
     }
 
@@ -50,18 +50,19 @@ public class Help_CreateSiteDataTB
     }
 
     public string TagListContent = "";
-   
-                       
+
+
     public string HtmlDivPage
     {
-        get {
+        get
+        {
             string htmldiv_page = @"<a id='a_firstPage' #firstPage_click style='margin-right:5px;#text_dec_first'>首页</a>
                  <a id='a_lastPage' #lastPage_click style='margin-right:5px;#text_dec_last'>上一页</a>
                  <a id='a_nextPage' #nextPage_click style='margin-right:5px;#text_dec_next'>下一页</a>
                  <a id='a_finalPage' #finalPage_click style='margin-right:5px;#text_dec_final'>尾页</a>&nbsp;&nbsp;&nbsp;
                  <a id='sp_pageMess' runat='server'>#sp_pageMess_text</a>";
-             return Regex.Replace(htmldiv_page, @"\r\n|\r|\n", ""); 
-           
+            return Regex.Replace(htmldiv_page, @"\r\n|\r|\n", "");
+
         }
     }
 
@@ -70,26 +71,26 @@ public class Help_CreateSiteDataTB
     /// </summary>
     /// <param name="projectId"></param>
     /// <returns></returns>
-    public string GetTagHeadByProjectId(int projectId,ref string[]tagAttr)
+    public string GetTagHeadByProjectId(int projectId, ref string[] tagAttr)
     {
         StringBuilder sbulider = new StringBuilder();
         List<TagList> list = new TagBLL().Get1stTagByProjectIdManager(projectId);
         tagAttr = new string[list.Count];
         for (int i = 0; i < list.Count; i++)
-		{
+        {
             int index = i + 1; //sp_tag_title_1 索引从1 开始
             tagAttr[i] = list[i].TagName;
             sbulider.Append("&nbsp;<span id='sp_tag_title_" + index + "'>[" + list[i].TagName + "]</span>");
-		}
+        }
         string result = sbulider.ToString();
         return result.Length > 6 ? result.Substring(6) : result; //去掉第一个 &nbsp;
     }
 
 
     #region 翻页控件
-    public string CreateDivPage(int projectId,int currentPage,int pageCount)
+    public string CreateDivPage(int projectId, int currentPage, int pageCount)
     {
-       
+
         string html_pageDiv = HtmlDivPage;
         string text_dec_Underline = "text-decoration:underline; cursor:hand;";
 
@@ -97,25 +98,25 @@ public class Help_CreateSiteDataTB
         string lastPage_click = "href='' onclick='a_lastPage_click(this,-1);return false;' ";
         string nextPage_click = "href='' onclick='a_nextPage_click(this,1);return false;' ";
         string finalPage_click = "href='' onclick='a_finalPage_click(this);return false;' ";
-      
+
 
         string sp_pageMess = string.Format("当前第{0}页,共{1}页", currentPage, pageCount);
-        if (currentPage == 1 && pageCount== 1)
+        if (currentPage == 1 && pageCount == 1)
         {
             //只有1页
-            html_pageDiv = html_pageDiv.Replace("#text_dec_first", "").Replace("#firstPage_click", ""); 
-            html_pageDiv = html_pageDiv.Replace("#text_dec_last", "").Replace("#lastPage_click", ""); 
-            html_pageDiv = html_pageDiv.Replace("#text_dec_next", "").Replace("#nextPage_click", ""); 
-            html_pageDiv = html_pageDiv.Replace("#text_dec_final", "").Replace("#finalPage_click", ""); 
+            html_pageDiv = html_pageDiv.Replace("#text_dec_first", "").Replace("#firstPage_click", "");
+            html_pageDiv = html_pageDiv.Replace("#text_dec_last", "").Replace("#lastPage_click", "");
+            html_pageDiv = html_pageDiv.Replace("#text_dec_next", "").Replace("#nextPage_click", "");
+            html_pageDiv = html_pageDiv.Replace("#text_dec_final", "").Replace("#finalPage_click", "");
         }
-        else if (currentPage == 1 && pageCount>1)
+        else if (currentPage == 1 && pageCount > 1)
         {
             //大于一页的 首页
             html_pageDiv = html_pageDiv.Replace("#text_dec_first", "").Replace("#firstPage_click", "");
             html_pageDiv = html_pageDiv.Replace("#text_dec_last", "").Replace("#lastPage_click", "");
             html_pageDiv = html_pageDiv.Replace("#text_dec_next", text_dec_Underline).Replace("#nextPage_click", nextPage_click);
             html_pageDiv = html_pageDiv.Replace("#text_dec_final", text_dec_Underline).Replace("#finalPage_click", finalPage_click);
-           
+
         }
         else if (currentPage > 1 && pageCount > currentPage)
         {
@@ -126,7 +127,7 @@ public class Help_CreateSiteDataTB
             html_pageDiv = html_pageDiv.Replace("#text_dec_next", text_dec_Underline).Replace("#nextPage_click", nextPage_click);
             html_pageDiv = html_pageDiv.Replace("#text_dec_final", text_dec_Underline).Replace("#finalPage_click", finalPage_click);
         }
-        else if (currentPage > 1 && currentPage ==pageCount)
+        else if (currentPage > 1 && currentPage == pageCount)
         {
             //大于一页的最后一页
 
@@ -134,11 +135,11 @@ public class Help_CreateSiteDataTB
             html_pageDiv = html_pageDiv.Replace("#text_dec_last", text_dec_Underline).Replace("#lastPage_click", lastPage_click);
 
             html_pageDiv = html_pageDiv.Replace("#text_dec_next", "").Replace("#nextPage_click", "");
-            html_pageDiv = html_pageDiv.Replace("#text_dec_final", "").Replace("#finalPage_click", ""); 
+            html_pageDiv = html_pageDiv.Replace("#text_dec_final", "").Replace("#finalPage_click", "");
 
         }
         html_pageDiv = html_pageDiv.Replace("#sp_pageMess_text", sp_pageMess);
-       
+
         return html_pageDiv;
     }
 
@@ -147,7 +148,7 @@ public class Help_CreateSiteDataTB
 
     #region 得到Tag的Content
 
-  
+
     #endregion
 
 
@@ -180,20 +181,20 @@ public class Help_CreateSiteDataTB
         tb_contend = tb_contend.Replace("#SrcUrl", item.SrcUrl);
         tb_contend = tb_contend.Replace("#SiteName", item.SiteName);
         tb_contend = tb_contend.Replace("#PlateName", item.PlateName);
-      
+
         return tb_contend;
     }
 
 
     public string tagHead = "";
-    
+
     public string CreateSiteDataTBHtml(List<SiteDataModel> list)
     {
         StringBuilder sBulider = new StringBuilder();
 
         string tb_head = HtmlHead;
-       
-        string[] tagAttr ={};
+
+        string[] tagAttr = { };
         if (list.Count > 0)
         {
             tagHead = GetTagHeadByProjectId(list[0].ProjectId, ref tagAttr);
@@ -201,7 +202,7 @@ public class Help_CreateSiteDataTB
         tb_head = tb_head.Replace("#TagHead", tagHead);
 
         sBulider.Append(tb_head);
-        
+
         foreach (SiteDataModel item in list)
         {
             sBulider.Append("<tr>");
@@ -211,16 +212,16 @@ public class Help_CreateSiteDataTB
             tb_contend = tb_contend.Replace("#Analysis", FormatAnalysis(item.Analysis));
             tb_contend = tb_contend.Replace("#Hot", FormatHot(item.Hot));
             tb_contend = tb_contend.Replace("#Title", IsSubStr(item.Title, 17, 3));
-           
+
             //#xiang 
 
             TagListContent = GetTagContent(item.Tag1, item.Tag2, item.Tag3, item.Tag4, item.Tag5, item.Tag6, tagAttr);
             tb_contend = tb_contend.Replace("#TagList", TagListContent);
 
             tb_contend = tb_contend.Replace("#Content_det", IsSubStr(item.Content, 350, 3));
-            tb_contend =tb_contend.Replace("#Content", IsSubStr(item.Content, 15, 3));
-            tb_contend =tb_contend.Replace("#CreateDate", item.CreateDate.ToString("yyyy-MM-dd"));
-            tb_contend =tb_contend.Replace("#SrcUrl", item.SrcUrl);
+            tb_contend = tb_contend.Replace("#Content", IsSubStr(item.Content, 15, 3));
+            tb_contend = tb_contend.Replace("#CreateDate", item.CreateDate.ToString("yyyy-MM-dd"));
+            tb_contend = tb_contend.Replace("#SrcUrl", item.SrcUrl);
             tb_contend = tb_contend.Replace("#SiteName", item.SiteName);
             tb_contend = tb_contend.Replace("#PlateName", item.PlateName);
             sBulider.Append(tb_contend);
@@ -229,7 +230,7 @@ public class Help_CreateSiteDataTB
         sBulider.Append("</table>");
         sBulider.Append("<script src='../Common/JS/commonjs.js' type='text/javascript'></script>");
         sBulider.Append("<script src='../Common/JS/sitedata_show.js' type='text/javascript'></script>");
-        sBulider.Append("<script src='../Common/JS/netPage.js' type='text/javascript'></script>");
+        // sBulider.Append("<script src='../Common/JS/netPage.js' type='text/javascript'></script>");
         string result = Regex.Replace(sBulider.ToString().Replace("\"", "\\\""), @"\r\n|\r|\n", "");
         return result;
     }
@@ -238,7 +239,7 @@ public class Help_CreateSiteDataTB
     {
         StringBuilder sbulider = new StringBuilder();
         string mess = tag1 + tag2 + tag3 + tag4 + tag5 + tag6;
-       
+
         int width = 80;
         if (mess.Trim() == "")
         {
@@ -294,7 +295,7 @@ public class Help_CreateSiteDataTB
                 sbulider.Append("<div style='float:left;width:" + width + "px;color:green;'><span>" + (tag6 == "" ? "&nbsp;" : tag6) + "</span></div>");
             }
         }
-      
+
         return sbulider.ToString();
 
     }
@@ -339,7 +340,7 @@ public class Help_CreateSiteDataTB
 
     public string FormatAttention(int attention)
     {
-         string result = "";
+        string result = "";
         if (attention == 1)
         {
             result = "<span style='color:red'>★</span>";
@@ -351,7 +352,7 @@ public class Help_CreateSiteDataTB
     {
         string show = strShow.Length > length ? strShow.Substring(0, length - trip) + "..." : strShow;
 
-        return show.Replace("\""," ").Replace("'"," ").Replace("<"," ").Replace(">"," ");
+        return show.Replace("\"", " ").Replace("'", " ").Replace("<", " ").Replace(">", " ");
     }
 
     #region #red
@@ -368,7 +369,7 @@ public class Help_CreateSiteDataTB
     {
         StringBuilder sbulider = new StringBuilder();
         //显示 标签
-       TagBLL bllAction =  new TagBLL();
+        TagBLL bllAction = new TagBLL();
         List<TagList> list = bllAction.GetTagListManager();
 
         foreach (TagList tag in list)
@@ -383,7 +384,7 @@ public class Help_CreateSiteDataTB
                 sb_li.Append(Tag_li.Replace("#TagName", inner_tag.TagName).Replace("tag_#id", "tag_" + inner_tag.Id));
             }
             sbulider.Append(tag_ul.Replace("#Tag_li", sb_li.ToString()));
-        }  
+        }
         //查询出 所有的 一级标签
         //查询 一级标签 下面的 2级标签,
         //绑定 一级标签的 二级标签
@@ -420,13 +421,13 @@ public class Help_CreateSiteDataTB
 
     public string CreateSelectHtml(List<TagList> tagList)
     {
-        StringBuilder sbulider =  new StringBuilder();
+        StringBuilder sbulider = new StringBuilder();
         sbulider.Append("<select><option value=''>--选择--</option>");
 
         foreach (TagList item in tagList)
-	    {
+        {
             sbulider.Append("<option value='op_" + item.Id + "'>" + item.TagName + "</option>");
-	    }
+        }
         sbulider.Append("</select>");
         return sbulider.ToString();
     }
