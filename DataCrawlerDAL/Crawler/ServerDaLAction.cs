@@ -1222,8 +1222,10 @@ namespace DataCrawler.DAL.Crawler
                 new SqlParameter("title",dataModel.Title ), 
                 new SqlParameter("srcurl",dataModel.SrcUrl ),
                 new SqlParameter("sitename", dataModel.SiteName),
-                   new SqlParameter("contentdate",dataModel.ContentDate.ToString("yyyy-MM-dd 12:00:00") ),
-                      new SqlParameter("sitetype", dataModel.SiteType)
+                new SqlParameter("contentdate",dataModel.ContentDate.ToString("yyyy-MM-dd 12:00:00") ),
+                new SqlParameter("sitetype", dataModel.SiteType),
+                new SqlParameter("analysis", dataModel.Analysis),
+                new SqlParameter("showstatus", dataModel.ShowStatus)
             };
                 IBRSCommonDAL dal = new IBRSCommonDAL();
                 LogBLL.Log("usp_mining_Insert_ImportSiteDataBy_ProjectId", parms);

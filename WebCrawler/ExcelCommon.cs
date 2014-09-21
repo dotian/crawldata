@@ -12,6 +12,7 @@ using DataCrawler.Model.Crawler;
 using DataCrawler.BLL.Crawler;
 using System.Text;
 using DataCrawler.Model.Hankook;
+using System.Linq;
 
 /// <summary>
 ///ExcelCommon 的摘要说明
@@ -128,6 +129,28 @@ public class ExcelCommon
                     model.Title = row[0].ToString();
                     model.SrcUrl = row[1].ToString();
                     model.SiteName = row[2].ToString();
+                    model.PlateName = row[2].ToString();
+
+                    model.Analysis = 0;
+                    if (row[4] != null && (!string.IsNullOrEmpty(row[4].ToString())))
+                    {
+                        string analysisValue = row[3].ToString();
+                        if (AnalysisMap.ContainsValue(analysisValue))
+                        {
+                            model.Analysis = AnalysisMap.First(m => m.Value == analysisValue).Key;
+                        }
+                    }
+
+                    model.ShowStatus = 0;
+                    if (row[5] != null && (!string.IsNullOrEmpty(row[5].ToString())))
+                    {
+                        string reviewStatus = row[4].ToString();
+                        if (reviewStatus == "已审核")
+                        {
+                            model.ShowStatus = 3;
+                        }
+                    }
+
                     model.ContentDate = DateTime.Parse(row[3].ToString());
                     list.Add(model);
                 }
@@ -178,7 +201,7 @@ public class ExcelCommon
         bool b = false;
         try
         {
-           
+
             List<TagList> list = new TagBLL().Get1stTagByProjectIdManager(projectId);
             string[] tagAttr = new string[list.Count];
             for (int i = 0; i < list.Count; i++)
@@ -254,17 +277,17 @@ public class ExcelCommon
 
     #region  Tool Method 方法
 
-    public static string GetFormatTagCell(int tagCount,params string[]tagArr)
+    public static string GetFormatTagCell(int tagCount, params string[] tagArr)
     {
         StringBuilder sbulider = new StringBuilder();
         if (tagCount > 0)
         {
             for (int i = 0; i < tagCount; i++)
             {
-                 sbulider.Append(Temp_TagCell.Replace("#temp_tagCell", tagArr[i]));
+                sbulider.Append(Temp_TagCell.Replace("#temp_tagCell", tagArr[i]));
             }
         }
-       
+
         return sbulider.ToString();
     }
 
@@ -274,7 +297,7 @@ public class ExcelCommon
         StringBuilder sbulider = new StringBuilder();
         for (int i = 0; i < arr.Length; i++)
         {
-                sbulider.Append(Temp_TagTitle.Replace("#temp_tagTitle", arr[i]));
+            sbulider.Append(Temp_TagTitle.Replace("#temp_tagTitle", arr[i]));
         }
         return sbulider.ToString();
     };
@@ -288,26 +311,22 @@ public class ExcelCommon
     public static Func<int, string> GetFormatAnalysis = (analysis) =>
       {
           string result = "";
-          switch (analysis)
+
+          if (AnalysisMap.ContainsKey(analysis))
           {
-              case 1:
-                  result = "正";
-                  break;
-              case 2:
-                  result = "中";
-                  break;
-              case 3:
-                  result = "负";
-                  break;
-              case 4:
-                  result = "争";
-                  break;
-              default:
-                  result = "";
-                  break;
+              result = AnalysisMap[analysis];
           }
+
           return result;
       };
+
+    public static Dictionary<int, string> AnalysisMap = new Dictionary<int, string>()
+    {
+        { 1, "正" },
+        { 2, "中" },
+        { 3, "负" },
+        { 4, "争" }
+    };
 
     public static Func<string, string> GetDecodeAnalysis = (analysisColor) =>
     {
@@ -318,6 +337,8 @@ public class ExcelCommon
         else
             return "负";
     };
+
     public static Func<string, string> GetFormatCsv = (str) => { return str.Replace("\"", "\"\""); };  //把一个",变为 两个 ""
+
     #endregion
 }

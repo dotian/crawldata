@@ -58,7 +58,7 @@ namespace DataCrawler.Model.Crawler
         public DateTime CreateDate { get; set; }
 
         /// <summary>
-        /// 调性
+        /// 调性, 1:正, 2:中，3：负，4：争
         /// </summary>
         public int Analysis { get; set; }
 
@@ -108,7 +108,7 @@ namespace DataCrawler.Model.Crawler
         public int ShowStatus { get; set; }
 
         /// <summary>
-        /// 数据类型 论坛,新闻,博客,微博
+        /// 数据类型 论坛 1,新闻 2,博客 3,微博 5
         /// </summary>
         public int SiteType { get; set; }
     }
