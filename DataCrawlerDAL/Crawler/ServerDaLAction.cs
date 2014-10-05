@@ -684,7 +684,7 @@ namespace DataCrawler.DAL.Crawler
                     siteDataModel.Tag4 = row["Tag4"] == DBNull.Value ? "" : row["Tag4"].ToString();
                     siteDataModel.Tag5 = row["Tag5"] == DBNull.Value ? "" : row["Tag5"].ToString();
                     siteDataModel.Tag6 = row["Tag6"] == DBNull.Value ? "" : row["Tag6"].ToString();
-                    
+
                     siteDataModel.Hot = row["Hot"] == DBNull.Value ? 0 : Convert.ToInt32(row["Hot"]);
                     list.Add(siteDataModel);
                 }

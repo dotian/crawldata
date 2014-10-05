@@ -62,6 +62,14 @@ namespace DataCrawler.Model.Crawler
         /// </summary>
         public int Analysis { get; set; }
 
+        public static Dictionary<int, string> AnalysisMap = new Dictionary<int, string>()
+        {
+            { 1, "正" },
+            { 2, "中" },
+            { 3, "负" },
+            { 4, "争" }
+        };
+
         /// <summary>
         /// 关注
         /// </summary>
@@ -103,7 +111,7 @@ namespace DataCrawler.Model.Crawler
         public int Hot { get; set; }
 
         /// <summary>
-        /// 状态: 0未审核,1已删除,2预审核,3已审核
+        /// 状态: 0,1预审核,2已审核,99已删除
         /// </summary>
         public int ShowStatus { get; set; }
 
@@ -111,5 +119,13 @@ namespace DataCrawler.Model.Crawler
         /// 数据类型 论坛 1,新闻 2,博客 3,微博 5
         /// </summary>
         public int SiteType { get; set; }
+
+        public static Dictionary<int, string> SiteTypeMap = new Dictionary<int, string>()
+        {
+            { 1, "论坛" },
+            { 2, "新闻" },
+            { 3, "博客" },
+            { 5, "微博" }
+        };
     }
 }

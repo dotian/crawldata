@@ -115,7 +115,7 @@ public class ExcelCommon
     }
 
     ReadExcelBLL excelActionBll = new ReadExcelBLL();
-    public List<SiteDataModel> DoOneTimeImport(string filepath)
+    public List<SiteDataModel> DoOneTimeImport(string filepath, int siteType, int projectId)
     {
         List<SiteDataModel> list = new List<SiteDataModel>();
         try
@@ -130,32 +130,49 @@ public class ExcelCommon
                     model.SrcUrl = row[1].ToString();
                     model.SiteName = row[2].ToString();
                     model.PlateName = row[2].ToString();
+                    model.ContentDate = DateTime.Parse(row[3].ToString());
 
                     model.Analysis = 0;
                     if (row[4] != null && (!string.IsNullOrEmpty(row[4].ToString())))
                     {
-                        string analysisValue = row[3].ToString();
-                        if (AnalysisMap.ContainsValue(analysisValue))
+                        string analysisValue = row[4].ToString();
+                        if (SiteDataModel.AnalysisMap.ContainsValue(analysisValue))
                         {
-                            model.Analysis = AnalysisMap.First(m => m.Value == analysisValue).Key;
+                            model.Analysis = SiteDataModel.AnalysisMap.First(m => m.Value == analysisValue).Key;
                         }
                     }
 
                     model.ShowStatus = 0;
                     if (row[5] != null && (!string.IsNullOrEmpty(row[5].ToString())))
                     {
-                        string reviewStatus = row[4].ToString();
+                        string reviewStatus = row[5].ToString();
                         if (reviewStatus == "已审核")
                         {
-                            model.ShowStatus = 3;
+                            model.ShowStatus = 2;
                         }
                     }
 
-                    model.ContentDate = DateTime.Parse(row[3].ToString());
+                    model.SiteType = siteType;
+                    if (row[6] != null && (!string.IsNullOrEmpty(row[6].ToString())))
+                    {
+                        var siteTypeString = row[6].ToString();
+                        if (SiteDataModel.SiteTypeMap.ContainsValue(siteTypeString))
+                        {
+                            model.SiteType = SiteDataModel.SiteTypeMap.First(m => m.Value == siteTypeString).Key;
+                        }
+                        else
+                        {
+                            throw new Exception("Not recognized site type: " + siteTypeString);
+                        }
+                    }
+
+                    model.ProjectId = projectId;
+
                     list.Add(model);
                 }
-                catch
+                catch (Exception e)
                 {
+                    LogNet.LogBLL.Error("DoOneTimeImport", e);
                 }
             }
         }
@@ -312,21 +329,13 @@ public class ExcelCommon
       {
           string result = "";
 
-          if (AnalysisMap.ContainsKey(analysis))
+          if (SiteDataModel.AnalysisMap.ContainsKey(analysis))
           {
-              result = AnalysisMap[analysis];
+              result = SiteDataModel.AnalysisMap[analysis];
           }
 
           return result;
       };
-
-    public static Dictionary<int, string> AnalysisMap = new Dictionary<int, string>()
-    {
-        { 1, "正" },
-        { 2, "中" },
-        { 3, "负" },
-        { 4, "争" }
-    };
 
     public static Func<string, string> GetDecodeAnalysis = (analysisColor) =>
     {

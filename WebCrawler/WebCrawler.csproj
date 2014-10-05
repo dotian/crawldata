@@ -511,7 +511,9 @@
     <Content Include="Admin\ashxHelp\HandlerAddContend.ashx" />
     <Content Include="Admin\ashxHelp\HandlerDeletePiAction.ashx" />
     <Content Include="Admin\ashxHelp\HandlerHuiPiAction.ashx" />
-    <None Include="Admin\DataModel\datamodel.xls" />
+    <Content Include="Admin\DataModel\datamodel.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Admin\Handler\datadetail\nextPage_click.ashx" />
     <Content Include="hankookAshx\login.ashx" />
     <Content Include="hankookAshx\maintainSuggest.ashx" />

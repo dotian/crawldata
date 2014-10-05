@@ -47,12 +47,12 @@ namespace WebCrawler.Admin
                         {
                             Response.Redirect("datadetail.aspx?pid=4&p=1");
                         }
-                        catch{}
+                        catch { }
                     }
                 }
                 catch (Exception ex)
                 {
-                    LogBLL.Error("datadetail.aspx Bind",ex);
+                    LogBLL.Error("datadetail.aspx Bind", ex);
                 }
             }
 
@@ -68,7 +68,7 @@ namespace WebCrawler.Admin
                     BindSelectTagHtml();
                     this.hid_batchGropTagStatus.Value = "true";//准备好了
                     int projectId = int.Parse(Request.QueryString["pid"]);
-                    string[]attrTag = new string[]{};
+                    string[] attrTag = new string[] { };
                     helpCreateHtml.tagHead = new Help_CreateSiteDataTB().GetTagHeadByProjectId(projectId, ref attrTag);
                     this.dv_tag_title.InnerHtml = "<h2>" + helpCreateHtml.tagHead + "</h2>";
 
@@ -76,7 +76,7 @@ namespace WebCrawler.Admin
                     helpCreateHtml.TagListContent = new Help_CreateSiteDataTB().GetTagContent(item.Tag1, item.Tag2, item.Tag3, item.Tag4, item.Tag5, item.Tag6, attrTag);
                     int width = 80 * (attrTag.Length > 0 ? attrTag.Length : 1);//不能除以0;
                     this.dv_tag_content.InnerHtml = "<div style='width:100%;height:100%;'><div style='width:" + width + "px;margin: 0px auto;'>" + helpCreateHtml.TagListContent + "</div></div>";//</br><div style='width:50px;visibility:hidden;'><span><a href='#' id='sp_tag_t_main' style='text-decoration:underline;'>标签</a></span></div>";
-                    this.alt.Style.Add(HtmlTextWriterStyle.Width, (120 + 80 * attrTag.Length).ToString()+"px"); //设定 层的 宽度
+                    this.alt.Style.Add(HtmlTextWriterStyle.Width, (120 + 80 * attrTag.Length).ToString() + "px"); //设定 层的 宽度
                 }
             }
             catch (Exception ex)
@@ -84,16 +84,16 @@ namespace WebCrawler.Admin
                 LogBLL.Error("datadetail.aspx BindSelectTagHtml", ex);
             }
 
-            
+
             #endregion
 
-           
+
         }
         private int pageIndex;
         public int PageIndex
         {
-            get{ return pageIndex >= 1 ? pageIndex : 1; }
-            set {   pageIndex = value; }
+            get { return pageIndex >= 1 ? pageIndex : 1; }
+            set { pageIndex = value; }
         }
 
 
@@ -108,8 +108,8 @@ namespace WebCrawler.Admin
             try
             {
                 int pid = int.Parse(Request.QueryString["pid"].ToString());
-                TagBLL tagBLLAction =  new TagBLL();
-                 //得到这个项目的 3个(最多3个一级标签)
+                TagBLL tagBLLAction = new TagBLL();
+                //得到这个项目的 3个(最多3个一级标签)
                 List<TagList> list = tagBLLAction.Get1stTagByProjectIdManager(pid);
                 hid_sel_count.Value = list.Count.ToString();
                 if (list.Count > 0)
@@ -139,7 +139,7 @@ namespace WebCrawler.Admin
             }
             catch (Exception ex)
             {
-                LogBLL.Error("BindSelectTagHtml",ex);
+                LogBLL.Error("BindSelectTagHtml", ex);
             }
         }
 
@@ -190,7 +190,7 @@ namespace WebCrawler.Admin
             catch (Exception ex)
             {
                 LogBLL.Error("datadetail.aspx 页 Bind方法  ", ex);
-               // Response.Write(ex.Message);
+                // Response.Write(ex.Message);
             }
 
             //查询得到 该项目所有的内容,然后显示出来,,查询条件,读取 隐藏 hidden里面的 内容
@@ -203,7 +203,7 @@ namespace WebCrawler.Admin
         {
             try
             {
-                
+
                 QueryDataModelParms queryDataModel = new QueryDataModelParms();
                 queryDataModel.sitetype = int.Parse(this.select_dataType.SelectedValue.Trim());
                 queryDataModel.projectId = int.Parse(this.hid_projectId.Value.Trim());
@@ -295,7 +295,7 @@ namespace WebCrawler.Admin
         {
             try
             {
-               
+
                 QueryDataModelParms queryDataModel = new QueryDataModelParms();
                 queryDataModel.projectId = queryJson.pid;
                 queryDataModel.sitetype = queryJson.dataType;
@@ -928,7 +928,7 @@ namespace WebCrawler.Admin
                 //  Response.Redirect("ApplicationErroy.aspx");
 
             }
-           
+
         }
 
         public static object obj = new object();
@@ -991,12 +991,9 @@ namespace WebCrawler.Admin
                     sp_uploadresult.InnerText = "没有获取到项目";
                     return;
                 }
+
+                // Use selected site type as default value
                 siteType = int.Parse(this.select_dataType.SelectedValue.Trim());
-                if (siteType <= 0)
-                {
-                    sp_uploadresult.InnerText = "请选择导入的数据类型";
-                    return;
-                }
             }
             catch (Exception ex)
             {
@@ -1026,10 +1023,10 @@ namespace WebCrawler.Admin
                         }
                         fileUpload1.PostedFile.SaveAs(savepath);
                         sp_uploadresult.InnerText = savepath;
-                        List<SiteDataModel> list = new ExcelCommon().DoOneTimeImport(savepath);
-                        int result = bllAction.InsertImportSiteDataByProjectIdManager(list, projectId, siteType);
-                        sp_uploadresult.InnerText = string.Format("上传文件解析成功, 上传成功数据:{0}条,识别数据:{1}条,插入失败数据:{2}条", result, list.Count, list.Count-result);
-                           
+                        List<SiteDataModel> list = new ExcelCommon().DoOneTimeImport(savepath, siteType, projectId);
+                        int result = bllAction.InsertImportSiteDataByProjectIdManager(list);
+                        sp_uploadresult.InnerText = string.Format("上传文件解析成功, 上传成功数据:{0}条,识别数据:{1}条,插入失败数据:{2}条", result, list.Count, list.Count - result);
+
                     }
                     catch (Exception ex)
                     {

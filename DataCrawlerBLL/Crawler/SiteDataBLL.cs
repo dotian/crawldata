@@ -74,7 +74,7 @@ namespace DataCrawler.BLL.Crawler
             return sqlDalAction.SelectProjectNameByProjectIdService(projectid, runStatus);
         }
 
-        public int InsertImportSiteDataByProjectIdManager(List<SiteDataModel> dataList, int projectId, int siteType)
+        public int InsertImportSiteDataByProjectIdManager(List<SiteDataModel> dataList)
         {
             ServerDaLAction sqlDalAction = new ServerDaLAction();
             int result = 0;
@@ -82,8 +82,6 @@ namespace DataCrawler.BLL.Crawler
             {
                 try
                 {
-                    dataModel.ProjectId = projectId;
-                    dataModel.SiteType = siteType;
                     result += sqlDalAction.InsertImportSiteDataByProjectIdService(dataModel);
                 }
                 catch (Exception ex)
