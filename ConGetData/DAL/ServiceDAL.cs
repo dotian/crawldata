@@ -27,14 +27,14 @@ namespace ConGetData.DAL
                     CrawlTarget crawlTarget = new CrawlTarget();
                     crawlTarget.SiteUrl = reader["SiteUrl"].ToString();
                     crawlTarget.SiteEncoding = reader["siteEncoding"].ToString();
-                    crawlTarget.TemplateContent = reader["TemplateContent"].ToString();
-                    //runstatus 等于1 才可以运行,99表示删除 0表示默认
+                    crawlTarget.TemplateContent = reader["TemplateContent"].ToString();                    
                     crawlTarget.RunStatus = Convert.ToInt32(reader["runstatus"]);
                     crawlTarget.ProjectId = reader["ProjectId"].ToString();
                     crawlTarget.SiteId =reader["SiteId"].ToString();
                     crawlTarget.ClassName = reader["ClassName"].ToString();
                     crawlTarget.KeyWords = reader["KeyWords"].ToString();
                     crawlTarget.Tid = reader["Tid"].ToString();
+                    crawlTarget.PostContent = reader["PostContent"].ToString();
                     list.Add(crawlTarget);
                 }
             }

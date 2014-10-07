@@ -8,6 +8,7 @@ using System.IO;
 using System.Data.SqlClient;
 using ConGetData.DAL;
 using LogNet;
+using System.Web;
 
 
 namespace ConGetData.BLL
@@ -22,21 +23,42 @@ namespace ConGetData.BLL
             if (target.SiteUrl.Contains("<>"))
             {
                 string strKeyWordEncode = target.KeyWords.Replace("+", " ");
-                strKeyWordEncode = System.Web.HttpUtility.UrlEncode(strKeyWordEncode, Encoding.GetEncoding(target.SiteEncoding));
+                strKeyWordEncode = HttpUtility.UrlEncode(strKeyWordEncode, Encoding.GetEncoding(target.SiteEncoding));
                 target.SiteUrl = target.SiteUrl.Replace("<>", strKeyWordEncode);
             }
             string siteUrlBackup = target.SiteUrl;
-            if (target.SiteUrl.Contains("{p}") && target.NextPageCount == 0)
+            if (target.SiteUrl.Contains("{p}") && target.NextPageCount ==-1)
             {
                 target.NextPageCount = target.XmlTemplate.PageStart;
             }
 
-            if (target.SiteUrl.Contains("{p}") && target.NextPageCount > 0 && target.NextPageCount <= target.XmlTemplate.PageEnd)
+            if (target.SiteUrl.Contains("{p}") && target.NextPageCount >= 0 && target.NextPageCount <= target.XmlTemplate.PageEnd)
             {
                 target.SiteUrl = target.SiteUrl.Replace("{p}", target.NextPageCount.ToString());
             }
 
-            string html = _hh.Open(target.SiteUrl, target.XmlTemplate.SiteEncoding);
+            string html = null;
+
+            if (target.SiteUrl.ToUpper().StartsWith("POST:"))
+            {
+                if (target.PostContent.Contains("<>"))
+                {
+                    target.PostContent = target.PostContent.Replace("<>",
+                        HttpUtility.UrlEncode(target.KeyWords.Replace("+", " "), Encoding.GetEncoding(target.SiteEncoding)).ToUpper());
+                }
+
+                // Remove POST: in site url.
+                target.SiteUrl = target.SiteUrl.Substring(5);
+
+                html = _hh.Open(
+                    target.SiteUrl,
+                    target.XmlTemplate.SiteEncoding,
+                    target.PostContent);
+            }
+            else
+            {
+                html = _hh.Open(target.SiteUrl, target.XmlTemplate.SiteEncoding);
+            }
 
             html = Regex.Replace(html, @"\r\n|\r|\n|\t", "", RegexOptions.IgnoreCase | RegexOptions.Multiline);
 
