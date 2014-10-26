@@ -121,57 +121,73 @@ public class ExcelCommon
         try
         {
             System.Data.DataTable table = excelActionBll.GetDataTable(filepath);
+            LogNet.LogBLL.Debug("Total row in file: " + table.Rows.Count);
+
             foreach (System.Data.DataRow row in table.Rows)
             {
                 try
                 {
-                    SiteDataModel model = new SiteDataModel();
-                    model.Title = row[0].ToString();
-                    model.SrcUrl = row[1].ToString();
-                    model.SiteName = row[2].ToString();
-                    model.PlateName = row[2].ToString();
-                    model.ContentDate = DateTime.Parse(row[3].ToString());
+                    string title = row[0].ToString();
+                    string url = row[1].ToString();
+                    string siteName = row[2].ToString();
+                    string plateName = row[2].ToString();
+                    string contentDateStr = row[3].ToString();
+                    string analysisStr = row[4].ToString();
+                    string showStatusStr = row[5].ToString();
+                    string siteTypeStr = row[6].ToString();
 
-                    model.Analysis = 0;
-                    if (row[4] != null && (!string.IsNullOrEmpty(row[4].ToString())))
+                    if (!(string.IsNullOrEmpty(title)
+                        || string.IsNullOrEmpty(url)
+                        || string.IsNullOrEmpty(siteName)
+                        || string.IsNullOrEmpty(contentDateStr)))
                     {
-                        string analysisValue = row[4].ToString();
-                        if (SiteDataModel.AnalysisMap.ContainsValue(analysisValue))
+                        SiteDataModel model = new SiteDataModel();
+                        model.Title = title;
+                        model.SrcUrl = url;
+                        model.SiteName = siteName;
+                        model.PlateName = siteName;
+                        model.ContentDate = DateTime.Parse(contentDateStr);
+
+                        model.Analysis = 0;
+                        if (!string.IsNullOrEmpty(analysisStr))
                         {
-                            model.Analysis = SiteDataModel.AnalysisMap.First(m => m.Value == analysisValue).Key;
+                            if (SiteDataModel.AnalysisMap.ContainsValue(analysisStr))
+                            {
+                                model.Analysis = SiteDataModel.AnalysisMap.First(m => m.Value == analysisStr).Key;
+                            }
                         }
+
+                        model.ShowStatus = 0;
+                        if (!string.IsNullOrEmpty(showStatusStr))
+                        {
+                            if (showStatusStr == "已审核")
+                            {
+                                model.ShowStatus = 2;
+                            }
+                        }
+
+                        model.SiteType = siteType;
+                        if (!string.IsNullOrEmpty(siteTypeStr))
+                        {
+                            if (SiteDataModel.SiteTypeMap.ContainsValue(siteTypeStr))
+                            {
+                                model.SiteType = SiteDataModel.SiteTypeMap.First(m => m.Value == siteTypeStr).Key;
+                            }
+                            else
+                            {
+                                throw new Exception("Not recognized site type: " + siteTypeStr);
+                            }
+                        }
+
+                        model.ProjectId = projectId;
+
+                        list.Add(model);
                     }
-
-                    model.ShowStatus = 0;
-                    if (row[5] != null && (!string.IsNullOrEmpty(row[5].ToString())))
-                    {
-                        string reviewStatus = row[5].ToString();
-                        if (reviewStatus == "已审核")
-                        {
-                            model.ShowStatus = 2;
-                        }
-                    }
-
-                    model.SiteType = siteType;
-                    if (row[6] != null && (!string.IsNullOrEmpty(row[6].ToString())))
-                    {
-                        var siteTypeString = row[6].ToString();
-                        if (SiteDataModel.SiteTypeMap.ContainsValue(siteTypeString))
-                        {
-                            model.SiteType = SiteDataModel.SiteTypeMap.First(m => m.Value == siteTypeString).Key;
-                        }
-                        else
-                        {
-                            throw new Exception("Not recognized site type: " + siteTypeString);
-                        }
-                    }
-
-                    model.ProjectId = projectId;
-
-                    list.Add(model);
                 }
                 catch (Exception e)
                 {
+                    LogNet.LogBLL.Error(string.Format("Title {0} Url {1} Site name {2} content date {3} analysis {4} show status {5}"
+                        , row[0].ToString(), row[1].ToString(), row[2].ToString(), row[3].ToString(), row[4].ToString(), row[5].ToString()));
                     LogNet.LogBLL.Error("DoOneTimeImport", e);
                 }
             }

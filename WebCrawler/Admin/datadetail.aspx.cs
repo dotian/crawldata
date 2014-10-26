@@ -979,7 +979,7 @@ namespace WebCrawler.Admin
 
         protected void btn_importExcel_Click(object sender, EventArgs e)
         {
-
+            int oriTimeout = Server.ScriptTimeout;
             //导入数据
             int projectId = 0;
             int siteType = 0;
@@ -1010,6 +1010,7 @@ namespace WebCrawler.Admin
                 {
                     try
                     {
+                        Server.ScriptTimeout = 24 * 60 * 60;
                         /*注意->这里为什么不是:FileUpLoad1.PostedFile.FileName
                       * 而是:FileUpLoad1.FileName?
                       * 前者是获得客户端完整限定(客户端完整路径)名称
@@ -1027,12 +1028,15 @@ namespace WebCrawler.Admin
                         int result = bllAction.InsertImportSiteDataByProjectIdManager(list);
                         sp_uploadresult.InnerText = string.Format("上传文件解析成功, 上传成功数据:{0}条,识别数据:{1}条,插入失败数据:{2}条", result, list.Count, list.Count - result);
 
+                        Server.ScriptTimeout = oriTimeout;
                     }
                     catch (Exception ex)
                     {
                         sp_uploadresult.InnerText = "出现错误,上传失败";
                         LogBLL.Error("datadetail.aspx 页 btn_importExcel_Click方法  ", ex);
                         Response.Write(ex.Message);
+
+                        Server.ScriptTimeout = oriTimeout;
                     }
                 }
                 else

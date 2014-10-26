@@ -48,7 +48,6 @@
     <Compile Include="Crawler\IBRSCommonDAL.cs" />
     <Compile Include="Crawler\PullDataDAL.cs" />
     <Compile Include="Crawler\ServerDaLAction.cs" />
-    <Compile Include="Crawler\SQLHelper.cs" />
     <Compile Include="Crawler\TemplateDAL.cs" />
     <Compile Include="Crawler\TagDAL.cs" />
     <Compile Include="Crawler\PageDAL.cs" />
