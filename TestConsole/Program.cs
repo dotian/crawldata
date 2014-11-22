@@ -6,6 +6,7 @@ using ConGetData.BLL;
 using ConGetData.DAL;
 using ConGetData.Model;
 using System.Text.RegularExpressions;
+using ConGetData.ConMicroblog;
 
 namespace TestConsole
 {
@@ -16,6 +17,8 @@ namespace TestConsole
 
         static void Main(string[] args)
         {
+            var cookie = TencentCookieHelper.GetTencentCookie();
+
             // setup
             ServiceLocator.SetDalType<MockServiceDAL>();
 

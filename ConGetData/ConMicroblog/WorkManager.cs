@@ -9,7 +9,6 @@ namespace ConGetData.ConMicroblog
 {
     public class WorkManager
     {
-
         public void Work()
         {
             try
@@ -20,17 +19,15 @@ namespace ConGetData.ConMicroblog
                 Start();
                 Thread.Sleep(ModelArgs.SleepTime);
                 Close();
-                GetCookie();
+                GetSinaCookie();
                 Thread.Sleep(5000);
             }
             catch (Exception ex)
             {
+                LogNet.LogBLL.Error(ex.Message);
                 Console.WriteLine(ex.Message);
             }
-
         }
-
-
 
         public void Start()
         {
@@ -58,7 +55,6 @@ namespace ConGetData.ConMicroblog
                 Process[] ps = Process.GetProcesses();
                 foreach (Process item in ps)
                 {
-                    //Console.WriteLine(item.ProcessName);
                     if (item.ProcessName == "WinGetMocroblogCookie")
                     {
                         item.Kill();
@@ -71,20 +67,21 @@ namespace ConGetData.ConMicroblog
         }
 
         List<string> list = new List<string>();
-        public void GetCookie()
+        public void GetSinaCookie()
         {
 
             string cookiePath = ModelArgs.ProcessWorkingDirectory + "\\" + ModelArgs.WriteFilePath;
             string cookie = File.ReadAllText(cookiePath);
-          
+
             bool b = list.Contains(cookie);
-            if (!b&&  cookie!="")
+            if (!b && cookie != "")
             {
                 list.Add(cookie);
                 ModelArgs.CookieStr = cookie;
+                LogNet.LogBLL.Info("Get Sina cookie: " + cookie);
             }
-            Console.WriteLine(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + ":\t" + list.Count);
 
+            Console.WriteLine(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + ":\t" + list.Count);
         }
     }
 }

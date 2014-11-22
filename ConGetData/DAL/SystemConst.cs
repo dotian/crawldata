@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Configuration;
 using System.IO;
+using ConGetData.BLL;
 
 namespace ConGetData.DAL
 {
@@ -22,15 +23,31 @@ namespace ConGetData.DAL
             }
         }
 
-        private static string strCookie;
-        public static string StrCookie
+        private static string strSinaCookie;
+        public static string StrSinaCookie
         {
             get
             {
-                return strCookie ?? ConfigurationManager.AppSettings["MicroblogCookie"].ToString();
-                //return strCookie ?? ConfigurationManager.ConnectionStrings["MicroblogCookie"].ToString();
+                return strSinaCookie ?? ConfigurationManager.AppSettings["MicroblogCookie"].ToString();
             }
-            set { strCookie = value; }
+            set { strSinaCookie = value; }
         }
+
+        private static string strTencentCookie;
+        public static string StrTencentCookie
+        {
+            get
+            {
+                if (tencentCookieUpdateTime.AddHours(24) < DateTime.Now)
+                {
+                    //strTencentCookie = HttpHelper.GetTencentCookie();
+                }
+
+                return strTencentCookie;
+            }
+            set { strTencentCookie = value; }
+        }
+
+        private static DateTime tencentCookieUpdateTime;
     }
 }

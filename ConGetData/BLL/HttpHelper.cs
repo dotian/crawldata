@@ -13,7 +13,7 @@ namespace ConGetData.BLL
     public class HttpHelper
     {
         private static string reqUserAgent = "User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36";
-        public string StrCookie = "";
+        public string StrCookie = string.Empty;
 
         public string Open(string url, string encoStr, string postContent = null)
         {
@@ -36,7 +36,6 @@ namespace ConGetData.BLL
                 {
                     req.Method = "POST";
                     req.ContentType = "application/x-www-form-urlencoded";
-                    //req.Headers.Add("Cookie: KtrD_2132_saltkey=cLAW7auJ;"); // POST:http://www.gslzw.com/search.php?searchsubmit=yes
                     byte[] data = encoding.GetBytes(postContent);
                     using (Stream stream = req.GetRequestStream())
                     {
@@ -46,34 +45,43 @@ namespace ConGetData.BLL
 
                 HttpWebResponse res = (HttpWebResponse)req.GetResponse();
 
-                bool isGzip = false;
-
-                if (res.Headers.AllKeys.Any(k => k == "Content-Encoding"))
-                {
-                    var responseEncoding = res.Headers["Content-Encoding"];
-                    isGzip = responseEncoding.ToLower() == "gzip";
-                }
-
-                //var charset = res.Headers["Content-Type"].Split(';').First(h => h.ToLower().Contains("charset"));
-                //encoStr = charset.Substring(charset.IndexOf("=") + 1);
-
-                Stream responseStream = res.GetResponseStream();
-
-                if (isGzip)
-                {
-                    responseStream = new GZipStream(res.GetResponseStream(), CompressionMode.Decompress);
-                }
-
-                StreamReader sr = new StreamReader(responseStream, encoding);
-                revData = sr.ReadToEnd();
-                sr.Close();
-                res.Close();
+                revData = GetResponseContent(res, encoding);
             }
             catch
             {
                 revData = "";
             }
 
+            return revData;
+        }
+
+        public static string GetResponseContent(HttpWebResponse res, Encoding encoding)
+        {
+            bool isGzip = false;
+
+            if (res.Headers.AllKeys.Any(k => k == "Content-Encoding"))
+            {
+                var responseEncoding = res.Headers["Content-Encoding"];
+                isGzip = responseEncoding.ToLower() == "gzip";
+            }
+
+            var charset = res.Headers["Content-Type"].Split(';').FirstOrDefault(h => h.Trim().ToLower().StartsWith("charset"));
+            if (charset != null)
+            {
+                encoding = Encoding.GetEncoding(charset.Substring(charset.IndexOf("=") + 1));
+            }
+
+            Stream responseStream = res.GetResponseStream();
+
+            if (isGzip)
+            {
+                responseStream = new GZipStream(res.GetResponseStream(), CompressionMode.Decompress);
+            }
+
+            StreamReader sr = new StreamReader(responseStream, encoding);
+            string revData = sr.ReadToEnd();
+            sr.Close();
+            res.Close();
             return revData;
         }
     }

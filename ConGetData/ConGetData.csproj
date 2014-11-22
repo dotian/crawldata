@@ -35,11 +35,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="log4net">
-      <HintPath>F:\svn管理器\ActionLM2013\联通音乐试听登录\log4net.dll</HintPath>
+      <HintPath>..\..\WebCrawler\Libiary\log4net.dll</HintPath>
     </Reference>
-    <Reference Include="LogNet, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\LogNet.dll</HintPath>
+    <Reference Include="LogNet">
+      <HintPath>..\..\WebCrawler\LogNet\bin\Release\LogNet.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -64,6 +63,7 @@
     <Compile Include="BLL\MicroblogWork.cs" />
     <Compile Include="BLL\NewsWork.cs" />
     <Compile Include="ConMicroblog\ModelArgs.cs" />
+    <Compile Include="ConMicroblog\TecentCookieHelper.cs" />
     <Compile Include="ConMicroblog\WorkManager.cs" />
     <Compile Include="DAL\IServiceDAL.cs" />
     <Compile Include="Model\CK_SiteList.cs" />
@@ -99,7 +99,11 @@
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="WinGetMocroblogCookie.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -17,11 +17,11 @@ namespace ConGetData.BLL
         public void TaskCrawlStart()
         {
             //首次加速 开启任务列表
-            new MicroblogGetCookie().GetCookieWork();
+            new MicroblogGetCookie().GetSinaCookieWork();
             CrawlListRun = logicAction.GetCrawtarget();
             CrawlListCount = CrawlListRun.Count;
 
-            if (CrawlListCount<=0)
+            if (CrawlListCount <= 0)
             {
                 Console.WriteLine("可运行的 任务为0");
                 return;
@@ -62,7 +62,7 @@ namespace ConGetData.BLL
                     Thread.Sleep(120 * 1000);//每次任务 结束之后,停2分钟
 
                     //更新新浪微博cookie
-                    new MicroblogGetCookie().GetCookieWork();
+                    new MicroblogGetCookie().GetSinaCookieWork();
 
                     CrawlListRun = logicAction.GetCrawtarget();
                     CrawlListCount = CrawlListRun.Count;
@@ -97,11 +97,11 @@ namespace ConGetData.BLL
             {
                 //if (CrawlListRun[i].ClassName == "microblog" || CrawlListRun[i].SiteId == "99463")
                 //{
-                    CrawlTargetArgs CrawlTargetArgs = new CrawlTargetArgs(threadCounter, CrawlListRun[i]);
-                    CrawlWorkAction(CrawlTargetArgs);
-	           // }
-                        
-              
+                CrawlTargetArgs CrawlTargetArgs = new CrawlTargetArgs(threadCounter, CrawlListRun[i]);
+                CrawlWorkAction(CrawlTargetArgs);
+                // }
+
+
             }
         }
 
@@ -121,7 +121,7 @@ namespace ConGetData.BLL
                         new ForumWork().RunWork(target);
                         break;
                     case "news":
-                         new NewsWork().RunWork(target);
+                        new NewsWork().RunWork(target);
                         break;
                     case "blog":
                         new BlogWork().RunWork(target);
@@ -133,7 +133,7 @@ namespace ConGetData.BLL
                         break;
                 }
                 #endregion
-                Console.WriteLine("ProjectId:{0} SiteId:{1} Tid:{2} 抓取成功", target.ProjectId, target.SiteId,target.Tid);
+                Console.WriteLine("ProjectId:{0} SiteId:{1} Tid:{2} 抓取成功", target.ProjectId, target.SiteId, target.Tid);
                 threadCounter.writerCounter("fcAdd");//完成
             }
             catch (Exception ex)
@@ -154,10 +154,12 @@ namespace ConGetData.BLL
 
             for (int i = 0; i < 10; i++)
             {
-                t.SiteUrl = t.SiteUrl + "&b=1&page=" + i;
+                if (t.SiteUrl.Contains("sina"))
+                {
+                    t.SiteUrl = t.SiteUrl + "&b=1&page=" + i;
+                }
                 new MicroblogWork().RunWork(t);
             }
-            
         }
     }
 }

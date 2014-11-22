@@ -17,9 +17,29 @@ namespace ConGetData.BLL
         CommonHelper common = new CommonHelper();
         static HttpHelper _hh = new HttpHelper();
 
+        private static DateTime sinaHitTime;
+
+        private static int sinaHitCount = 0;
+        private static int SinaHitCount
+        {
+            get
+            {
+                return sinaHitCount;
+            }
+            set
+            {
+                if (value >= 20)
+                {
+                    sinaHitTime = DateTime.Now;
+                }
+
+                sinaHitCount = value;
+            }
+        }
+
         public void RunWork(CrawlTarget target)
         {
-            //LogBLL.Info(string.Format("开始微博, project {0}, site {1}", target.ProjectId, target.SiteId));
+            LogBLL.Info(string.Format("开始微博, project {0}, site {1}", target.ProjectId, target.SiteId));
             if (target.SiteUrl.Contains("<>"))
             {
                 string strKeyWordEncode = target.KeyWords.Replace("+", " ");
@@ -27,7 +47,7 @@ namespace ConGetData.BLL
                 target.SiteUrl = target.SiteUrl.Replace("<>", strKeyWordEncode);
             }
 
-            _hh.StrCookie = SystemConst.StrCookie;
+            _hh.StrCookie = SystemConst.StrSinaCookie;
             string rawHtml = _hh.Open(target.SiteUrl, target.XmlTemplate.SiteEncoding);
             string html = common.StrDecode(rawHtml);
             Console.WriteLine(html.Length);
@@ -35,7 +55,7 @@ namespace ConGetData.BLL
 
             Regex reg = new Regex(target.XmlTemplate.Node, RegexOptions.Singleline | RegexOptions.IgnoreCase);
             MatchCollection mc = GetMatchCollection(reg, html);
-       
+
             int result = 0;
             foreach (Match match in mc)
             {
@@ -48,13 +68,13 @@ namespace ConGetData.BLL
                 {
                     model.SiteId = target.SiteId;
                     model.ProjectID = target.ProjectId;
+
                     Console.WriteLine("------------------------------------------------------------------------");
                     Console.WriteLine(model.Title);
-                  //  Console.WriteLine(model.Content);
-                  // Console.WriteLine(model.SiteUrl);
-                     Console.WriteLine(model.ContentDate.ToString("yyyy-MM-dd HH:mm:ss"));
-                     Console.WriteLine("------------------------------------------------------------------------");
-                     //LogBLL.Info(string.Format("微博匹配, project {0}, site {1}", target.ProjectId, target.SiteId));
+                    Console.WriteLine(model.ContentDate.ToString("yyyy-MM-dd HH:mm:ss"));
+                    Console.WriteLine("------------------------------------------------------------------------");
+
+                    LogBLL.Info(string.Format("微博匹配, project {0}, site {1}", target.ProjectId, target.SiteId));
                     result += InsertSiteData(model);
                 }
             }
@@ -67,7 +87,7 @@ namespace ConGetData.BLL
             {
                 //LogBLL.Info(string.Format("微博抓取匹配失败, project {0}, site {1} \r\n {2}", target.ProjectId, target.SiteId, rawHtml));
             }
-           
+
         }
 
         public XmlTemplate GetXmlTemplate(string tempContent)
@@ -83,7 +103,6 @@ namespace ConGetData.BLL
         public DataModel GetDataModel(XmlTemplate xmlTemp, string inputMatchHtml, string parentUrl)
         {
             //得到 
-
             DataModel model = new DataModel();
             string title = common.GetMatchRegex(xmlTemp.Title, inputMatchHtml);
             model.Title = common.NoHTML(title).Trim();
@@ -117,13 +136,10 @@ namespace ConGetData.BLL
 
             try
             {
-
                 result = HelperSQL.ExecNonQuery("usp_Spider_Insert_MicroBlog", parms);
-
             }
             catch (Exception ex)
             {
-
                 LogBLL.Log("usp_Spider_Insert_MicroBlog", parms);
                 LogBLL.Error("InsertSiteData", ex);
             }
@@ -135,16 +151,14 @@ namespace ConGetData.BLL
         {
             for (int i = 0; i < 100; i++)
             {
-               string url = "http://s.weibo.com/weibo/%25E8%258B%25B9%25E6%259E%259C?topnav=1&wvr=5&topsug=1";
-               _hh.StrCookie = SystemConst.StrCookie;
-               string html = _hh.Open(url, "utf-8");
+                string url = "http://s.weibo.com/weibo/%25E8%258B%25B9%25E6%259E%259C?topnav=1&wvr=5&topsug=1";
+                _hh.StrCookie = SystemConst.StrSinaCookie;
+                string html = _hh.Open(url, "utf-8");
                 html = common.StrDecode(html);
                 Console.WriteLine(html);
                 Console.WriteLine(html.Length);
                 Thread.Sleep(20000);
             }
-         
         }
-
     }
 }

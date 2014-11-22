@@ -14,13 +14,13 @@ namespace ConGetData.BLL
     public  class MicroblogGetCookie
     {
        
-        public void GetCookieWork()
+        public void GetSinaCookieWork()
         {
             //每隔3小时 登陆一次,看一看cookie
               new WorkManager().Work();
               Console.WriteLine("Microblog Cookie  获取完毕");
               LogNet.LogBLL.Info("Microblog Cookie  获取完毕:\t" + ModelArgs.CookieStr);
-              SystemConst.StrCookie = ModelArgs.CookieStr;
+              SystemConst.StrSinaCookie = ModelArgs.CookieStr;
         }
     }
 }
