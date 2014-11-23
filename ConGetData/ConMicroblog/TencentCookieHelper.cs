@@ -66,15 +66,30 @@ namespace ConGetData.ConMicroblog
             string loginUrl = paraSSLLogin[2];
 
             HttpWebRequest reqFinalLogin = (HttpWebRequest)WebRequest.Create(loginUrl);
-            foreach (Cookie c in resSSLLogin.Cookies)
-            {
-                reqFinalLogin.CookieContainer.Add(c);
-            }
+
+            var cookieHeaderString = resSSLLogin.Headers["Set-Cookie"];
+            var cookieCollection = ExtractCookieCollection(cookieHeaderString);
+            reqFinalLogin.CookieContainer = new CookieContainer();
+            reqFinalLogin.CookieContainer.Add(cookieCollection);
+            reqFinalLogin.AllowAutoRedirect = false;
 
             HttpWebResponse resFinalLogin = (HttpWebResponse)reqFinalLogin.GetResponse();
             var resFinalStr = HttpHelper.GetResponseContent(resFinalLogin, Encoding.UTF32);
 
-            return resFinalLogin.Cookies;
+            return ExtractCookieCollection(resFinalLogin.Headers["Set-Cookie"]);
+        }
+
+        public static string GetTencentCookieStr()
+        {
+            var cookies = GetTencentCookie();
+            string[] result = new string[cookies.Count];
+
+            for (int i = 0; i < cookies.Count; i++)
+            {
+                result[i] = cookies[i].Name + "=" + cookies[i].Value;
+            }
+
+            return string.Join(";", result);
         }
 
         private static string EncodePassword(string oriPsw, string accountCode, string verifyCode)
@@ -135,6 +150,51 @@ namespace ConGetData.ConMicroblog
             int index1 = res.IndexOf("(");
             int index2 = res.LastIndexOf(")");
             return res.Substring(index1 + 1, index2 - index1 - 1).Split(',').Select(s => s.Trim('\'', ' ')).ToArray();
+        }
+
+        private static CookieCollection ExtractCookieCollection(string cookieHeaderString)
+        {
+            var cookieCollection = new CookieCollection();
+            string[] cookieStrs = cookieHeaderString.Split(',');
+            for (int i = 0; i < cookieStrs.Length; i++)
+            {
+                var cookie = new Cookie();
+                var cookieAttrs = cookieStrs[i].Split(';');
+                foreach (var attr in cookieAttrs)
+                {
+                    var valuePair = attr.Trim().Split('=');
+                    if (valuePair.Length > 1 && (!string.IsNullOrEmpty(valuePair[1])))
+                    {
+                        if (valuePair[0].ToUpper() == "PATH")
+                        {
+                            cookie.Path = valuePair[1];
+                        }
+                        else if (valuePair[0].ToUpper() == "DOMAIN")
+                        {
+                            cookie.Domain = valuePair[1];
+                        }
+                        else if (valuePair[0].ToUpper() == "EXPIRES")
+                        {
+                            cookie.Expires = DateTime.Now.AddDays(30);
+                        }
+                        else
+                        {
+                            cookie.Name = valuePair[0];
+                            cookie.Value = valuePair[1];
+                        }
+                    }
+                }
+
+                bool cookieHasValue = !(string.IsNullOrEmpty(cookie.Name) ||
+                    string.IsNullOrEmpty(cookie.Value) ||
+                    string.IsNullOrEmpty(cookie.Domain));
+                if (cookieHasValue)
+                {
+                    cookieCollection.Add(cookie);
+                }
+            }
+
+            return cookieCollection;
         }
     }
 }

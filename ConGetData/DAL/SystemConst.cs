@@ -5,6 +5,7 @@ using System.Text;
 using System.Configuration;
 using System.IO;
 using ConGetData.BLL;
+using ConGetData.ConMicroblog;
 
 namespace ConGetData.DAL
 {
@@ -38,9 +39,10 @@ namespace ConGetData.DAL
         {
             get
             {
-                if (tencentCookieUpdateTime.AddHours(24) < DateTime.Now)
+                if (tencentCookieUpdateTime == null || tencentCookieUpdateTime.AddHours(24) < DateTime.Now)
                 {
-                    //strTencentCookie = HttpHelper.GetTencentCookie();
+                    strTencentCookie = TencentCookieHelper.GetTencentCookieStr();
+                    tencentCookieUpdateTime = DateTime.Now;
                 }
 
                 return strTencentCookie;

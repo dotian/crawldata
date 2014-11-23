@@ -15,7 +15,7 @@ namespace ConGetData.BLL
     public class MicroblogWork : ISpiderData
     {
         CommonHelper common = new CommonHelper();
-        static HttpHelper _hh = new HttpHelper();
+       
 
         private static DateTime sinaHitTime;
 
@@ -47,7 +47,17 @@ namespace ConGetData.BLL
                 target.SiteUrl = target.SiteUrl.Replace("<>", strKeyWordEncode);
             }
 
-            _hh.StrCookie = SystemConst.StrSinaCookie;
+            HttpHelper _hh = new HttpHelper();
+
+            if (target.SiteUrl.Contains("sina"))
+            {
+                _hh.StrCookie = SystemConst.StrSinaCookie;
+            }
+            else if (target.SiteUrl.Contains("qq.com"))
+            {
+                _hh.StrCookie = SystemConst.StrTencentCookie;
+            }
+
             string rawHtml = _hh.Open(target.SiteUrl, target.XmlTemplate.SiteEncoding);
             string html = common.StrDecode(rawHtml);
             Console.WriteLine(html.Length);
@@ -81,11 +91,11 @@ namespace ConGetData.BLL
             if (result > 0)
             {
                 Console.WriteLine(target.SiteId + " 抓取成功");
-                //LogBLL.Info(string.Format("微博抓取成功结束, project {0}, site {1}", target.ProjectId, target.SiteId));
+                LogBLL.Info(string.Format("微博抓取成功结束, project {0}, site {1}", target.ProjectId, target.SiteId));
             }
             else
             {
-                //LogBLL.Info(string.Format("微博抓取匹配失败, project {0}, site {1} \r\n {2}", target.ProjectId, target.SiteId, rawHtml));
+                LogBLL.Info(string.Format("微博抓取匹配失败, project {0}, site {1} \r\n {2}", target.ProjectId, target.SiteId, rawHtml));
             }
 
         }
@@ -145,20 +155,6 @@ namespace ConGetData.BLL
             }
 
             return result;
-        }
-
-        public void OpenWork()
-        {
-            for (int i = 0; i < 100; i++)
-            {
-                string url = "http://s.weibo.com/weibo/%25E8%258B%25B9%25E6%259E%259C?topnav=1&wvr=5&topsug=1";
-                _hh.StrCookie = SystemConst.StrSinaCookie;
-                string html = _hh.Open(url, "utf-8");
-                html = common.StrDecode(html);
-                Console.WriteLine(html);
-                Console.WriteLine(html.Length);
-                Thread.Sleep(20000);
-            }
         }
     }
 }

@@ -29,10 +29,6 @@ namespace ConGetData
                 {
                     new CK_SiteManager().WorkStart();
                 }
-                else if (workMethord == "MICROBLOG")
-                {
-                    new MicroblogWork().OpenWork();
-                }
             }
             catch (Exception ex)
             {

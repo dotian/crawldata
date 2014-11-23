@@ -63,7 +63,7 @@
     <Compile Include="BLL\MicroblogWork.cs" />
     <Compile Include="BLL\NewsWork.cs" />
     <Compile Include="ConMicroblog\ModelArgs.cs" />
-    <Compile Include="ConMicroblog\TecentCookieHelper.cs" />
+    <Compile Include="ConMicroblog\TencentCookieHelper.cs" />
     <Compile Include="ConMicroblog\WorkManager.cs" />
     <Compile Include="DAL\IServiceDAL.cs" />
     <Compile Include="Model\CK_SiteList.cs" />

@@ -17,14 +17,12 @@ namespace TestConsole
 
         static void Main(string[] args)
         {
-            var cookie = TencentCookieHelper.GetTencentCookie();
-
             // setup
             ServiceLocator.SetDalType<MockServiceDAL>();
 
             ConGetData.ConMicroblog.ModelArgs.InitModeArgs();
 
-          // new MicroblogGetCookie().GetCookieWork();
+            // new MicroblogGetCookie().GetCookieWork();
             LogicBLL logicAction = new LogicBLL();
             var targetList = logicAction.GetCrawtarget();
 
