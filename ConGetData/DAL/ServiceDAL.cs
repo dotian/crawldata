@@ -27,20 +27,23 @@ namespace ConGetData.DAL
                     CrawlTarget crawlTarget = new CrawlTarget();
                     crawlTarget.SiteUrl = reader["SiteUrl"].ToString();
                     crawlTarget.SiteEncoding = reader["siteEncoding"].ToString();
-                    crawlTarget.TemplateContent = reader["TemplateContent"].ToString();                    
+                    crawlTarget.TemplateContent = reader["TemplateContent"].ToString();
                     crawlTarget.RunStatus = Convert.ToInt32(reader["runstatus"]);
                     crawlTarget.ProjectId = reader["ProjectId"].ToString();
-                    crawlTarget.SiteId =reader["SiteId"].ToString();
+                    crawlTarget.SiteId = reader["SiteId"].ToString();
                     crawlTarget.ClassName = reader["ClassName"].ToString();
                     crawlTarget.KeyWords = reader["KeyWords"].ToString();
                     crawlTarget.Tid = reader["Tid"].ToString();
                     crawlTarget.PostContent = reader["PostContent"].ToString();
+                    crawlTarget.SiteUseType = reader["SiteUseType"] is DBNull ?
+                        SiteUseTypeEnum.None :
+                        ((SiteUseTypeEnum)Convert.ToInt32(reader["SiteUseType"]));
                     list.Add(crawlTarget);
                 }
             }
             catch (Exception ex)
             {
-                LogNet.LogBLL.Error("GetTargetService",ex);
+                LogNet.LogBLL.Error("GetTargetService", ex);
             }
             finally
             {
@@ -49,8 +52,8 @@ namespace ConGetData.DAL
                     reader.Close();
                 }
             }
-            return list;
 
+            return list;
         }
 
         public List<CK_SiteList> GetCK_listService()
@@ -62,7 +65,7 @@ namespace ConGetData.DAL
 
             try
             {
-               
+
                 reader = HelperSQL.ExecuteReader(sql, null, CommandType.Text);
                 while (reader.Read())
                 {
@@ -87,13 +90,13 @@ namespace ConGetData.DAL
 
         }
 
-        public int UpdateCKStatusService(int siteId,int status)
+        public int UpdateCKStatusService(int siteId, int status)
         {
             int result = 0;
             string sql = "update SiteList_ck set Status = '" + status + "' where SiteId = '" + siteId + "'";
             try
             {
-               result = HelperSQL.ExecNonQuery(sql,null, CommandType.Text);
+                result = HelperSQL.ExecNonQuery(sql, null, CommandType.Text);
             }
             catch (Exception ex)
             {

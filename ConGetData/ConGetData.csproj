@@ -67,6 +67,7 @@
     <Compile Include="ConMicroblog\WorkManager.cs" />
     <Compile Include="DAL\IServiceDAL.cs" />
     <Compile Include="Model\CK_SiteList.cs" />
+    <Compile Include="Model\SiteUseTypeEnum.cs" />
     <Compile Include="UnitTest\UnitTest.cs" />
     <Compile Include="Model\ThreadCounter.cs" />
     <Compile Include="DAL\HelperSQL.cs" />

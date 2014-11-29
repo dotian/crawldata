@@ -66,5 +66,7 @@ namespace ConGetData.Model
         public int LevelIndex { get; set; }
 
         public XmlTemplate XmlTemplate { get; set; }
+
+        public SiteUseTypeEnum SiteUseType { get; set; }
     }
 }

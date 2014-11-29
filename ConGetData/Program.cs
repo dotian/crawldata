@@ -16,11 +16,7 @@ namespace ConGetData
             try
             {
                 string workMethord = System.Configuration.ConfigurationManager.AppSettings["WorkMethod"].ToString().ToUpper();
-                if (workMethord=="TEST")
-                {
-                    mainWork.CrawlStartSinger();
-                }
-                else if (workMethord == "WORK")
+                if (workMethord == "WORK")
                 {
                     ModelArgs.InitModeArgs();
                     mainWork.TaskCrawlStart();

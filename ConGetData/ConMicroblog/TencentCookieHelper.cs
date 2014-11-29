@@ -18,7 +18,7 @@ namespace ConGetData.ConMicroblog
             string verifyCode;
             string verifySession;
             string accountCode;
-            string qqAccount = "451308127";
+            string qqAccount = "1853882890";
             string qqPassword = "zsgy8888";
             string loginSig = "YBWgVzgvSwM*353jswAlAjQG1GJcJ037Cd1JImhnAnFHwIUS93xb4Gpold0VD-J0";
 
@@ -101,7 +101,7 @@ namespace ConGetData.ConMicroblog
 
             return str3;
         }
-
+       
         private static string ParseHexToString(string hexInput)
         {
             var charArray = new char[hexInput.Length / 4];

@@ -9,21 +9,33 @@ namespace ConGetData.Model
 {
     public class ModelArgs
     {
-        private static int maxThreadNum;
+        private static int maxCommonThreadNum;
         /// <summary>
         /// 最大线程数
         /// </summary>
-        public static int MaxThreadNum
+        public static int MaxCommonThreadNum
         {
             get
             {
-                if (maxThreadNum <= 0)
+                if (maxCommonThreadNum <= 0)
                 {
-                    maxThreadNum = int.Parse(ConfigurationManager.AppSettings["MaxThreadNum"]);
+                    maxCommonThreadNum = int.Parse(ConfigurationManager.AppSettings["MaxCommonThreadNum"]);
                 }
-                return maxThreadNum;
+                return maxCommonThreadNum;
             }
+        }
 
+        private static int maxProjectRelatedThreadNum;
+        public static int MaxProjectRelatedThreadNum
+        {
+            get
+            {
+                if (maxProjectRelatedThreadNum <= 0)
+                {
+                    maxProjectRelatedThreadNum = int.Parse(ConfigurationManager.AppSettings["MaxProjectRelatedThreadNum"]);
+                }
+                return maxProjectRelatedThreadNum;
+            }
         }
 
         /// <summary>

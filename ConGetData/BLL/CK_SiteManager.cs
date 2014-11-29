@@ -26,7 +26,7 @@ namespace ConGetData.BLL
             }
             int runningMark = 0;
             char[] runMark = { '-', '/', '|', '\\' };
-            int MaxThreadNum = ModelArgs.MaxThreadNum;
+            int MaxThreadNum = ModelArgs.MaxCommonThreadNum;
 
             ModelArgs.RunStatus = true;
 
