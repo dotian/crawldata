@@ -7,6 +7,7 @@ using System.IO;
 using System.Reflection;
 using System.Threading;
 using System.IO.Compression;
+using LogNet;
 
 namespace ConGetData.BLL
 {
@@ -47,8 +48,9 @@ namespace ConGetData.BLL
 
                 revData = GetResponseContent(res, encoding);
             }
-            catch
+            catch (Exception ex)
             {
+                LogBLL.Error("Http error with url:" + url, ex);
                 revData = "";
             }
 

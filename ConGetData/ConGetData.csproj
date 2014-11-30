@@ -54,9 +54,9 @@
     <Compile Include="BLL\BlogWork.cs" />
     <Compile Include="BLL\CK_SiteManager.cs" />
     <Compile Include="BLL\CommonHelper.cs" />
+    <Compile Include="BLL\CrawlWorkBase.cs" />
     <Compile Include="BLL\ForumWork.cs" />
     <Compile Include="BLL\HttpHelper.cs" />
-    <Compile Include="BLL\ISpiderData.cs" />
     <Compile Include="BLL\LogicBLL.cs" />
     <Compile Include="BLL\MainWork.cs" />
     <Compile Include="BLL\MicroblogGetCookie.cs" />
