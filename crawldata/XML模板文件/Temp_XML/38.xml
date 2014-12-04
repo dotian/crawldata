@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;li class="list"&gt;(.+?)&lt;/span&gt;&lt;/div&gt;</Node>
+	<Title>
+		&lt;a id="bbs_title".+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;a class="black_a".+?&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发帖于：(.+?)&lt;/div&gt;
+	</ContentDate>
+	<Content>
+		&lt;div id="bbs_content.+?&gt;(.+?)&lt;/li
+	</Content>
+	<Views>&lt;div class="w3 fleft"&gt;\d+/(\d+)&lt;/div&gt;</Views>
+	<Replies>&lt;div class="w3 fleft"&gt;(\d+)/\d+&lt;/div&gt;</Replies>
+	<SrcUrl>&lt;a id="bbs_title" href="(.+?)"</SrcUrl>
+	<Url>http://www.facekoo.com/modules/bbs.php?act=branchlist&amp;bid=1</Url>
+			<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="chk"&gt;(.+?)&lt;/tr&gt;</Node>
+	<Title>
+		&lt;td class="tit"&gt;(.+?)&lt;/a&gt;&lt;span
+	</Title>
+	<Author>
+		&lt;td class="author".+?&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于 (.+?)&lt;/div&gt;
+	</ContentDate>
+	<Content>
+		class="p-content"&gt;(.+?)&lt;/div&gt;
+	</Content>
+	<Views>&lt;td class="info"&gt;(\d+)/\d+&lt;/td&gt;</Views>
+	<Replies>&lt;td class="info"&gt;\d+/(\d+)&lt;/td&gt;</Replies>
+	<SrcUrl>&lt;td class="tit"&gt;&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://club.china.alibaba.com/forum/threadList/33_.html</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

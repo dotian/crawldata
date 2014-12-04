@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;tr align=center class=t_two&gt;(.+?)&lt;/tr</Node>
+	<Title>
+		&lt;a href='read.php\?tid=\d+' id=''&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;br&gt;by: (\w+)&lt;/td&gt;
+	</Author>
+	<ContentDate>
+		alt="发贴时间"&gt;&amp;nbsp;(.+?)&amp;n
+	</ContentDate>
+	<Content>
+		&lt;span class='tpc_content' &gt;(.+?)&lt;/tr
+	</Content>
+	<Views>&lt;td class=t_one&gt;\d+&lt;/td&gt;&lt;td class=t_one&gt;(\d+)&lt;/td&gt;</Views>
+	<Replies>&lt;td class=t_one&gt;(\d+)&lt;/td&gt;</Replies>
+	<SrcUrl>href='(.+?)'</SrcUrl>
+	<Url>http://www.zigui.org/bbs/thread.php?fid=8</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

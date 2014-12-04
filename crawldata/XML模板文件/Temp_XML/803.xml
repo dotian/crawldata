@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>td width="79%"(.+?)&lt;/tr</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		
+	</ContentDate>
+	<Content>
+		&lt;td id=artibody.+?&gt;(.+?)&lt;/tr
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://travel.fznews.com.cn/more.asp?channelname=%C2%C3%D3%CE%D0%C2%CE%C5</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>news</SiteName>
+	<NextPage />
+</template>

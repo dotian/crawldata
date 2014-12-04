@@ -1,0 +1,5 @@
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\ConSiteUesFul\bin\Release\ConSiteUesFul.exe.config
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\ConSiteUesFul\bin\Release\ConSiteUesFul.exe
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\ConSiteUesFul\bin\Release\ConSiteUesFul.pdb
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\ConSiteUesFul\obj\x86\Release\ConSiteUesFul.exe
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\ConSiteUesFul\obj\x86\Release\ConSiteUesFul.pdb

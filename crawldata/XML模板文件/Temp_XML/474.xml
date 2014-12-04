@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="icon"&gt;(.+?)&lt;/tbody&gt;</Node>
+	<Title>
+		&lt;th.+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		发表于 (.+?)&lt;/em&gt;
+	</Author>
+	<ContentDate>
+		#lastpost"&gt;(.+?)&lt;/a&gt;
+	</ContentDate>
+	<Content>
+		&lt;td class="t_msgfont" id="postmessage_\d+"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>&lt;em&gt;(\d+)&lt;/em&gt;</Views>
+	<Replies>&lt;strong&gt;(\d+)&lt;/strong&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.365master.com/forumdisplay.php?fid=302&amp;filter=0&amp;orderby=dateline&amp;ascdesc=DESC</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

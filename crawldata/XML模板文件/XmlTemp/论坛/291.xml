@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;tr&gt;             &lt;td bgcolor="#f1f1f1"(.+?)#lastpost"&gt;</Node>
+	<Title>
+		&lt;a href.+? &gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;td bgcolor="#eef4f8" align="center"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		edited by Legend on (.+?) at
+	</ContentDate>
+	<Content>
+		break-word"&gt;&lt;tr&gt;&lt;td valign="top"&gt;(.+?)&lt;/table
+	</Content>
+	<Views>&lt;td bgcolor="#eef4f8" align="center"&gt;(\d+)&lt;/td&gt;</Views>
+	<Replies>&lt;td bgcolor="#f1f1f1" align="center"&gt;(\d+)&lt;/td&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.micropoint.com.cn/forumdisplay.asp?fid=8&amp;sid=sk2SN4</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

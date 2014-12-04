@@ -1,0 +1,22 @@
+﻿<template>
+	<Node>&lt;dl class="list-dl"&gt;(.+?)&lt;/dl&gt;</Node>
+	<Title>&lt;dt&gt;(.+?)&lt;/a&gt;</Title>
+	<ContentDate>&lt;span xname="date"&gt;2013-11-19 16:21:16&lt;/span&gt;</ContentDate>
+	<Content>&lt;div class="rconten"&gt;(.+?)&lt;div class="last_editer_and_date</Content>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	<Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<!--
+	<MainPage site=""></MainPage>
+	<Author>
+		class="xi2"&gt;(.+?)&lt;/a&gt; &lt;cite&gt;
+	</Author>
+	<Url>http://sou.autohome.com.cn/zonghe?q=%BA%AB%CC%A9&amp;pvareaid=100834&amp;entry=42</Url>
+	<Views></Views>
+	<Replies></Replies>
+	<NextPage />-->
+	
+	<!-- content 和 content date 不对-->
+</template>

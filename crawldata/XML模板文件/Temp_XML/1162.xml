@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>pic_top_arow.gif(.+?)&lt;/td</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		作者：\w+ (.+?)   &lt;/p&gt;
+	</ContentDate>
+	<Content>
+		&lt;span class="px13"&gt;(.+?)&lt;/TABLE&gt;
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://315.p5w.net/front/index.jsp</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>news</SiteName>
+	<NextPage />
+</template>

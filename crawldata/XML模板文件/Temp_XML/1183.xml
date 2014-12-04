@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;li&gt;(.+?)&lt;/li&gt;</Node>
+	<Title>
+		&lt;span&gt;&lt;a hre.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		&lt;h1&gt;(.+?)&lt;/h1&gt;
+	</ContentDate>
+	<Content>
+		&lt;div class="article"&gt;(.+?)&lt;div class="pages"&gt;
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://life.yesky.com/more/107176_15474_syxd_1.shtml</Url>
+    <SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>news</SiteName>
+	<NextPage />
+</template>

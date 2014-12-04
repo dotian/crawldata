@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>td class="icon(.+?)&lt;/tr</Node>
+	<Title>
+		name="readlink".+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		发表于(.+?)&lt;/em&gt;
+	</ContentDate>
+	<Content>
+		div class="f14 mb10" id="read_tpc"(.+?)&lt;/div
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>a&gt;&lt;a href="(.+?)" name="readlink"</SrcUrl>
+	<Url>http://club.alipay.com/thread-htm-fid-755.html</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>forum</SiteName>
+	<NextPage />
+</template>

@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;tr onmouseover=.+?&gt;(.+?)&lt;/tr&gt;</Node>
+	<Title>
+		&lt;td class="list2"&gt;.+?href="dispbbs.asp.+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;td class="list3"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		Post By：(.+?) \[
+	</ContentDate>
+	<Content>
+		&lt;td class="inforight".+?&gt;(.+?)&lt;/div&gt;
+	</Content>
+	<Views>&lt;span&gt;(.+?)&lt;/td&gt;</Views>
+	<Replies>&lt;span&gt;(.+?)&lt;/td&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://www.chinareform.org.cn/cirdbbs/index.asp?boardid=6</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

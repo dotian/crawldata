@@ -1,0 +1,27 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>div class="rb"&gt;(.+?)&lt;!--resulttitle</Node>
+	<Title>
+		target="_blank"&gt;&lt;b&gt;(.+?)&lt;/b
+	</Title>
+	<Author>
+		&lt;a href='/user.+?&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		&lt;cite title=.+?nbsp;(.+?)&lt;
+	</ContentDate>
+	<Content>
+		class="ft"&gt;(.+?)&lt;/div&gt;
+	</Content>
+	<SrcUrl>&lt;a class="pp" href="(.+?)"</SrcUrl>
+	<Url>http://news.sogou.com/news?query=%BA%AB%CC%A9%C2%D6%CC%A5&amp;time=0&amp;sort=1&amp;mode=1&amp;media=&amp;clusterId=&amp;page={p}&amp;p=42230305&amp;dp=1</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>1</Layer>
+	 <PageSize>20</PageSize>
+	  <PageStart>1</PageStart>
+	 <PageEnd>10</PageEnd>
+	<SiteName>news</SiteName>
+	<Remark>搜狗新闻搜索</Remark>
+	<NextPage />
+</template>

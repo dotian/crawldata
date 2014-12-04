@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>class="icon"&gt;(.+?)&lt;/tr</Node>
+	<Title>
+		&lt;span itemprop="主题标题"&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		&lt;li title="发表于(.+?)"&gt;
+	</ContentDate>
+	<Content>
+		 iv class="thread-cont"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://jinhua.19lou.com/forum-1425-1.html</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>forum</SiteName>
+	<NextPage />
+</template>

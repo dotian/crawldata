@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;li&gt;(.+?)&lt;/li&gt;</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		&lt;/h1&gt;&lt;p&gt;(.+?)&amp;nbsp;出处：&lt;b&gt;
+	</ContentDate>
+	<Content>
+		&lt;div class="ivy620"&gt;(.+?)&lt;div class="ivy620"&gt;
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a.+?href='(.+?)'</SrcUrl>
+	<Url>http://family.pconline.com.cn/index_news/</Url>
+<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>forum</SiteName>
+	<NextPage />
+</template>

@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;tbody id="normalthread_\d+"(.+?)&lt;/tbody</Node>
+	<Title>
+		class="xst"&gt;(.+?)&lt;/a
+	</Title>
+	<Author>
+		class="by1 xi2"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		nowrap class="pls"&gt;(.+?)&lt;/td&gt;
+	</ContentDate>
+	<Content>
+		id="postmessage_\d+" class="t_f"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>&lt;td class="num2 xi2"&gt;(\d+)&lt;/td&gt;</Views>
+	<Replies>&lt;td class="num1 xi2"&gt;(\d+)&lt;/td&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://forum.xitek.com/forumdisplay.php?forumid=88</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

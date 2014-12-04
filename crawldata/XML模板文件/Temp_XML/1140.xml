@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>images/mark/mark05.gif" align="absmiddle"&gt;(.+?)&lt;/td</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		able border=0 align=center&gt;&lt;tr&gt;&lt;td align=center&gt;(.+?)&amp;nbsp;&amp;nbsp;&lt;fo
+	</ContentDate>
+	<Content>
+		td id="ccaContent" class="newsContent"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://www.cca.org.cn/web/dcjd/dcjd.jsp</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>forum</SiteName>
+	<NextPage />
+</template>

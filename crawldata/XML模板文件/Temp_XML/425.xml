@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="icn"&gt;(.+?)&lt;/tbody&gt;</Node>
+	<Title>
+		class="xst" name="thread_sub"&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;cite&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于 &lt;span title="(.+?)"&gt;
+	</ContentDate>
+	<Content>
+		&lt;td class="t_f" id="postmessage_\d+"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>&lt;em&gt;.+?&gt;(\d+)&lt;/span&gt;&lt;/em&gt;</Views>
+	<Replies>&lt;td class="num"&gt;(\d+)&lt;em&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.rayli.com.cn/forum-175-1.html</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

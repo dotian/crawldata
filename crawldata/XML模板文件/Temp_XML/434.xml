@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="subject essence"&gt;(.+?)&lt;/tr&gt;</Node>
+	<Title>
+		&lt;a href.+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;a rel="nofollow".+?&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于 (.+?)&lt;/em&gt;
+	</ContentDate>
+	<Content>
+		&lt;div class="pcb"&gt;(.+?)&lt;div class="articlebt
+	</Content>
+	<Views>&lt;/td&gt;&lt;td&gt;(.+?)&lt;/td&gt;</Views>
+	<Replies>&lt;/td&gt;&lt;td&gt;(.+?)&lt;/td&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.vsharing.com/ArticleList.aspx?cid=2050</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

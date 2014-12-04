@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;tr name="showreply_\w+"&gt;(.+?)&lt;/tr&gt;</Node>
+	<Title>
+		&lt;span class="f14px"&gt;(.+?)&lt;/a&gt;&lt;/span&gt;
+	</Title>
+	<Author>
+		&lt;td class="author"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		&lt;/span&gt; 于(.+?)发布在 &lt;span
+	</ContentDate>
+	<Content>
+		&lt;div class="posts-cont"&gt;(.+?)&lt;p align="center"&gt;
+	</Content>
+	<Views>&lt;td class="statistics clearfix" &gt;(.+?)&lt;/td&gt;</Views>
+	<Replies>&lt;td class="statistics clearfix" &gt;(.+?)&lt;/td&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://club.kdnet.net/list.asp?boardid=58</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

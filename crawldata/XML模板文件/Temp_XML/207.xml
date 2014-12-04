@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;tr onmouseover(.+?)&lt;/tr&gt;</Node>
+	<Title>
+		&lt;/span&gt;&lt;a.+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		class="list3"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		&lt;td class="list5"&gt;.+?class="font10"&gt;(.+?)&lt;/a&gt;
+	</ContentDate>
+	<Content>
+	   &lt;div id="textstyle_1".+?&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>&lt;/span&gt; / (\d+)&lt;/td&gt;</Views>
+	<Replies>font10"&gt;&lt;span&gt;(\d+)&lt;/span&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://www.hc178.com.cn/index.asp?boardid=2</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

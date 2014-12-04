@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td bgcolor="#F7F7F7" align="center"(.+?)&lt;/table&gt;</Node>
+	<Title>
+		&lt;/div&gt;&lt;a href=.+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;cite&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		&lt;td valign="middle" class="smalltxt"&gt;.+?align="absmiddle"&gt;(.+?)&lt;/div&gt;
+	</ContentDate>
+	<Content>
+		&lt;div  id=post_content_\d+&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>&lt;em&gt;(\d+)&lt;/em&gt;</Views>
+	<Replies>class="xi2"&gt;(\d+)&lt;/a&gt;</Replies>
+	<SrcUrl>&lt;/div&gt;&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://motorcycle.sh.cn/forumdisplay.php?fid=16&amp;sid=tqFi4j</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;tr&gt;(.+?)&lt;/tr&gt;</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;span class="name"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于&amp;nbsp;(.+?) 星期
+	</ContentDate>
+	<Content>
+		div class="post-detail"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>&lt;td class="row1"&gt;&lt;span class="postdetails"&gt;(\d+)&lt;/span&gt;</Views>
+	<Replies>="postdetails"&gt;\d+&lt;/span&gt;.+?&lt;span class="postdetails"&gt;(\d+)&lt;/span&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://www.beitaichufang.com/bbs/viewforum.php?f=2?f=2</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

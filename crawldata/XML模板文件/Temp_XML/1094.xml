@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>li class="li_1n"&gt;.+?&lt;dt&gt;(.+?)&lt;li class="li_2"&gt;</Node>
+	<Title>
+		&lt;dt&gt;&lt;a.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		&lt;li class="c_1_r_1-1"&gt;发表于(.+?)&lt;/li&gt;
+	</ContentDate>
+	<Content>
+		&lt;div class="c_1_r_2"&gt;(.+?)&lt;div class="c_1_r_3"&gt;
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.thethirdmedia.com/group/l84p1.html</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>forum</SiteName>
+	<NextPage />
+</template>

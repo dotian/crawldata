@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;tr class="row"(.+?)&lt;/tr&gt;</Node>
+	<Title>
+		显示主题类型.+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;a href="userinfo.+?"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		最后编辑于(.+?)&lt;/span&gt;
+	</ContentDate>
+	<Content>
+		id="message\d+" class="t_msgfont"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>&lt;td width="6%" align="center"&gt;                        (\d+)&lt;/td&gt;                    &lt;td width="17%" align="center"&gt;</Views>
+	<Replies>&lt;td width="6%" align="center"&gt;                        (\d+)&lt;/td&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.wushuangol.com/showforum-17.shtml</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

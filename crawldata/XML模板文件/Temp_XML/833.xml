@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;li&gt;&lt;span(.+?)&lt;/li</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		发表于(.+?)&lt;/em&gt;
+	</ContentDate>
+	<Content>
+		class="t_f" id="postmessage_\d+"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a href=(.+?)&gt;</SrcUrl>
+	<Url>http://house.kunming.cn/index/node_28041.htm</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>forum</SiteName>
+	<NextPage />
+</template>

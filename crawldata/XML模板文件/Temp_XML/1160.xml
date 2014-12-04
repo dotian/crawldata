@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;li&gt;(.+?)pan&gt;&lt;/li</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		&lt;span id="pubTime"&gt;(.+?)&lt;/span	
+	</ContentDate>
+	<Content>
+		&lt;div id="contentMain"&gt;(.+?)&lt;div id="contentLiability"&gt;
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a href=(.+?) target</SrcUrl>
+	<Url>http://house.gmw.cn/node_9302.htm</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>news</SiteName>
+	<NextPage />
+</template>

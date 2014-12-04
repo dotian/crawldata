@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;li&gt;&lt;spa(.+?)&lt;/li</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		&lt;li id="newscont02"&gt;时间：(.+?) 来源：&lt;/li&gt;	
+	</ContentDate>
+	<Content>
+		&lt;div class="mobcont"&gt;(.+?)&lt;/div
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a target="_blank" href='(.+?)'</SrcUrl>
+	<Url>http://www.aosmith.com.cn/news/NewsList.aspx?id=4</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>forum</SiteName>
+	<NextPage />
+</template>

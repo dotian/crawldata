@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td&gt;·(.+?)&lt;/td</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		&lt;span id="endData"&gt;(.+?)&lt;/span&gt;
+	</ContentDate>
+	<Content>
+		&lt;div id="artical"&gt;(.+?)&lt;p class="editorN"&gt;
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a  href="(.+?)"</SrcUrl>
+	<Url>http://info.xjd.hc360.com/list/list_zlbgt.shtml</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>news</SiteName>
+	<NextPage />
+</template>

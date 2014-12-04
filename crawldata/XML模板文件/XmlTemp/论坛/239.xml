@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="(.+?)&lt;/tr&gt;</Node>
+	<Title>
+		&lt;a href.+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		class="author"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		&lt;span&gt;时间：(.+?)&lt;/span&gt;
+	</ContentDate>
+	<Content>
+		&lt;div class="bbs-content clearfix"&gt;(.+?)&lt;/div&gt;
+	</Content>
+	<Views>&lt;td&gt;(\d+)&lt;/td&gt;</Views>
+	<Replies>&lt;td&gt;(\d+)&lt;/td&gt;&lt;td title</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.tianya.cn/list-consumer-1.shtml</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>·(.+?)&lt;br /&gt;</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		span class="STYLE26"&gt;&amp;nbsp; (.+?)&lt;/span	
+	</ContentDate>
+	<Content>
+		td align="left"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://xianqu.lyd.com.cn/list.asp?xianqu=%D2%C1%B4%A8</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>news</SiteName>
+	<NextPage />
+</template>

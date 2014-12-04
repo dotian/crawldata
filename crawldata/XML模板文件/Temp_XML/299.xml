@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;div class="list_s"&gt;(.+?)&lt;font color="#FF0000"&gt;\|&lt;/font&gt;</Node>
+	<Title>
+		&lt;div class="listtitle"&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		作者：(\w+)
+	</Author>
+	<ContentDate>
+		ip地址已设置保密" /&gt;&lt;/div&gt;(.+?)&lt;/div&gt;
+	</ContentDate>
+	<Content>
+		onload="this.style.overflowX='auto';"&gt;(.+?)&lt;/div
+	</Content>
+	<Views>&lt;div class="list_c"&gt;(\d+)&lt;/div&gt;&lt;div class="list_t"&gt;</Views>
+	<Replies>&lt;div class="list_c"&gt;(\d+)&lt;/div&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://www.e-works.net.cn/ewkbbs/index.asp?boardid=200</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

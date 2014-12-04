@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;span class="wz_bglist"&gt;(.+?)&lt;/div</Node>
+	<Title>
+		style="font-size:14px;"&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		发布日期.+?&gt;(.+?)&lt;/span&gt;
+	</ContentDate>
+	<Content>
+		&lt;div id="content".+?&gt;(.+?)&lt;!--end content--&gt;
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a target="_blank" href="(.+?)"</SrcUrl>
+	<Url>http://www.sootoo.com/tag/10/</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>news</SiteName>
+	<NextPage />
+</template>

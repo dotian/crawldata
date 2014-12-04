@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="icn"&gt;(.+?)&lt;/tbody&gt;</Node>
+	<Title>
+		class="xst" &gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;cite&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于 (.+?)&lt;/em&gt;
+	</ContentDate>
+	<Content>
+		&lt;td class="t_\w+" id="postmessage_\d+"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>&lt;em&gt;(\d+)&lt;/em&gt;</Views>
+	<Replies>class="xi2"&gt;(\d+)&lt;/a&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.gter.net/bbs/forum-547-1.html</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

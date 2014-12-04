@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="folder"&gt;(.+?)&lt;/tr</Node>
+	<Title>
+		target="_blank"&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		class="f_author"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于(.+?)&lt;
+	</ContentDate>
+	<Content>
+		&lt;div class="replyBody"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>&lt;/i&gt;&lt;span&gt;(\d+)&lt;/span&gt;</Views>
+	<Replies>&lt;td class="reply"&gt;&lt;i class="hot"&gt;(\d+)&lt;/i&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.pcbaby.com.cn/forum-1988.html</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

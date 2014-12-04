@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;tr height=25.+?&gt;(.+?)&lt;tr height=25</Node>
+	<Title>
+		&lt;a href=ShowPost.asp.+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;td align=center&gt;&lt;a href=Profile.asp\?UserName=(.+?)&gt;
+	</Author>
+	<ContentDate>
+		此帖子已被.+?在(.+?)编辑过
+	</ContentDate>
+	<Content>
+		style=word-break:break-all&gt;&lt;div.+?&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>&lt;td align=center&gt;\d+&lt;/td&gt;&lt;td align=center&gt;(\d+)&lt;/td&gt;</Views>
+	<Replies>&lt;td align=center&gt;(\d+)&lt;/td&gt;</Replies>
+	<SrcUrl>&lt;a href=(.+?)&gt;</SrcUrl>
+	<Url>http://bbs.storychina.cn/ShowForum.asp?ForumID=4</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

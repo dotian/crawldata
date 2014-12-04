@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>class="treeReplyItem"&gt;(.+?)&lt;/li</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a
+	</Title>
+	<Author>
+		&lt;td width="136"&gt;(.+?)&lt;/a&gt;&lt;/span&gt;
+	</Author>
+	<ContentDate>
+		class="replayNum.+?&amp;nbsp;&amp;nbsp;(.+?)&lt;/span&gt;
+	</ContentDate>
+	<Content>
+		content_id="\d+" content_path="(.+?)"
+	</Content>
+	<Views>&lt;td width="116"&gt;(.+?)&lt;/strong&gt;</Views>
+	<Replies>&lt;td width="116"&gt;(.+?)&lt;/strong&gt;</Replies>
+	<SrcUrl>href="(.+?)"</SrcUrl>
+	<Url>http://bbs1.people.com.cn/boardList.do?action=postList&amp;boardId=33</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

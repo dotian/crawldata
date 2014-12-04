@@ -1,0 +1,27 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;li class="result" id="\d+"&gt;(.+?)&lt;/li</Node>
+	<Title>
+		&lt;h3 class="c-title"&gt;(.+?)&lt;/h3
+	</Title>
+	<Author>
+		&lt;a href='/user.+?&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		&lt;span class="c-author"&gt;&amp;nbsp;\w+&amp;nbsp;(.+?)&lt;/span&gt;
+	</ContentDate>
+	<Content>
+		target="_blank" &gt;.+?&lt;/a&gt;(.+?)&amp;nbsp;&lt;a
+	</Content>
+	<SrcUrl>&lt;h3 class="c-title"&gt;&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://news.baidu.com/ns?word=%E9%9F%A9%E6%B3%B0%E8%BD%AE%E8%83%8E&amp;pn={p}0&amp;cl=2&amp;ct=0&amp;tn=news&amp;ie=utf-8&amp;bt=0&amp;et=0</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	 <Layer>1</Layer>
+	 <PageSize>20</PageSize>
+	  <PageStart>1</PageStart>
+	 <PageEnd>10</PageEnd>
+	<SiteName>news</SiteName>
+	<Remark>百度新闻搜索</Remark>
+	<NextPage />
+</template>

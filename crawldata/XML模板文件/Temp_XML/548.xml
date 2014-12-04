@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;tbody&gt;(.+?)&lt;/tbody&gt;</Node>
+	<Title>
+		class="xst" &gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;cite&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于 &lt;span title="(.+?)"&gt;
+	</ContentDate>
+	<Content>
+		&lt;div class="t_fsz"&gt;(.+?)&lt;/div
+	</Content>
+	<Views>&lt;em&gt;(\d+)&lt;/em&gt;</Views>
+	<Replies>class="xi2".+?&gt;(\d+)&lt;/a&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://www.steelhome.cn/luntan/forumdisplay.php?s=962343c9fd753b71fe50ffc432f9c5b0&amp;f=4</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

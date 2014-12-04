@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>class="icon"&gt;(.+?)&lt;/tr</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		发表于 &lt;span title="(.+?)"&gt;
+	</ContentDate>
+	<Content>
+		id="message\d+" class="t_msgfont"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a onclick="atarget\(this\)" href="(.+?)"&gt;</SrcUrl>
+	<Url>http://www.17se.com/showforum-100.aspx</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>forum</SiteName>
+	<NextPage />
+</template>

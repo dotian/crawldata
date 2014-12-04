@@ -1,0 +1,26 @@
+﻿<template>
+ <MainPage site=""> </MainPage>
+	 <Node>&lt;div class="t_con clearfix"&gt;(.+?)&lt;/li</Node>
+	 <Title>&lt;a href=.+?&gt;(.+?)&lt;/a&gt;</Title>
+	 <Author>class="tb_icon_author.+?&lt;a.+?&gt;(.+?)&lt;/</Author>
+	<Author>
+		&lt;a href='/user.+?&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		&lt;span class="lzl_time"&gt;(.+?)&lt;/span
+	</ContentDate>
+	<Content>
+		&lt;div class="p_content"&gt;(.+?)&lt;/cc
+	</Content>
+	 <SrcUrl>&lt;a href="(.+?)" title="</SrcUrl>
+	 <Url>http://tieba.baidu.com/f?kw=%BA%EA%B3%9E</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	 <PageSize>20</PageSize>
+	 <PageStart>1</PageStart>
+	 <PageEnd>5</PageEnd>
+	<SiteName>tieba</SiteName>
+	<Remark>百度贴吧</Remark>
+	<NextPage />
+ </template>

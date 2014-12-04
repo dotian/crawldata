@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;br&gt;(.+?)&lt;span class="f12 black"&gt;</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&amp;nbsp;&amp;nbsp;
+	</Title>
+	<ContentDate>
+		发布时间：(.+?)&lt;/td	
+	</ContentDate>
+	<Content>
+		&lt;div id=ozoom.+?&gt;(.+?)&lt;!--/enpcontent--&gt;
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a href=(.+?) class="f14</SrcUrl>
+	<Url>http://www.chinalegalaid.gov.cn/China_legalaid/node_24963.htm</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>forum</SiteName>
+	<NextPage />
+</template>

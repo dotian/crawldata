@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;li class="dot"&gt;(.+?)&lt;/li</Node>
+	<Title>
+		&lt;a target="_blank" titl.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		&lt;span id="pub_date"&gt;(.+?)&amp;nb	
+	</ContentDate>
+	<Content>
+		&lt;div id="articleText"&gt;(.+?)&lt;div class="blkComment
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl> &lt;a target="_blank" titl.+?href="(.+?)"</SrcUrl>
+	<Url>http://news.jiaju.sina.com.cn/list-jiaju-a12</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>forum</SiteName>
+	<NextPage />
+</template>

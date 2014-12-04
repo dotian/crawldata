@@ -1,0 +1,13 @@
+<template>
+<Node>&lt;li class=&quot;pbw&quot;[^&gt;]*&gt;(.+?)&lt;/li&gt;</Node>
+<Title>&lt;a [^&gt;]*&gt;(.+?)&lt;/a&gt;</Title>
+<SrcUrl>&lt;a href=&quot;(.+?)&quot;</SrcUrl>
+<Content>&lt;td class=&quot;t_f[^&gt;]*&gt;(.+?)&lt;td class=&quot;plc</Content>
+<ContentDate>发表于[&lt;span\stitle=&quot;]*(.+?)[&quot;&lt;][/em&gt;]*</ContentDate>
+	<SiteEncoding>gbk</SiteEncoding>
+	<InnerEncoding>gbk</InnerEncoding>
+	<Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<PageStart>1</PageStart>
+	<PageEnd>10</PageEnd>
+</template>

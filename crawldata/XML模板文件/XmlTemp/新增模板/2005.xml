@@ -1,0 +1,27 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;dt class="title" id="title_\d+"&gt;(.+?)&lt;/dl</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a
+	</Title>
+	<Author>
+		&lt;a href='/user.+?&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		&lt;/a&gt;&lt;span&gt;(.+?)&lt;/span&gt;
+	</ContentDate>
+	<Content>
+		&lt;dd class="content"&gt;(.+?)&lt;/dd&gt;
+	</Content>
+	<SrcUrl>href="(.+?)"</SrcUrl>
+	<Url>http://www.qihoo.com/wenda.php?r=search/index&amp;kw=%BA%AB%CC%A9%C2%D6%CC%A5&amp;do=search&amp;area=2&amp;src=wenda_tab&amp;sort=pdate&amp;page={p}&amp;time=month&amp;type=bbs</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>1</Layer>
+	 <PageSize>20</PageSize>
+	  <PageStart>1</PageStart>
+	 <PageEnd>10</PageEnd>
+	<SiteName>forum</SiteName>
+	<Remark>奇虎论坛搜索</Remark>
+	<NextPage />
+</template>

@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="icn"&gt;(.+?)&lt;/tr</Node>
+	<Title>
+		class="xst" &gt;(.+?)&lt;/a
+	</Title>
+	<Author>
+		&lt;cite&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于 (.+?)&lt;/em&gt;
+	</ContentDate>
+	<Content>
+		&lt;td class="t_f" id="postmessage_\d+"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>&lt;span class="xg1"&gt; / &lt;span title="(\d+)"&gt;</Views>
+	<Replies>&lt;span class="xi2"&gt;&lt;span title="(\d+)"&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.mydrivers.com/forum.php</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

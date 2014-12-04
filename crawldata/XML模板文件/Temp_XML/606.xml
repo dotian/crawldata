@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;div class="listcontent"&gt;(.+?)&lt;/ul&gt;</Node>
+	<Title>
+		class="topics"&gt;(.+?)&lt;/a
+	</Title>
+	<Author>
+		&lt;li class="post"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于：(.+?)&lt;/div&gt;
+	</ContentDate>
+	<Content>
+		needLogin'&gt;(.+?)&lt;/div
+	</Content>
+	<Views>&lt;/span&gt;/(\d+)&lt;/li&gt;</Views>
+	<Replies>&lt;li class="reply"&gt;&lt;span&gt;(.+?)&lt;/span&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.instrument.com.cn/forum_640.htm</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

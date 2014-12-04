@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;ul class="list_item"&gt;(.+?)&lt;/ul&gt;</Node>
+	<Title>
+		&lt;li class="i3"&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;li class="i5"&gt;(.+?)&lt;/a&gt;&lt;/li&gt;
+	</Author>
+	<ContentDate>
+		发表于:(.+?) &lt;/div&gt;
+	</ContentDate>
+	<Content>
+		&lt;div id="__Message_\d+"&gt;(.+?)&lt;/div&gt;
+	</Content>
+	<Views>&lt;li class="i2"&gt;(\d+)&lt;/li&gt;</Views>
+	<Replies>class="i4"&gt;(\d+)&lt;/li&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://club.pchome.net/forum_2_11____.html</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

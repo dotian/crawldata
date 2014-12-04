@@ -1,0 +1,433 @@
+﻿
+select * from dbo.SiteList where siteid  in (99431,99432,99433,99434,99435,99436)
+
+select * from projectdetail where siteid in (99431,99432,99433,99434,99435,99436)
+
+家电行业发展谈	家电导购论坛
+  public static CrawlTarget crawlTarget_1091 = new CrawlTarget()
+        {
+            ClassName = "forum",
+            TemplateContent = File.ReadAllText("../../TsetFile/forum_1091.xml"),
+            SiteEncoding = "GB2312",
+            KeyWords = "韩泰",
+            NextPageCount = 1,
+            ProjectId = "180",
+            SiteId = "99431",
+            SiteUrl = "http://www.51mjd.com/bbs/index.asp?id=77&s=default",
+            RunStatus = 0
+        };
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+class:论坛
+ProjectType 0
+tid = 1091
+classId = 1
+
+select * from dbo.SiteList where siteid  in (99431,99432,99433,99434,99435,99436)
+
+select * from projectdetail where siteid in (99431,99432,99433,99434,99435,99436)
+
+家电行业发展谈	家电导购论坛
+  public static CrawlTarget crawlTarget_1091 = new CrawlTarget()
+        {
+            ClassName = "forum",
+            TemplateContent = File.ReadAllText("../../TsetFile/forum_1091.xml"),
+            SiteEncoding = "GB2312",
+            KeyWords = "韩泰",
+            NextPageCount = 1,
+            ProjectId = "180",
+            SiteId = "99431",
+            SiteUrl = "http://www.51mjd.com/bbs/index.asp?id=77&s=default",
+            RunStatus = 0
+        };
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+class:论坛
+ProjectType 0
+tid = 1090
+classId = 1
+
+select * from dbo.SiteList where siteid  in (99415)
+
+select * from projectdetail where siteid in (99415)
+
+小家电	太平洋电脑网家电论坛
+   public static CrawlTarget crawlTarget_1090 = new CrawlTarget()
+        {
+            ClassName = "forum",
+            TemplateContent = File.ReadAllText("../../TsetFile/forum_1090.xml"),
+
+            SiteEncoding = "GB2312",
+            KeyWords = "韩泰",
+            NextPageCount = 1,
+            ProjectId = "180",
+            SiteId = "99415",
+            SiteUrl = "http://itbbs.pconline.com.cn/tv/f767804.html",
+            RunStatus = 0
+        };
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+class:论坛
+ProjectType 0
+tid = 1089
+classId = 1
+
+select * from dbo.SiteList where siteid  in (99462)
+
+select * from projectdetail where siteid in (99462)
+
+消费曝光台	中国网和平论坛
+     public static CrawlTarget crawlTarget_1089 = new CrawlTarget()
+        {
+            ClassName = "forum",
+            TemplateContent = File.ReadAllText("../../TsetFile/forum_1089.xml"),
+
+            SiteEncoding = "UTF-8",
+            KeyWords = "韩泰",
+            NextPageCount = 1,
+            ProjectId = "180",
+            SiteId = "99462",
+            SiteUrl = "http://forum.china.com.cn/forum-174-1.html",
+            RunStatus = 0
+        };
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+class:论坛
+ProjectType 0
+tid = 1087
+classId = 1
+
+select * from dbo.SiteList where siteid  in (99405,99406,99407,99408,99409,99410,99411,99412,99413,99414)
+
+select * from projectdetail where siteid in (99405,99406,99407,99408,99409,99410,99411,99412,99413,99414)
+
+家电综合讨论区	中关村在线家电论坛
+      public static CrawlTarget crawlTarget_1087 = new CrawlTarget()
+        {
+            ClassName = "forum",
+            TemplateContent = File.ReadAllText("../../TsetFile/forum_1087.xml"),
+
+            SiteEncoding = "GB2312",
+            KeyWords = "韩泰",
+            NextPageCount = 1,
+            ProjectId = "180",
+            SiteId = "99405",
+            SiteUrl = "http://jdbbs.zol.com.cn/subcate_list_74.html",
+            RunStatus = 0
+        };
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+class:论坛
+ProjectType 0
+tid = 1086
+classId = 1
+
+select * from dbo.SiteList where siteid  in (99401,99402,99403,99404)
+
+select * from projectdetail where siteid in (99401,99402,99403,99404)
+厨卫小家电	万维家电论坛
+      public static CrawlTarget crawlTarget_1086 = new CrawlTarget()
+        {
+            ClassName = "forum",
+            TemplateContent = File.ReadAllText("../../TsetFile/forum_1086.xml"),
+
+            SiteEncoding = "GBK",
+            KeyWords = "韩泰",
+            NextPageCount = 1,
+            ProjectId = "180",
+            SiteId = "99401",
+            SiteUrl = "http://forum.ea3w.com/forum-2-1.html",
+            RunStatus = 0
+        };
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+class:论坛
+ProjectType 0
+tid = 968
+classId = 1
+
+select * from dbo.SiteList where siteid  in (99450)
+
+select * from projectdetail where siteid in (99451)
+
+美食厨房	搜狐论坛
+       public static CrawlTarget crawlTarget_968 = new CrawlTarget()
+        {
+            ClassName = "forum",
+            TemplateContent = File.ReadAllText("../../TsetFile/forum_968.xml"),
+
+            SiteEncoding = "GBK",
+            KeyWords = "韩泰",
+            NextPageCount = 1,
+            ProjectId = "180",
+            SiteId = "99450",
+            SiteUrl = "http://beta.club.sohu.com/food/threads#p1",
+            RunStatus = 0
+        };
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+class:论坛
+ProjectType 0
+tid = 286
+classId = 1
+
+select * from dbo.SiteList where siteid  in (99390)
+
+select * from projectdetail where siteid in (99390)
+
+行游天下	张家界公众论坛
+       public static CrawlTarget crawlTarget_286 = new CrawlTarget()
+        {
+            ClassName = "forum",
+            TemplateContent = File.ReadAllText("../../TsetFile/forum_286.xml"),
+
+            SiteEncoding = "GBK",
+            KeyWords = "韩泰",
+            NextPageCount = 1,
+            ProjectId = "180",
+            SiteId = "99390",
+            SiteUrl = "http://www.bbszjj.com/thread.php?fid=22",
+            RunStatus = 0
+        };
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+class:论坛
+ProjectType 0
+tid = 361
+classId = 1
+
+select * from dbo.SiteList where siteid  in (99384)
+
+select * from projectdetail where siteid in (99384)
+
+漫谈枪手	枪手论坛
+        public static CrawlTarget crawlTarget_361 = new CrawlTarget()
+        {
+            ClassName = "forum",
+            TemplateContent = File.ReadAllText("../../TsetFile/forum_361.xml"),
+
+            SiteEncoding = "GBK",
+            KeyWords = "韩泰",
+            NextPageCount = 1,
+            ProjectId = "180",
+            SiteId = "99384",
+            SiteUrl = "http://bbs.arsenal.com.cn/forum-2-1.html",
+            RunStatus = 0
+        };
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+class:论坛
+ProjectType 0
+tid = 281
+classId = 1
+
+select * from dbo.SiteList where siteid  in (99385,99386,99387,99388)
+
+select * from projectdetail where siteid in (99385,99386,99387,99388)
+
+IT数码	常德论坛
+        public static CrawlTarget crawlTarget = new CrawlTarget()
+        {
+            ClassName = "forum",
+            TemplateContent = File.ReadAllText("../../TsetFile/forum_281.xml"),
+
+            SiteEncoding = "GBK",
+            KeyWords = "韩泰",
+            NextPageCount = 1,
+            ProjectId = "180",
+            SiteId = "99385",
+            SiteUrl = "http://bbs.changde.gov.cn/thread.php?fid-6.html",
+            RunStatus = 0
+        };
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+class:论坛
+ProjectType 0
+tid = 254
+classId = 1
+
+select * from dbo.SiteList where siteid  in (99394,99395,99396)
+
+select * from projectdetail where siteid in (99394,99395,99396)
+
+食客先锋	姑苏美食论坛
+        public static CrawlTarget crawlTarget = new CrawlTarget()
+        {
+            ClassName = "forum",
+            TemplateContent = File.ReadAllText("../../TsetFile/forum_179.xml"),
+
+            SiteEncoding = "gb2312",
+            KeyWords = "韩泰",
+            NextPageCount = 1,
+            ProjectId = "180",
+            SiteId = "99394",
+            SiteUrl = "http://bbs.512ms.com/forum-6-1.html",
+            RunStatus = 0
+        };
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+class:论坛
+ProjectType 1
+tid = 179
+classId = 1
+
+select * from dbo.SiteList where siteid  in (99438,99439,99440,99441)
+
+select * from projectdetail where siteid in (99438,99439,99440,99441)
+
+装修论坛	凤凰论坛
+        public static CrawlTarget crawlTarget = new CrawlTarget()
+        {
+            ClassName = "forum",
+            TemplateContent = File.ReadAllText("../../TsetFile/forum_179.xml"),
+
+            SiteEncoding = "UTF-8",
+            KeyWords = "韩泰",
+            NextPageCount = 1,
+            ProjectId = "180",
+            SiteId = "99438",
+            SiteUrl = "http://bbs.ifeng.com/forumdisplay.php?fid=460",
+            RunStatus = 0
+        };
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+class:论坛
+ProjectType 0
+tid = 471
+classId = 1
+
+select * from dbo.SiteList where siteid  in (99400)
+
+select * from projectdetail where siteid in (99400)
+家用电器
+家用电器	网易论坛
+
+        public static CrawlTarget crawlTarget = new CrawlTarget()
+        {
+            ClassName = "forum",
+            TemplateContent = File.ReadAllText("../../TsetFile/forum_471.xml"),
+
+            SiteEncoding = "gb2312",
+            KeyWords = "韩泰",
+            NextPageCount = 1,
+            ProjectId = "180",
+            SiteId = "99400",
+            SiteUrl = "http://digibbs.tech.163.com/list/jiadian.html",
+            RunStatus = 0
+        };
+
+
+------------------------------------------------------------------------------
+
+
+
+class:论坛
+ProjectType 0
+tid = 334
+classId = 1
+
+select * from dbo.SiteList where siteid  in (99453)
+
+select * from projectdetail where siteid in (99452)
+家电综合讨论区	新浪论坛
+
+   public static CrawlTarget crawlTarget_334 = new CrawlTarget()
+        {
+            ClassName = "forum",
+            TemplateContent = File.ReadAllText("../../TsetFile/forum_334.xml"),
+
+            SiteEncoding = "GB2312",
+            KeyWords = "韩泰",
+            NextPageCount = 1,
+            ProjectId = "180",
+            SiteId = "99452",
+            SiteUrl = "http://club.tech.sina.com.cn/forum-335-1.html?t=1",
+            RunStatus = 0
+        };
+
+------------------------------------------------------------------------------
+
+class:论坛
+ProjectType 0
+tid = 41
+classId = 1
+
+select * from dbo.SiteList where siteid  in (99366)
+
+select * from projectdetail where siteid in (99366)
+HTPC硬件交流	HTPC原动力论坛
+
+   public static CrawlTarget crawlTarget_334 = new CrawlTarget()
+        {
+            ClassName = "forum",
+            TemplateContent = File.ReadAllText("../../TsetFile/forum_334.xml"),
+
+            SiteEncoding = "GB2312",
+            KeyWords = "韩泰",
+            NextPageCount = 1,
+            ProjectId = "180",
+            SiteId = "99366",
+            SiteUrl = "http://bbs.htpc1.com/forum-104-1.html",
+            RunStatus = 0
+        };
+
+------------------------------------------------------------------------------
+
+
+class:论坛
+ProjectType 0
+tid = 208
+classId = 1
+
+select * from dbo.SiteList where siteid  in (99377)
+
+select * from projectdetail where siteid in (99377)
+HTPC硬件交流	HTPC原动力论坛
+
+  public static CrawlTarget crawlTarget_41 = new CrawlTarget()
+        {
+            /* 7 - 16 测试通过 */
+            ClassName = "forum",
+            TemplateContent = File.ReadAllText("../../TsetFile/forum_208.xml"),
+
+            SiteEncoding = "GB2312",
+            KeyWords = "韩泰",
+            NextPageCount = 1,
+            ProjectId = "180",
+            SiteId = "99377",
+            SiteUrl = "http://www.watchstore.com.cn/index.asp?boardid=1",
+            RunStatus = 0
+        };
+
+
+
+------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

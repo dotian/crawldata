@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>td class="icon(.+?)&lt;/tr</Node>
+	<Title>
+		name="readlink" id="a_ajax_\d+".+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		sp;&amp;nbsp;&lt;/span&gt;&lt;span title="(.+?)"&gt;发表于
+	</ContentDate>
+	<Content>
+		div class="f14 mb10" id="read_tpc"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;/a&gt;&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://www.chinayk.com/thread.php?fid=230</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>forum</SiteName>
+	<NextPage />
+</template>

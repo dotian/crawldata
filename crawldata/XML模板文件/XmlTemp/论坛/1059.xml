@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="post_status"&gt;(.+?)&lt;/tr&gt;</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		class="post_author"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于(.+?)&lt;a
+	</ContentDate>
+	<Content>
+		class="post_content"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>&lt;td class="post_visits"&gt;(\d+)&lt;/td&gt;</Views>
+	<Replies>class="post_reply"&gt;(\d+)&lt;/td&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.ci123.com/postList/4.html</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

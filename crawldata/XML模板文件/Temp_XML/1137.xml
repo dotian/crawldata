@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;li&gt;(.+?)&lt;/p&gt;  &lt;/li</Node>
+	<Title>
+		class="title"&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		&lt;small&gt;时间:&lt;/small&gt;(.+?)&lt;small&gt;来源
+	</ContentDate>
+	<Content>
+		div class="intro"&gt;(.+?)责任编辑
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://zg12365.com/a/minsheng/</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>forum</SiteName>
+	<NextPage />
+</template>

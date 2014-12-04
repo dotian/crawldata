@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;tr class="tr3"&gt;(.+?)&lt;/tr&gt;</Node>
+	<Title>
+		name="readlink".+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		class="author"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		&lt;span title="(.+?)"&gt;
+	</ContentDate>
+	<Content>
+		&lt;div class="f14 mb10" id="read_tpc"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>&lt;em&gt;(.+?)&lt;/td&gt;</Views>
+	<Replies>&lt;em&gt;(.+?)&lt;/td&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.popgo.org/bbs/thread.php?fid=11</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;tr&gt;&lt;td width=85%&gt;(.+?)&lt;/tr</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		&gt;时间：(.+?)&amp;nbsp
+	</ContentDate>
+	<Content>
+		div id="tdcontent"(.+?)&lt;!--/newstext--&gt;
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a href='(.+?)'</SrcUrl>
+	<Url>http://stock.cfi.cn/BCA0A1A8A1172.html</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>news</SiteName>
+	<NextPage />
+</template>

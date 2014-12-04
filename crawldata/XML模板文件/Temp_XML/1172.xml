@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;h2&gt;(.+?)&lt;/h2&gt;</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		来源：&lt;span id="sourcename"&gt;\w+&lt;/span&gt;　(.+?)&lt;/div
+	</ContentDate>
+	<Content>
+		&lt;div class="art_main"&gt;(.+?)&lt;div class="sidebar"&gt;
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a.+?href="(.+?)"</SrcUrl>
+	<Url>http://index.10jqka.com.cn/list/field/084017/</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>news</SiteName>
+	<NextPage />
+</template>

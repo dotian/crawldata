@@ -1,0 +1,10 @@
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\WriteSpiderAgain\bin\Debug\WriteSpiderAgain.exe.config
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\WriteSpiderAgain\bin\Debug\WriteSpiderAgain.exe
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\WriteSpiderAgain\bin\Debug\WriteSpiderAgain.pdb
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\WriteSpiderAgain\obj\x86\Debug\WriteSpiderAgain.exe
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\WriteSpiderAgain\obj\x86\Debug\WriteSpiderAgain.pdb
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\WriteSpiderAgain\obj\x86\Debug\WriteSpiderAgain.csprojResolveAssemblyReference.cache
+M:\杨博\2015年Join\ActionLM2014\数据挖掘系统\WriteSpiderAgain\WriteSpiderAgain\bin\Debug\WriteSpiderAgain.exe.config
+M:\杨博\2015年Join\ActionLM2014\数据挖掘系统\WriteSpiderAgain\WriteSpiderAgain\obj\x86\Debug\WriteSpiderAgain.exe
+M:\杨博\2015年Join\ActionLM2014\数据挖掘系统\WriteSpiderAgain\WriteSpiderAgain\obj\x86\Debug\WriteSpiderAgain.pdb
+M:\杨博\2015年Join\ActionLM2014\数据挖掘系统\WriteSpiderAgain\WriteSpiderAgain\obj\x86\Debug\ResolveAssemblyReference.cache

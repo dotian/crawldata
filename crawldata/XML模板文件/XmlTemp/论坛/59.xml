@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;tbody id="normalthread_\d+"&gt;(.+?)&lt;/tbody&gt;</Node>
+	<Title>
+		&lt;span.+?&gt;(.+?)&lt;/a&gt;&lt;/span&gt;
+	</Title>
+	<Author>
+		&lt;td class="author"&gt;(.+?)&lt;/a&gt;&lt;/cite&gt;
+	</Author>
+	<ContentDate>
+		发表于 (.+?)&lt;/em&gt;
+	</ContentDate>
+	<Content>
+		&lt;td class="t_\w+" id="postmessage_\d+"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>&lt;em&gt;(\d+)&lt;/em&gt;</Views>
+	<Replies>&lt;strong&gt;(\d+)&lt;/strong&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://www.mobiledigit.net/bbs/forumdisplay.php?fid=67</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

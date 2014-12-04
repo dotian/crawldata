@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;th class="subject common"&gt;(.+?)&lt;/tr</Node>
+	<Title>
+		class="thread_123"&gt;(.+?)&lt;/a&gt;&lt;/span&gt;
+	</Title>
+	<Author>
+		&lt;cite&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		本帖最后由 \w+ 于(.+?)编辑
+	</ContentDate>
+	<Content>
+		&lt;td class="t_msgfont" id="postmessage_\d+"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>align="right"&gt;(\d+)&lt;/p&gt;</Views>
+	<Replies>&lt;td class="nums"&gt;(.+?)&lt;/span&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://www.a9188.com/bbs/forumdisplay.php?fid=16</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

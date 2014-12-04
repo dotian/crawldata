@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>td class="list2"&gt;(.+?)&lt;/tr</Node>
+	<Title>
+		pan&gt;&lt;a.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		Post By：(.+?)\[
+	</ContentDate>
+	<Content>
+		&lt;div id="textstyle_1".+?&gt;(.+?)&lt;/tr
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>span&gt;&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://www.watchstore.com.cn/index.asp?boardid=1</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>forum</SiteName>
+	<NextPage />
+</template>

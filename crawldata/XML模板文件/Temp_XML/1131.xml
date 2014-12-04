@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;li&gt;&lt;a style="color:#408(.+?)&lt;/li</Node>
+	<Title>
+		&lt;a style="color:#000;".+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		来源.+?编辑:&amp;nbsp;\w+&amp;nbsp;(.+?)&amp;nbsp;
+	</ContentDate>
+	<Content>
+		div id="tagsBox"&gt;(.+?)&lt;!-- 百度分享 --&gt;
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a style="color:#000;" href="(.+?)"</SrcUrl>
+	<Url>http://gas.cheaa.com/hangye.shtml</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>news</SiteName>
+	<NextPage />
+</template>

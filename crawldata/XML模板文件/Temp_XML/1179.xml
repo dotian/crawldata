@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;h3&gt;(.+?)&lt;/h3</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		&lt;span&gt;&lt;!--fabutime--&gt;(.+?)&lt;!--/fabutime--&gt;&lt;/span&gt;
+	</ContentDate>
+	<Content>
+		&lt;div class="blank10"&gt;(.+?)&lt;div id="qrcode"
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://elec.dzwww.com/hb/</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>news</SiteName>
+	<NextPage />
+</template>

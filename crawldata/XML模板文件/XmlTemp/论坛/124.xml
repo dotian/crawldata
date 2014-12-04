@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;tbody id="stickthread_\d+" &gt;(.+?)&lt;/tr&gt;</Node>
+	<Title>
+		&lt;span id="thread_\d+"&gt;.+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		class="author"&gt;&lt;cite&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于 (.+?)&amp;nbsp
+	</ContentDate>
+	<Content>
+		&lt;div id="postmessage_\d+" class="t_msgfont"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>&lt;em&gt;(\d+)&lt;/em&gt;</Views>
+	<Replies>&lt;strong&gt;(\d+)&lt;/strong&gt;</Replies>
+	<SrcUrl>&lt;td class="folder"&gt;&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://www.chinabmw.net/bbs/forumdisplay.php?fid=26</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

@@ -1,0 +1,14 @@
+<template>
+<!-- site:http://search.xgo.com.cn/bbs.php?keyword=<> -->
+	<Node>&lt;dl&gt;(.+?)&lt;/dl&gt;</Node>
+	<Title>&lt;dt [^&gt;]*&gt;(.+?)&lt;/dt&gt;</Title>
+	<SrcUrl>&lt;a href=&quot;(.+?)&quot;</SrcUrl>
+	<Content>&lt;div class=&quot;edit_mcont&quot;[^&gt;]*&gt;(.+?)&lt;div class=&quot;signa&quot;</Content>
+	<ContentDate>发表于：(.+?)\|</ContentDate>
+	<SiteEncoding>gbk</SiteEncoding>
+	<InnerEncoding>gbk</InnerEncoding>
+	<Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<PageStart>1</PageStart>
+	<PageEnd>10</PageEnd>
+</template>

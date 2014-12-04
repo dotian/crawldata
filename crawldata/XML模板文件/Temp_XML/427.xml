@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;span class="list-title"&gt;(.+?)&lt;/li&gt;</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		class=""&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		&lt;span class="update f10"&gt;(.+?)&lt;/span&gt;
+	</ContentDate>
+	<Content>
+		&lt;td class="content"&gt;(.+?)&lt;div class="fz"
+	</Content>
+	<Views>&lt;span class="list-data"&gt;(.+?)&lt;/span&gt;</Views>
+	<Replies>&lt;span class="list-data"&gt;(.+?)&lt;/span&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.dianyuan.com/dianyuan</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

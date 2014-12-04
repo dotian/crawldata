@@ -1,0 +1,14 @@
+<template>
+<!-- site: http://search.discuz.qq.com/f/discuz?sId=9340908&ts=1411828585&cuId=0&cuName=&gId=7&agId=0&egIds=&fmSign=&ugSign7=&sign=f972917a14646ea599b2bda9ea49ec6a&charset=gbk&source=forum&q=<>&module=forum -->
+	<Node>&lt;h3 class=&quot;title&quot;&gt;(.+?)&lt;/li&gt;</Node>
+	<Title>&gt;(.+?)&lt;/a&gt;</Title>
+	<SrcUrl>&lt;a href=&quot;(.+?)&quot;</SrcUrl>
+	<Content>&lt;td class=&quot;t_f&quot;[^&gt;]*&gt;(.+?)&lt;/td&gt;</Content>
+	<ContentDate>&lt;em id=&quot;author[^&gt;]*&gt;发表于(.+?)&lt;/em&gt;</ContentDate>
+	<SiteEncoding>utf-8</SiteEncoding>
+	<InnerEncoding>gbk</InnerEncoding>
+	<Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<PageStart>1</PageStart>
+	<PageEnd>10</PageEnd>
+</template>

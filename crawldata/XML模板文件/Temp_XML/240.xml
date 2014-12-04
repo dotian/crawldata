@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="(.+?)&lt;/tr&gt;</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		class="w12_gray.+?&gt;(.+?)&lt;br&gt;
+	</Author>
+	<ContentDate>
+		"&gt;發表時間：(.+?)&lt;/div&gt;
+	</ContentDate>
+	<Content>
+		id="DSCDOC_Detail"&gt;(.+?)&lt;/div&gt;
+	</Content>
+	<Views>&lt;td class="td_dot.+?&gt;\d+&lt;/td&gt;&lt;td class="td_dot.+?&gt;(\d+)&lt;/td&gt;</Views>
+	<Replies>&lt;td class="td_dot.+?&gt;(\d+)&lt;/td&gt;</Replies>
+	<SrcUrl>&lt;a class="t14blue" href="(.+?)"</SrcUrl>
+	<Url>http://www.skymap.tw/client/ForumList.php?DSCDOCTYPID=00au8ixomgx6mnco</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

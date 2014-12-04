@@ -1,0 +1,21 @@
+<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="icn"&gt;(.+?)&lt;/tbody&gt;</Node>
+	<Title>
+		&lt;th.+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;cite&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		#lastpost"&gt;&lt;span title="(.+?)"&gt;
+	</ContentDate>
+	<Content>
+		&lt;th.+?&gt;(.+?)&lt;/a&gt;
+	</Content>
+	<Views>&lt;em&gt;(\d+)&lt;/em&gt;</Views>
+	<Replies>class="xi2"&gt;(\d+)&lt;/a&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.tech.ccidnet.com/thread.php?fid=143</Url>
+	<NextPage />
+</template>

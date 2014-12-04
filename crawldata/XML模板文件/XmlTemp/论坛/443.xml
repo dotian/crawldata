@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;tr class="alt2"&gt;(.+?)&lt;/tbody&gt;</Node>
+	<Title>
+		&lt;a.+?&gt;&lt;.+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;a class="info_user.+?&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		id="post_\d+".+?&gt;(.+?)&lt;/tr
+	</ContentDate>
+	<Content>
+		id="post_\d+".+?&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>&lt;p title="新帖/回复"&gt;(.+?)&lt;/p&gt;</Views>
+	<Replies>&lt;p title="新帖/回复"&gt;(.+?)&lt;/p&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://www.doyouhike.net/city/shenzhen/</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

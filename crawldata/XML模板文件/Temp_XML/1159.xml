@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>·(.+?)&lt;br /&gt;</Node>
+	<Title>
+		&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		&lt;span id="p_publishtime"&gt;(.+?)&lt;/span&gt;
+	</ContentDate>
+	<Content>
+		div id="p_content"&gt;(.+?)&lt;div class="text_img"&gt;
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a href='(.+?)'</SrcUrl>
+	<Url>http://homea.people.com.cn/GB/41411/100406/index.html</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>news</SiteName>
+	<NextPage />
+</template>

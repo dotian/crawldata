@@ -1,0 +1,14 @@
+<template>
+<Node>&lt;div class=&quot;result f s0&quot;&gt;(.+?)&lt;span class=&quot;c-showurl&quot;</Node>
+<Title>&lt;a [^&gt;]*&gt;(.+?)&lt;/a&gt;</Title>
+<SrcUrl>&lt;a href=&quot;(.+?)&quot;</SrcUrl>
+<Content>&lt;td class=&quot;t_msgfont&quot;[^&gt;]*&gt;(.+?)&lt;div class=&quot;sharebottoms&quot;&gt;</Content>
+<ContentDate>发表于(.+?)&lt;/em&gt;</ContentDate>
+
+	<SiteEncoding>utf-8</SiteEncoding>
+	<InnerEncoding>gbk</InnerEncoding>
+	<Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<PageStart>0</PageStart>
+	<PageEnd>9</PageEnd>
+</template>

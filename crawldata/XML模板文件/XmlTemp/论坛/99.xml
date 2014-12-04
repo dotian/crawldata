@@ -1,0 +1,25 @@
+<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;div class="list_s"&gt;(.+?)&lt;font color="#FF0000"&gt;\|&lt;/font&gt;</Node>
+	<Title>
+		&lt;div class="listtitle"&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		作者：(.+?)
+	</Author>
+	<ContentDate>
+		#\d+"&gt;(.+?)&lt;/a&gt;
+	</ContentDate>
+	<Content>
+		onload="this\.style\.overflowX='auto';"&gt;(.+?)&lt;div style="width
+	</Content>
+	<Views>&lt;div class="list_c"&gt;(\d+)&lt;/div&gt;</Views>
+	<Replies>&lt;div class="list_c"&gt;(\d+)&lt;/div&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.dycar.net/index.asp?boardid=3</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

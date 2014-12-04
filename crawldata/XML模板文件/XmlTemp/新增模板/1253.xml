@@ -1,0 +1,22 @@
+<template>
+	<Node>&lt;dl  class="list_dl(.+?)&lt;/dl&gt;</Node>	
+	<Title>&lt;a  target="_blank" href=".+?"&gt;(.+?)&lt;/a&gt;</Title>
+	<ContentDate>&lt;span xname="date"&gt;(.+?)&lt;/span&gt;</ContentDate>
+	<Content>&lt;div class="rconten"&gt;(.+?)&lt;div class="conbottoms-main"&gt;</Content>
+	<SrcUrl>&lt;a  target="_blank" href="(.+?)"</SrcUrl>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	<Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<PageStart>1</PageStart>
+	<PageEnd>10</PageEnd>
+	<!--
+	<MainPage site=""></MainPage>
+	<Author>
+		&lt;div class="board-list-write"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<NextPage />
+	<Views>&lt;div class="board-list-count-inner"&gt;(\d+)/</Views>
+	<Replies>&lt;div class="board-list-count-inner"&gt;\d+/(\d+)&lt;/div&gt;</Replies>
+	<Url>http://bbs.education.163.com/bbs/list.jsp?boardid=feeling&amp;order=posttime</Url>-->
+</template>

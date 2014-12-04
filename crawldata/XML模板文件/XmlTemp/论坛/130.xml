@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;div class="list_s"&gt;(.+?)&lt;font color="#FF0000"&gt;\|&lt;/font&gt;</Node>
+	<Title>
+		&lt;div class="listtitle"&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		作者：(\w+)
+	</Author>
+	<ContentDate>
+		&lt;div class="list_t"&gt;&lt;a href=".+?&gt;(.+?)&lt;/a&gt;
+	</ContentDate>
+	<Content>
+		&lt;div style="min-height:200px;.+?&gt;(.+?)&lt;/div&gt;
+	</Content>
+	<Views>class="list_c"&gt;(\d+)&lt;/div&gt;&lt;div class="list_t"&gt;</Views>
+	<Replies>&lt;div class="list_c"&gt;(\d+)&lt;/div&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://xx007.cn/index.asp?boardid=166</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

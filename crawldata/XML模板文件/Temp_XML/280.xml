@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="t" &gt;(.+?)&lt;/tr</Node>
+	<Title>
+		class="lnk"&gt;&lt;a.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		发表于：(.+?)&lt;/div&gt;
+	</ContentDate>
+	<Content>
+		class="body lz"&gt;(.+?)&lt;div class="foot"&gt;
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>class="lnk"&gt;&lt;a  href="(.+?)"</SrcUrl>
+	<Url>http://bbs.gkong.com/list.asp?Boardid=2</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>forum</SiteName>
+	<NextPage />
+</template>

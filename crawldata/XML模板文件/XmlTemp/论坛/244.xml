@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="line"&gt;(.+?)&lt;/tr</Node>
+	<Title>
+		&lt;span class="site"&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;div class="author"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于(.+?)&lt;s
+	</ContentDate>
+	<Content>
+		&lt;div class="replyBody"&gt;(.+?)&lt;/div
+	</Content>
+	<Views>&lt;em&gt;(\d+)&lt;/em&gt;</Views>
+	<Replies>&lt;strong&gt;(\d+)&lt;/strong&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.pclady.com.cn/forum-1762.html</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

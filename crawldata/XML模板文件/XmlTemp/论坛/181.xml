@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="list1"&gt;(.+?)&lt;/tr&gt;</Node>
+	<Title>
+		&lt;/span&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;td class="list3"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		Post By：(.+?) \[
+	</ContentDate>
+	<Content>
+		&lt;div id="textstyle_1".+?&gt;(.+?)&lt;/table
+	</Content>
+	<Views>&lt;td class="list4 font10"&gt;(.+?)&lt;/td&gt;</Views>
+	<Replies>&lt;td class="list4 font10"&gt;(.+?)&lt;/td&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.dvbbs.net/index.asp?boardid=143</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

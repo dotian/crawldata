@@ -1,0 +1,14 @@
+<template>
+<!-- site: http://www.jiemeng.com.cn/search.php?mod=forum&searchid=194&orderby=lastpost&ascdesc=desc&searchsubmit=yes&kw=<> -->
+	<Node>&lt;li class=&quot;pbw&quot;[^&gt;]*?&gt;(.+?)&lt;/li&gt;</Node>
+	<Title>&lt;h3[^&gt;]*?&gt;(.+?)&lt;/h3&gt;</Title>
+	<SrcUrl>&lt;a href=&quot;(.+?)&quot;</SrcUrl>
+	<Content>&lt;td class=&quot;t_f&quot;[^&gt;]*&gt;(.+?)&lt;/td&gt;</Content>
+	<ContentDate>&lt;em id=&quot;author[^&gt;]*&gt;发表于(.+?)&lt;/em&gt;</ContentDate>
+	<SiteEncoding>utf-8</SiteEncoding>
+	<InnerEncoding>utf-8</InnerEncoding>
+	<Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<PageStart>1</PageStart>
+	<PageEnd>10</PageEnd>
+</template>

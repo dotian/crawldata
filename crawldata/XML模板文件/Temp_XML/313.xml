@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="new" &gt;(.+?)&lt;/tbody&gt;</Node>
+	<Title>
+		&lt;a href.+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;td class="author"&gt;.+?&lt;a.+?&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于:&lt;span&gt;(.+?)&lt;/span&gt;
+	</ContentDate>
+	<Content>
+		postmessage_\d+.+?&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>&lt;td class="nums"&gt;(.+?)&lt;/td&gt;</Views>
+	<Replies>&lt;td class="nums"&gt;(.+?)&lt;/td&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.yaolan.com/board_31.aspx</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

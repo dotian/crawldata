@@ -1,0 +1,56 @@
+【待办】
+更新汽车论坛模板
+新浪微博和腾讯微博数据及模板
+研究如何避免防刷机器人
+
+模板774 不可用	
+
+【已完成，未部署】
+
+【已实施】
+
+导入数据模板加"分类“列
+
+------
+
+导入数据：1.媒体名变成了版块名 2. template中加入对应论坛、新闻、微博和博客，正、负评价
+修正后台去重的BUG
+后台数据EXCEL导入
+将常抓的数据暂时关闭，只抓取关键字前10页
+
+------
+
+隐藏博客
+改正负面图片
+隐藏数据报表
+隐藏中性
+登陆JS问题修复
+登陆后选中的项目的颜色
+显示行业报告
+隐藏后台竞争社和行业报告项目
+
+
+插入韩泰数据
+批量删除按钮 <== admin/datadetail.aspx
+title显示...（改成了显示30位） 《== customer.aspx
+翻页bug <== backend
+修改网站，显示PLATE NAME <== admin/datadetail.aspx
+修改网站，下拉触发搜索事件 <== admin/datadetail.aspx
+登陆后应显示c=2&a=0 <== backend
+按时间排序
+
+【已验收】
+数据库脚本修补SITE DATA历史数据丢失的SITE ID
+修复PULL CONSOLE对于SITE DATA表的SITE ID更新，添加对于PLATE NAME的更新
+数据库SITE DATA加一列PLATE NAME
+汽车之家4个url更新{p}，需要更新数据库
+模板2001 更新字段node和content date
+模板766 不可用，需要修复
+1253中无用字段已注释，已复制
+修复抓取程序（ConGetData）翻页bug，已复制
+模板22 content 及 content date 取不出，可用模板1253替换
+模板373 没有sitename，可用模板1253替换
+模板375 content 及 content date 取不出，可用模板1253替换 
+模板1251 content 及 content date 取不出，可用模板1253替换
+
+

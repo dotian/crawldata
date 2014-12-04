@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;th class="forumlisttitle"&gt;(.+?)&lt;/tbody&gt;</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;h3&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		&lt;div class="postinfoleft"&gt;&lt;span&gt;(.+?)&lt;/span&gt;
+	</ContentDate>
+	<Content>
+		&lt;div class="defaultcontent"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>&lt;em&gt;(\d+)&lt;/em&gt;</Views>
+	<Replies>&lt;/em&gt; / (\d+)&lt;/font&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.525j.com.cn/showforum-340.htm</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;tbody&gt;&lt;tr&gt;(.+?)&lt;/tbody&gt;</Node>
+	<Title>
+		&lt;a class="f14".+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;cite&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于(.+?)&lt;/em
+	</ContentDate>
+	<Content>
+		&lt;div class="pl20 pcon_con of_h"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>&lt;em&gt;(\d+)&lt;/em&gt;</Views>
+	<Replies>class="xi2"&gt;(\d+)&lt;/a&gt;</Replies>
+	<SrcUrl>&lt;a.+?href='(.+?)'</SrcUrl>
+	<Url>http://bj.bbs.house.sina.com.cn/forum-19801-1.html</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

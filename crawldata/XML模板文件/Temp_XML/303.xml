@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="folder"&gt;(.+?)&lt;/tr</Node>
+	<Title>
+		&lt;span id="thread_\d+"&gt;&lt;a href.+?&gt;(.+?)&lt;/a
+	</Title>
+	<Author>
+		&lt;h3&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于(.+?)&amp;n
+	</ContentDate>
+	<Content>
+    	id="postmessage_\d+" class="t_msgfont"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>&lt;em&gt;(\d+)&lt;/em&gt;</Views>
+	<Replies>&lt;/em&gt; / (\d+)&lt;/td&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.525j.com.cn/showforum-143.htm</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

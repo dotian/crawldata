@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;tr class="t_item"&gt; (.+?)&lt;/tr&gt;</Node>
+	<Title>
+		&lt;a href="thread.+?title="(.+?)"&gt;
+	</Title>
+	<Author>
+		valign="middle" class="by"&gt;(.+?)&lt;/a&gt;&lt;br /&gt;
+	</Author>
+	<ContentDate>
+		发表于&amp;nbsp;(.+?)&amp;nbsp;&lt;span&gt;
+	</ContentDate>
+	<Content>
+		&lt;div class="postmessage defaultpost"&gt;(.+?)&lt;div class="postinfo
+	</Content>
+	<Views>&lt;br /&gt;(\d+)&lt;/td&gt;</Views>
+	<Replies>target="_blank"&gt;(\d+)&lt;/a&gt;</Replies>
+	<SrcUrl>&lt;span id="thread.+?&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.51cto.com/forum-35-1.html</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

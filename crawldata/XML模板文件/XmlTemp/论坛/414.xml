@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;tr class="all"&gt;(.+?)&lt;/tr&gt;</Node>
+	<Title>
+		&lt;td class="one"&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;p&gt;&lt;a href=".+?&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于 (.+?)&lt;/em&gt;
+	</ContentDate>
+	<Content>
+		id="text\d+".+?&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>&lt;nobr&gt;(\d+)&lt;/nobr&gt;</Views>
+	<Replies>class="three"&gt;(\d+)/&lt;nobr&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.aigou.com/bbs/post/page/534_1__30__.html</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

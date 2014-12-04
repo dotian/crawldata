@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>tr class="row".+?id="trTopic\d+"&gt;(.+?)&lt;/tr</Node>
+	<Title>
+		&lt;span.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		只看楼主&lt;/a&gt;(.+?)&lt;/div&gt;
+	</ContentDate>
+	<Content>
+		div id="message\d+" class="t_msgfont"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.cheminfo.gov.cn/showforum-3.aspx</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>forum</SiteName>
+	<NextPage />
+</template>

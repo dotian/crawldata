@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="subject"&gt;(.+?)&lt;/tr&gt;</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;div class="name"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于(.+?)&lt;s&gt;
+	</ContentDate>
+	<Content>
+		&lt;div class="substance"&gt;(.+?)&lt;div class="bd"&gt;
+	</Content>
+	<Views>class="score"&gt;&lt;em &gt;(.+?)&lt;/td&gt;</Views>
+	<Replies>class="score"&gt;&lt;em &gt;(.+?)&lt;/td&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.taobao.com/catalog/459501.htm</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

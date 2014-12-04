@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;th class="subject new"&gt; (.+?)&lt;/tbody&gt;</Node>
+	<Title>
+		&lt;input name="txt_title" type="text" value="(.+?)"
+	</Title>
+	<Author>
+		&lt;cite&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于(.+?)&lt;/em&gt;
+	</ContentDate>
+	<Content>
+		&lt;div class="t_msgfont" id="postmessage_\d+"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>&lt;em&gt;(\d+)&lt;/em&gt;</Views>
+	<Replies>&lt;strong&gt;(\d+)&lt;/strong&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://www.91town.com/forumdisplay.php?fid=3621&amp;page=1&amp;filter=sort&amp;sortid=6655</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

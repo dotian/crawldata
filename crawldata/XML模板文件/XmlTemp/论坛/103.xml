@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="title"&gt;(.+?)class="reply-ico.+?&lt;/tr&gt;</Node>
+	<Title>
+		&lt;/span&gt;.+?&lt;a href=.+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		class="author"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于(.+?)&lt;/span&gt;
+	</ContentDate>
+	<Content>
+		&lt;div class="main-content clearfix" id="book_content"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>&lt;font color='red'&gt;(\d+)&lt;/font&gt;</Views>
+	<Replies>&lt;span class="black"&gt;(\d+)&lt;/span&gt;</Replies>
+	<SrcUrl>&lt;/span&gt;.+?&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://asusbbs.zol.com.cn/xilie_list_16_227_5586.html</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

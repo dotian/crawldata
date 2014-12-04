@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;dd(.+?)&lt;dd class="clear"</Node>
+	<Title>&lt;/a&gt;：&lt;em&gt;(.+?)&lt;/em</Title>
+	<Author>&lt;a nick-name="(.+?)"</Author>
+	<Content>&lt;/a&gt;：&lt;em&gt;(.+?)&lt;/em</Content>
+	<ContentDate>&lt;/span&gt; &lt;a href=.+?" title="(.+?)" date</ContentDate>
+	<Views></Views>
+	<Replies></Replies>
+	<SrcUrl>评论&lt;/a&gt; &lt;/span&gt; &lt;a href="(.+?)"</SrcUrl>
+	<Url>http://weibo.com/</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>microblog</SiteName>
+	<NextPage />
+</template>

@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="folder"&gt;(.+?)&lt;/tbody&gt;</Node>
+	<Title>
+		&lt;th.+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;td class="by"&gt;&lt;cite&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于 &lt;span title="(.+?)"&gt;
+	</ContentDate>
+	<Content>
+		id="message\d+" class="t_msgfont"&gt;(.+?)&lt;/div
+	</Content>
+	<Views>&lt;em&gt;(\d+)&lt;/em&gt;</Views>
+	<Replies>class="xg2"&gt;(\d+)&lt;/a&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://www.nbuser.com/showforum-4.aspx</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

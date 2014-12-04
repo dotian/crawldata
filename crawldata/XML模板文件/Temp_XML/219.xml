@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;tr&gt;&lt;td class="f_folder"&gt;(.+?)&lt;/tr&gt;</Node>
+	<Title>
+		class="right"&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		class="f_author"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于 (.+?)&amp;bsp
+	</ContentDate>
+	<Content>
+		message\d+" class="t_msgfont"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>&lt;td class="f_views"&gt;(.+?)&lt;/span&gt;</Views>
+	<Replies>&lt;td class="f_views"&gt;(.+?)&lt;/span&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.dospy.com/forumdisplay.php?fid=137&amp;filter=0&amp;orderby=dateline&amp;ascdesc=DESC</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

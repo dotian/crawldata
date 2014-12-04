@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="icon"&gt;(.+?)&lt;/tr</Node>
+	<Title>
+		&lt;td class="title"&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		发表于(.+?) -
+	</ContentDate>
+	<Content>
+		td class="postcontentwrap-main"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;td class="title"&gt;.+?href="(.+?)"</SrcUrl>
+	<Url>http://bbs.fjlottery.com/index.asp?boardid=9</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>forum</SiteName>
+	<NextPage />
+</template>

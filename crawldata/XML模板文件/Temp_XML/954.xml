@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;li&gt;&lt;span class="ll"&gt;(.+?)&lt;/li&gt;</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;cite&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		&lt;span class="article-time"&gt;(.+?)&lt;/span&gt;
+	</ContentDate>
+	<Content>
+		&lt;div id="Cnt-Main-Article-QQ" bosszone="content".+?&gt;(.+?)&lt;/div
+	</Content>
+	<Views>&lt;em&gt;(\d+)&lt;/em&gt;</Views>
+	<Replies>class="xi2"&gt;(\d+)&lt;/a&gt;</Replies>
+	<SrcUrl>href="(.+?)"</SrcUrl>
+	<Url>http://cq.qq.com/CQxinwen/chongqi/cqnews.htm</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>news</SiteName>
+	<NextPage />
+</template>

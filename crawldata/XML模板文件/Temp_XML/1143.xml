@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;span class="news_title"&gt;(.+?)&lt;/li</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		更新日期.+?&gt;(.+?)&lt;/label	
+	</ContentDate>
+	<Content>
+		&lt;div class="de_artical_content" id="pager_content"&gt;(.+?)&lt;div id="Pagination_pager
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a.+?href="(.+?)"</SrcUrl>
+	<Url>http://www.ceeia.com/News_List.aspx?classId=34</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>forum</SiteName>
+	<NextPage />
+</template>

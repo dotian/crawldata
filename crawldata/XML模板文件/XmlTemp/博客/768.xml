@@ -1,0 +1,21 @@
+﻿<template>   
+<MainPage site=""></MainPage>  
+ <Node>class="blog_title"&gt;(.+?)&lt;div class="blog_title_h"&gt;</Node>  
+   <Title>&lt;a href=.+?&gt;(.+?)&lt;/a&gt;</Title>
+   <Author></Author> 
+   <ContentDate>  
+     &lt;span class="time SG_txtc"&gt;\((.+?)\)&lt;/span&gt; 
+   </ContentDate> 
+   <Content>  
+     class="articalContent  "&gt;(.+?)&lt;div class="shareUp"&gt;   
+   </Content>  
+ <Views></Views>  
+ <Replies></Replies>   
+ <SrcUrl>&lt;a href="(.+?)"</SrcUrl> 
+  <Url>http://blog.sina.com.cn/s/blog_5d8d68c10102eefl.html</Url> 
+  <SiteEncoding>UTF-8</SiteEncoding>
+  <InnerEncoding>UTF-8</InnerEncoding> 
+  <Layer>2</Layer>
+  <SiteName>blog</SiteName>
+  <NextPage />  
+  </template>

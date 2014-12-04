@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;tr class="tr3"&gt;(.+?)&lt;/tr&gt;</Node>
+	<Title>
+		class="subject_t f14"&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;td class="author"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于: (.+?)&lt;/span&gt;
+	</ContentDate>
+	<Content>
+		&lt;td class="floot_bottom" id="td_tpc"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>&lt;td class="num"&gt;(.+?)&lt;/td&gt;</Views>
+	<Replies>&lt;td class="num"&gt;(.+?)&lt;/td&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.xmfish.com/thread.php?fid=76&amp;page=1</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

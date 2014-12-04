@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>tr&gt;&lt;td&gt;&amp;middot;&lt;/td&gt;&lt;td  &gt;(.+?)font&gt;&lt;/td&gt;&lt;/tr&gt;</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		&lt;!--function pub_date.+?&gt;(.+?)&lt;!--function: pub_date	
+	</ContentDate>
+	<Content>
+		td class="box con"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://internal.dbw.cn/gnxw/</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>forum</SiteName>
+	<NextPage />
+</template>

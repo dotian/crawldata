@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;div class="list_s"&gt;(.+?)&lt;div id="followTd\d+"</Node>
+	<Title>
+		&lt;div class="listtitle"&gt;&lt;a href.+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;div class="list_r1"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		alt="ip地址已设置保密" /&gt;&lt;/div&gt;(.+?)&lt;/div
+	</ContentDate>
+	<Content>
+		&lt;div style="min-height:200px;font-size:9pt;.+?&gt;(.+?)&lt;div class="postbottom1"
+	</Content>
+	<Views>&lt;div class="list_c"&gt;(\d+)&lt;/div&gt;&lt;div class="list_t"&gt;</Views>
+	<Replies>&lt;/div&gt;&lt;div class="list_c"&gt;(\d+)&lt;/div&gt;</Replies>
+	<SrcUrl>&lt;div class="listtitle"&gt;&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.9degree.com/index.asp?boardid=194</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="icn"(.+?)&lt;/tr</Node>
+	<Title>
+		class="xst" &gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		发表于 &lt;span title="(.+?)"&gt;
+	</ContentDate>
+	<Content>
+		td class="t_f" first="1" id="postmessage_\d+"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.seedit.com/forum-30-1.html</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>forum</SiteName>
+	<NextPage />
+</template>

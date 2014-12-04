@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="f_icon"(.+?)&lt;/tr&gt;</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;td class="f_author"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于(.+?)&lt;a
+	</ContentDate>
+	<Content>
+		&lt;div id="message\d+" class="t_msgfont"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>&lt;span class="lighttxt"&gt;(\d+)&lt;/span&gt;</Views>
+	<Replies>class="f_views"&gt;(\d+) / &lt;span class="lighttxt"&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.shouji.com.cn/do/listthreads?phone=52014</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

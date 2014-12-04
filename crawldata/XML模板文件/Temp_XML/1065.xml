@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>tr class="board_bg_0" data-id="\d+"&gt;(.+?)&lt;/tr</Node>
+	<Title>
+		&lt;td &gt;&lt;a target.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		
+	</ContentDate>
+	<Content>
+		text_1_0.+?&gt;(.+?)&lt;div class=doc_txt
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;td &gt;&lt;a target="_blank" href="(.+?)"</SrcUrl>
+	<Url>http://www.xici.net/b1209316/</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>forum</SiteName>
+	<NextPage />
+</template>

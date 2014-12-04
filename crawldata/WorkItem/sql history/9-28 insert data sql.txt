@@ -1,0 +1,95 @@
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('太平洋汽车论坛','太平洋汽车论坛','http://ks.pcauto.com.cn/auto_bbs.shtml?q=<>&pageNo={p}',1,3000,'gbk','2014-9-28')
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('Vfans上海车友联盟','Vfans上海车友联盟','http://search.discuz.qq.com/f/discuz?sId=9340908&ts=1411828585&cuId=0&cuName=&gId=7&agId=0&egIds=&fmSign=&ugSign7=&sign=f972917a14646ea599b2bda9ea49ec6a&charset=gbk&source=forum&q=<>&module=forum&page={p}',1,3002,'gbk','2014-9-28')
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('汽车点评论坛','汽车点评论坛','http://search.xgo.com.cn/bbs.php?keyword=<>&page={p}',1,3003,'gbk','2014-9-28')
+
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('山西88车友会','山西88车友会','http://www.88cheyou.com/search.php?mod=forum&searchid=4&orderby=lastpost&ascdesc=desc&searchsubmit=yes&kw=<>&page={p}',1,3004,'gbk','2014-9-28')
+
+
+
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('360汽车网','360汽车网','http://search.discuz.qq.com/f/discuz?mod=forum&formhash=fdd658c0&srchtype=title&srhfid=&srhlocality=forum%3A%3Aindex&sId=22962727&ts=1411883902&cuId=0&cuName=&gId=7&agId=0&egIds=&fmSign=&ugSign7=&sign=42b26c00732d68fd7cd6156d75dd5a25&charset=utf-8&source=discuz&fId=0&q=<>&searchsubmit=true&page={p}',1,3008,'gbk','2014-9-28')
+
+
+
+
+
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('卡车之家','卡车之家','http://so.360che.com/cse/search?q=<>&s=3494890232603857038&nsid=3&p={p}',1,3011,'gbk','2014-9-28')
+
+
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('甘肃汽车网','甘肃汽车网','http://search.discuz.qq.com/f/discuz?mod=forum&formhash=4f63c18c&srchtype=title&srhfid=&srhlocality=forum%3A%3Aindex&sId=2856804&ts=1411887954&cuId=0&cuName=&gId=7&agId=0&egIds=&fmSign=&ugSign7=&sign=d7fb3d58641886f456d33434335f9bb6&charset=utf-8&source=discuz&fId=0&q=<>&searchsubmit=true&page={p}',1,3014,'utf-8','2014-9-28')
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('豫D车友会','豫D车友会','http://search.discuz.qq.com/f/discuz?mod=search&formhash=e2124516&srchtype=title&srhfid=&srhlocality=forum%3A%3Aindex&sId=8742880&ts=1411888553&cuId=0&cuName=&gId=7&agId=0&egIds=&fmSign=&ugSign7=&sign=3b1569dfb8905e0d8482964fd125aea2&charset=gbk&source=discuz&fId=0&q=<>&searchsubmit=true&page={p}',1,3015,'gbk','2014-9-28')
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('环球汽车网','环球汽车网','http://search.discuz.qq.com/f/discuz?mod=forum&formhash=54fbed6e&srchtype=title&srhfid=0&srhlocality=portal%3A%3Aindex&sId=15701784&ts=1411881143&cuId=0&cuName=&gId=7&agId=0&egIds=&fmSign=&ugSign7=&sign=cb48c052cc260bd247759e8cb371de40&charset=gbk&source=discuz&fId=0&q=<>&searchsubmit=true',1,3016,'gbk','2014-9-28')
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('OURSX4车友会','OURSX4车友会','http://search.discuz.qq.com/f/discuz?mod=forum&formhash=a8dc27ba&srchtype=title&srhfid=&srhlocality=forum%3A%3Aindex&sId=2667439&ts=1411889531&cuId=0&cuName=&gId=7&agId=0&egIds=&fmSign=&ugSign7=&sign=eefc43b0c1e4021a5c58fbf4daacd063&charset=gbk&source=discuz&fId=0&q=<>&searchsubmit=true&page={p}',1,3017,'gbk','2014-9-28')
+
+
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('青海同福车友会','青海同福车友会','http://search.discuz.qq.com/f/discuz?mod=forum&formhash=9e2e4f68&srchtype=title&srhfid=&srhlocality=forum%3A%3Aindex&sId=16140105&ts=1411889796&cuId=0&cuName=&gId=7&agId=0&egIds=&fmSign=&ugSign7=&ext_vgIds=0&sign=14eec51a6d865792d1916f71b57ddbe8&charset=gbk&source=discuz&fId=0&q=<>&searchsubmit=true&page={p}',1,3018,'gbk','2014-9-28')
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('中国汽车运动网','中国汽车运动网','http://search.discuz.qq.com/f/search?mod=forum&formhash=ccae85db&srchtype=title&srhfid=&srhlocality=forum%3A%3Aindex&sId=15702456&ts=1411911600&cuId=0&cuName=&gId=7&agId=0&egIds=&fmSign=&ugSign7=&sign=394314083d7b61232fe4fc084fbd2057&charset=gbk&source=discuz&fId=0&q=<>&searchsubmit=true&mySign=df4adad0&searchLevel=3&qs=discuz&menu=1&orderField=default&page={p}',1,3019,'utf-8','2014-9-28')
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('爱卡汽车网','爱卡汽车网','http://search.xcar.com.cn/search.php?c=5&k=<>&s=dateline_desc&f=_all&p=10&d=0&i=0&fid=0&fctbox=0&brbox=0&special=0&pn={p}',1,3020,'utf-8','2014-9-28')
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('车讯汽车网','车讯汽车网','http://search.discuz.qq.com/f/discuz?mod=search&formhash=0da79e6c&srchtype=title&srhfid=0&srhlocality=portal%3A%3Aindex&sId=9206497&ts=1411892651&cuId=0&cuName=&gId=7&agId=0&egIds=&fmSign=&ugSign7=&ext_vgIds=0&sign=eb1e5c99c1184e1ad0da7b5be6dee848&charset=utf-8&source=discuz&fId=0&q=<>&searchsubmit=true&page={p}',1,3021,'utf-8','2014-9-28')
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('易车网','易车网','http://www.cheyisou.com/luntan/<>/{p}.html',1,3022,'utf-8','2014-9-28')
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('腾讯汽车','腾讯汽车','http://search.discuz.qq.com/f/discuz?mod=forum&formhash=c3d9f9d2&srchtype=title&srhfid=&srhlocality=forum%3A%3Aindex&sId=13689299&ts=1411892824&cuId=0&cuName=&gId=7&agId=0&egIds=&fmSign=&ugSign7=&ext_vgIds=0&sign=75335b4df396a6e5fd6ca27cf41f3531&charset=utf-8&source=discuz&fId=0&q=<>&searchsubmit=true&page={p}',1,3023,'utf-8','2014-9-28')
+
+
+
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('越野ｅ族','越野ｅ族','http://so.fblife.com/searchinfo.fb?query=<>&fromtype=0&page={p}',1,3024,'utf-8','2014-9-28')
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('苏E车友会','苏E车友会','http://search.discuz.qq.com/f/discuz?mod=forum&formhash=9e08e1d6&srchtype=title&srhfid=&srhlocality=forum%3A%3Aindex&sId=5404118&ts=1411896561&cuId=0&cuName=&gId=7&agId=0&egIds=&fmSign=&ugSign7=&sign=76281340319cccd43207410001afc345&charset=gbk&source=discuz&fId=0&q=<>&searchsubmit=true&page={p}',1,3025,'gbk','2014-9-28')
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('无锡车友会','无锡车友会','http://search.discuz.qq.com/f/discuz?mod=forum&formhash=9e98cb6d&srchtype=title&srhfid=0&srhlocality=portal%3A%3Aindex&sId=1757184&ts=1411897269&cuId=0&cuName=&gId=7&agId=0&egIds=&fmSign=&ugSign7=&sign=618e199764ce02eab3c856a767d42c98&charset=gbk&source=discuz&fId=0&q=<>&searchsubmit=true&page={p}',1,3026,'gbk','2014-9-28')
+
+
+
+
+
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('电动汽车论坛','电动汽车论坛','http://so.ddqcw.com/f/discuz?sId=8252412&ts=1411897746&cuId=0&cuName=&gId=7&egIds=&fmSign=&ugSign7=&sign=b2646f71af04775b629c5ba64583cc4b&q=<>&charset=gbk&page={p}',1,3027,'gbk','2014-9-28')
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('泰无聊论坛 ','泰无聊论坛 ','http://so.t56.net/f/discuz?mod=forum&formhash=9efad17d&srchtype=title&srhfid=0&srhlocality=portal%3A%3Aindex&sId=9669700&ts=1411897962&cuId=0&cuName=&gId=7&agId=0&egIds=&fmSign=&ugSign7=&ext_vgIds=0&sign=7b3217b889635a8b4d21ae6fb0d02f2e&charset=gbk&source=discuz&fId=0&q=<>&searchsubmit=true&page={p}',1,3028,'gbk','2014-9-28')
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('天涯论坛','天涯论坛','http://search.tianya.cn/bbs?q=<>&pn={p}',1,3029,'utf-8','2014-9-28')
+
+
+
+
+
+
+
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('KDS车友会','KDS车友会','http://club.pchome.net/forum_1_26_{p}___md__1_<>.html',1,3030,'gbk','2014-9-28')
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('首都人社区-爱车一族','首都人社区-爱车一族','http://www.shouduren.com/so/?lx=2&key=<>&page={p}',1,3031,'gbk','2014-9-28')
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('重庆社区-重庆车友会','重庆社区-重庆车友会','http://www.cqsq.com/?m=search&key=<>',1,3032,'gbk','2014-9-28')
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('长春论坛-长春车友','长春论坛-长春车友','http:/={p}/search.bbs.xwh.cn/f/discuz?mod=forum&formhash=65de4b29&srchtype=title&srhfid=276&srhlocality=forum%3A%3Aforumdisplay&sId=1642005&ts=1411902626&cuId=0&cuName=&gId=7&agId=0&egIds=&fmSign=&ugSign7=&ext_vgIds=0&sign=0a56258206a862d42b85425f2faed6d6&charset=gbk&source=discuz&fId=276&q=<>&searchsubmit=true&page',1,3033,'gbk','2014-9-28')
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('内蒙古万人呼市网-车友途说','内蒙古万人呼市网-车友途说','http://search.discuz.qq.com/f/discuz?mod=forum&formhash=3f8c111f&srchtype=title&srhfid=13316&srhlocality=forum%3A%3Aforumdisplay&sId=28804822&ts=1411903071&cuId=0&cuName=&gId=7&agId=0&egIds=&fmSign=&ugSign7=&ext_vgIds=0&sign=76c774cae175bad54bb4a2703633f97b&charset=gbk&source=discuz&fId=0&q=<>&searchsubmit=true&page={p}',1,3034,'gbk','2014-9-28')
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('河北论坛-河北车友','河北论坛-河北车友','http://soso.hb130.com/f/discuz?mod=forum&formhash=ea2860d2&srchtype=title&srhfid=30&srhlocality=forum%3A%3Aforumdisplay&sId=2825460&ts=1411903188&cuId=0&cuName=&gId=7&agId=0&egIds=&fmSign=&ugSign7=&ext_vgIds=0&sign=81d995d3e035d93ca5c38bbd3f92ea4c&charset=gbk&source=discuz&fId=0&q=<>&searchsubmit=true&page={p}',1,3035,'gbk','2014-9-28')
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('山西临汾365-临汾车友','山西临汾365-临汾车友','http://s.linfen365.com/f/discuz?mod=forum&formhash=efbb78d9&srchtype=title&srhfid=146&srhlocality=forum%3A%3Aindex&sId=1697386&ts=1411903480&cuId=0&cuName=&gId=7&agId=0&egIds=&fmSign=&ugSign7=&ext_vgIds=0&sign=0b60dda3e5f6ee89055cfb1349848dd6&charset=gbk&source=discuz&fId=0&q=<>&searchsubmit=true&page={p}',1,3036,'gbk','2014-9-28')
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('山东社区-以车会友','山东社区-以车会友','http://search.discuz.qq.com/f/discuz?mod=forum&formhash=97881459&srchtype=title&srhfid=82&srhlocality=forum%3A%3Aforumdisplay&sId=2845608&ts=1411903086&cuId=0&cuName=&gId=7&agId=0&egIds=&fmSign=&ugSign7=&ext_vgIds=0&sign=4a678e7d4ab3650cd150f9fcc50a7683&charset=gbk&source=discuz&fId=0&q=<>&searchsubmit=true&page={p}',1,3037,'gbk','2014-9-28')
+
+
+
+
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('湖北荆楚网-东湖车迷公社','湖北荆楚网-东湖车迷公社','http://search.discuz.qq.com/f/discuz?mod=forum&formhash=1455399b&srchtype=title&srhfid=56&srhlocality=forum%3A%3Aforumdisplay&sId=1842877&ts=1411904611&cuId=0&cuName=&gId=7&agId=0&egIds=&fmSign=&ugSign7=&ext_vgIds=0&sign=52889ed07a2ba2fcfda47606ce9c5591&charset=utf-8&source=discuz&fId=0&q=<>&searchsubmit=true&page={p}',1,3038,'utf-8','2014-9-28')
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('江西大江论坛-汽车论坛','江西大江论坛-汽车论坛','http://search.discuz.qq.com/f/discuz?sId=5482506&ts=1411904887&cuId=0&cuName=&gId=7&agId=0&egIds=&fmSign=&ugSign7=&ext_vgIds=0&sign=49f123e2c2db269ca685fdea7afc0b49&charset=gbk&source=discuz&q=<>&module=forum&page={p}',1,3039,'gbk','2014-9-28')
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('广东社区论坛-汽车天地','广东社区论坛-汽车天地','http://search.discuz.qq.com/f/discuz?mod=forum&formhash=b435029f&srchtype=title&srhfid=59&srhlocality=forum%3A%3Aforumdisplay&sId=15025902&ts=1411905154&cuId=0&cuName=&gId=7&agId=0&egIds=&fmSign=&ugSign7=&sign=6af726d7bef95a0a863256958c4f7bec&charset=utf-8&source=discuz&fId=0&q=<>&searchsubmit=true&page={p}',1,3040,'utf-8','2014-9-28')
+
+
+
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('宁夏网虫-网虫车友会','宁夏网虫-网虫车友会','http://search.discuz.qq.com/f/discuz?mod=forum&formhash=f66c22cb&srchtype=title&srhfid=579&srhlocality=forum%3A%3Aforumdisplay&sId=1076049&ts=1411905528&cuId=0&cuName=&gId=7&agId=0&egIds=&fmSign=&ugSign7=&sign=c5e957edd53418dc6ae266b49b422005&charset=gbk&source=discuz&fId=0&q=<>&searchsubmit=true&page={p}',1,3041,'gbk','2014-9-28')
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('青海夏都热线-爱车一族','青海夏都热线-爱车一族','http://search.discuz.qq.com/f/discuz?sId=19883530&ts=1411905730&cuId=0&cuName=&gId=7&agId=0&egIds=&fmSign=&ugSign7=&sign=383369694f92b60cdd8beba07a995c46&charset=gbk&source=forum_thread&q=<>&module=forum&fId=46&page={p}',1,3042,'gbk','2014-9-28')
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('新疆亚心社区-新疆车友','新疆亚心社区-新疆车友','http://search.discuz.qq.com/f/discuz?mod=forum&formhash=6958912b&srchtype=title&srhfid=130&srhlocality=forum%3A%3Aforumdisplay&sId=2695678&ts=1411905804&cuId=0&cuName=&gId=7&agId=0&egIds=&fmSign=&ugSign7=&sign=04c1f274d41a685c3aacd756401c954d&charset=utf-8&source=discuz&fId=0&q=<>&searchsubmit=true&page={p}',1,3043,'utf-8','2014-9-28')
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate]) values ('海南三亚论坛-车行三亚','海南三亚论坛-车行三亚','http://search.discuz.qq.com/f/discuz?mod=forum&formhash=590dbb34&srchtype=title&srhfid=93&srhlocality=forum%3A%3Aforumdisplay&sId=5861890&ts=1411906890&cuId=0&cuName=&gId=7&agId=0&egIds=&fmSign=&ugSign7=&ext_vgIds=0&sign=e3a7b78bec95109fad9ed06e67637987&charset=gbk&source=discuz&fId=0&q=<>&searchsubmit=true&page={p}',1,3044,'gbk','2014-9-28')

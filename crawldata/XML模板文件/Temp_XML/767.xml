@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>td class="icon(.+?)&lt;/tr</Node>
+	<Title>
+		name="readlink".+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		sp;&amp;nbsp;&lt;span title="(.+?)"&gt;发表于
+	</ContentDate>
+	<Content>
+		div class="tpc_content"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>a&gt;&lt;a href="(.+?)" name="readlink"</SrcUrl>
+	<Url>http://blog.163.com/feitianhanxue@126/rss/</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>forum</SiteName>
+	<NextPage />
+</template>

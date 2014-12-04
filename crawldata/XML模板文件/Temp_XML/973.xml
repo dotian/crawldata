@@ -1,0 +1,21 @@
+<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;item&gt;(.+?)&lt;/item&gt;</Node>
+	<Title>
+		&lt;title&gt;(.+?)&lt;/title&gt;
+	</Title>
+	<Author>
+		&lt;cite&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		#lastpost"&gt;(.+?)&lt;/a&gt;
+	</ContentDate>
+	<Content>
+		&lt;description&gt;(.+?)&lt;/description&gt;
+	</Content>
+	<Views>&lt;em&gt;(\d+)&lt;/em&gt;</Views>
+	<Replies>class="xi2"&gt;(\d+)&lt;/a&gt;</Replies>
+	<SrcUrl>&lt;link&gt;(.+?)&lt;/link&gt;</SrcUrl>
+	<Url>http://blog.hjenglish.com/hjb/rssfeed.aspx?rsstype=1</Url>
+	<NextPage />
+</template>

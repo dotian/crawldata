@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>CCCCCC;"&gt;  &lt;tr&gt;    &lt;td (.+?)&lt;/tr</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		稿源：&lt;!--function source\(\) parse begin--&gt;&lt;a.+?&lt;/a&gt;&amp;nbsp;&amp;nbsp;(.+?)&lt;
+	</ContentDate>
+	<Content>
+		div class="content"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://world.gansudaily.com.cn/jsjj/index.shtml</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>news</SiteName>
+	<NextPage />
+</template>

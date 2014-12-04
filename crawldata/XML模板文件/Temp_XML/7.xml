@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;li class='list '&gt;(.+?)&lt;/li</Node>
+	<Title>
+		title='(.+?)'
+	</Title>
+	<ContentDate>
+		&lt;/span&gt;&amp;nbsp;&amp;nbsp;更新时间：(.+?)&amp;nbsp;
+	</ContentDate>
+	<Content>
+		div class="editor"&gt;(.+?)&lt;/div
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a href='(.+?)'</SrcUrl>
+	<Url>http://shequ.goodjd.com/thread-jiadian-fid-10.html</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>forum</SiteName>
+	<NextPage />
+</template>

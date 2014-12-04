@@ -1,0 +1,14 @@
+<template>
+<Node>&lt;li class=&quot;i2&quot;&gt;(.+?)&lt;/li&gt;</Node>
+<Title>&lt;span class=&quot;n3&quot;&gt;(.+?)&lt;span class=&quot;n4&quot;&gt;</Title>
+<SrcUrl>&lt;a href=&quot;(.+?)&quot;</SrcUrl>
+<Content>&lt;div class=&quot;mc&quot;&gt;(.+?)&lt;div id=&quot;sign&quot;&gt;</Content>
+<ContentDate>发表于:(.+?)&lt;/</ContentDate>
+
+	<SiteEncoding>gbk</SiteEncoding>
+	<InnerEncoding>gbk</InnerEncoding>
+	<Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<PageStart>1</PageStart>
+	<PageEnd>10</PageEnd>
+</template>

@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td bgcolor='F2F5EB'&gt;(.+?)&lt;/tr&gt;</Node>
+	<Title>
+		title="(.+?)"
+	</Title>
+	<Author>
+		&lt;td bgcolor='F2F5EB' class="l" title="(\w+)" &gt;
+	</Author>
+	<ContentDate>
+		发帖时间：(.+?)&lt;br&gt;
+	</ContentDate>
+	<Content>
+		&lt;td class="bt"&gt;(.+?)&lt;/table
+	</Content>
+	<Views>&lt;td bgcolor='F2F5EB' class="szyd" align="center" title="(\d+)" &gt;</Views>
+	<Replies>&lt;td  bgcolor='F2F5EB' align="center" class="szhf" title="(\d+)" &gt;</Replies>
+	<SrcUrl>&lt;a href='(.+?)'</SrcUrl>
+	<Url>http://bbs.hongxiu.com/list.asp?bid=14</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

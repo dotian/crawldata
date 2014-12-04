@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;div class="list_s"&gt;(.+?)&lt;div class="mainbar3</Node>
+	<Title>
+		&lt;div class="listtitle"&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		text-indent:12px;"&gt;(.+?)&lt;/div&gt;	
+	</ContentDate>
+	<Content>
+		div id="textstyle_\d+".+?&gt;(.+?)&lt;/tr
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;div class="listtitle"&gt;.+?&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.abi.com.cn/index.asp?boardid=8</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>forum</SiteName>
+	<NextPage />
+</template>

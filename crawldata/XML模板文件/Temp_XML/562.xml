@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;tr&gt;&lt;td class=forumColorOne align=center&gt;(.+?)&lt;/tr</Node>
+	<Title>
+		&lt;u&gt;(.+?)&lt;/u
+	</Title>
+	<Author>
+		&lt;b&gt;(.+?)&lt;/b&gt;
+	</Author>
+	<ContentDate>
+		这个贴子最后由.+?在 (.+?) 重新编辑
+	</ContentDate>
+	<Content>
+		&lt;tr&gt;&lt;td valign=top&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>align=center&gt;\d+&lt;/td&gt;&lt;td class=forumColorTwo align=center&gt;(\d+)&lt;/td&gt;</Views>
+	<Replies>&lt;td class=forumColorTwo align=center&gt;(\d+)&lt;/td&gt;</Replies>
+	<SrcUrl>&lt;a href=(.+?) TITLE</SrcUrl>
+	<Url>http://www.qingdaoyuer.net/bbs_forum.do?forumID=4</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

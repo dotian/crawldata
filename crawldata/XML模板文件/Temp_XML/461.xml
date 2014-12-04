@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;div class="thread-row"(.+?)&lt;/font&gt;&lt;/a&gt;</Node>
+	<Title>
+		&lt;a title="主题：(.+?)#
+	</Title>
+	<Author>
+		作者：(\w+)#
+	</Author>
+	<ContentDate>
+		#lastpost"&gt;(.+?)&lt;/a&gt;
+	</ContentDate>
+	<Content>
+		message start--&gt; (.+?)&lt;!--message end
+	</Content>
+	<Views>&lt;font color='#CC0000'&gt;(.+?)&lt;/div&gt;</Views>
+	<Replies>&lt;font color='#CC0000'&gt;(.+?)&lt;/div&gt;</Replies>
+	<SrcUrl>发表时间：.+?href="(.+?)"&gt;</SrcUrl>
+	<Url>http://hongdou.gxnews.com.cn/viewforum-1.html</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

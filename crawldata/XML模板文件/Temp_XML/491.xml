@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class='c2 posticon'&gt;(.+?)&lt;/td</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		postdate0' title='reply time'&gt;(.+?)&lt;/span&gt;
+	</ContentDate>
+	<Content>
+		id='postcontent0' class='postcontent ubbcode'&gt;(.+?)&lt;div
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a href='(.+?)'</SrcUrl>
+	<Url>http://bbs.ngacn.cc/thread.php?fid=334</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>forum</SiteName>
+	<NextPage />
+</template>

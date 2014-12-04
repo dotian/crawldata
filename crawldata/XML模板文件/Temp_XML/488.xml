@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>id="td_threadstatusicon_\d+"&gt;(.+?)&lt;/tr</Node>
+	<Title>
+		id="thread_title_\d+"&gt;(.+?)&lt;/a
+	</Title>
+	<Author>
+		id="thread_title_\d+"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		&lt;div&gt;注册日期: (.+?)&lt;/div&gt;
+	</ContentDate>
+	<Content>
+		&lt;div id="post_message_\d+" class="vb_postbit"&gt;(.+?)&lt;/div
+	</Content>
+	<Views>&lt;td class="alt2" align="center"&gt;(\d+)&lt;/td&gt;</Views>
+	<Replies>class="alt1" align="center"&gt;(\d+)&lt;/td&gt;</Replies>
+	<SrcUrl>&lt;a  href="(.+?)"</SrcUrl>
+	<Url>http://www.bbkz.com/forum/forumdisplay.php?f=183</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

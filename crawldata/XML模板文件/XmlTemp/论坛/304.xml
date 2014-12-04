@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="icon"&gt;(.+?)&lt;/tr&gt;</Node>
+	<Title>
+		&lt;a href=.+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;td class="listitem"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于(.+?)&amp;nbsp
+	</ContentDate>
+	<Content>
+		id="postmessage_\d+" class="t_msgfont"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>&lt;em&gt;(\d+)&lt;/em&gt;</Views>
+	<Replies>&lt;/em&gt; / (\d+)&lt;/td&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.craftworkshop.com/forumdisplay.php?fid=14</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

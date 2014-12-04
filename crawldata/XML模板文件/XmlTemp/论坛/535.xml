@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="icn"&gt;(.+?)&lt;/tr</Node>
+	<Title>
+		class="xst" &gt;(.+?)&lt;/a
+	</Title>
+	<Author>
+		&lt;cite&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于 (.+?)&lt;/em&gt;
+	</ContentDate>
+	<Content>
+		&lt;td class="t_f" id="postmessage_\d+"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>class='Topic_Title_txt'&gt;\d+&lt;/td&gt;&lt;td align=center class='Topic_Title_txt'&gt;(\d+)&lt;/td&gt;</Views>
+	<Replies>&lt;td align=center class='Topic_Title_txt'&gt;(\d+)&lt;/td&gt;</Replies>
+	<SrcUrl>&lt;/em&gt; &lt;a href="(.+?)"</SrcUrl>
+	<Url>http://www.mybyd.com/forum-30-1.html</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

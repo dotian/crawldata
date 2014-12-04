@@ -1,0 +1,7 @@
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\WriteSpiderAgain\bin\Release\WriteSpiderAgain.exe.config
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\WriteSpiderAgain\bin\Release\WriteSpiderAgain.exe
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\WriteSpiderAgain\bin\Release\WriteSpiderAgain.pdb
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\WriteSpiderAgain\obj\x86\Release\WriteSpiderAgain.exe
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\WriteSpiderAgain\obj\x86\Release\WriteSpiderAgain.pdb
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\WriteSpiderAgain\bin\Release\log4net.dll
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\WriteSpiderAgain\obj\x86\Release\WriteSpiderAgain.csprojResolveAssemblyReference.cache

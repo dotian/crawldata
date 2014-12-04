@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;tr class="tr2"&gt; (.+?)&lt;/tr</Node>
+	<Title>
+		linkblack f14"&gt;(.+?)&lt;/a
+	</Title>
+	<Author>
+		class="author"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		&lt;script&gt;var show_real_time='(.+?)'&lt;/script&gt;&lt;/div&gt;&lt;div class='ilt_panel
+	</ContentDate>
+	<Content>
+		ilt_p'&gt;(.+?)&lt;div class='ilt_panel
+	</Content>
+	<Views>&lt;span class="red"&gt;(\d+)&lt;/span&gt;</Views>
+	<Replies>&lt;/td&gt;.+?&lt;td&gt;&lt;span class="red"&gt;(\d+)&lt;/span&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://guba.sina.com.cn/?s=bar&amp;name=sz000625</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

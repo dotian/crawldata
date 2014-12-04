@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;div class="c cl"&gt;(.+?)&lt;/li&gt;</Node>
+	<Title>
+		&lt;h3 class="ptn".+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;td class="by"&gt;&lt;cite&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于 (.+?)&lt;/em&gt;
+	</ContentDate>
+	<Content>
+		&lt;td class="t_f" id="postmessage_\d+"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>class="xi2".+?&gt;(.+?)&lt;/em&gt;</Views>
+	<Replies>class="xi2".+?&gt;(.+?)&lt;/em&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://we.pcinlife.com/forum-212-1.html</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

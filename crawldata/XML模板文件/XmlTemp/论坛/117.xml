@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="f_title"(.+?)&lt;/tr&gt;</Node>
+	<Title>
+		&lt;span class="lighttxt"&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;td class="f_author"  width="13%"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于 (.+?) &lt;a
+	</ContentDate>
+	<Content>
+		&lt;td valign="top" class="line".+?&gt;(.+?)&lt;/div&gt;
+	</Content>
+	<Views>&lt;span class="lighttxt"&gt;(\d+)&lt;/span&gt;</Views>
+	<Replies>class="f_views".+?&gt;(\d+)</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.inknet.cn/forum-54-1.html</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

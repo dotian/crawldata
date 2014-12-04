@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;div class="postslist_xh "&gt;(.+?)&lt;/div&gt;</Node>
+	<Title>
+		&lt;a href='.+?'  target="_blank"&gt;.+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;cite&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		&lt;/a&gt;&lt;/em&gt;&lt;em&gt;(.+?)&lt;/em&gt;
+	</ContentDate>
+	<Content>
+		div id="message\d+" class="t_msgfont"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>&lt;em&gt;(\d+)&lt;/em&gt;</Views>
+	<Replies>class="xi2"&gt;(\d+)&lt;/a&gt;</Replies>
+	<SrcUrl>&lt;a href=["'](.+?)["']</SrcUrl>
+	<Url>http://bbs.315che.com/forums/showforum-31.htm</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

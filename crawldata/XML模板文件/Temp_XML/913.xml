@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;li class="item"&gt;(.+?)&lt;/li&gt;</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		board-threadlist-type-5"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于(.+?)&lt;/em&gt;
+	</ContentDate>
+	<Content>
+		td class="qyer_spam_text_filter"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>&lt;span class="views"&gt;(\d+)&lt;/span&gt;</Views>
+	<Replies>&lt;span class="sum"&gt;(\d+)&lt;/span&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://www.go2eu.com/bbs/forumdisplay.php?fid=51</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

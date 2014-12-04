@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;tbody id="normalthread_\d+" &gt;(.+?)&lt;/tbody&gt;</Node>
+	<Title>
+		&lt;span id="thread_\d+"&gt;&lt;a href=".+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;td class="author"&gt;&lt;cite&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于 (.+?)&lt;/em&gt;
+	</ContentDate>
+	<Content>
+		&lt;div class="postmessage firstpost"&gt;(.+?)&lt;/table&gt;
+	</Content>
+	<Views>&lt;strong&gt;(.+?)&lt;/em&gt;</Views>
+	<Replies>&lt;strong&gt;(.+?)&lt;/em&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.mbahome.com/forumdisplay.php?fid=41</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

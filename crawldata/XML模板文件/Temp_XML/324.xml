@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="icn"(.+?)&lt;/tr</Node>
+	<Title>
+		class="s xst"&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+	
+	</ContentDate>
+	<Content>
+		
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://www.octavia.com.cn/forum.php?mod=forumdisplay&amp;fid=23&amp;page=1</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>forum</SiteName>
+	<NextPage />
+</template>

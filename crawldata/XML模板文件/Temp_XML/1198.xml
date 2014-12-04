@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>·(.+?)&lt;/td</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		&lt;span id="pubtime"&gt;(.+?)&lt;/span&gt;
+	</ContentDate>
+	<Content>
+		&lt;div id="content"&gt;(.+?)&lt;div class="share"&gt;
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a href=(.+?) targ</SrcUrl>
+	<Url>http://search.news.cn/mb/xinhua/list/search/?styleurl=http://imgs.xinhuanet.com/icon/dflb/20100702/erji_css.css&amp;nodeid=1112713&amp;nodetype=3&amp;rp=90</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>news</SiteName>
+	<NextPage />
+</template>

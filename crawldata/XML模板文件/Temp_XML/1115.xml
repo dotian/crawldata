@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;li&gt;(.+?)&lt;/li</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		&lt;span&gt;时间: (.+?)&amp;nbsp;&amp;nbsp;
+	</ContentDate>
+	<Content>
+		copy_st"&gt;(.+?)&lt;div class="l_news_interfix
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a class="newstitle" target="_blank" href="(.+?)"&gt;</SrcUrl>
+	<Url>http://news.dnkb.com.cn/list.php?category=1-148-</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>news</SiteName>
+	<NextPage />
+</template>

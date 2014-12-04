@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="ico_2_td"&gt;(.+?)&lt;/tr</Node>
+	<Title>
+		&lt;A title="《(.+?)》作者
+	</Title>
+	<Author>
+		作者：(.+?)发表于
+	</Author>
+	<ContentDate>
+		发表于 (.+?)&lt;/span&gt;
+	</ContentDate>
+	<Content>
+		class="box_content" id="box_content"&gt;(.+?)scShare clear
+	</Content>
+	<Views>&lt;p class="red"&gt;(\d+)&lt;/p&gt;</Views>
+	<Replies>&lt;p class="liu"&gt;(\d+)&lt;/p&gt;&lt;</Replies>
+	<SrcUrl>href='(.+?)'</SrcUrl>
+	<Url>http://dl.focus.cn/msglist/300571/</Url>
+    <SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

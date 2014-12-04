@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;div class="tz_left"&gt;(.+?)&lt;hr class="cls"/&gt;</Node>
+	<Title>
+		&lt;a href=".+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		class="tiezi_zz_3"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于 (.+?)&lt;/em&gt;|发表于 &lt;span title="(.+?)"&gt;
+	</ContentDate>
+	<Content>
+		&lt;td class="t_\w+" id="postmessage_\d+"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views></Views>
+	<Replies>&lt;span class="te_nub".+?&gt;(\d+)&lt;/span&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://community.chinahrd.net/forum.php?mod=forumdisplay&amp;fid=154</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;li&gt;·(.+?)&lt;/li</Node>
+	<Title>
+		 &lt;a.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		iv class="remark"&gt;(.+?)&amp;nbsp;&amp;nbsp	
+	</ContentDate>
+	<Content>
+		div class="contenttext"&gt;(.+?)&lt;div align="right"&gt;
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a href=(.+?) targe</SrcUrl>
+	<Url>http://jiaju.dzcnc.com/news/jjzx/index.html</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>forum</SiteName>
+	<NextPage />
+</template>

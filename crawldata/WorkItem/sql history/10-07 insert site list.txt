@@ -1,0 +1,104 @@
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate],[postcontent]) values ('论坛','论坛','Search URL',1,20141005,'Encoding','2014-10-05','PostContent')
+
+
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate],[postcontent]) values ('迈腾俱乐部','迈腾俱乐部','POST:http://magotan.gtuu.com/search.php?searchsubmit=yes',1,3045,'utf-8','2014-10-05','mod=forum&formhash=12d9f15d&srchtype=title&srhfid=&srhlocality=forum%3A%3Aindex&srchtxt=<>&searchsubmit=true')
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate],[postcontent]) values ('改联网','改联网','POST:http://club.gtuu.com/search.php?searchsubmit=yes',1,3045,'utf-8','2014-10-05','mod=forum&formhash=0e7e09c0&srchtype=title&srhfid=&srhlocality=forum%3A%3Aindex&srchtxt=<>&searchsubmit=true')
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate],[postcontent]) values ('捷达车友会','捷达车友会','POST:http://www.jiemeng.com.cn/search.php?searchsubmit=yes',1,3001,'utf-8','2014-10-05','mod=forum&formhash=13b6c12b&srchtype=title&srhfid=&srhlocality=forum%3A%3Aindex&srchtxt=<>&searchsubmit=true')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate],[postcontent]) values ('长安车友会','长安车友会','POST:http://www.changan.biz/search.php?searchsubmit=yes ',1,3005,'gbk','2014-10-05','mod=forum&formhash=afff770a&srchtype=title&srhfid=&srhlocality=forum%3A%3Aindex&srchtxt=<>&searchsubmit=true')
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate],[postcontent]) values ('SUV汽车论坛','SUV汽车论坛','http://bbs.suv.cn/search.php?mod=my&q=<>',1,3006,'gbk','2014-10-05','')
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate],[postcontent]) values ('江淮车友会','江淮车友会','POST:http://www.cnjac.com/search.php?searchsubmit=yes',1,3007,'gbk','2014-10-05','formhash=22fb863a&srchtxt=<>&searchsubmit=yes')
+
+
+
+
+
+
+
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate],[postcontent]) values ('安徽汽车论坛','安徽汽车论坛','POST:http://www.ahauto.com/bbs/search.php?searchsubmit=yes',1,3012,'gbk','2014-10-05','mod=forum&formhash=582ba756&srchtype=title&srhfid=&srhlocality=forum%3A%3Aindex&srchtxt=<>&searchsubmit=true')
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate],[postcontent]) values ('虎拜车友俱乐部','虎拜车友俱乐部','POST:http://www.hubai.com/club/search.php?searchsubmit=yes',1,3013,'gbk','2014-10-05','mod=forum&formhash=f0fe912d&srchtype=title&srhfid=&srhlocality=forum%3A%3Aindex&srchtxt=<>&searchsubmit=true')
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate],[postcontent]) values ('中原汽车网','中原汽车网','POST:http://bbs.zhongyuanauto.com/search.php?searchsubmit=yes',1,3046,'gbk','2014-10-05','mod=forum&formhash=baa7af60&srchtype=title&srhfid=&srhlocality=forum%3A%3Aindex&srchtxt=<>&searchsubmit=true')
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate],[postcontent]) values ('车族网论坛','车族网论坛','POST:http://www.icarzoo.com/bbs/search.php?searchsubmit=yes',1,3045,'utf-8','2014-10-05','mod=forum&formhash=216c2d3d&srchtype=title&srhfid=&srhlocality=forum%3A%3Aindex&srchtxt=<>&searchsubmit=true')
+
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate],[postcontent]) values ('e路有你','e路有你','POST:http://www.19861866.com/search.php?searchsubmit=yes ',1,3046,'gbk','2014-10-05','
+mod=forum&formhash=5d2fbe57&srchtype=title&srhfid=&srhlocality=forum%3A%3Aindex&srchtxt=<>&searchsubmit=true')
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate],[postcontent]) values ('昂科拉车友俱乐部','昂科拉车友俱乐部','POST:http://www.sh-encore.com/search.php?searchsubmit=yes',1,3046,'gbk','2014-10-05','formhash=12df777e&srchtxt=<>&searchsubmit=yes')
+
+
+
+
+
+
+
+
+
+
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate],[postcontent]) values ('汽车之友','汽车之友','POST:http://bbs.autofan.com.cn/search.php?searchsubmit=yes',1,3046,'gbk','2014-10-05','mod=forum&formhash=c28e6b57&srchtype=title&srhfid=&srhlocality=forum%3A%3Aindex&srchtxt=<>&searchsubmit=true')
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate],[postcontent]) values ('凤凰汽车','凤凰汽车','POST:http://bbs.auto.ifeng.com/search.php?searchsubmit=yes',1,3045,'utf-8','2014-10-05','srchtxt=<>&mod=search&formhash=a4ce9cfe&srchtype=title&srhfid=0&srhlocality=forum&searchsubmit=%E6%90%9C%E7%B4%A2')
+
+
+
+
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate],[postcontent]) values ('徐州汽车论坛','徐州汽车论坛','POST:http://che.xzxx.com/search.php?searchsubmit=yes',1,3046,'gbk','2014-10-05','mod=forum&formhash=fc40ddc1&srchtype=title&srhfid=&srhlocality=forum%3A%3Aindex&srchtxt=<>&searchsubmit=true')
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate],[postcontent]) values ('车迷之家','车迷之家','POST:http://bbs.chefans.com/search.php?searchsubmit=yes',1,3046,'gbk','2014-10-05','mod=forum&formhash=c09199e7&srchtype=title&srhfid=&srhlocality=forum%3A%3Aindex&srchtxt=<>&searchsubmit=true')
+
+
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate],[postcontent]) values ('汽车经济论坛','汽车经济论坛','POST:http://bbs.autoeconomy.com.cn/search.php?searchsubmit=yes',1,3045,'utf-8','2014-10-05','mod=forum&formhash=81f1a892&srchtype=title&srhfid=&srhlocality=forum%3A%3Aindex&srchtxt=<>&searchsubmit=true')
+
+
+
+
+
+
+
+
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate],[postcontent]) values ('上海热线汽车天地','上海热线汽车天地','POST:http://bbs.online.sh.cn/search.php?searchsubmit=yes',1,3046,'gbk','2014-10-05','mod=forum&formhash=a3ff5849&srchtype=title&srhfid=1303&srhlocality=forum%3A%3Aforumdisplay&srchtxt=<>&searchsubmit=true')
+
+
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate],[postcontent]) values ('天津论坛-天津车友会','天津论坛-天津车友会','POST:http://bbs.kutj.com/search.php?searchsubmit=yes',1,3046,'gbk','2014-10-05','mod=forum&formhash=12fc07d9&srchtype=title&srhfid=90&srhlocality=forum%3A%3Aforumdisplay&srchtxt=<>&searchsubmit=true')
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate],[postcontent]) values ('龙江在线-龙江汽车','龙江在线-龙江汽车','POST:http://auto.longjiang.net/search.php?searchsubmit=yes',1,3046,'gbk','2014-10-05','mod=forum&formhash=4bf4b9a2&srchtype=title&srhfid=190&srhlocality=forum%3A%3Aforumdisplay&srchtxt=<>&searchsubmit=true')
+
+
+
+
+
+
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate],[postcontent]) values ('郑州论坛-郑州车友会','郑州论坛-郑州车友会','POST:http://www.zzbbs.com/search.php?searchsubmit=yes',1,3046,'gbk','2014-10-05','mod=search&formhash=aeab9e62&srchtype=title&srhfid=152&srhlocality=forum%3A%3Aforumdisplay&source=discuz&fId=152&q=&srchtxt=<>')
+
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate],[postcontent]) values ('浙江天一论坛-车行天下','浙江天一论坛-车行天下','POST:http://bbs.cnnb.com.cn/search.php?searchsubmit=yes',1,3046,'gbk','2014-10-05','mod=curforum&formhash=1752538e&srchtype=title&srhfid=23&srhlocality=forum%3A%3Aforumdisplay&srchtxt=<>&searchsubmit=%26%23160%3B%26%23160%3B%26%23160%3B%26%23160%3B%26%23160%3B')
+
+
+
+
+
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate],[postcontent]) values ('广西桂林人论坛-车友会','广西桂林人论坛-车友会','POST:http://bbs.guilinlife.com/search.php?searchsubmit=yes',1,3046,'gbk','2014-10-05','mod=search&formhash=d6ac9b9c&srchtype=title&srhfid=56&srhlocality=forum%3A%3Aforumdisplay&srchtxt=<>&searchsubmit=true')
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate],[postcontent]) values ('贵州社区-马力部落','贵州社区-马力部落','POST:http://club.gog.cn/search.php?searchsubmit=yes',1,3045,'utf-8','2014-10-05','mod=forum&formhash=a46f0c41&srchtype=title&srhfid=207&srhlocality=forum%3A%3Aforumdisplay&srchtxt=<>&searchsubmit=true')
+insert into [datamingdb].[dbo].[sitelist]([sitename],[platename],[siteurl],[sitetype],[tid],[siteencoding],[createdate],[postcontent]) values ('云南金碧坊社区-云南车友','云南金碧坊社区-云南车友','POST:http://www.jinbifun.com/search.php?searchsubmit=yes',1,3045,'utf-8','2014-10-05','mod=curforum&formhash=497e6402&srchtype=title&srhfid=73405&srhlocality=forum%3A%3Aforumdisplay&srchtxt=<>&searchsubmit=true')

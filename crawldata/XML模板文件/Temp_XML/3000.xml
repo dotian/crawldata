@@ -1,0 +1,14 @@
+<template>
+<!-- site: http://ks.pcauto.com.cn/auto_bbs.shtml?q=<> -->
+	<Node>&lt;div class="paragraph(.+?)&lt;i&gt;时间：</Node>	
+	<Title>&lt;a[^&gt;]+?href=".+?"&gt;(.+?)&lt;/a&gt;</Title>
+	<SrcUrl>&lt;a[^&gt;]+?href="(.+?)"</SrcUrl>
+	<Content>&lt;div class=&quot;post_msg replyBody&quot;&gt;(.+?)&lt;/div</Content>
+	<ContentDate>&lt;div class=&quot;post_time&quot;&gt;(.+?)&lt;/div&gt;</ContentDate>
+	<SiteEncoding>gbk</SiteEncoding>
+	<InnerEncoding>gbk</InnerEncoding>
+	<Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<PageStart>1</PageStart>
+	<PageEnd>10</PageEnd>
+</template>

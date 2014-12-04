@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;tr&gt;&lt;td height="22"(.+?)&lt;/tr&gt;</Node>
+	<Title>
+		&lt;a href=".+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;/td&gt;&lt;td align="center" valign="middle" bgcolor="#F6F6F6"&gt;(\w+)&lt;/td&gt;
+	</Author>
+	<ContentDate>
+		&lt;td align="left" valign="middle" bgcolor="#FFFFFF"&gt;时间：(.+?)&lt;/td&gt;
+	</ContentDate>
+	<Content>
+		&lt;td align="left" vAlign="top"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>bgcolor="#F6F6F6"&gt;(\d+)/\d+&lt;/td&gt;</Views>
+	<Replies>bgcolor="#F6F6F6"&gt;\d+/(\d+)&lt;/td&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://www.jslottery.com/bbs/ForumList.aspx?id=94</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

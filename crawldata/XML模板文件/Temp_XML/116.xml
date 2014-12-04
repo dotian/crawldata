@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="list1"&gt;(.+?)&lt;/tr&gt;</Node>
+	<Title>
+		&lt;/strong&gt;&lt;/font&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		作者：(\w+)
+	</Author>
+	<ContentDate>
+		发表于 (.+?) &lt;/EM&gt;
+	</ContentDate>
+	<Content>
+		&lt;div id="textstyle_1".+?&gt;(.+?)&lt;/div&gt;
+	</Content>
+	<Views>&lt;td class="list4 font10"&gt;(.+?)&lt;/td&gt;</Views>
+	<Replies>&lt;td class="list4 font10"&gt;(.+?)&lt;/td&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://www.chinabi.net/bbs/index.asp?boardid=31</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

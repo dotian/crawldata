@@ -1,0 +1,19 @@
+﻿ <template>  
+    <!-- <MainPage site=""></MainPage> -->
+    <Node>&lt;div class="box-result clearfix"(.+?)class="fgray"</Node>
+    <Title>&lt;a.+?&gt;(.+?)&lt;/a</Title>
+	
+    <ContentDate>&lt;span class="time SG_txtc"&gt;\((.+?)\)&lt;/span&gt;   </ContentDate>
+    <Content>class="articalContent[^&gt;]+?&gt;(.+?)&lt;div id='share' class="shareUp"&gt;</Content>
+	<!-- <Author>&lt;cite&gt;(.+?)&lt;/a&gt;</Author>    -->
+    <!-- <ContentIN>&lt;div class="content"&gt;(.+?)&lt;/span&gt;</ContentIN>  -->
+    <!-- <Views>&lt;em&gt;(\d+)&lt;/em&gt;</Views> -->
+    <!-- <Replies>class="xi2"&gt;(\d+)&lt;/a&gt;</Replies>  -->
+    <!-- <Url>http://uni.sina.com.cn/c.php?k=韩泰&amp;t=blog&amp;ts=bpost&amp;stype=all</Url>  -->
+    <SrcUrl>&lt;a href=['"](.+?)['"]</SrcUrl>
+	<SiteEncoding>GB2312</SiteEncoding>
+    <InnerEncoding>UTF-8</InnerEncoding> 
+    <Layer>2</Layer>
+    <SiteName>blog</SiteName>
+    <NextPage />  
+ </template>

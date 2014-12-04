@@ -1,0 +1,24 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>td class="icon.+?&gt;(.+?)&lt;/tr</Node>
+	<Title>
+		class="subject_t f14"&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;div id="listsmalltext"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+	 发表于: [^@]{1,20}\((.+?)\)
+	</ContentDate>
+	<Content>
+		&lt;div class="f14 mb10" id="read_tpc"&gt;(.+?)&gt;&lt;/tr
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.tt86.com/thread.php?fid=45</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<NextPage />
+</template>

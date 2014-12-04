@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;p class="icothree"&gt;(.+?)&lt;/div&gt;          &lt;/dd&gt;</Node>
+	<Title>
+		&lt;span id="thread_.+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		p class="usname"&gt; (.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于 (.+?)&lt;/em&gt;
+	</ContentDate>
+	<Content>
+		postmessage firstpost"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>class="reply"&gt;(\d+)&lt;/span&gt;</Views>
+	<Replies>&lt;span class="read"&gt;(\d+)&lt;/span&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.lady8844.com/forumdisplay.php?fid=76&amp;filter=type&amp;typeid=52</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

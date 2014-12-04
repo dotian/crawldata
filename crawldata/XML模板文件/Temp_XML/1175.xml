@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td width="73%"&gt;(.+?)&lt;font class="todaytime"&gt;</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		编译.+?tm = "(.+?)"
+	</ContentDate>
+	<Content>
+		&lt;div id="zoom" class="cont"&gt;(.+?)&lt;/div
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a.+?href="(.+?)"</SrcUrl>
+	<Url>http://www.mofcom.gov.cn/column/todayupdateoncle.shtml?www/2011/11/20111118</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>news</SiteName>
+	<NextPage />
+</template>

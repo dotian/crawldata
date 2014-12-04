@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>tr id="tr_thread_(.+?)&lt;/tr</Node>
+	<Title>
+		target="_blank"&gt;(.+?)&lt;/a
+	</Title>
+	<Author>
+		&lt;a href="/userspace.+?&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于 (.+?) &lt;/spa
+	</ContentDate>
+	<Content>
+		&lt;h1 class="wx"&gt;(.+?)&lt;/h1
+	</Content>
+	<Views>&lt;i class="fg_xx"&gt;/&lt;/i&gt;&lt;i&gt;&lt;font color="#ff0000"&gt;(\d+)&lt;/font&gt;</Views>
+	<Replies>&lt;font color="#ff0000"&gt;(\d+)&lt;/font&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.house365.com/forumdisplay.php?forumid=1461</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage/>
+</template>

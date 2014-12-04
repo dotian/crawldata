@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>td class="subject"&gt;(.+?)&lt;/tr</Node>
+	<Title>
+		class="f14px"&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		class="posts-posted"&gt;.+?于(.+?)发布	
+	</ContentDate>
+	<Content>
+		div class="posts-cont"&gt;(.+?)&lt;/div
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://club.kdnet.net/list.asp?boardid=88</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>forum</SiteName>
+	<NextPage />
+</template>

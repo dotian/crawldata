@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="col2"&gt;(.+?)&lt;/tr&gt;</Node>
+	<Title>
+		&lt;a href.+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;td&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于：(.+?)&lt;/div&gt;
+	</ContentDate>
+	<Content>
+		&lt;div class="ct"&gt;(.+?)&lt;/div&gt;
+	</Content>
+	<Views>&lt;i&gt;(\d+)&lt;/i&gt;</Views>
+	<Replies>&lt;td&gt;&lt;b&gt;(\d+)&lt;/b&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.imobile.com.cn/forum-id-65577.html</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

@@ -1,0 +1,11 @@
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\ConSiteUesFul\bin\Debug\ConSiteUesFul.exe.config
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\ConSiteUesFul\bin\Debug\ConSiteUesFul.exe
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\ConSiteUesFul\bin\Debug\ConSiteUesFul.pdb
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\ConSiteUesFul\obj\x86\Debug\ConSiteUesFul.exe
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\ConSiteUesFul\obj\x86\Debug\ConSiteUesFul.pdb
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\ConSiteUesFul\obj\x86\Debug\ConSiteUesFul.csprojResolveAssemblyReference.cache
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\ConSiteUesFul\bin\Debug\WriteSpiderAgain.exe
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\ConSiteUesFul\bin\Debug\log4net.dll
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\ConSiteUesFul\bin\Debug\WriteSpiderAgain.pdb
+M:\杨博\2015年Join\ActionLM2014\数据挖掘系统\WriteSpiderAgain\ConSiteUesFul\obj\x86\Debug\ResolveAssemblyReference.cache
+M:\杨博\2015年Join\ActionLM2014\数据挖掘系统\WriteSpiderAgain\ConSiteUesFul\bin\Debug\ConSiteUesFul.exe.config

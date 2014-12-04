@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>li&gt;(.+?)&lt;/li</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		div id="chan_newsInfo"&gt;.+?&lt;/div&gt;(.+?)&amp;nbsp; &amp;nbsp; &amp;nbsp;
+	</ContentDate>
+	<Content>
+		&lt;div id="chan_newsDetail"&gt;(.+?)IndiKeyword
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a href='(.+?)'</SrcUrl>
+	<Url>http://home.china.com/dg/cg/</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>news</SiteName>
+	<NextPage />
+</template>

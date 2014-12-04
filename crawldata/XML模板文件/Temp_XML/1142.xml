@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;li&gt;(.+?)&lt;/li</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		onclick="ChangeFontSize.+?&lt;/span&gt;(.+?)(&amp;nbsp;)+?
+	</ContentDate>
+	<Content>
+		&lt;div class="main1_L8"  id="mainContent"&gt;(.+?)&lt;div class="main1_L9"&gt;
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url></Url>
+<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName></SiteName>
+	<NextPage />
+</template>

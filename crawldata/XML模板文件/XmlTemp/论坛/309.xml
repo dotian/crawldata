@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;tr class="tr3"&gt;(.+?)&lt;/tr&gt;</Node>
+	<Title>
+		&lt;a href.+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		class="author"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于: (.+?)&lt;/span&gt;
+	</ContentDate>
+	<Content>
+		&lt;div class="f14 mb10" id="read_tpc"&gt;(.+?)&lt;/div
+	</Content>
+	<Views>&lt;em&gt;(.+?)&lt;/td&gt;</Views>
+	<Replies>&lt;em&gt;(.+?)&lt;/td&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.zenha.net/bbs/thread.php?fid=22</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

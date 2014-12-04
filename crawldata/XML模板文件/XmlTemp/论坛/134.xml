@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;div class="postslist_xh "&gt;(.+?)&lt;/div&gt;</Node>
+	<Title>
+		&lt;a href=".+?&gt;(.+?)&lt;/span&gt;&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;li class="zz"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		&lt;/em&gt;&lt;em&gt;(.+?)&lt;/em&gt;
+	</ContentDate>
+	<Content>
+		id="message\d+" class="t_msgfont"&gt;(.+?)&lt;/div&gt;
+	</Content>
+	<Views>&lt;li class="hf"&gt;(.+?)&lt;/li&gt;</Views>
+	<Replies>&lt;li class="hf"&gt;(.+?)&lt;/li&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.315che.com/forums/showforum-135.htm</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

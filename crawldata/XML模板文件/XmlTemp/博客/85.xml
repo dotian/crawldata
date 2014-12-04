@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;div class="Arc"&gt;(.+?)&lt;div class="hui\d+"&gt;</Node>
+	<Title>
+		title.+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;a&gt;
+	</Author>
+	<ContentDate>
+		&lt;span class="hui912"&gt;(.+?)&amp;nbsp;
+	</ContentDate>
+	<Content>
+		&lt;div class="A_con wrap"&gt;(.+?)&lt;/div
+	</Content>
+	<Views>.html"&gt;浏览\((\d+)\)&lt;/a&gt;</Views>
+	<Replies>&lt;a href="/6599/article_6598347.html"&gt;评论\((\d+)\)&lt;/a&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://blog.zol.com.cn/guhao/</Url>
+		<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	<Layer>2</Layer>
+	<SiteName>blog</SiteName>
+	<NextPage />
+</template>

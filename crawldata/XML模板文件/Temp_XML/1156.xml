@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;i&gt;\((.+?)/a&gt;</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;
+	</Title>
+	<ContentDate>
+		
+	</ContentDate>
+	<Content>
+		div class="ArtM Pr30" id="Content"&gt;(.+?)&lt;/div
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a.+?href="(.+?)"</SrcUrl>
+	<Url>http://gegu.stock.cnfol.com/1332/</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>news</SiteName>
+	<NextPage />
+</template>

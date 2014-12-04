@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="zi14" &gt;(.+?)&lt;/tr</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		&lt;div id="Time" class="date p12 pubdate"&gt;http://www.enorth.com.cn　(.+?)&lt;/div&gt;
+	</ContentDate>
+	<Content>
+		&lt;div class="zi14 hanggao24" id="Content"&gt;(.+?)id="Content"&gt;
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a.+?href="(.+?)"</SrcUrl>
+	<Url>http://jd.enorth.com.cn/system/2014/03/03/011715382.shtml</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>news</SiteName>
+	<NextPage />
+</template>

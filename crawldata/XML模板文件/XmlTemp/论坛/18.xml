@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;div class="postslist_xh"&gt;(.+?)&lt;/ul&gt;</Node>
+	<Title>
+		&lt;li class="bt"&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;a class="name" .+?&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于(.+?)&lt;/div&gt;
+	</ContentDate>
+	<Content>
+		&lt;div class="post_text post_text_sl.+?&gt;(.+?)&lt;/div&gt;
+	</Content>
+	<Views>&lt;em&gt;(.+?)&lt;/li&gt;</Views>
+	<Replies>&lt;em&gt;(.+?)&lt;/li&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://baa.bitauto.com/drive/forum-5558.html</Url>
+		<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

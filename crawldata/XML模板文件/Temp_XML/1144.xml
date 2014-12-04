@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;h2 class="fix cl"&gt;(.+?)&lt;div class="cblb_list_r1"&gt;</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		&gt;来源：\w+&lt;/span&gt; &lt;span&gt;(.+?)&lt;/span&gt;	
+	</ContentDate>
+	<Content>
+		art fix" id="Article"&gt;(.+?)&lt;div class="art_btnav fix"
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://www.cb.com.cn/1634429/list/40561/1.html</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>forum</SiteName>
+	<NextPage />
+</template>

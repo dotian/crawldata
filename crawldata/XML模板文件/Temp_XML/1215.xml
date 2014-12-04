@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>td class='listbg2'&gt;(.+?)&lt;/td</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		&lt;td align="center"&gt;作者：.　来源：\w+　(.+?)　&lt;
+	</ContentDate>
+	<Content>
+		&lt;td&gt;&lt;span class="main_tdbg_\d+"&gt;(.+?)&lt;/tr&gt;
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a.+?href='(.+?)'</SrcUrl>
+	<Url>http://www.szxf.net/fashion/cljj/Index.html</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>news</SiteName>
+	<NextPage />
+</template>

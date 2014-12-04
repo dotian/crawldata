@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;tr class="list"(.+?)&lt;/tbody&gt;</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/th
+	</Title>
+	<Author>
+		&lt;h3&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于：(.+?)&lt;/span&gt;
+	</ContentDate>
+	<Content>
+		id="message\d+" class="t_msgfont"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>&lt;td class="listitem kakaviewnumbers"&gt;(.+?)&lt;/td&gt;</Views>
+	<Replies>&lt;td class="listitem kakaviewnumbers"&gt;(.+?)&lt;/td&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.ikaka.com/showforum-28.aspx</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

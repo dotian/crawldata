@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;tr class="tr3"&gt;(.+?)&lt;/tr&gt;</Node>
+	<Title>
+		&lt;a href.+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		class="author"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		&lt;span title="(.+?)"&gt;发表于
+	</ContentDate>
+	<Content>
+		&lt;td class="floot_right" id="td_tpc"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>&lt;td class="tal"&gt;(\d+)&lt;/td&gt;</Views>
+	<Replies>&lt;em&gt;(.+?)&lt;/td&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://www.51zhijia.cn/thread-htm-fid-252.html</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

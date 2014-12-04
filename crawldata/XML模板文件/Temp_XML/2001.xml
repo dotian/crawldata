@@ -1,0 +1,24 @@
+﻿<template>
+	<Node>&lt;div class="box-result clearfix"(.+?)class="fgray"</Node>
+	<Title>&lt;a.+?&gt;(.+?)&lt;/a</Title>
+	<ContentDate>&lt;span class="fgray_time"&gt;\w+ (.+?)&lt;/span&gt;</ContentDate>
+	<Content>&lt;p class="content"&gt;(.+?)&lt;/p</Content>
+	<SrcUrl>&lt;a href=['"](.+?)['"]</SrcUrl>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	<Layer>1</Layer>
+	<PageStart>1</PageStart>
+	<PageEnd>10</PageEnd>
+	<!--<SiteName>news</SiteName>-->
+	<SiteName>news</SiteName>
+	
+	<!--
+	<MainPage site=""></MainPage>
+	<Url>http://search.sina.com.cn/?q=%BA%AB%CC%A9%C2%D6%CC%A5&amp;c=news&amp;sort=time&amp;page={p}</Url>
+	<Remark>新浪新闻搜索</Remark>
+	 <PageSize>20</PageSize>
+	<NextPage />
+	<Author>
+		&lt;a href='/user.+?&gt;(.+?)&lt;/a&gt;
+	</Author>-->
+</template>

@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;TR bgColor=#ffffff&gt;&lt;TD(.+?)&lt;/TR</Node>
+	<Title>
+		&lt;A.+?&gt;(.+?)&lt;/A
+	</Title>
+	<Author>
+		&lt;cite&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发帖时间&lt;/SPAN&gt;&amp;nbsp;-&amp;nbsp;(.+?)&lt;/FONT&gt;
+	</ContentDate>
+	<Content>
+		发帖时间.+?&lt;TR&gt;(.+?)&lt;/TR&gt;
+	</Content>
+	<Views>&lt;em&gt;(\d+)&lt;/em&gt;</Views>
+	<Replies>class="xi2"&gt;(\d+)&lt;/a&gt;</Replies>
+	<SrcUrl>&lt;A href="(.+?)"</SrcUrl>
+	<Url>http://bbs.globalimporter.net/bbslist-N11101108-1-0.htm</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

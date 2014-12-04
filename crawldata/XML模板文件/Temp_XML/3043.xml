@@ -1,0 +1,13 @@
+<template>
+<Node>&lt;h3 class=&quot;title&quot;[^&gt;]*&gt;(.+?)&lt;a name=&quot;forum</Node>
+<Title>&lt;a [^&gt;]*&gt;(.+?)&lt;/a&gt;</Title>
+<SrcUrl>&lt;a href=&quot;(.+?)&quot;</SrcUrl>
+<Content>&lt;td class=&quot;t_f[^&gt;]*&gt;(.+?)&lt;div id=&quot;comment</Content>
+<ContentDate>发表于(.+?)&lt;/em&gt;</ContentDate>
+	<SiteEncoding>utf-8</SiteEncoding>
+	<InnerEncoding>utf-8</InnerEncoding>
+	<Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<PageStart>1</PageStart>
+	<PageEnd>10</PageEnd>
+</template>

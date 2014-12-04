@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>td class="icn"&gt;(.+?)&lt;/tr</Node>
+	<Title>
+		&lt;td class="common"&gt;&lt;a.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		发表于：&lt;span class="cRed"&gt;(.+?)&lt;/span&gt;
+	</ContentDate>
+	<Content>
+		div id="postmessage_\d+"&gt;(.+?)&lt;/a
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;td class="common"&gt;&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.ifeng.com/forumdisplay.php?fid=460</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>forum</SiteName>
+	<NextPage />
+</template>

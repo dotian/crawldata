@@ -1,0 +1,13 @@
+<template>
+<Node>&lt;dl class=&quot;list_right&quot;&gt;(.+?)&lt;/dl&gt;</Node>
+<Title>&lt;a [^&gt;]*&gt;(.+?)&lt;/a&gt;</Title>
+<SrcUrl>&lt;a href=&quot;(.+?)&quot;</SrcUrl>
+<Content>&lt;td valign=&quot;top&quot;[^&gt;]*&gt;(.+?)&lt;td height=&quot;10&quot; valign=&quot;bottom&quot;</Content>
+<ContentDate>发表于(.+?)&lt;/div&gt;</ContentDate>
+	<SiteEncoding>utf-8</SiteEncoding>
+	<InnerEncoding>gb2312</InnerEncoding>
+	<Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<PageStart>1</PageStart>
+	<PageEnd>10</PageEnd>
+</template>

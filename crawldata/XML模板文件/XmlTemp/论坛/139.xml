@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td align="Center" valign="Middle"&gt;(.+?)&lt;/tr&gt;</Node>
+	<Title>
+		&lt;a id=.+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;td class="author"&gt;&lt;cite&gt;(.+?)&lt;/a&gt;&lt;/cite&gt;
+	</Author>
+	<ContentDate>
+		nbsp;于(.+?)编辑过
+	</ContentDate>
+	<Content>
+		&lt;table width=100% cellpadding=5 cellspacing=1 border=0&gt;(.+?)&lt;/div
+	</Content>
+	<Views>Center" valign="Middle"&gt;\d+&lt;/td&gt;&lt;td align="Center" valign="Middle"&gt;(\d+)&lt;/td&gt;</Views>
+	<Replies>&lt;td align="Center" valign="Middle"&gt;(\d+)&lt;/td&gt;</Replies>
+	<SrcUrl>&lt;a id=".+?" href="(.+?)"&gt;</SrcUrl>
+	<Url>http://202.204.193.237/cupbbs/ThreadList.aspx?fid=63</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

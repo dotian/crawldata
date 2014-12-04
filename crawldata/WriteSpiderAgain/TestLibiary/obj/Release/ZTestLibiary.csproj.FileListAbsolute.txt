@@ -1,0 +1,9 @@
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\TestLibiary\bin\Release\ZTestLibiary.dll
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\TestLibiary\bin\Release\ZTestLibiary.pdb
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\TestLibiary\bin\Release\WriteSpiderAgain.exe
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\TestLibiary\obj\Release\ZTestLibiary.csprojResolveAssemblyReference.cache
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\TestLibiary\obj\Release\ZTestLibiary.dll
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\TestLibiary\obj\Release\ZTestLibiary.pdb
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\TestLibiary\bin\Release\ZTestLibiary.dll.config
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\TestLibiary\bin\Release\log4net.dll
+F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\TestLibiary\bin\Release\WriteSpiderAgain.pdb

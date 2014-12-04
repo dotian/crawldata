@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;br /&gt;(.+?)class="gcolor01"&gt;</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		&lt;td align="center" class="gcolor01"&gt;(.+?) 编辑:\w+&lt;/td&gt;
+	</ContentDate>
+	<Content>
+		&lt;td class="bcolor02"&gt;&lt;p&gt;(.+?)&lt;strong&gt;来源:
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://home.hangzhou.com.cn/article_list.php?article_class=43</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>news</SiteName>
+	<NextPage />
+</template>

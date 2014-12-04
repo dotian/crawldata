@@ -1,0 +1,13 @@
+<template>
+<Node>&lt;div class=&quot;title&quot;&gt;(.+?)&lt;div class=&quot;info&quot;&gt;</Node>
+<Title>&lt;a [^&gt;]*&gt;(.+?)&lt;/a&gt;</Title>
+<SrcUrl>&lt;a href=&quot;(.+?)&quot;</SrcUrl>
+<Content>&lt;div id=&quot;J_read_main&quot;&gt;(.+?)&lt;td class=&quot;box_wrap floor_bottom&quot;</Content>
+<ContentDate>发布于：(.+?)&lt;/</ContentDate>
+	<SiteEncoding>gbk</SiteEncoding>
+	<InnerEncoding>gbk</InnerEncoding>
+	<Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<PageStart>1</PageStart>
+	<PageEnd>10</PageEnd>
+</template>

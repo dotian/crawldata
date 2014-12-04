@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>span class="txt01"&gt;(.+?)&lt;/li</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		&lt;p class="p_time"&gt;.+?&gt;(.+?)&lt;/span	
+	</ContentDate>
+	<Content>
+		&lt;div id="artical_real".+?&gt;(.+?)&lt;span class="ifengLogo"&gt;
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a  href="(.+?)"</SrcUrl>
+	<Url>http://finance.ifeng.com/roll/index.shtml</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>news</SiteName>
+	<NextPage />
+</template>

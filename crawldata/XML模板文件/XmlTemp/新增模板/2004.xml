@@ -1,0 +1,27 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>class="rb"&gt;(.+?)&lt;div class="fb"</Node>
+	<Title>
+		&lt;h3 class="pt"&gt;(.+?)&lt;/h3
+	</Title>
+	<Author>
+		&lt;a href='/user.+?&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		更新时间：(.+?)&lt;/div&gt;
+	</ContentDate>
+	<Content>
+		&lt;div class="ft" id="\w+"&gt;(.+?)&lt;/div&gt;
+	</Content>
+	<SrcUrl>href="(.+?)"</SrcUrl>
+	<Url>http://www.sogou.com/web?query=%E9%9F%A9%E6%B3%B0%E8%BD%AE%E8%83%8E&amp;tsn=3&amp;page={p}&amp;p=40040100&amp;dp=1</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	 <Layer>1</Layer>
+	 <PageSize>20</PageSize>
+	  <PageStart>1</PageStart>
+	 <PageEnd>10</PageEnd>
+	<SiteName>blog</SiteName>
+	<Remark>搜狗博客搜索</Remark>
+	<NextPage />
+</template>

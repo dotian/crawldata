@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="icon"&gt;(.+?)&lt;/tr</Node>
+	<Title>
+		target="_blank" title="(.+?)"
+	</Title>
+	<Author>
+		&lt;td class="author"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于 (.+?)&lt;/em&gt;
+	</ContentDate>
+	<Content>
+		class="cont".+?&gt;&lt;/tr
+	</Content>
+	<Views>&lt;span itemprop="查看数"&gt;(\d+)&lt;/span&gt;</Views>
+	<Replies>&lt;em itemprop="回复数"&gt;(\d+)&lt;/em&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://go.cqmmgo.com/forum-20-1.html</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="subject" id="td_\d+"&gt;(.+?)&lt;/td</Node>
+	<Title>
+		class="subject_t f14"&gt;(.+?)&lt;a
+	</Title>
+	<Author>
+		class="author"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于 (.+?)&lt;/em&gt;
+	</ContentDate>
+	<Content>
+		&lt;div class="f14 mb10" id="read_tpc"&gt;(.+?)&lt;/div
+	</Content>
+	<Views>&lt;em&gt;(.+?)&lt;/td&gt;</Views>
+	<Replies>&lt;em&gt;(.+?)&lt;/td&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://www.zyhuwai.com/thread.php?fid=2</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

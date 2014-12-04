@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>class=mtbl&gt;(.+?)&lt;/table&gt;</Node>
+	<Title>
+		align=left&gt;&lt;a href=.+? target=_blank&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		class=ag1&gt;(\w+)&lt;/td&gt;&lt;td width=8%
+	</Author>
+	<ContentDate>
+		&lt;i&gt;于(.+?)\(
+	</ContentDate>
+	<Content>
+		&lt;ul&gt;(.+?)&lt;/ul
+	</Content>
+	<Views>class=ag1&gt;(\d+)&lt;/td&gt;</Views>
+	<Replies>class=ag2&gt;(\d+)&lt;/td&gt;</Replies>
+	<SrcUrl>align=left&gt;&lt;a href=(.+?) target=_blank&gt;</SrcUrl>
+	<Url>http://pc.beareyes.com.cn/cgi-bin/joytlun.pl?id=wd001&amp;ping=1</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;tr&gt;(.+?)&lt;/font&gt;&lt;tr&gt;</Node>
+	<Title>
+		&lt;a href=bbstcon\?board=.+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;a href.+?&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		&lt;td&gt;(.+?)&lt;td&gt;
+	</ContentDate>
+	<Content>
+		NET_\d+'&gt;(.+?)&lt;/table
+	</Content>
+	<Views>&lt;font color=black&gt;(\d+)</Views>
+	<Replies>&lt;font.+?&gt;(\d+)&lt;/font&gt;</Replies>
+	<SrcUrl>&lt;/a&gt;&lt;td.+?&lt;a href=(.+?)&gt;</SrcUrl>
+	<Url>http://bbs.nju.edu.cn/bbstdoc?board=NJUExpress</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

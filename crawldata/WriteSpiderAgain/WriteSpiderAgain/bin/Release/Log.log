@@ -1,0 +1,54 @@
+[时间]:2013-07-24 15:10:52,836
+[级别]:INFO
+[内容]:CrawlListRun.Count:	4116
+
+[时间]:2013-07-25 15:43:50,171
+[级别]:ERROR
+[内容]:ClrowSpiderMain 获取任务结果集 dalAction.GetTargetList() 异常
+
+System.InvalidOperationException: ExecuteReader: Connection 属性尚未初始化。
+   在 WriteSpiderAgain.ServiceDAL.ServiceDALAction.GetTargetList() 位置 F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\WriteSpiderAgain\ServiceDAL\ServiceDALAction.cs:行号 46
+   在 WriteSpiderAgain.ManagerBLL.ClrowBLL.ClrowSpiderMain() 位置 F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\WriteSpiderAgain\ManagerBLL\ClrowBLL.cs:行号 42
+[时间]:2013-07-25 15:45:27,986
+[级别]:ERROR
+[内容]:ClrowSpiderMain 获取任务结果集 dalAction.GetTargetList() 异常
+
+System.InvalidOperationException: ExecuteReader: Connection 属性尚未初始化。
+   在 WriteSpiderAgain.ServiceDAL.ServiceDALAction.GetTargetList() 位置 F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\WriteSpiderAgain\ServiceDAL\ServiceDALAction.cs:行号 47
+   在 WriteSpiderAgain.ManagerBLL.ClrowBLL.ClrowSpiderMain() 位置 F:\2013Year\小工具\重写爬虫\WriteSpiderAgain\WriteSpiderAgain\ManagerBLL\ClrowBLL.cs:行号 42
+[时间]:2013-07-25 15:47:43,369
+[级别]:INFO
+[内容]:CrawlListRun.Count:	4116
+
+[时间]:2013-09-10 17:54:25,263
+[级别]:INFO
+[内容]:Main 开始
+
+[时间]:2013-09-10 17:54:26,702
+[级别]:INFO
+[内容]:CrawlListRun.Count:	25226
+
+[时间]:2013-09-10 18:03:11,613
+[级别]:INFO
+[内容]:Main 开始
+
+[时间]:2013-09-10 18:03:12,487
+[级别]:INFO
+[内容]:CrawlListRun.Count:	25226
+
+[时间]:2013-09-11 15:12:30,491
+[级别]:INFO
+[内容]:Main 开始
+
+[时间]:2013-09-11 15:12:31,475
+[级别]:INFO
+[内容]:CrawlListRun.Count:	17952
+
+[时间]:2013-09-11 15:28:24,951
+[级别]:INFO
+[内容]:Main 开始
+
+[时间]:2013-09-11 15:28:25,119
+[级别]:INFO
+[内容]:CrawlListRun.Count:	1034
+

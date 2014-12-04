@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="hot title(.+?)&lt;/tr&gt;</Node>
+	<Title>
+		&lt;a target=.+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;a href='/user.+?&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表时间：(.+?)&lt;/span&gt;
+	</ContentDate>
+	<Content>
+		&lt;div class="tz_mainP" id="js-sub-body"&gt;(.+?)&lt;/div
+	</Content>
+	<Views>bold"&gt;(\d+)&lt;/span&gt;</Views>
+	<Replies>color=ff0000&gt;(\d+)&lt;/font&gt;</Replies>
+	<SrcUrl>&lt;a target.+?href="(.+?)"</SrcUrl>
+	<Url>http://tt.mop.com/topic/list_70_61_0_1.html</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

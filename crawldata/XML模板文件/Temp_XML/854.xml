@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>td class="icon(.+?)&lt;/tr</Node>
+	<Title>
+		class="subject_t f14" &gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		&lt;!--&lt;span title="(.+?)"&gt;发表于
+	</ContentDate>
+	<Content>
+		v class="tpc_content"&gt;(.+?)&lt;!--content_read--&gt;
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://www.actoys.net/bbs/thread.php?fid=99</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>forum</SiteName>
+	<NextPage />
+</template>

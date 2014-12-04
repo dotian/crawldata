@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;tr bgcolor="#FFFFFF"&gt;(.+?)&lt;/tr&gt;</Node>
+	<Title>
+		title="(.+?)"
+	</Title>
+	<Author>
+		target="_blank" class="newa22"&gt;(.+?)&lt;/a&gt;&lt;/td&gt;
+	</Author>
+	<ContentDate>
+		class="topbg"&gt;&lt;script.+?addtim=(.+?)'&gt;&lt;/script&gt;&lt;/td&gt;
+	</ContentDate>
+	<Content>
+		&lt;td height="220" valign="top" style="letter-spacing:1px.+?&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>class="style22"&gt;(\d+)&lt;/p&gt;&lt;/td&gt;</Views>
+	<Replies>class="style22"&gt;(\d+)&lt;/p&gt;&lt;/td&gt;</Replies>
+	<SrcUrl>&lt;td width="51%"&gt;　&lt;a href="(.+?)" target="_blank" class="newa2"</SrcUrl>
+	<Url>http://bbs.itren.cn/zilist.asp?boardid=36</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

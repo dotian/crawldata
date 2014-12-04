@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td(.+?)&lt;/tr</Node>
+	<Title>
+		&lt;a title="(.+?)"
+	</Title>
+	<Author>
+		&lt;td class="c-send"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于(.+?)&lt;/span&gt;
+	</ContentDate>
+	<Content>
+		&lt;div class="block-inner"&gt;(.+?)&lt;div class="section-footer" id="J_footer
+	</Content>
+	<Views>&lt;td class="c-count"&gt;(.+?)&lt;/td&gt;</Views>
+	<Replies>&lt;td class="c-count"&gt;(.+?)&lt;/td&gt;</Replies>
+	<SrcUrl> href="(.+?)"</SrcUrl>
+	<Url>http://s.dianping.com/xzqg</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

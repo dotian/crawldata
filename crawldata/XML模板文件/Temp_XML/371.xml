@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;TR class=board_bg_\d&gt;(.+?)&lt;/tr&gt;</Node>
+	<Title>
+		mydataList_ctl\d+_Label\d+"&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		class='A111'&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		&lt;span id="Label3"&gt;(.+?)&lt;/span&gt;
+	</ContentDate>
+	<Content>
+		&lt;td class="L15 F14".+?&gt;(.+?)&lt;div
+	</Content>
+	<Views>TD class=en width="5%"&gt;(\d+)&lt;/TD&gt;</Views>
+	<Replies>"mydataList_ctl\d+_Label\d+"&gt;(\d+)&lt;/span&gt;</Replies>
+	<SrcUrl>&lt;a href='(.+?)'</SrcUrl>
+	<Url>http://bbs.88999.com/forum.aspx?Classid=80C29483F06DDBF4</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

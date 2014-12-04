@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;li &gt;.+?&lt;h3&gt;(.+?)&lt;/h3&gt;</Node>
+	<Title>
+		 &gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		&lt;span class="date fl"&gt;(.+?)&lt;/span&gt;
+	</ContentDate>
+	<Content>
+		&lt;div class="summary"&gt;(.+?)&lt;div class="backhome"&gt;
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://www.cztv.com/zspd/zsfc/</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>forum</SiteName>
+	<NextPage />
+</template>

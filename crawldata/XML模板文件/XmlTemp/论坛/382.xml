@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;span class='classfix'&gt;(.+?)&lt;/tr&gt;</Node>
+	<Title>
+		id="topiclink"&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;/span&gt;&lt;br /&gt;&lt;a href=.+?&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于:&lt;/a&gt;&lt;/b&gt;(.+?)&amp;n
+	</ContentDate>
+	<Content>
+		&lt;div class='postcolor'&gt;(.+?)&lt;/tr
+	</Content>
+	<Views>&lt;td align='center'&gt;(\d+)&lt;/td&gt;</Views>
+	<Replies>&gt;(\d+)&lt;/a&gt;&lt;/td&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.chinacourt.org/index.php?showforum=24</Url>
+		<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

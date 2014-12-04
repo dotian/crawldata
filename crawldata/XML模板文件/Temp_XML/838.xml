@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>li&gt;&lt;a(.+?)&lt;br</Node>
+	<Title>
+		target=_blank&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<ContentDate>
+		p class="cont" align="center"&gt;\（(.+?)\）&lt;/p&gt;	
+	</ContentDate>
+	<Content>
+		p class="cont" align="center"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>href=(.+?)target</SrcUrl>
+	<Url>http://changzhou.zaobao.com/changzhou_idx.shtml</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>forum</SiteName>
+	<NextPage />
+</template>

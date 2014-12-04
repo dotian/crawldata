@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="icn"&gt;(.+?)&lt;/tr&gt;</Node>
+	<Title>
+		class="xst" &gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;td class="by"&gt;&lt;cite&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		发表于 (.+?)&lt;/em&gt;
+	</ContentDate>
+	<Content>
+	    &lt;td class="t_f" id="postmessage_\d+"&gt;(.+?)&lt;/tr&gt;
+	</Content>
+	<Views>&lt;em&gt;帖数: &lt;span title="(\d+)"&gt;</Views>
+	<Replies>&lt;em&gt;主题: (\d+)&lt;/em&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.pep.com.cn/forum-139-1.html</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>className='trout'"&gt;(.+?)&lt;/tr</Node>
+	<Title>
+		&lt;/span&gt;	&lt;a.+?&gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		&lt;td class="list3"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		Post By：(.+?)&lt;/span&gt;
+	</ContentDate>
+	<Content>
+		Post By.+?&lt;table cellspacing="0" cellpadding="0"&gt;(.+?)&lt;/table
+	</Content>
+	<Views>&lt;/span&gt; / (\d+)&lt;/td&gt;</Views>
+	<Replies>&lt;span&gt;(\d+)&lt;/span&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://bbs.nongli.net/index.asp?boardid=19</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

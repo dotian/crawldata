@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>·(.+?)font&gt;&lt;br&gt;</Node>
+	<Title>
+		&lt;a.+?&gt;(.+?)&lt;/a
+	</Title>
+	<ContentDate>
+		文章时间：&lt;FONT color=#666666 size=2&gt;(.+?)&lt;/FONT&gt;
+	</ContentDate>
+	<Content>
+		&lt;td height="57" align="left" style="FONT-SIZE: 14px; LINE-HEIGHT: 21px"&gt;(.+?)&lt;font size=2&gt;编辑:&lt;/font&gt;
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a href=(.+?) targ</SrcUrl>
+	<Url>http://www.eaonline.com.cn/info/infoListnews.dll?id=8</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>news</SiteName>
+	<NextPage />
+</template>

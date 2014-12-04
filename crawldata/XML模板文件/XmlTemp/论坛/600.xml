@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;div class="subone"&gt;(.+?)&lt;/li&gt;</Node>
+	<Title>
+		&lt;span id="thread_\d+"&gt;(.+?)&lt;/a
+	</Title>
+	<Author>
+		&lt;div class="floatleft"&gt;(.+?)&lt;/a&gt;
+	</Author>
+	<ContentDate>
+		#lastpost"&gt;(.+?)&lt;/a&gt;
+	</ContentDate>
+	<Content>
+		&lt;span id="thread_\d+"&gt;(.+?)&lt;/a&gt;
+	</Content>
+	<Views>&lt;div class="subfour"&gt;(.+?)&lt;div class="subfive"&gt;</Views>
+	<Replies>&lt;div class="subfour"&gt;(.+?)&lt;div class="subfive"&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://com.mysvw.com/forumdisplay.php?fid=14&amp;page=1</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

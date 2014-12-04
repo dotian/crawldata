@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="title"&gt;(.+?)&lt;/tr&gt;</Node>
+	<Title>
+		&lt;/strong&gt;(.+?)&lt;/a&gt;&lt;/span&gt;
+	</Title>
+	<Author>
+		&lt;td class="author"&gt;&lt;cite&gt;(.+?)&lt;/a&gt;&lt;/cite&gt;
+	</Author>
+	<ContentDate>
+		发表于：(.+?)&lt;/span&gt;
+	</ContentDate>
+	<Content>
+		&lt;div class="post_body"&gt;(.+?)&lt;/div
+	</Content>
+	<Views>&lt;td class="tc"&gt;(\d+)&lt;/td&gt;</Views>
+	<Replies>&lt;td class="tc"&gt;\d+&lt;/td&gt;.+?&lt;td class="tc"&gt;(\d+)&lt;/td&gt;</Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://forum.csdn.net/SList/ITnews/</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>

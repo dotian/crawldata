@@ -1,0 +1,23 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;div style=" margin-top:5px" class="heading"&gt;(.+?)&lt;/td&gt;</Node>
+	<Title>
+		
+	</Title>
+	<ContentDate>
+		
+	</ContentDate>
+	<Content>
+		
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<Author></Author>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://www.newscenter.philips.com/cn_zh/index.wpd</Url>
+	<SiteEncoding>UTF-8</SiteEncoding>
+	<InnerEncoding>UTF-8</InnerEncoding>
+	<Layer>2</Layer>
+    <SiteName>forum</SiteName>
+	<NextPage />
+</template>

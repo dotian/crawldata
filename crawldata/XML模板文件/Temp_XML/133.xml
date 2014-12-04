@@ -1,0 +1,25 @@
+﻿<template>
+	<MainPage site=""></MainPage>
+	<Node>&lt;td class="icn"&gt;(.+?)&lt;/tr&gt;</Node>
+	<Title>
+		 class="xst" &gt;(.+?)&lt;/a&gt;
+	</Title>
+	<Author>
+		class="xi2"&gt;奇瑞a516怠速抖动问题&lt;/a&gt;
+	</Author>
+	<ContentDate>
+	发表于(.+?)&lt;/em&gt;
+	</ContentDate>
+	<Content>
+		&lt;td class="t_f" id="postmessage_\d+"&gt;(.+?)&lt;/tr
+	</Content>
+	<Views></Views>
+	<Replies></Replies>
+	<SrcUrl>&lt;a href="(.+?)"</SrcUrl>
+	<Url>http://www.cartech8.com/forum-19268-1.html</Url>
+	<SiteEncoding>GB2312</SiteEncoding>
+	<InnerEncoding>GB2312</InnerEncoding>
+	 <Layer>2</Layer>
+	<SiteName>forum</SiteName>
+	<NextPage />
+</template>
