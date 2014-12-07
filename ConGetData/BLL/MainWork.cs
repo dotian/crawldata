@@ -10,18 +10,20 @@ namespace ConGetData.BLL
 {
     public class CrawlTask
     {
-        public CrawlTask(string name, int maxThreadNumber)
+        public CrawlTask(string name, int maxThreadNumber, SiteUseTypeEnum type)
         {
             this.ThreadCounter = new ThreadCounter();
             this.CrawlTargetList = new List<CrawlTarget>();
             this.MaxThreadNumber = maxThreadNumber;
             this.TaskName = name;
+            this.TaskType = type;
         }
 
         public int MaxThreadNumber { get; set; }
         public ThreadCounter ThreadCounter { get; set; }
         public IList<CrawlTarget> CrawlTargetList { get; set; }
         public string TaskName { get; set; }
+        public SiteUseTypeEnum TaskType { get; set; }
     }
 
     public class MainWork
@@ -32,8 +34,8 @@ namespace ConGetData.BLL
         {
             ModelArgs.RunStatus = true;
 
-            var commonSitesTask = new CrawlTask("Common Sites Tasks", ModelArgs.MaxCommonThreadNum);
-            var projectRelatedSitesTask = new CrawlTask("Search Sites Tasks", ModelArgs.MaxProjectRelatedThreadNum);
+            var commonSitesTask = new CrawlTask("Common Sites Tasks", ModelArgs.MaxCommonThreadNum, SiteUseTypeEnum.Common);
+            var projectRelatedSitesTask = new CrawlTask("Search Sites Tasks", ModelArgs.MaxProjectRelatedThreadNum, SiteUseTypeEnum.Search);
 
             while (ModelArgs.RunStatus == true)
             {
@@ -44,22 +46,20 @@ namespace ConGetData.BLL
             }
         }
 
-        private void ProcessTask(CrawlTask commonSitesTask)
+        private void ProcessTask(CrawlTask sitesTask)
         {
-            WorkInfoOutput(commonSitesTask);
+            WorkInfoOutput(sitesTask);
 
             #region  填充队列
 
-            if (commonSitesTask.CrawlTargetList.Count == 0)
+            if (sitesTask.CrawlTargetList.Count == 0)
             {
-                Thread.Sleep(120 * 1000);//每次任务 结束之后,停2分钟
-
                 //更新新浪微博cookie
                 new MicroblogGetCookie().GetSinaCookieWork();
 
-                ResetCrawlWorkTask(commonSitesTask);  //重新读取列表，重设计数
+                ResetCrawlWorkTask(sitesTask);  //重新读取列表，重设计数
 
-                if (commonSitesTask.CrawlTargetList.Count <= 0)
+                if (sitesTask.CrawlTargetList.Count <= 0)
                 {
                     Console.WriteLine("可运行的 任务为0");
                     throw new Exception();
@@ -70,7 +70,12 @@ namespace ConGetData.BLL
 
             #region  处理工作队列
 
-            ProcessWorkList(commonSitesTask);
+            ProcessWorkList(sitesTask);
+
+            if (sitesTask.CrawlTargetList.Count == 0)
+            {
+                Thread.Sleep(120 * 1000);//每次任务 结束之后,停2分钟
+            }
 
             #endregion
         }
@@ -90,11 +95,6 @@ namespace ConGetData.BLL
 
         private static void WorkInfoOutput(CrawlTask task)
         {
-            int left = Console.CursorLeft;
-            int top = Console.CursorTop;
-            Console.SetCursorPosition(0, top);
-            Console.SetCursorPosition(left, top);
-
             string outPutMess = string.Format("-- Task Name:{5}, ThreadNum:{0} Queue:{1} Pending:{2} Error:{3} Finished:{4}",
                 task.ThreadCounter.getThreadNum("tc"),
                 task.CrawlTargetList.Count,
@@ -104,13 +104,14 @@ namespace ConGetData.BLL
                 task.TaskName);
 
             Console.WriteLine(outPutMess);
-            Console.SetCursorPosition(left, top);
         }
 
         private void ResetCrawlWorkTask(CrawlTask task)
         {
-            task.CrawlTargetList = logicAction.GetCrawtarget().Where(c => (c.SiteUseType & SiteUseTypeEnum.Search) == 0).ToList();
+            task.CrawlTargetList = logicAction.GetCrawtarget().Where(c => (c.SiteUseType & task.TaskType) != 0).ToList();
             task.ThreadCounter = new ThreadCounter();
+
+            Console.WriteLine(string.Format("{0} tasks found for {1}", task.CrawlTargetList.Count, task.TaskName));
         }
 
         //实际处理函数

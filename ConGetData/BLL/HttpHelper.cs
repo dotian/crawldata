@@ -30,7 +30,7 @@ namespace ConGetData.BLL
                     req.Headers.Add("Cookie", StrCookie);
                 }
 
-                req.Timeout = 10000;
+                req.Timeout = 20000;
                 var encoding = Encoding.GetEncoding(encoStr);
 
                 if (!string.IsNullOrEmpty(postContent))
@@ -50,7 +50,7 @@ namespace ConGetData.BLL
             }
             catch (Exception ex)
             {
-                LogBLL.Error("Http error with url:" + url, ex);
+                LogBLL.Error("Http error with url: " + url, ex);
                 revData = "";
             }
 

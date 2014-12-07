@@ -26,17 +26,21 @@ namespace ConGetData.BLL
 
             string html = GetHttpContent(target, siteUrl);
 
-            MatchContentByTemplate(target, siteUrl, html);
+            if (!string.IsNullOrEmpty(html))
+            {
+                MatchContentByTemplate(target, siteUrl, html);
+            }
 
             ProcessPageCount(target);
         }
 
         protected void RecordSiteFailure(string siteId, string failureMessage, bool ignoreCount = false)
         {
+            // LogBLL.Info("starting to record site failure for site: " + siteId);
             string failureUpdateSqlTempate = string.Empty;
             if (!ignoreCount)
             {
-                failureUpdateSqlTempate += "UPDATE [DataMingDB].[dbo].[SiteList] SET [SiteFailureCount] = SiteFailureCount + 1;";
+                failureUpdateSqlTempate += "UPDATE [DataMingDB].[dbo].[SiteList] SET [SiteFailureCount] = [SiteFailureCount] + 1 WHERE [SiteId] = {0};";
             }
             failureUpdateSqlTempate += @"INSERT INTO [DataMingDB].[dbo].[SiteListFailureLog]
     ([SiteId]
@@ -51,9 +55,7 @@ VALUES
 
             try
             {
-
-                HelperSQL.ExecNonQuery(failureUpdateSqlTempate);
-
+                HelperSQL.ExecNonQuery(sqlCommand);
             }
             catch (Exception ex)
             {
@@ -126,34 +128,41 @@ VALUES
             MatchCollection mc = reg.Matches(html);
 
             int result = 0;
-            foreach (Match match in mc)
-            {
-                string inputMatchHtml = match.Groups[1].Value.Trim();
-                if (inputMatchHtml.Length == 0)
-                    continue;
-                DataModel model = GetDataModel(target.XmlTemplate, inputMatchHtml, siteUrl);
+            bool notCaptureContent = false;
 
-                if (model.Content != null)
-                {
-                    model.SiteId = target.SiteId;
-                    model.ProjectID = target.ProjectId;
-
-                    result += InsertSiteData(model);
-                }
-                else
-                {
-                    RecordSiteFailure(target.SiteId, "Template id:" + target.Tid + "\r\nSingle node not matched for:" + inputMatchHtml, true);
-                }
-            }
-            if (result > 0)
-            {
-                // 记录到文件,有多少还可以使用的 , 需要的是 模板Tid,站点SiteId
-                Console.WriteLine(target.SiteId + " 抓取成功");
-            }
-            else
+            if (mc.Count == 0)
             {
                 // No match node
                 RecordSiteFailure(target.SiteId, "No result matched from the content:" + html);
+            }
+            else
+            {
+                foreach (Match match in mc)
+                {
+                    string inputMatchHtml = match.Groups[1].Value.Trim();
+                    if (inputMatchHtml.Length == 0)
+                        continue;
+                    DataModel model = GetDataModel(target.XmlTemplate, inputMatchHtml, siteUrl);
+
+                    if (model.Content != null)
+                    {
+                        model.SiteId = target.SiteId;
+                        model.ProjectID = target.ProjectId;
+
+                        result += InsertSiteData(model);
+                    }
+                    else if (!notCaptureContent)
+                    {
+                        notCaptureContent = true;
+                        RecordSiteFailure(target.SiteId, "Template id:" + target.Tid + "\r\nSingle node not matched for:" + inputMatchHtml, true);
+                    }
+                }
+
+                if (result > 0)
+                {
+                    // 记录到文件,有多少还可以使用的 , 需要的是 模板Tid,站点SiteId
+                    Console.WriteLine(target.SiteId + " 抓取成功");
+                }
             }
         }
 
